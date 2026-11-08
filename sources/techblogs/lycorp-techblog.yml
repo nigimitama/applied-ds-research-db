@@ -1,0 +1,11 @@
+# URL未検証。実フィードで collect.py --only lycorp-techblog を確認してから enabled: true にする
+id: lycorp-techblog
+type: techblog
+company: lycorp
+venue: LINEヤフー Tech Blog
+method: rss
+feed: https://techblog.lycorp.co.jp/ja/feed/index.xml
+filter_hint: 機械学習・データ分析・実験/A/Bテスト・最適化に関する記事のみ。採用・イベント告知・純粋なインフラ記事は除外
+lang: ja
+schedule: weekly
+enabled: false

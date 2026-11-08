@@ -1,0 +1,11 @@
+# URL未検証。実フィードで collect.py --only google-research-blog を確認してから enabled: true にする
+id: google-research-blog
+type: techblog
+company: google
+venue: Google Research Blog
+method: rss
+feed: https://research.google/blog/rss/
+filter_hint: 機械学習・データ分析・実験/A/Bテスト・最適化に関する記事のみ。採用・イベント告知・純粋なインフラ記事は除外
+lang: en
+schedule: weekly
+enabled: false

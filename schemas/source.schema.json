@@ -3,22 +3,98 @@
   "title": "Source",
   "type": "object",
   "additionalProperties": false,
-  "required": ["id", "type", "lang", "schedule"],
+  "required": [
+    "id",
+    "type",
+    "lang",
+    "schedule"
+  ],
   "properties": {
-    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "type": {"enum": ["conference", "techblog", "preprint", "company_paper", "journal"]},
-    "company": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
-    "venue": {"type": "string"},
-    "method": {"enum": ["rss", "arxiv_api", "jstage_api", "html_list", "sitemap"]},
-    "feed": {"type": "string", "pattern": "^https?://"},
-    "url": {"type": "string", "pattern": "^https?://"},
-    "filter_hint": {"type": "string"},
-    "lang": {"enum": ["ja", "en"]},
-    "schedule": {"enum": ["weekly", "monthly", "yearly"]},
-    "enabled": {"type": "boolean"}
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "type": {
+      "enum": [
+        "conference",
+        "techblog",
+        "preprint",
+        "company_paper",
+        "journal"
+      ]
+    },
+    "company": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "venue": {
+      "type": "string"
+    },
+    "method": {
+      "enum": [
+        "rss",
+        "arxiv_api",
+        "jstage_api",
+        "html_list",
+        "sitemap"
+      ]
+    },
+    "feed": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "url": {
+      "type": "string",
+      "pattern": "^https?://"
+    },
+    "filter_hint": {
+      "type": "string"
+    },
+    "lang": {
+      "enum": [
+        "ja",
+        "en"
+      ]
+    },
+    "schedule": {
+      "enum": [
+        "weekly",
+        "monthly",
+        "yearly"
+      ]
+    },
+    "enabled": {
+      "type": "boolean"
+    },
+    "query": {
+      "type": "string",
+      "description": "arxiv_api / jstage_api の検索クエリ"
+    },
+    "link_pattern": {
+      "type": "string",
+      "description": "html_list で記事リンクを拾う正規表現"
+    },
+    "max_items": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 500
+    }
   },
   "anyOf": [
-    {"required": ["feed"]},
-    {"required": ["url"]}
+    {
+      "required": [
+        "feed"
+      ]
+    },
+    {
+      "required": [
+        "url"
+      ]
+    },
+    {
+      "required": [
+        "query"
+      ]
+    }
   ]
 }

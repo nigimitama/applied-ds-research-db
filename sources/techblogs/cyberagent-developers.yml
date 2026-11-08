@@ -1,0 +1,11 @@
+# URL未検証。実フィードで collect.py --only cyberagent-developers を確認してから enabled: true にする
+id: cyberagent-developers
+type: techblog
+company: cyberagent
+venue: CyberAgent Developers Blog
+method: rss
+feed: https://developers.cyberagent.co.jp/blog/feed/
+filter_hint: 機械学習・データ分析・実験/A/Bテスト・最適化に関する記事のみ。採用・イベント告知・純粋なインフラ記事は除外
+lang: ja
+schedule: weekly
+enabled: false

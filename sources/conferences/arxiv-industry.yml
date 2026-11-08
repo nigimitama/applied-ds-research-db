@@ -1,0 +1,12 @@
+# URL/クエリ未検証。実環境で collect.py --only arxiv-industry を確認してから enabled: true にする
+id: arxiv-industry
+type: preprint
+venue: arXiv
+method: arxiv_api
+query: (cat:cs.IR OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL) AND (abs:"A/B test" OR
+  abs:"online experiment" OR abs:"deployed" OR abs:"production")
+filter_hint: 企業所属の著者を含み、実サービス/実データへの適用が書かれた論文のみ。所属は本文/arXivページで確認
+lang: en
+schedule: weekly
+max_items: 100
+enabled: false

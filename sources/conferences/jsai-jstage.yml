@@ -1,0 +1,11 @@
+# URL/クエリ未検証。実環境で collect.py --only jsai-jstage を確認してから enabled: true にする
+id: jsai-jstage
+type: conference
+venue: 人工知能学会全国大会
+method: jstage_api
+query: 人工知能学会全国大会
+filter_hint: 著者所属に企業を含み実データ適用がある発表のみ
+lang: ja
+schedule: monthly
+max_items: 100
+enabled: false
