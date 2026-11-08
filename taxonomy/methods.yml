@@ -1,0 +1,27 @@
+# 手法・技術
+- {id: gradient-boosting, ja: 勾配ブースティング, en: Gradient Boosting, aliases: [LightGBM, XGBoost, GBDT]}
+- {id: deep-learning, ja: 深層学習, en: Deep Learning, aliases: [ニューラルネット]}
+- {id: transformer, ja: Transformer, en: Transformer, aliases: [BERT, attention]}
+- {id: llm, ja: 大規模言語モデル, en: LLM, aliases: [LLM, GPT, 生成AI]}
+- {id: rag, ja: RAG, en: Retrieval-Augmented Generation, aliases: [検索拡張生成]}
+- {id: fine-tuning, ja: ファインチューニング, en: Fine-tuning, aliases: [LoRA, SFT]}
+- {id: embedding, ja: 埋め込み・表現学習, en: Embedding & Representation Learning, aliases: [two-tower, 分散表現]}
+- {id: vector-search, ja: ベクトル検索, en: Vector Search, aliases: [ANN, 近似最近傍探索]}
+- {id: graph-neural-network, ja: グラフニューラルネットワーク, en: GNN, aliases: [GNN, グラフ学習]}
+- {id: reinforcement-learning, ja: 強化学習, en: Reinforcement Learning, aliases: [RL]}
+- {id: bandit, ja: バンディット, en: Bandit, aliases: [多腕バンディット, contextual bandit]}
+- {id: off-policy-evaluation, ja: オフ方策評価, en: Off-policy Evaluation, aliases: [OPE, 反実仮想]}
+- {id: causal-inference, ja: 因果推論, en: Causal Inference, aliases: [傾向スコア, DID, 差の差]}
+- {id: uplift-modeling, ja: アップリフトモデリング, en: Uplift Modeling, aliases: []}
+- {id: bayesian, ja: ベイズ統計, en: Bayesian Methods, aliases: [ベイズ推定, 階層ベイズ]}
+- {id: time-series-model, ja: 時系列モデル, en: Time-series Models, aliases: [ARIMA, 状態空間モデル, Prophet]}
+- {id: mathematical-optimization, ja: 数理最適化, en: Mathematical Optimization, aliases: [整数計画, 線形計画, ソルバー]}
+- {id: simulation, ja: シミュレーション, en: Simulation, aliases: [エージェントベース]}
+- {id: ab-testing, ja: A/Bテスト手法, en: A/B Testing Methodology, aliases: [分散削減, CUPED, sequential test]}
+- {id: online-learning, ja: オンライン学習, en: Online Learning, aliases: [ストリーミング学習]}
+- {id: federated-learning, ja: 連合学習・プライバシー, en: Federated Learning & Privacy, aliases: [差分プライバシー]}
+- {id: knowledge-graph, ja: 知識グラフ, en: Knowledge Graph, aliases: []}
+- {id: multimodal, ja: マルチモーダル, en: Multimodal Learning, aliases: [画像テキスト]}
+- {id: explainable-ai, ja: 説明可能AI, en: Explainable AI, aliases: [XAI, SHAP]}
+- {id: model-compression, ja: モデル軽量化, en: Model Compression, aliases: [蒸留, 量子化]}
+- {id: active-learning, ja: 能動学習・ラベリング, en: Active Learning, aliases: [アノテーション]}

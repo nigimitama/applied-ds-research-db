@@ -1,0 +1,10 @@
+# 扱うデータの種類
+- {id: tabular, ja: 表形式, en: Tabular, aliases: [構造化データ]}
+- {id: text, ja: テキスト, en: Text, aliases: [自然言語]}
+- {id: image, ja: 画像, en: Image, aliases: []}
+- {id: video, ja: 動画, en: Video, aliases: []}
+- {id: audio, ja: 音声, en: Audio, aliases: []}
+- {id: time-series, ja: 時系列, en: Time-series, aliases: [センサーデータ]}
+- {id: graph, ja: グラフ, en: Graph, aliases: [ネットワーク]}
+- {id: log, ja: 行動ログ, en: Behavior Logs, aliases: [クリックログ, 購買履歴]}
+- {id: geospatial, ja: 位置情報, en: Geospatial, aliases: [GPS]}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Company",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "name", "country"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "name": {"type": "string", "minLength": 1},
+    "name_ja": {"type": "string"},
+    "aliases": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "country": {"type": "string", "pattern": "^[A-Z]{2}$"},
+    "industry": {"type": "string"},
+    "website": {"type": "string", "pattern": "^https?://"}
+  }
+}

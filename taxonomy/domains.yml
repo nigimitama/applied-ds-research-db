@@ -1,0 +1,22 @@
+# 適用分野(どの業界/事業か)
+- {id: e-commerce, ja: EC・マーケットプレイス, en: E-commerce, aliases: [ECサイト, フリマ]}
+- {id: retail, ja: 小売, en: Retail, aliases: [店舗, リテール]}
+- {id: advertising, ja: 広告, en: Advertising, aliases: [アドテク]}
+- {id: finance, ja: 金融, en: Finance, aliases: [銀行, 決済, フィンテック]}
+- {id: insurance, ja: 保険, en: Insurance, aliases: []}
+- {id: logistics, ja: 物流・配送, en: Logistics, aliases: [ラストワンマイル]}
+- {id: mobility, ja: モビリティ, en: Mobility, aliases: [タクシー配車, 自動運転]}
+- {id: manufacturing, ja: 製造, en: Manufacturing, aliases: [工場]}
+- {id: energy, ja: エネルギー, en: Energy, aliases: [電力]}
+- {id: healthcare, ja: 医療・ヘルスケア, en: Healthcare, aliases: [創薬]}
+- {id: telecom, ja: 通信, en: Telecom, aliases: [通信キャリア]}
+- {id: media, ja: メディア・コンテンツ, en: Media & Content, aliases: [ニュース, 動画配信, 音楽]}
+- {id: gaming, ja: ゲーム, en: Gaming, aliases: []}
+- {id: hr, ja: 人材・採用, en: HR & Recruiting, aliases: [求人]}
+- {id: real-estate, ja: 不動産, en: Real Estate, aliases: []}
+- {id: travel, ja: 旅行・宿泊, en: Travel, aliases: [宿泊予約]}
+- {id: food, ja: フード・グルメ, en: Food & Restaurant, aliases: [飲食, フードデリバリー]}
+- {id: education, ja: 教育, en: Education, aliases: []}
+- {id: social, ja: SNS・コミュニケーション, en: Social & Communication, aliases: [メッセンジャー]}
+- {id: cloud-infra, ja: クラウド・インフラ, en: Cloud & Infrastructure, aliases: [SRE, AIOps]}
+- {id: public-sector, ja: 公共・社会, en: Public Sector, aliases: [自治体]}

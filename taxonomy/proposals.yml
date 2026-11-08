@@ -1,0 +1,4 @@
+# Claudeが収集中に「既存語彙に合うタグがない」と判断したときの新タグ提案キュー。
+# 人間が承認したら該当の taxonomy/*.yml に移し、ここから削除する。
+# 形式: {axis: task|domain|method|data_type, id, ja, en, reason, example_url}
+[]

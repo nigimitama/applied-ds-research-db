@@ -1,0 +1,24 @@
+# 解きたい課題(何をするか)。idはkebab-case。aliasesは表記ゆれ吸収用。
+- {id: recommendation, ja: 推薦, en: Recommendation, aliases: [レコメンド, recommender system]}
+- {id: search-ranking, ja: 検索・ランキング, en: Search & Ranking, aliases: [情報検索, learning to rank]}
+- {id: ad-optimization, ja: 広告配信最適化, en: Ad Optimization, aliases: [広告, CTR予測, CVR予測, bidding]}
+- {id: demand-forecasting, ja: 需要予測, en: Demand Forecasting, aliases: [需要予測, sales forecasting]}
+- {id: time-series-forecasting, ja: 時系列予測, en: Time-series Forecasting, aliases: []}
+- {id: pricing, ja: 価格最適化, en: Pricing Optimization, aliases: [ダイナミックプライシング]}
+- {id: fraud-detection, ja: 不正検知, en: Fraud Detection, aliases: [不正利用, abuse detection]}
+- {id: anomaly-detection, ja: 異常検知, en: Anomaly Detection, aliases: [故障検知]}
+- {id: churn-prediction, ja: 離反予測, en: Churn Prediction, aliases: [解約予測]}
+- {id: causal-effect-estimation, ja: 効果推定, en: Causal Effect Estimation, aliases: [uplift, 施策効果測定]}
+- {id: experimentation, ja: 実験・A/Bテスト, en: Experimentation, aliases: [AB test, オンライン実験]}
+- {id: personalization, ja: パーソナライゼーション, en: Personalization, aliases: []}
+- {id: classification, ja: 分類・タグ付け, en: Classification, aliases: [カテゴリ分類, 商品分類]}
+- {id: entity-matching, ja: 名寄せ・マッチング, en: Entity Matching, aliases: [entity resolution, 重複検出]}
+- {id: text-generation, ja: 文章生成・要約, en: Text Generation & Summarization, aliases: [要約, 文章生成]}
+- {id: conversational-ai, ja: 対話・QA, en: Conversational AI, aliases: [チャットボット, 質問応答]}
+- {id: image-recognition, ja: 画像認識, en: Image Recognition, aliases: [物体検出]}
+- {id: speech-processing, ja: 音声処理, en: Speech Processing, aliases: [音声認識]}
+- {id: resource-optimization, ja: 資源配分・スケジューリング, en: Resource Optimization, aliases: [配送最適化, 在庫最適化, シフト最適化]}
+- {id: matching-market, ja: マッチング市場設計, en: Marketplace Matching, aliases: [two-sided marketplace]}
+- {id: risk-scoring, ja: 与信・リスク評価, en: Risk Scoring, aliases: [信用スコア]}
+- {id: predictive-maintenance, ja: 予知保全, en: Predictive Maintenance, aliases: []}
+- {id: data-quality, ja: データ品質・基盤, en: Data Quality & Platform, aliases: [MLOps, 特徴量基盤]}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Source",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["id", "type", "lang", "schedule"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "type": {"enum": ["conference", "techblog", "preprint", "company_paper", "journal"]},
+    "company": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "venue": {"type": "string"},
+    "method": {"enum": ["rss", "arxiv_api", "jstage_api", "html_list", "sitemap"]},
+    "feed": {"type": "string", "pattern": "^https?://"},
+    "url": {"type": "string", "pattern": "^https?://"},
+    "filter_hint": {"type": "string"},
+    "lang": {"enum": ["ja", "en"]},
+    "schedule": {"enum": ["weekly", "monthly", "yearly"]},
+    "enabled": {"type": "boolean"}
+  },
+  "anyOf": [
+    {"required": ["feed"]},
+    {"required": ["url"]}
+  ]
+}

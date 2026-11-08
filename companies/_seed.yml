@@ -1,0 +1,22 @@
+# 企業マスタ(リスト形式)。aliasesは著者所属や表記ゆれの名寄せに使う。
+# 企業を追加するときはこのファイルか companies/*.yml に追記する(ファイル名は任意、_で始まらなくてもよい)。
+- {id: google, name: Google, aliases: [Google Research, Google DeepMind, Alphabet], country: US, industry: Internet}
+- {id: meta, name: Meta, aliases: [Facebook, Meta AI, FAIR], country: US, industry: Internet}
+- {id: netflix, name: Netflix, aliases: [], country: US, industry: Media}
+- {id: uber, name: Uber, aliases: [Uber Technologies], country: US, industry: Mobility}
+- {id: airbnb, name: Airbnb, aliases: [], country: US, industry: Travel}
+- {id: amazon, name: Amazon, aliases: [AWS, Amazon Science], country: US, industry: E-commerce}
+- {id: microsoft, name: Microsoft, aliases: [Microsoft Research], country: US, industry: Software}
+- {id: spotify, name: Spotify, aliases: [], country: SE, industry: Media}
+- {id: mercari, name: Mercari, name_ja: メルカリ, aliases: [mercari, 株式会社メルカリ], country: JP, industry: E-commerce, website: "https://engineering.mercari.com"}
+- {id: lycorp, name: LY Corporation, name_ja: LINEヤフー, aliases: [LINE, Yahoo Japan, ヤフー, LINEヤフー株式会社, LINE Yahoo], country: JP, industry: Internet}
+- {id: cyberagent, name: CyberAgent, name_ja: サイバーエージェント, aliases: [CyberAgent AI Lab, 株式会社サイバーエージェント], country: JP, industry: Advertising}
+- {id: dena, name: DeNA, name_ja: ディー・エヌ・エー, aliases: [株式会社ディー・エヌ・エー], country: JP, industry: Gaming}
+- {id: recruit, name: Recruit, name_ja: リクルート, aliases: [Recruit Co., Recruit Holdings, リクルートホールディングス], country: JP, industry: HR}
+- {id: rakuten, name: Rakuten, name_ja: 楽天, aliases: [楽天グループ, Rakuten Institute of Technology], country: JP, industry: E-commerce}
+- {id: ntt, name: NTT, name_ja: NTT, aliases: [NTT Labs, 日本電信電話, NTTドコモ, NTT DOCOMO], country: JP, industry: Telecom}
+- {id: pfn, name: Preferred Networks, name_ja: プリファードネットワークス, aliases: [PFN], country: JP, industry: AI}
+- {id: sony, name: Sony, name_ja: ソニー, aliases: [Sony AI, ソニーグループ], country: JP, industry: Electronics}
+- {id: hitachi, name: Hitachi, name_ja: 日立製作所, aliases: [日立], country: JP, industry: Manufacturing}
+- {id: fujitsu, name: Fujitsu, name_ja: 富士通, aliases: [Fujitsu Research], country: JP, industry: IT}
+- {id: toyota, name: Toyota, name_ja: トヨタ自動車, aliases: [Toyota Research Institute, Woven by Toyota], country: JP, industry: Automotive}
