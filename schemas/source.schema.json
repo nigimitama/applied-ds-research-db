@@ -36,6 +36,7 @@
         "arxiv_api",
         "jstage_api",
         "html_list",
+        "html_doi_table",
         "sitemap"
       ]
     },
@@ -70,6 +71,10 @@
       "type": "string",
       "description": "arxiv_api / jstage_api の検索クエリ"
     },
+    "cdjournal": {
+      "type": "string",
+      "description": "jstage_api で対象誌を限定するJ-STAGE誌コード(例: pjsai)"
+    },
     "link_pattern": {
       "type": "string",
       "description": "html_list で記事リンクを拾う正規表現"
@@ -94,6 +99,11 @@
     {
       "required": [
         "query"
+      ]
+    },
+    {
+      "required": [
+        "cdjournal"
       ]
     }
   ]

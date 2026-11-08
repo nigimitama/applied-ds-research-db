@@ -90,6 +90,12 @@ def parse_feed(data: bytes) -> list[dict]:
         authors = []
         for a in e.findall(f"{ATOM}author"):
             name = _text(a.find(f"{ATOM}name"))
+            if not name:  # J-STAGE: <author><ja><name>..</name>..</ja></author>(所属は含まれない)
+                lang_el = a.find(f"{ATOM}ja")
+                if lang_el is None:
+                    lang_el = a.find(f"{ATOM}en")
+                authors += [_text(n) for n in (lang_el if lang_el is not None else []) if _text(n)]
+                continue
             aff = _text(a.find(f"{ARXIV}affiliation"))
             authors.append(f"{name} ({aff})" if aff else name)
         items.append(
@@ -139,6 +145,36 @@ def parse_html_links(html: str, base_url: str, pattern: str) -> list[dict]:
     return out
 
 
+_DOI_CELL = re.compile(r"<strong>(.*?)</strong>\s*(?:<br\s*/?>)?\s*DOI:\s*(?:<a[^>]*>)?\s*(https?://\S+?)\s*(?:</a>|<|$)", re.S)
+
+
+def parse_doi_table(html: str) -> list[dict]:
+    """<td><strong>題名</strong><br/>DOI: URL</td> の次の <td> に著者(所属)が並ぶ表(KDD等)。"""
+    cells = re.findall(r"<td[^>]*>(.*?)</td>", html, re.S)
+    out, i = [], 0
+    while i < len(cells):
+        m = _DOI_CELL.search(cells[i])
+        if not m:
+            i += 1
+            continue
+        title = _strip_html(m.group(1))
+        affil = ""
+        if i + 1 < len(cells) and not _DOI_CELL.search(cells[i + 1]):
+            affil = _strip_html(cells[i + 1])
+            i += 1
+        i += 1
+        # 所属が分かるよう summary に著者(所属)を入れる(企業判定は triage 側)
+        out.append({"url": m.group(2), "title": title, "published": None, "summary": affil, "authors": []})
+    return out
+
+
+def check_jstage(raw: bytes) -> None:
+    """J-STAGE API はエラーでも HTTP 200 + 空feedを返すので status を見て失敗にする。"""
+    m = re.search(rb"<status>(\w+)</status>", raw)
+    if m and m.group(1).startswith(b"ERR"):
+        raise RuntimeError(f"J-STAGE API {m.group(1).decode()}")
+
+
 # ---------- ソース別の取得URL ----------
 def build_request_url(src: dict, since: date) -> str:
     m = src.get("method")
@@ -149,9 +185,12 @@ def build_request_url(src: dict, since: date) -> str:
         )
         return f"https://export.arxiv.org/api/query?{q}"
     if m == "jstage_api":
-        q = urllib.parse.urlencode(
-            {"service": 3, "keyword": src["query"], "pubyearfrom": since.year, "count": n, "lang": src["lang"]}
-        )
+        params = {"service": 3, "pubyearfrom": since.year, "count": n, "lang": src["lang"]}
+        if src.get("cdjournal"):  # 特定誌(例: pjsai=人工知能学会全国大会論文集)に限定
+            params["cdjournal"] = src["cdjournal"]
+        if src.get("query"):
+            params["text"] = src["query"]
+        q = urllib.parse.urlencode(params)
         return f"https://api.jstage.jst.go.jp/searchapi/do?{q}"
     return src.get("feed") or src["url"]
 
@@ -161,7 +200,11 @@ def collect_source(src: dict, since: date, fetcher=fetch) -> list[dict]:
     raw = fetcher(build_request_url(src, since))
     if m == "html_list":
         items = parse_html_links(raw.decode("utf-8", "replace"), src["url"], src["link_pattern"])
+    elif m == "html_doi_table":
+        items = parse_doi_table(raw.decode("utf-8", "replace"))
     else:
+        if m == "jstage_api":
+            check_jstage(raw)
         items = parse_feed(raw)
     out = []
     for it in items[: src.get("max_items", 50)]:

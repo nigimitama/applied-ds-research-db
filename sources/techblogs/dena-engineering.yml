@@ -1,4 +1,3 @@
-# URL未検証。実フィードで collect.py --only dena-engineering を確認してから enabled: true にする
 id: dena-engineering
 type: techblog
 company: dena
@@ -8,4 +7,4 @@ feed: https://engineering.dena.com/blog/index.xml
 filter_hint: 機械学習・データ分析・実験/A/Bテスト・最適化に関する記事のみ。採用・イベント告知・純粋なインフラ記事は除外
 lang: ja
 schedule: weekly
-enabled: false
+enabled: true

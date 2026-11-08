@@ -93,3 +93,42 @@ def test_limit_and_carry_over(root):
 def test_build_request_url():
     u = collect.build_request_url({"method": "arxiv_api", "query": "all:foo", "id": "a", "lang": "en"}, date(2026, 1, 1))
     assert u.startswith("https://export.arxiv.org/api/query?") and "all%3Afoo" in u
+
+
+DOI_HTML = """<table><tbody>
+<tr><td><strong>Paper One</strong><br/>DOI: https://doi.org/10.1145/1</td></tr>
+<tr><td>Alice (ExampleCorp); Bob (Univ X)</td></tr>
+<tr><td><strong>Paper Two</strong><br/>DOI: https://doi.org/10.1145/2</td></tr>
+<tr><td>Carol (Corp Y)</td></tr>
+<tr><td><strong>No DOI yet</strong></td></tr>
+</tbody></table>"""
+
+
+def test_parse_doi_table():
+    items = collect.parse_doi_table(DOI_HTML)
+    assert [i["url"] for i in items] == ["https://doi.org/10.1145/1", "https://doi.org/10.1145/2"]
+    assert items[0]["title"] == "Paper One"
+    assert items[0]["summary"] == "Alice (ExampleCorp); Bob (Univ X)"
+
+
+JSTAGE = b"""<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom"><entry><title>T</title>
+<author><en><name>Taro YAMADA</name></en><ja><name>\xe5\xb1\xb1\xe7\x94\xb0 \xe5\xa4\xaa\xe9\x83\x8e</name><name>\xe4\xbd\x90\xe8\x97\xa4 \xe8\x8a\xb1\xe5\xad\x90</name></ja></author>
+<link href="https://www.jstage.jst.go.jp/article/x"/><updated>2026-01-01T09:00+09:00</updated></entry></feed>"""
+
+
+def test_parse_jstage_authors():
+    (it,) = collect.parse_feed(JSTAGE)
+    assert it["authors"] == ["山田 太郎", "佐藤 花子"]
+
+
+def test_check_jstage_error():
+    with pytest.raises(RuntimeError):
+        collect.check_jstage(b"<result><status>ERR_001</status></result>")
+    collect.check_jstage(b"<result><status>WARN_002</status></result>")
+
+
+def test_jstage_url_uses_text_and_cdjournal():
+    url = collect.build_request_url(
+        {"method": "jstage_api", "cdjournal": "pjsai", "lang": "ja"}, date(2025, 1, 1)
+    )
+    assert "cdjournal=pjsai" in url and "keyword" not in url

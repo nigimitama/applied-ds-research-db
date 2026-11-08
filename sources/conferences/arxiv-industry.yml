@@ -1,4 +1,3 @@
-# URL/クエリ未検証。実環境で collect.py --only arxiv-industry を確認してから enabled: true にする
 id: arxiv-industry
 type: preprint
 venue: arXiv
@@ -9,4 +8,4 @@ filter_hint: 企業所属の著者を含み、実サービス/実データへの
 lang: en
 schedule: weekly
 max_items: 100
-enabled: false
+enabled: true

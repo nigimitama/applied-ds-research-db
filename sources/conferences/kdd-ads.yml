@@ -1,10 +1,10 @@
-# ソース定義の例。URLは年ごとに変わるため Phase 1 で収集スクリプトと合わせて確定する。
 id: kdd-ads
 type: conference
 venue: KDD Applied Data Science Track
-method: html_list
-url: https://kdd.org/
-filter_hint: "著者所属に企業を含む論文のみ。企業名は companies/ のaliasesで名寄せ"
+method: html_doi_table
+url: https://kdd2025.kdd.org/applied-data-science-ads-track-papers-2/
+filter_hint: "著者所属に企業を含む論文のみ。summary は著者(所属)の列。企業名は companies/ のaliasesで名寄せ"
 lang: en
 schedule: yearly
-enabled: false
+max_items: 300
+enabled: true
