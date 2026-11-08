@@ -172,6 +172,28 @@ def validate_rejected(root: Path, errors: list[str]) -> None:
             errors.append(f"data/rejected.jsonl:{n}: url/reason/date が必要")
 
 
+def validate_proposals(root: Path, vocab: dict[str, set[str]], errors: list[str]) -> None:
+    path = root / "taxonomy" / "proposals.yml"
+    if not path.exists():
+        return
+    seen: set[tuple[str, str]] = set()
+    for i, item in enumerate(load_yaml(path) or []):
+        label = f"taxonomy/proposals.yml[{i}]"
+        if not isinstance(item, dict) or not {"axis", "id", "ja", "en", "reason"} <= item.keys():
+            errors.append(f"{label}: axis/id/ja/en/reason が必要")
+            continue
+        if item["axis"] not in vocab:
+            errors.append(f"{label}: axis '{item['axis']}' が不正")
+            continue
+        if not ID_RE.match(str(item["id"])):
+            errors.append(f"{label}: id '{item['id']}' はkebab-case")
+        if item["id"] in vocab[item["axis"]]:
+            errors.append(f"{label}: '{item['id']}' は既に語彙にある(提案を削除してください)")
+        if (item["axis"], item["id"]) in seen:
+            errors.append(f"{label}: 提案が重複")
+        seen.add((item["axis"], item["id"]))
+
+
 def run(root: Path) -> tuple[list[str], int]:
     errors: list[str] = []
     vocab = load_taxonomy(root, errors)
@@ -179,6 +201,7 @@ def run(root: Path) -> tuple[list[str], int]:
     validate_sources(root, companies, errors)
     n = validate_articles(root, vocab, companies, errors)
     validate_rejected(root, errors)
+    validate_proposals(root, vocab, errors)
     return errors, n
 
 

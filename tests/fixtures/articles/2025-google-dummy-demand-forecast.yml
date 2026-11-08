@@ -1,0 +1,27 @@
+id: 2025-google-dummy-demand-forecast
+url: https://example.com/dummy/2
+title: '[DUMMY] Demand forecasting at scale'
+published: '2025-09-01'
+collected: '2025-09-08'
+companies:
+- google
+collab_academia: true
+source:
+  type: conference
+  venue: Dummy Conf 2025 ADS Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 表示確認用のダミー記事です。実在の論文ではありません。大規模な需要予測を想定した要約です。
+result: ダミー成果
+tags:
+  task:
+  - demand-forecasting
+  - time-series-forecasting
+  domain:
+  - retail
+  method:
+  - deep-learning
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.8

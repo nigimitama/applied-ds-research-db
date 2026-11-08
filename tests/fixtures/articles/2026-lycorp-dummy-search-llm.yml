@@ -1,0 +1,27 @@
+id: 2026-lycorp-dummy-search-llm
+url: https://example.com/dummy/3
+title: '[DUMMY] LLM reranking for search'
+title_ja: '[ダミー] LLMによる検索リランキング'
+published: '2026-02-14'
+collected: '2026-02-21'
+companies:
+- lycorp
+- cyberagent
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: ja
+summary_ja: 表示確認用のダミー記事です。実在の論文ではありません。検索結果のリランキングにLLMを使う想定の要約です。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - media
+  method:
+  - llm
+  - embedding
+  data_type:
+  - text
+has_online_experiment: true
+confidence: 0.65

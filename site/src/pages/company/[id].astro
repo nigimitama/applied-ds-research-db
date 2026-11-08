@@ -1,0 +1,32 @@
+---
+import Base from "../../layouts/Base.astro";
+import ArticleCard from "../../layouts/ArticleCard.astro";
+import { loadArticles, loadCompanies, loadTaxonomy, tagCounts } from "../../lib/data.mjs";
+
+export function getStaticPaths() {
+  const companies = loadCompanies();
+  return Object.values(companies).map((c) => ({ params: { id: c.id }, props: { c } }));
+}
+const { c } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const tax = loadTaxonomy();
+const mine = loadArticles().filter((a) => a.companies.includes(c.id));
+const tc = tagCounts(mine);
+const topTasks = Object.entries(tc.task).sort((a, b) => b[1] - a[1]).slice(0, 8);
+const topMethods = Object.entries(tc.method).sort((a, b) => b[1] - a[1]).slice(0, 8);
+---
+<Base title={`${c.name_ja ?? c.name} | Applied DS Research DB`}>
+  <h1>{c.name_ja ?? c.name}</h1>
+  <p class="muted">{c.industry} ・ {mine.length} 件{c.website && <> ・ <a href={c.website}>{c.website}</a></>}</p>
+  {topTasks.length > 0 && (<>
+    <h2>取り組んでいるタスク</h2>
+    <div>{topTasks.map(([id, n]) => (<a class="chip" href={`${base}/tag/task/${id}/`}>{tax.task[id]?.ja ?? id} {n}</a>))}</div>
+  </>)}
+  {topMethods.length > 0 && (<>
+    <h2>よく使う手法</h2>
+    <div>{topMethods.map(([id, n]) => (<a class="chip" href={`${base}/tag/method/${id}/`}>{tax.method[id]?.ja ?? id} {n}</a>))}</div>
+  </>)}
+  <h2>事例</h2>
+  {mine.length === 0 && <p class="muted">まだ事例がありません。</p>}
+  {mine.map((a) => <ArticleCard a={a} />)}
+</Base>

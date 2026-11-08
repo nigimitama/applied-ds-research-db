@@ -1,0 +1,21 @@
+---
+import Base from "../../../layouts/Base.astro";
+import ArticleCard from "../../../layouts/ArticleCard.astro";
+import { AXES, loadArticles, loadTaxonomy } from "../../../lib/data.mjs";
+
+export function getStaticPaths() {
+  const tax = loadTaxonomy();
+  return Object.keys(AXES).flatMap((axis) =>
+    Object.values(tax[axis]).map((t) => ({ params: { axis, id: t.id }, props: { axis, t } }))
+  );
+}
+const { axis, t } = Astro.props;
+const mine = loadArticles().filter((a) => (a.tags?.[axis] || []).includes(t.id));
+---
+<Base title={`${t.ja} | Applied DS Research DB`}>
+  <p class="muted">{AXES[axis].label}</p>
+  <h1>{t.ja} <span class="muted">{t.en}</span></h1>
+  <p class="muted">{mine.length} 件</p>
+  {mine.length === 0 && <p class="muted">該当する事例はまだありません。</p>}
+  {mine.map((a) => <ArticleCard a={a} />)}
+</Base>

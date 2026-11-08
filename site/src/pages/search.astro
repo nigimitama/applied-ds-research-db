@@ -1,0 +1,31 @@
+---
+import Base from "../layouts/Base.astro";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+---
+<Base title="検索 | Applied DS Research DB">
+  <h1>検索</h1>
+  <p class="muted">キーワードと、左のフィルタ(企業・タスク・分野・手法・年など)を組み合わせて絞り込めます。</p>
+  <link href={`${base}/pagefind/pagefind-ui.css`} rel="stylesheet" />
+  <div id="search"></div>
+  <script is:inline define:vars={{ base }}>
+    const s = document.createElement("script");
+    s.src = base + "/pagefind/pagefind-ui.js";
+    s.onload = () => {
+      const q = new URLSearchParams(location.search).get("q") || "";
+      const ui = new PagefindUI({
+        element: "#search",
+        showSubResults: false,
+        showImages: false,
+        resetStyles: false,
+        baseUrl: base + "/",
+        translations: { placeholder: "キーワード" },
+      });
+      if (q) ui.triggerSearch(q);
+    };
+    s.onerror = () => {
+      document.getElementById("search").textContent =
+        "検索インデックスがありません(npm run build で生成されます)。";
+    };
+    document.head.appendChild(s);
+  </script>
+</Base>

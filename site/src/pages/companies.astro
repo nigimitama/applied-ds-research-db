@@ -1,0 +1,14 @@
+---
+import Base from "../layouts/Base.astro";
+import { loadArticles, loadCompanies, companyCounts } from "../lib/data.mjs";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const companies = loadCompanies();
+const cc = companyCounts(loadArticles());
+const rows = Object.values(companies).map((c) => ({ ...c, n: cc[c.id] || 0 })).sort((a, b) => b.n - a.n || a.name.localeCompare(b.name));
+---
+<Base title="企業一覧 | Applied DS Research DB">
+  <h1>企業一覧</h1>
+  <ul class="grid">
+    {rows.map((c) => (<li><a href={`${base}/company/${c.id}/`}>{c.name_ja ?? c.name}</a> <span class="muted">{c.n}</span></li>))}
+  </ul>
+</Base>

@@ -139,3 +139,23 @@ def test_taxonomy_duplicate_alias_detected(root):
     items.append({"id": "dup-task", "ja": "重複", "en": "Dup", "aliases": ["レコメンド"]})
     p.write_text(yaml.safe_dump(items, allow_unicode=True), encoding="utf-8")
     assert any("衝突" in e for e in errs(root))
+
+
+def test_fixture_articles_are_valid(root):
+    shutil.copytree(REPO / "tests" / "fixtures" / "articles", root / "data" / "articles" / "fx")
+    e, n = validate.run(root)
+    assert e == [] and n == 3
+
+
+def test_proposal_already_in_vocab_is_error(root):
+    (root / "taxonomy" / "proposals.yml").write_text(
+        yaml.safe_dump([{"axis": "task", "id": "recommendation", "ja": "x", "en": "x", "reason": "r"}])
+    )
+    assert any("既に語彙" in e for e in errs(root))
+
+
+def test_valid_proposal_ok(root):
+    (root / "taxonomy" / "proposals.yml").write_text(
+        yaml.safe_dump([{"axis": "method", "id": "new-method", "ja": "新手法", "en": "New", "reason": "r"}])
+    )
+    assert errs(root) == []

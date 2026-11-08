@@ -20,3 +20,20 @@ jobs:
         run: python pipeline/validate.py
       - name: Unit tests
         run: pytest -q
+
+  site-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - run: npm ci
+        working-directory: site
+      - name: Build site (ダミー記事で全ページ種別を生成できるか確認)
+        working-directory: site
+        run: npm run build
+        env:
+          ARTICLES_DIR: ../tests/fixtures/articles

@@ -1,0 +1,33 @@
+---
+import Base from "../layouts/Base.astro";
+import ArticleCard from "../layouts/ArticleCard.astro";
+import { loadArticles, loadCompanies, loadTaxonomy, companyCounts, tagCounts } from "../lib/data.mjs";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const articles = loadArticles();
+const companies = loadCompanies();
+const tax = loadTaxonomy();
+const cc = companyCounts(articles);
+const tc = tagCounts(articles);
+const topCompanies = Object.entries(cc).sort((a, b) => b[1] - a[1]).slice(0, 12);
+const topTasks = Object.entries(tc.task).sort((a, b) => b[1] - a[1]).slice(0, 12);
+---
+<Base>
+  <h1>企業のデータサイエンス応用事例データベース</h1>
+  <p class="muted">学会・テックブログ・企業論文から、実運用への適用事例を収集してタグ付けしています。現在 {articles.length} 件。</p>
+  <form action={`${base}/search/`} method="get">
+    <input type="search" name="q" placeholder="キーワードで検索" style="width:100%;padding:10px;font-size:1rem;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg)" />
+  </form>
+
+  <h2>企業から探す</h2>
+  <ul class="grid">
+    {topCompanies.map(([id, n]) => (<li><a href={`${base}/company/${id}/`}>{companies[id]?.name_ja ?? companies[id]?.name ?? id}</a> <span class="muted">{n}</span></li>))}
+  </ul>
+  <h2>タスクから探す</h2>
+  <ul class="grid">
+    {topTasks.map(([id, n]) => (<li><a href={`${base}/tag/task/${id}/`}>{tax.task[id]?.ja ?? id}</a> <span class="muted">{n}</span></li>))}
+  </ul>
+
+  <h2>新着</h2>
+  {articles.length === 0 && <p class="muted">まだ記事がありません。</p>}
+  {articles.slice(0, 20).map((a) => <ArticleCard a={a} />)}
+</Base>

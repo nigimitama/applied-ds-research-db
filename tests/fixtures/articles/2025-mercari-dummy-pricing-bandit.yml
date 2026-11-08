@@ -1,0 +1,27 @@
+id: 2025-mercari-dummy-pricing-bandit
+url: https://example.com/dummy/1
+title: '[DUMMY] Pricing with contextual bandits'
+title_ja: '[ダミー] バンディットによる価格提案'
+published: '2025-06-10'
+collected: '2025-06-17'
+companies:
+- mercari
+source:
+  type: techblog
+  venue: Dummy Engineering Blog
+evidence: blog
+lang: en
+summary_ja: 表示確認用のダミー記事です。実在の記事ではありません。価格提案にバンディットを使う想定の要約です。
+problem: ダミー課題
+tags:
+  task:
+  - pricing
+  domain:
+  - e-commerce
+  method:
+  - bandit
+  - off-policy-evaluation
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.9

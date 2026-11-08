@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import { AXES, loadArticles, loadTaxonomy, tagCounts } from "../lib/data.mjs";
+const base = import.meta.env.BASE_URL.replace(/\/$/, "");
+const tax = loadTaxonomy();
+const tc = tagCounts(loadArticles());
+---
+<Base title="タグ一覧 | Applied DS Research DB">
+  <h1>タグ一覧</h1>
+  {Object.entries(AXES).map(([axis, { label }]) => (
+    <>
+      <h2>{label}</h2>
+      <ul class="grid">
+        {Object.values(tax[axis]).map((t) => (
+          <li><a href={`${base}/tag/${axis}/${t.id}/`}>{t.ja}</a> <span class="muted">{tc[axis][t.id] || 0}</span></li>
+        ))}
+      </ul>
+    </>
+  ))}
+</Base>
