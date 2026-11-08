@@ -1,11 +1,10 @@
-# URL/クエリ未検証。実環境で collect.py --only jsai-jstage を確認してから enabled: true にする
 id: jsai-jstage
 type: conference
 venue: 人工知能学会全国大会
 method: jstage_api
-query: 人工知能学会全国大会
-filter_hint: 著者所属に企業を含み実データ適用がある発表のみ
+cdjournal: pjsai
+filter_hint: "著者に企業所属が含まれ実データ適用がある発表のみ。J-STAGE APIは所属を返さないため、題名から候補を絞り所属は論文ページで確認する"
 lang: ja
 schedule: monthly
 max_items: 100
-enabled: false
+enabled: true

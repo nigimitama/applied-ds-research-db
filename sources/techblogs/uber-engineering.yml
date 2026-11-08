@@ -1,3 +1,4 @@
+# Uber は HTTP 406 でbot拒否(2026-11時点)。別経路(公式API/許可された取得方法)が見つかるまで無効
 # URL未検証。実フィードで collect.py --only uber-engineering を確認してから enabled: true にする
 id: uber-engineering
 type: techblog
