@@ -1,0 +1,30 @@
+id: 2025-ga-technologies-rental-apartment-vacancy-duration-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2O4OS21a03/_article
+title: Predicting the vacancy duration of Japanese rental apartments
+title_ja: 賃貸アパートの空室期間予測
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- ga-technologies
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: en
+summary_ja: 賃貸物件の家賃設定のため、公開サイトの空室掲載データと大手ワンルーム管理会社の独自データを使い、LightGBMとベイズ階層生存時間モデルを組み合わせて空室期間を予測した。この種のデータとして期待できる水準の精度で予測できたと報告している。
+problem: 家賃を高く設定すると空室が長引き、低くするとキャッシュフローが悪化するため、家賃と空室期間を併せて考える必要がある。
+approach: 公開サイトの空室情報と管理会社の独自データから、物件特性と掲載家賃を入力にLightGBMとベイズ階層生存時間モデルを組み合わせて空室期間を予測する。
+tags:
+  task:
+  - pricing
+  - time-series-forecasting
+  domain:
+  - real-estate
+  method:
+  - gradient-boosting
+  - bayesian
+  data_type:
+  - tabular
+confidence: 0.7
+result: 空室期間を良好な精度で予測できたと報告(具体値は要旨に記載なし)。

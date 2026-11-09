@@ -1,0 +1,29 @@
+id: 2025-fuji-electric-power-trading-plan-under-uncertainty
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1M5GS1004/_article
+title: 不確実性を考慮した電力取引計画の検討
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- fuji-electric
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 再生可能エネルギーと系統用蓄電池を組み合わせた電力アービトラージ取引で、価格・日射量の予測誤差を考慮した計画作成法を提案した。過去1年分の日次計画を実績データで評価し、利益が5.4%改善することを確認している。
+problem: 価格や日射量の予測を使って利益最大の計画を作っても、予測誤差で利益が下がるリスクがある。
+approach: 予測の不確実性をシナリオとして生成し、ポートフォリオ理論の考え方を取り入れて、不確実性を考慮した発電・取引計画を作る。
+tags:
+  task:
+  - resource-optimization
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - mathematical-optimization
+  - simulation
+  data_type:
+  - time-series
+confidence: 0.65
+result: 過去1年の日次計画を実際の価格・太陽光発電量で評価し、利益が5.4%向上。

@@ -1,0 +1,27 @@
+id: 2025-ihi-dynamic-training-data-plant-ml-accuracy
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3S5GS203/_article
+title: 学習データを動的にすることによる，プラント・産業設備の機械学習精度向上技術について
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- ihi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プラントや産業設備の運転モードや外気温の変化で内部状態が動的に変わると、従来の機械学習は誤検知や精度低下を起こす。学習データを動的に更新する技術を適用し、設備の運用環境に合った学習データを動的に選んで高精度な分析を実現する手法を開発した。
+problem: 運転データを使う設備分析では、運転モードや外気温の影響で状態が動的に変化し、誤検知や分析精度の低下が起こる。安定で高精度な分析は顧客価値に直結する。
+approach: 設備の変化する運用環境に合わせて、学習に用いるデータセットを動的に選択・更新する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - online-learning
+  data_type:
+  - time-series
+confidence: 0.6

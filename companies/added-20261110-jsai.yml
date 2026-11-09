@@ -1,0 +1,208 @@
+# 2026-11-10 JSAI2025 取り込みで追加(要レビュー)
+- id: sumitomo-heavy
+  name: Sumitomo Heavy Industries
+  name_ja: 住友重機械工業
+  aliases:
+  - 住友重機械工業株式会社
+  - Sumitomo Heavy Industries, Ltd.
+  country: JP
+  industry: Manufacturing
+- id: oki
+  name: Oki Electric Industry
+  name_ja: 沖電気工業
+  aliases:
+  - 沖電気工業株式会社
+  - OKI
+  - 沖コンサルティングソリューションズ
+  country: JP
+  industry: Electronics
+- id: panasonic
+  name: Panasonic Holdings
+  name_ja: パナソニック ホールディングス
+  aliases:
+  - パナソニック ホールディングス株式会社
+  - パナソニック インダストリー株式会社
+  - Panasonic
+  country: JP
+  industry: Electronics
+- id: ntt-data
+  name: NTT DATA
+  name_ja: NTTデータ
+  aliases:
+  - 株式会社NTTデータ
+  - 株式会社NTTデータ数理システム
+  - NTT DATA Mathematical Systems
+  country: JP
+  industry: IT Services
+- id: fuji-electric
+  name: Fuji Electric
+  name_ja: 富士電機
+  aliases:
+  - 富士電機株式会社
+  country: JP
+  industry: Electrical Equipment
+- id: nissui
+  name: Nissui
+  name_ja: ニッスイ
+  aliases:
+  - 株式会社ニッスイ
+  - 日本水産
+  country: JP
+  industry: Food
+- id: shionogi
+  name: Shionogi
+  name_ja: 塩野義製薬
+  aliases:
+  - 塩野義製薬株式会社
+  country: JP
+  industry: Pharmaceutical
+- id: askul
+  name: ASKUL
+  name_ja: アスクル
+  aliases:
+  - アスクル株式会社
+  country: JP
+  industry: E-commerce
+- id: chino-framework
+  name: Chino Framework Laboratory
+  name_ja: 知能フレームワーク研究所
+  aliases:
+  - 株式会社知能フレームワーク研究所
+  - （株）知能フレームワーク研究所
+  country: JP
+  industry: AI
+- id: ga-technologies
+  name: GA technologies
+  name_ja: GA technologies
+  aliases:
+  - GA technologies Co., Ltd.
+  country: JP
+  industry: Real Estate Tech
+- id: md-corp
+  name: MD Corporation
+  name_ja: エムディー
+  aliases:
+  - エムディー株式会社
+  country: JP
+  industry: Healthcare
+- id: mitsubishi-heavy
+  name: Mitsubishi Heavy Industries
+  name_ja: 三菱重工業
+  aliases:
+  - 三菱重工業株式会社
+  country: JP
+  industry: Manufacturing
+- id: daiichi-life-technocross
+  name: Dai-ichi Life Technocross
+  name_ja: 第一生命テクノクロス
+  aliases:
+  - 第一生命テクノクロス株式会社
+  country: JP
+  industry: Insurance IT
+- id: zozo
+  name: ZOZO
+  name_ja: ZOZO
+  aliases:
+  - 株式会社ZOZO
+  - ZOZO研究所
+  - ZOZO Research
+  country: JP
+  industry: E-commerce
+- id: mitsubishi-electric
+  name: Mitsubishi Electric
+  name_ja: 三菱電機
+  aliases:
+  - 三菱電機株式会社
+  - Mitsubishi Electric Corporation
+  country: JP
+  industry: Electrical Equipment
+- id: indx
+  name: INDX
+  name_ja: INDX
+  aliases:
+  - 株式会社INDX
+  country: JP
+  industry: AI
+- id: insight-edge
+  name: Insight Edge
+  name_ja: Insight Edge
+  aliases:
+  - 株式会社Insight Edge
+  country: JP
+  industry: AI
+- id: kobe-steel
+  name: Kobe Steel
+  name_ja: 神戸製鋼所
+  aliases:
+  - 株式会社神戸製鋼所
+  - 神戸製鋼所
+  country: JP
+  industry: Steel
+- id: raksul
+  name: Raksul
+  name_ja: ラクスル
+  aliases:
+  - ラクスル株式会社
+  country: JP
+  industry: Printing/E-commerce
+- id: novacell
+  name: Novacell
+  name_ja: ノバセル
+  aliases:
+  - ノバセル株式会社
+  country: JP
+  industry: Advertising
+- id: jins
+  name: JINS
+  name_ja: ジンズ
+  aliases:
+  - 株式会社ジンズ
+  country: JP
+  industry: Retail
+- id: nikon
+  name: Nikon
+  name_ja: ニコン
+  aliases:
+  - 株式会社ニコン
+  - 株式会社 ニコン
+  country: JP
+  industry: Precision Equipment
+- id: toshiba
+  name: Toshiba
+  name_ja: 東芝
+  aliases:
+  - 株式会社東芝
+  - （株）東芝
+  - 株式会社 東芝
+  - Toshiba Corporation
+  country: JP
+  industry: Electronics
+- id: grid-inc
+  name: GRID
+  name_ja: グリッド
+  aliases:
+  - 株式会社グリッド
+  - GRID Inc.
+  country: JP
+  industry: AI/Optimization
+- id: tokyo-gas
+  name: Tokyo Gas
+  name_ja: 東京ガス
+  aliases:
+  - 東京ガス株式会社
+  country: JP
+  industry: Energy
+- id: chugai
+  name: Chugai Pharmaceutical
+  name_ja: 中外製薬
+  aliases:
+  - 中外製薬株式会社
+  country: JP
+  industry: Pharmaceutical
+- id: ihi
+  name: IHI
+  name_ja: IHI
+  aliases:
+  - 株式会社IHI
+  country: JP
+  industry: Heavy Industry

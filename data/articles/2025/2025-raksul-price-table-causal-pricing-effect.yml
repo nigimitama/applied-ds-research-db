@@ -1,0 +1,27 @@
+id: 2025-raksul-price-table-causal-pricing-effect
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4D3OS33c03/_article
+title: 因果推論による価格表単位でのプライシング施策の効果量の推定
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- raksul
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 価格が価格表単位で決まり、顧客別に価格を変えられないためA/Bテストで効果を測れない状況で、価格表単位で処置群と対照群を作り、因果推論で価格施策の顧客獲得効果を推定した。
+problem: 価格表の組み合わせ(納期や部数など)で価格が決まる事業では、顧客ごとに価格を出し分けられず、A/Bテストで施策効果を推定できない。
+approach: 価格表単位で処置群と対照群を構成し、因果推論の手法で獲得への効果を推定する。
+tags:
+  task:
+  - causal-effect-estimation
+  - pricing
+  domain:
+  - e-commerce
+  method:
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.55

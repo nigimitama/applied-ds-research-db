@@ -1,0 +1,28 @@
+id: 2025-panasonic-conformal-inference-inventory-optimization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1L5OS1501/_article
+title: 機械学習による不確実性の推定に基づく在庫適正化
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- panasonic
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 販売・生産・在庫計画で、販売予測の不確実性をSequential Predictive Conformal Inference(SPCI)で推定して安全在庫の決定に使った。状態空間モデルより在庫水準を下げつつ欠品リスクを抑えられることを実験で確認している。
+problem: 安全在庫の水準は販売予測の不確実性に左右される。従来の状態空間モデルは残差の対称分布を仮定し、データ効率も低い。
+approach: 残差を非パラメトリックに推定するSPCIで予測区間を求め、その区間を安全在庫の設定に用いる。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - manufacturing
+  - retail
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6
+result: SPCIにより欠品リスクを抑えながら在庫水準を下げられることを実験で確認(具体値は要旨に記載なし)。

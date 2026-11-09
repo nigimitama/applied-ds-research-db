@@ -1,0 +1,28 @@
+id: 2025-kobe-steel-press-forming-shape-prediction-surrogate-pointnext
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3Win568/_article
+title: プレス成形シミュレーションを対象とした形状予測サロゲートモデル
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- kobe-steel
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プレス金型の設計で、FEM解析の結果から成形品形状を予測するサロゲートモデルを、点群向け深層学習モデルPointNeXtで構築した。数分で平均誤差約0.3mmの予測ができ、実用的な精度を満たすとしている。
+problem: プレス金型設計はFEM解析に基づく修正と再解析を繰り返すが、計算コストが高く部品形状も複雑化して、設計サイクルが長引いている。
+approach: 金型形状とプレス後の成形品形状の関係を、3D点群の分類・セグメンテーション向けモデルPointNeXtで学習してFEM解析の代わりに予測する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  - simulation
+  data_type:
+  - image
+confidence: 0.65
+result: 予測は数分で、平均誤差は約0.3mm。

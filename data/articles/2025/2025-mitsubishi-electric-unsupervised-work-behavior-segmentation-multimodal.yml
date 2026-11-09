@@ -1,0 +1,27 @@
+id: 2025-mitsubishi-electric-unsupervised-work-behavior-segmentation-multimodal
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3E1GS1003/_article
+title: マルチモーダル時系列情報の教師なし分節化に基づく作業行動分析
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- mitsubishi-electric
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 生産現場の作業者の動作をガウス過程隠れセミマルコフモデル(GP-HSMM)で教師なしに分節化する手法を、道具や部品などの物体情報を加えたマルチモーダルに拡張した。動作データだけでは似た動作が同じクラスにまとまる限界を改善する。
+problem: 生産現場の作業行動分析は目視観察に頼っており、時間と手間がかかる。動作データのみの分節化では、特徴が似ていても意味の異なる行動が同一クラスになってしまう。
+approach: GP-HSMMによる教師なし分節化に、作業者が使う道具・部品などの物体データを組み合わせて分節化精度を高める。
+tags:
+  task:
+  - classification
+  domain:
+  - manufacturing
+  method:
+  - multimodal
+  data_type:
+  - time-series
+  - video
+confidence: 0.55

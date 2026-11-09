@@ -1,0 +1,29 @@
+id: 2025-tokyo-gas-gas-appliance-fault-part-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4R3GS1002/_article
+title: ガス機器修理業務における故障箇所推定モデルの開発
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- tokyo-gas
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ガス機器の修理依頼情報と顧客データから故障箇所を推定する勾配ブースティングの機械学習モデルを開発し、必要部品を過去事例から集約するアルゴリズムと、技術者に推定結果を表示するシステムを構築して運用に載せた。導入後の評価結果も報告している。
+problem: 従来は技術者が経験で故障箇所を推定して部品を準備して訪問するため、推定を外すと再訪問になり顧客満足度が下がる。
+approach: 修理依頼情報と顧客データを入力に勾配ブースティング木で故障箇所を推定し、過去事例から必要部品を集約する。推定結果を技術者に表示するシステムを構築して運用した。
+tags:
+  task:
+  - classification
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+  - text
+confidence: 0.7
+result: 実験およびシステム導入後の評価で効果が示唆されたと報告(具体値は要旨に記載なし)。
