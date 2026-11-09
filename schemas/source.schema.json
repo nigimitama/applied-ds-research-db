@@ -37,6 +37,7 @@
         "jstage_api",
         "html_list",
         "html_doi_table",
+        "html_title_table",
         "sitemap"
       ]
     },
@@ -74,6 +75,14 @@
     "cdjournal": {
       "type": "string",
       "description": "jstage_api で対象誌を限定するJ-STAGE誌コード(例: pjsai)"
+    },
+    "openalex_source": {
+      "type": "string",
+      "description": "html_title_table でDOI解決に使うOpenAlexのsource id(例: S4363608767 = KDD)"
+    },
+    "openalex_year": {
+      "type": "integer",
+      "description": "html_title_table でDOI解決する出版年"
     },
     "link_pattern": {
       "type": "string",

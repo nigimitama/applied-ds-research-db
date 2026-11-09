@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import sys
 import time
@@ -168,6 +169,72 @@ def parse_doi_table(html: str) -> list[dict]:
     return out
 
 
+_TITLE_CELL = re.compile(r"^\s*<strong>(.*?)(?:<strong>\s*</strong>)?\s*</strong>\s*$", re.S)
+
+
+def _norm_title(t: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", t.lower()).strip()
+
+
+def parse_title_author_table(html: str, page_url: str) -> list[dict]:
+    """<td><strong>題名</strong></td> の次の <td> に著者(所属)が並ぶ表(DOI無しのKDD 2024等)。
+    url は暫定でページURL#題名スラッグ。DOI は resolve_dois で置き換える。"""
+    cells = re.findall(r"<td[^>]*>(.*?)</td>", html, re.S)
+    out, i = [], 0
+    while i < len(cells):
+        m = _TITLE_CELL.match(cells[i])
+        if not m:
+            i += 1
+            continue
+        title = _strip_html(m.group(1))
+        affil = ""
+        if i + 1 < len(cells) and not _TITLE_CELL.match(cells[i + 1]):
+            affil = _strip_html(cells[i + 1])
+            i += 1
+        i += 1
+        slug = _norm_title(title).replace(" ", "-")[:80]
+        out.append({"url": f"{page_url.split('#')[0]}#{slug}", "title": title, "published": None, "summary": affil, "authors": []})
+    return out
+
+
+def _openalex_url(src: dict, cursor: str) -> str:
+    q = {
+        "filter": f"primary_location.source.id:{src['openalex_source']},publication_year:{src['openalex_year']}",
+        "select": "doi,title",
+        "per-page": 200,
+        "cursor": cursor,
+    }
+    key = os.environ.get("OPENALEX_API_KEY")
+    if key:
+        q["api_key"] = key
+    return "https://api.openalex.org/works?" + urllib.parse.urlencode(q)
+
+
+def resolve_dois(items: list[dict], src: dict, fetcher=fetch, delay: float = 0.0) -> int:
+    """会議の年のOpenAlex一覧(ページ送り)を題名で突き合わせ、正規化後に完全一致した10.1145のDOIだけ url に採用する。
+    429(無料枠切れ)などで取れなければ解決せず、url はページURL#スラッグのまま。"""
+    titles, cursor = {}, "*"
+    try:
+        while cursor:
+            data = json.loads(fetcher(_openalex_url(src, cursor)))
+            for w in data.get("results", []):
+                doi = w.get("doi") or ""
+                if "/10.1145/" in doi and w.get("title"):
+                    titles.setdefault(_norm_title(w["title"]), doi)
+            cursor = (data.get("meta") or {}).get("next_cursor")
+            if delay:
+                time.sleep(delay)
+    except Exception as e:
+        print(f"warn: OpenAlex DOI解決を中断: {type(e).__name__}: {e}", file=sys.stderr)
+    n = 0
+    for it in items:
+        doi = titles.get(_norm_title(it["title"]))
+        if doi:
+            it["url"] = doi if doi.startswith("http") else f"https://doi.org/{doi}"
+            n += 1
+    return n
+
+
 def check_jstage(raw: bytes) -> None:
     """J-STAGE API はエラーでも HTTP 200 + 空feedを返すので status を見て失敗にする。"""
     m = re.search(rb"<status>(\w+)</status>", raw)
@@ -236,6 +303,9 @@ def collect_other(src: dict, since: date, fetcher=fetch) -> list[dict]:
         items = parse_html_links(raw.decode("utf-8", "replace"), src["url"], src["link_pattern"])
     elif m == "html_doi_table":
         items = parse_doi_table(raw.decode("utf-8", "replace"))
+    elif m == "html_title_table":
+        items = parse_title_author_table(raw.decode("utf-8", "replace"), src["url"])
+        resolve_dois(items, src, fetcher, delay=0.2 if fetcher is fetch else 0.0)
     else:
         items = parse_feed(raw)
     return items
