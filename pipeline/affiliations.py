@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""arXiv 候補に著者所属を補完し、企業所属のない論文を除外する。
+"""arXiv・J-STAGE(人工知能学会全国大会) 候補に著者所属を補完し、企業所属のない論文を除外する。
 
 arXiv API は所属を返さない。Semantic Scholar / OpenAlex は新着論文を数週間インデックスしない
 (2026-11 時点の実測で新着は 404 / null)ため、arXiv 自身の HTML 版(arxiv.org/html/<id>)の
@@ -24,6 +24,7 @@ from html.parser import HTMLParser
 from pathlib import Path
 
 import yaml
+from concurrent.futures import ThreadPoolExecutor
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from collect import UA  # noqa: E402
@@ -105,6 +106,70 @@ def has_company_signal(text: str, terms: list[str]) -> bool:
     return False
 
 
+# J-STAGE(日本語所属)用。「研究所」は企業研究所を含むので大学語に入れない(企業の取りこぼし防止)。
+ACADEMIC_JA_RX = re.compile(
+    r"大学|学院|高等専門学校|高専|学校法人|国立研究開発法人|理化学研究所|産業技術総合研究所|情報通信研究機構|"
+    r"防衛装備庁|病院|Universit|Institute of Technology|National ",
+    re.I,
+)
+
+
+class _MetaParser(HTMLParser):
+    """<meta name=citation_author_institution ...> などを集める。"""
+
+    def __init__(self):
+        super().__init__()
+        self.meta: dict[str, list[str]] = {}
+
+    def handle_starttag(self, tag, attrs):
+        if tag == "meta":
+            a = dict(attrs)
+            if a.get("name") and a.get("content") is not None:
+                self.meta.setdefault(a["name"], []).append(a["content"])
+
+
+def parse_jstage_meta(html: str) -> dict:
+    """J-STAGE 論文ページから所属・キーワード・抄録を取り出す。所属は重複を除いて順序維持。"""
+    p = _MetaParser()
+    p.feed(html)
+    affs = list(dict.fromkeys(a.strip() for a in p.meta.get("citation_author_institution", []) if a.strip()))
+    return {
+        "affiliations": affs,
+        "keywords": p.meta.get("citation_keywords", []),
+        "abstract": (p.meta.get("abstract") or [""])[0].strip(),
+    }
+
+
+def has_company_signal_list(affs: list[str], terms: list[str]) -> bool:
+    """所属文字列のリスト版。全所属が大学・公的機関と確定できるときだけ False。"""
+    if not affs:
+        return True  # 読み取れない → 残す
+    for a in affs:
+        if CORP_RX.search(a):
+            return True
+        low = a.lower()
+        if any(re.search(r"(?<![a-z])" + re.escape(t.lower()) + r"(?![a-z])", low) for t in terms):
+            return True
+        if not ACADEMIC_JA_RX.search(a):
+            return True
+    return False
+
+
+def jstage_article_url(url: str) -> str:
+    return re.sub(r"/_article/-char/\w+/?$", "/_article", url)
+
+
+def fetch_page(url: str, timeout: int = 30) -> str | None:
+    req = urllib.request.Request(url, headers={"User-Agent": UA})
+    for attempt in range(3):
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as r:
+                return r.read().decode("utf-8", "replace")
+        except Exception:
+            time.sleep(2 * (attempt + 1))
+    return None
+
+
 def arxiv_id(url: str) -> str | None:
     m = re.search(r"arxiv\.org/abs/([\w.\-/]+?)(?:v\d+)?$", url)
     return m.group(1) if m else None
@@ -119,12 +184,40 @@ def fetch_html(aid: str, timeout: int = 30) -> str | None:
         return None
 
 
-def run(root: Path, fetcher=fetch_html, delay: float = 1.0, today: date | None = None) -> dict:
+def run(root: Path, fetcher=fetch_html, delay: float = 1.0, today: date | None = None, jstage_fetcher=None, workers: int = 4) -> dict:
     cand_path = root / "work" / "candidates.jsonl"
     cands = [json.loads(l) for l in cand_path.read_text(encoding="utf-8").splitlines() if l.strip()]
     terms = load_company_terms(root)
     kept, dropped, stats = [], [], {"checked": 0, "unavailable": 0, "dropped": 0, "with_signal": 0}
+    jfetch = jstage_fetcher or fetch_page
+    jcands = [c for c in cands if c.get("source_id") == "jsai-jstage"]
+    jhtml: dict[str, str | None] = {}
+    if jcands:
+        with ThreadPoolExecutor(max_workers=workers) as ex:
+            def _get(c):
+                h = jfetch(jstage_article_url(c["url"]))
+                if jfetch is fetch_page:
+                    time.sleep(delay)
+                return c["url"], h
+            jhtml = dict(ex.map(_get, jcands))
     for c in cands:
+        if c.get("source_id") == "jsai-jstage":
+            stats["checked"] += 1
+            meta = parse_jstage_meta(jhtml.get(c["url"]) or "")
+            if not meta["affiliations"]:
+                stats["unavailable"] += 1
+                kept.append(c)
+                continue
+            if not has_company_signal_list(meta["affiliations"], terms):
+                stats["dropped"] += 1
+                dropped.append(c)
+                continue
+            stats["with_signal"] += 1
+            aff = " / ".join(meta["affiliations"])[:400]
+            kw = ", ".join(meta["keywords"])[:200]
+            c["summary"] = f"[所属] {aff}\n[KW] {kw}\n{meta['abstract']}"[:1800]
+            kept.append(c)
+            continue
         aid = arxiv_id(c["url"]) if c.get("source_id") == "arxiv-industry" else None
         if not aid:
             kept.append(c)
@@ -153,7 +246,7 @@ def run(root: Path, fetcher=fetch_html, delay: float = 1.0, today: date | None =
             for c in dropped:
                 f.write(
                     json.dumps(
-                        {"url": c["url"], "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": d},
+                        {"url": c["url"], "reason": "no-company-author: " + ("J-STAGE論文ページ" if c.get("source_id") == "jsai-jstage" else "arXiv HTML版") + "の著者所属に企業が見当たらない(自動判定)", "date": d},
                         ensure_ascii=False,
                     )
                     + "\n"
@@ -165,9 +258,10 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--root", type=Path, default=Path(__file__).resolve().parent.parent)
     ap.add_argument("--delay", type=float, default=1.0)
+    ap.add_argument("--workers", type=int, default=4, help="J-STAGE の並列数")
     args = ap.parse_args()
-    s = run(args.root, delay=args.delay)
-    print(f"arXiv {s['checked']} 件: 企業所属あり {s['with_signal']} / 除外 {s['dropped']} / 所属取得不可(残す) {s['unavailable']}")
+    s = run(args.root, delay=args.delay, workers=args.workers)
+    print(f"所属確認 {s['checked']} 件: 企業所属あり {s['with_signal']} / 除外 {s['dropped']} / 所属取得不可(残す) {s['unavailable']}")
     return 0
 
 

@@ -1,4 +1,5 @@
 """collect.py のテスト。ネットワークは使わず、手書きのフィードで検証する。"""
+import re
 import json
 import shutil
 import sys
@@ -132,3 +133,26 @@ def test_jstage_url_uses_text_and_cdjournal():
         {"method": "jstage_api", "cdjournal": "pjsai", "lang": "ja"}, date(2025, 1, 1)
     )
     assert "cdjournal=pjsai" in url and "keyword" not in url
+
+
+def test_collect_jstage_pages_and_normalizes_url():
+    def page(n, start):
+        entries = "".join(
+            f'<entry><title>T{start+i}</title><link href="https://www.jstage.jst.go.jp/article/p/{start+i}/_article/-char/ja/"/>'
+            f"<updated>2025-07-01T09:00+09:00</updated></entry>"
+            for i in range(n)
+        )
+        return f'<?xml version="1.0"?><feed xmlns="http://www.w3.org/2005/Atom">{entries}</feed>'.encode()
+
+    calls = []
+
+    def fetcher(url):
+        start = int(re.search(r"start=(\d+)", url).group(1))
+        calls.append(start)
+        return page(collect.JSTAGE_PAGE if start == 1 else 3, start)
+
+    src = {"id": "j", "type": "conference", "method": "jstage_api", "lang": "ja", "max_items": 10000}
+    items = collect.collect_source(src, date(2025, 1, 1), fetcher)
+    assert calls == [1, collect.JSTAGE_PAGE + 1]
+    assert len(items) == collect.JSTAGE_PAGE + 3
+    assert items[0]["url"].endswith("/1/_article")

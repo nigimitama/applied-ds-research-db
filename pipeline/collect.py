@@ -176,7 +176,10 @@ def check_jstage(raw: bytes) -> None:
 
 
 # ---------- ソース別の取得URL ----------
-def build_request_url(src: dict, since: date) -> str:
+JSTAGE_PAGE = 500  # J-STAGE API の count 上限は1000。安全側に500
+
+
+def build_request_url(src: dict, since: date, start: int = 1) -> str:
     m = src.get("method")
     n = src.get("max_items", 50)
     if m == "arxiv_api":
@@ -185,7 +188,7 @@ def build_request_url(src: dict, since: date) -> str:
         )
         return f"https://export.arxiv.org/api/query?{q}"
     if m == "jstage_api":
-        params = {"service": 3, "pubyearfrom": since.year, "count": n, "lang": src["lang"]}
+        params = {"service": 3, "pubyearfrom": since.year, "count": min(n, JSTAGE_PAGE), "start": start, "lang": src["lang"]}
         if src.get("cdjournal"):  # 特定誌(例: pjsai=人工知能学会全国大会論文集)に限定
             params["cdjournal"] = src["cdjournal"]
         if src.get("query"):
@@ -197,15 +200,48 @@ def build_request_url(src: dict, since: date) -> str:
 
 def collect_source(src: dict, since: date, fetcher=fetch) -> list[dict]:
     m = src.get("method", "rss")
+    if m == "jstage_api":
+        items = collect_jstage(src, since, fetcher)
+    else:
+        items = collect_other(src, since, fetcher)
+    return finalize_items(src, since, items)
+
+
+def collect_jstage(src: dict, since: date, fetcher=fetch) -> list[dict]:
+    """J-STAGE API は1回の件数に上限があるので start でページングし max_items まで集める。"""
+    n = src.get("max_items", 50)
+    items: list[dict] = []
+    start = 1
+    while len(items) < n:
+        raw = fetcher(build_request_url(src, since, start))
+        check_jstage(raw)
+        page = parse_feed(raw)
+        if not page:
+            break
+        items += page
+        if len(page) < min(n, JSTAGE_PAGE):
+            break
+        start += len(page)
+        if fetcher is fetch:
+            time.sleep(1.0)
+    for it in items:  # -char/ja/ 付きURLは取得できないことがあるので論文ページ本体のURLに正規化
+        it["url"] = re.sub(r"/_article/-char/\w+/?$", "/_article", it["url"])
+    return items
+
+
+def collect_other(src: dict, since: date, fetcher=fetch) -> list[dict]:
+    m = src.get("method", "rss")
     raw = fetcher(build_request_url(src, since))
     if m == "html_list":
         items = parse_html_links(raw.decode("utf-8", "replace"), src["url"], src["link_pattern"])
     elif m == "html_doi_table":
         items = parse_doi_table(raw.decode("utf-8", "replace"))
     else:
-        if m == "jstage_api":
-            check_jstage(raw)
         items = parse_feed(raw)
+    return items
+
+
+def finalize_items(src: dict, since: date, items: list[dict]) -> list[dict]:
     out = []
     for it in items[: src.get("max_items", 50)]:
         if it["published"] and date.fromisoformat(it["published"]) < since:
