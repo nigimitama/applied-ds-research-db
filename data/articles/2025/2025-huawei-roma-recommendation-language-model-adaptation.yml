@@ -1,0 +1,33 @@
+id: 2025-huawei-roma-recommendation-language-model-adaptation
+url: https://doi.org/10.1145/3711896.3737262
+title: 'ROMA: Recommendation-Oriented Language Model Adaptation Using Multi-Modal Multi-Domain Item Sequences'
+title_ja: 'ROMA: マルチモーダル・マルチドメインの商品系列を用いた推薦指向の言語モデル適応'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 事前学習言語モデルを逐次推薦に使う際の、推薦モデルとの表現・知識レベルのずれを分析し、言語モデルを下位層と上位層に分けて適応させるROMAを提案した。公開ベンチマークでの評価に加え、HuaweiのAppGallery推薦システムでオンラインA/Bテストを行い有意な改善を報告している。
+problem: テキスト強化型の逐次推薦では事前学習言語モデルで意味情報を抽出するが、言語モデルと推薦モデルでは表現やタスク志向の知識に差があり、推薦への有用性が十分に引き出されていない。
+approach: 言語モデルを下位層(表現レベルの適応)と上位層(タスクレベルの適応)に分け、マルチモーダル・マルチドメインの商品系列を使って適応させる。専用のアーキテクチャ、転移戦略、学習フレームワークを組み合わせる。
+result: 公開ベンチマークで有効性と転移性を示し、AppGalleryのオンラインA/Bテストで指標の有意な改善が報告された(具体値は未確認)。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - fine-tuning
+  - multimodal
+  - transformer
+  data_type:
+  - log
+  - text
+has_online_experiment: true
+confidence: 0.8

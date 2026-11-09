@@ -1,0 +1,31 @@
+published: '2025-08-03'
+collected: '2026-11-09'
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+id: 2025-jd-hierarchical-sharing-gnn-customer-expansion
+url: https://doi.org/10.1145/3711896.3737234
+title: Hierarchical Structure Sharing Empowers Multi-task Heterogeneous GNNs for Customer Expansion
+title_ja: 階層的な構造共有がマルチタスク異種グラフNNを強化する:顧客拡大への応用
+alt_urls:
+- https://arxiv.org/abs/2410.22089
+companies:
+- jd
+collab_academia: true
+summary_ja: 物流企業の新規顧客獲得を、異種グラフ上のマルチタスク学習で解く手法を提案した。構造学習を複数段階に分けて各段階にタスク間の共有機構を入れ、疎な正例ラベルを関連タスクで補う。大手物流企業で実運用され、契約成立率が向上したと報告している。
+problem: 顧客拡大は異種グラフ上のノード分類として扱われるが、正例ラベルが極端に疎い。マルチタスク学習で補う場合も、タスク共通の構造と固有の構造を分けないと性能が悪化し得る。
+approach: グラフ構造の学習を複数ステージに分割し、各ステージに情報共有機構を設ける階層的構造共有(SrucHIS)で、タスク固有の構造の干渉を抑えながら共通信号を共有する。
+result: 実物流企業の私有データで平均精度+51.41%、公開データでmacro F1+10.52%。中国最大級の物流企業への展開で契約成立率+41.67%、2か月で45.3万件超の新規注文を報告。
+tags:
+  task:
+  - classification
+  - personalization
+  domain:
+  - logistics
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+confidence: 0.7

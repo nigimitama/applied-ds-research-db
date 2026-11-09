@@ -1,0 +1,33 @@
+id: 2025-knowdis-partially-labeled-attribute-value-identification
+url: https://doi.org/10.1145/3690624.3709427
+alt_urls:
+- https://arxiv.org/abs/2405.10918
+title: A Framework for Leveraging Partially-Labeled Data for Product Attribute-Value Identification
+title_ja: 部分ラベルデータを活用した商品属性値抽出のフレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- knowdis
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ECの商品タイトルや検索クエリから属性と値を抽出する際、学習データのアノテーションが不完全な問題に対し、部分ラベルデータで直接学習できる2段階モデルGenToCを提案した。B2B
+  ECプラットフォームIndiaMARTに導入され、従来システム比で正しく抽出できた属性値ペアが増えたと報告している。
+problem: 商品の属性値抽出は検索や推薦に重要だが、出品者が付与した属性値は不完全で、完全なアノテーションを前提とする既存手法は使いにくい。
+approach: 属性候補をマーカー付きの生成モデルで提案し、続いて属性名と元のテキストを入力とするトークン分類モデルで値を特定する2段階構成。出力を使って学習データを再生成し、軽量なNERモデルの学習にも利用できる。
+result: 既存の最先端手法より最大56.3%多く正しく抽出と報告。IndiaMARTへの導入で正しい属性値ペアが従来比20.2%増、精度89.5%。
+tags:
+  task:
+  - classification
+  domain:
+  - e-commerce
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - text
+has_online_experiment: false
+confidence: 0.8

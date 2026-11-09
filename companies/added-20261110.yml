@@ -1,0 +1,16 @@
+# 2026-11-10 KDD再triageで追加(要レビュー)
+- id: china-securities
+  name: China Securities Co., Ltd.
+  aliases: ['China Securities Co.,Ltd.', China Securities]
+  country: CN
+  industry: Finance
+- id: edf
+  name: EDF (Électricité de France)
+  aliases: [EDF, EDF R&D, Électricité de France]
+  country: FR
+  industry: Energy
+- id: knowdis
+  name: KnowDis AI
+  aliases: [KnowDis AI, KnowDis]
+  country: IN
+  industry: AI/NLP solutions

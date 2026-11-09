@@ -1,0 +1,32 @@
+id: 2025-alibaba-comrecycle-ad-computation-recycling
+url: https://doi.org/10.1145/3711896.3737205
+doi: 10.1145/3711896.3737205
+title: 'ComRecycle: An Intelligent Computation Recycling Framework for Online Advertising'
+title_ja: ComRecycle:オンライン広告のための計算再利用フレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Taobaoのディスプレイ広告で、広告リクエストごとに複雑な配信パイプラインを回すと計算資源が非効率になる問題に対し、未露出の広告集合をキャッシュして繰り返しリクエストで再利用するComRecycleを提案。オンラインA/Bテストで検証している。
+problem: 広告リクエストのたびに重い配信パイプラインを実行する方式では、Taobaoのディスプレイ広告で計算資源の利用効率が悪いことが分析で示された。
+approach: 未露出の広告集合をキャッシュし、繰り返しのリクエストで再利用する。細粒度の再利用戦略を設計し、再利用の判断をオンラインの制約付き最適化問題として定式化することで、推薦性能を保ったまま計算コストを下げる。
+result: オンラインA/Bテストで、ベースラインと同等の性能を保ちつつ計算資源を20%超削減。
+tags:
+  task:
+  - ad-optimization
+  - resource-optimization
+  domain:
+  - advertising
+  - e-commerce
+  method:
+  - mathematical-optimization
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

@@ -1,0 +1,32 @@
+id: 2025-google-matryoshka-elastic-student-models
+url: https://doi.org/10.1145/3711896.3737245
+alt_urls:
+- https://arxiv.org/abs/2505.23337
+title: Matryoshka Model Learning for Improved Elastic Student Models
+title_ja: 弾力的な生徒モデルを改善するマトリョーシカ型モデル学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- google
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 1回の学習で、サービング費用と精度のトレードオフが異なる複数の生徒モデルを得る蒸留枠組みMatTAを提案した。教師と生徒の間にTA(助手)モデルを置き、そこから入れ子状の生徒モデルを取り出す。自社データとGPT-2
+  Mediumで評価し、本番MLシステムでのライブA/Bテストでも効果を確認した。
+problem: 本番では精度と推論コストの兼ね合いで複数サイズのモデルを提供したいが、サイズごとに別々に蒸留すると学習コストがかさみ、小型モデルの精度も伸びにくい。
+approach: 教師-TA-生徒の3段構成のMatTAを用いる。生徒より容量の大きいTAが教師との整合とドメイン知識の取り込みを担い、生徒モデルはTAに入れ子で含まれるため、1回の学習から複数の配備可能な生徒を抽出できる。
+result: GPT-2 MediumでSAT Mathが相対24%超、LAMBADAが10%超改善。本番MLシステムのライブA/Bテストで主要指標が20%改善したと報告。
+tags:
+  task:
+  - resource-optimization
+  domain: []
+  method:
+  - model-compression
+  - deep-learning
+  - ab-testing
+  data_type: []
+has_online_experiment: true
+confidence: 0.72

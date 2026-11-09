@@ -1,0 +1,30 @@
+id: 2025-alibaba-context-nearby-flight-recommendation
+url: https://doi.org/10.1145/3711896.3737183
+title: A Context based Personalized Deep Network for Nearby Flight Recommendation
+title_ja: 文脈を考慮したパーソナライズ深層ネットワークによる近隣フライト推薦
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 旅行プラットフォームFliggyで、近隣都市・近隣日程の代替フライトを推薦するCPNetを提案。個人の嗜好、履歴上の価格感度、周辺フライトとの差分を学習し、オフライン評価とオンラインA/Bテストで有効性を確認、本番運用されている。
+problem: フライトの選択肢が少ないとき、旅行サイトは近隣のフライトを代替として提示するが、既存はルールや単純な嗜好に基づき、ユーザー履歴や周辺フライトの文脈を十分に使えていない。
+approach: 個人嗜好学習、過去の価格感度を捉える履歴コスト学習、対象フライトと周辺フライトのコスト差を強調する文脈ポテンシャル学習の3モジュールからなる深層ネットワークを構成した。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - travel
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8
+result: 本番データでのオフライン実験でベースラインを上回り、FliggyでのオンラインA/Bテストでも有効性が支持され、日々多数のユーザーに提供されている(具体数値は未確認)。
+has_online_experiment: true

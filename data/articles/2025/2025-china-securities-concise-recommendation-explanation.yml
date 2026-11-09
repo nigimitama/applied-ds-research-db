@@ -1,0 +1,30 @@
+id: 2025-china-securities-concise-recommendation-explanation
+url: https://doi.org/10.1145/3711896.3737206
+doi: 10.1145/3711896.3737206
+title: 'ConciseExplain: Reducing Redundancy and Spuriousness in Persuasive Recommendation Explanation'
+title_ja: ConciseExplain:説得力ある推薦説明における冗長性と疑似相関の低減
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- china-securities
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 証券会社の債券販売で、推薦理由の説明が冗長・疑似的な特徴を選びがちで説得力を損なう問題に対し、マスク学習と勾配降下で簡潔な特徴集合を直接選ぶConciseExplainを提案。実データと合成データで評価し、1年間の運用も報告している。
+problem: 専門的な営業場面の推薦では、顧客を行動に導く説得力のある説明が求められる。しかし既存の説明手法は冗長で疑似的な特徴を選びやすく、説得力を弱める。
+approach: マスク学習戦略と勾配降下により、説明に用いる簡潔な特徴集合を直接特定する手法。China Securitiesの債券販売の推薦を題材にしている。
+result: 実データ・合成データで、冗長性指標と疑似相関指標においてベストのベースラインに対しそれぞれ6.1%、12.4%の相対改善。1年間の運用で推薦精度が継続的に向上したと報告。
+tags:
+  task:
+  - recommendation
+  domain:
+  - finance
+  method:
+  - explainable-ai
+  data_type:
+  - tabular
+has_online_experiment: false
+confidence: 0.75

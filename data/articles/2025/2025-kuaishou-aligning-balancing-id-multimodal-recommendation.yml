@@ -1,0 +1,33 @@
+id: 2025-kuaishou-aligning-balancing-id-multimodal-recommendation
+url: https://doi.org/10.1145/3711896.3737275
+title: Aligning and Balancing ID and Multimodal Representations for Recommendation
+title_ja: 推薦のためのIDとマルチモーダル表現の整合とバランス調整
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: IDとマルチモーダル表現の分布ずれと収束速度の差という2つの課題に対し、MLLMを微調整して得た商品表現をID表現と整合させ、勾配調整で学習のバランスを取るAB-Recを提案した。4つのデータセットのオフライン実験と、オンライン動画プラットフォームでのA/Bテストで有効性を示している。
+problem: 大規模推薦はスパースなIDに依存しデータ疎性に悩む。マルチモーダル情報で補う際、IDとの分布の不一致で直接統合するとユーザーと商品のミスマッチが起きやすく、またマルチモーダル表現はIDより収束が遅く最適化が不均衡になる。
+approach: 3つの整合タスクでマルチモーダルLLMを微調整し商品ごとの統一表現を得る。バッチ内Wasserstein距離の最小化でID表現との分布を揃えつつ、同一商品の2種の表現が潰れないよう距離を保つ。さらに両表現の寄与差を監視する勾配調整で最適化を制御する。
+result: 4つのデータセットのオフライン実験とオンライン動画プラットフォームでのA/Bテストで有効性と拡張性を確認と報告(具体値は未確認)。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  method:
+  - multimodal
+  - embedding
+  - llm
+  - fine-tuning
+  data_type:
+  - log
+  - video
+has_online_experiment: true
+confidence: 0.8

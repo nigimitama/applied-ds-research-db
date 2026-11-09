@@ -1,0 +1,36 @@
+id: 2025-huawei-cbr-functional-test-script-generation
+url: https://doi.org/10.1145/3711896.3737254
+alt_urls:
+- https://arxiv.org/abs/2503.20576
+title: Optimizing Case-Based Reasoning System for Functional Test Script Generation with Large Language
+  Models
+title_ja: LLMによる機能テストスクリプト生成のための事例ベース推論システムの最適化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ソフトウェア変更に追随して機能テストスクリプトをLLMで生成するため、過去のテスト意図とスクリプトの事例を参照する事例ベース推論(CBR)システムを構築し、検索器とLLMを最適化するRe4を提案した。Huawei
+  Datacomの2つの製品開発部門で評価している。
+problem: 機能テストスクリプトの自動生成では、変化し続けるソフトウェアのコードをLLMが理解する必要があり、汎用LLMだけでは対応しづらい。
+approach: 検索・再利用・修正・保持の4Rサイクルで、テスト意図とスクリプトの事例バンクを参照する。Re4では、意味・スクリプト類似度の高い正例を疑似ラベルとして再ランキング検索器を微調整し、LLMを教師ありと強化学習で微調整して取得事例を忠実に再利用させる。
+result: Huawei Datacomの2つの製品開発部門での実験でCBR+Re4がベースラインを上回り、LLMの反復生成も減らせたと報告(数値は原文参照)。
+tags:
+  task:
+  - text-generation
+  domain:
+  - telecom
+  method:
+  - llm
+  - rag
+  - fine-tuning
+  - reinforcement-learning
+  data_type:
+  - text
+has_online_experiment: false
+confidence: 0.72

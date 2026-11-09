@@ -1,0 +1,31 @@
+published: '2025-08-03'
+collected: '2026-11-09'
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+id: 2025-ant-group-flow-reconcile-transformer
+url: https://doi.org/10.1145/3711896.3737224
+title: 'FRT: Flow-based Reconcile Transformer for Hierarchical Time Series'
+title_ja: 'FRT: 階層時系列のためのフローベース整合Transformer'
+companies:
+- ant-group
+- alibaba
+collab_academia: true
+summary_ja: 階層構造をもつ時系列の予測で、上下層の整合性を保つ予測を後処理なしに得るため、条件付き正規化フローを備えた自己回帰Transformer「FRT」を提案した。データセンターのワークロード予測として大手決済企業で本番利用され、クラスタの資源配分に使われている。
+problem: 階層時系列では各階層の予測が集約制約を満たす必要がある。独立に予測すると整合しないうえ、階層ごとの分布の違いや非ガウス性・非線形な相関が難しさとなり、従来の事後調整は不偏性やガウス性を仮定しがちである。
+approach: 条件付き正規化フローに基づく自己回帰Transformerで複雑な分布を表現し、同じモデル内で整合化まで行うエンドツーエンド手法とした。
+result: 公開3データセットと企業データセンターのサーバーデータの計4データセットで有効性を確認。本番ではクラスタの資源配分に利用されると報告(具体的数値は未確認)。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - cloud-infra
+  - finance
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.75

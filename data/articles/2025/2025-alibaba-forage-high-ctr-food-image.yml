@@ -1,0 +1,31 @@
+published: '2025-08-03'
+collected: '2026-11-09'
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+id: 2025-alibaba-forage-high-ctr-food-image
+url: https://doi.org/10.1145/3711896.3737223
+title: 'FoRAGe: High-CTR Food Image Synthesis with Retrieval-Augmented Diffusion Model'
+title_ja: 'FoRAGe: 検索拡張拡散モデルによる高CTRなフード画像生成'
+companies:
+- alibaba
+collab_academia: true
+summary_ja: フードデリバリー掲載用の料理画像の背景を、検索で得た類似画像を条件に拡散モデルで生成し、CTR予測モデルで良い画像を選ぶ手法FoRAGeを提案した。オンライン実験でCTRの有意な向上を確認している。
+problem: 配達プラットフォームではCTRの高い料理画像が収益に直結するが、背景を単に差し替えてもCTRが上がるとは限らず、拡散モデルの追加学習は高速に回る広告運用にはコストが重い。
+approach: 多様な背景を持つ料理画像データベースから、入力の料理に近い背景例を検索し、ControlNet付きStable Diffusionの条件として背景を生成する。生成画像はマルチモーダルなCTR予測モデルで選別する。
+result: オンライン実験でCTRの有意な向上を報告(具体値は未確認)。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - food
+  - advertising
+  method:
+  - rag
+  - multimodal
+  data_type:
+  - image
+has_online_experiment: true
+confidence: 0.75

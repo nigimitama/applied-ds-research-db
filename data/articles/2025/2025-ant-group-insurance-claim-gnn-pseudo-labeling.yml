@@ -1,0 +1,32 @@
+id: 2025-ant-group-insurance-claim-gnn-pseudo-labeling
+url: https://doi.org/10.1145/3711896.3737213
+doi: 10.1145/3711896.3737213
+title: Enhanced Insurance Claim Prediction via Decoupled Graph Neural Networks with Pseudo Labeling
+title_ja: 疑似ラベルを用いた分離型GNNによる保険請求予測の高度化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- ant-group
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 保険の請求額(回帰)をグラフで予測するGClaimを提案。グラフを潜在クラスタに分解して個別に学習し、不確かな未ラベルノードに疑似ラベルを付与する。Alipayの自動車保険プラットフォームに導入し効果を確認している。
+problem: 請求額予測は高リスク顧客の特定や公正な保険料設定に重要だが、GNNは請求額の回帰には適用されてこなかった。異質性と同質性が混在するネットワーク、ラベルの不足、ラベルの不確実性が障害となる。
+approach: GClaimはグラフを潜在クラスタに分解して各クラスタを独立に学習する。不確かな未ラベルノードには、標準偏差に基づく基準で選別した疑似ラベルを加える。
+result: 産業データと公開データでベースラインを上回る。Alipayの自動車保険プラットフォームで、エンドツーエンドの転換率が10%超、UV価値が25%向上。
+tags:
+  task:
+  - risk-scoring
+  domain:
+  - insurance
+  - finance
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+  - tabular
+has_online_experiment: false
+confidence: 0.85
