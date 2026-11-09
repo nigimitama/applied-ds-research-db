@@ -1,0 +1,15 @@
+id: 2026-dena-basketball-shot-expected-value-pose
+url: https://engineering.dena.com/blog/2026/11/kbt-shot-expected-value/
+title: 姿勢推定を用いたバスケットボールにおけるショット期待値モデルの改善
+published: 2026-11-05
+collected: 2026-11-09
+companies: [dena]
+collab_academia: false
+source: {type: techblog, venue: DeNA Engineering Blog}
+evidence: blog
+lang: ja
+summary_ja: プロバスケットボールチームの試合映像から選手の3次元姿勢を復元し、関節間距離や体の向きといった特徴量をショット期待値モデルに追加した。単眼映像では奥行きと身長を分離できない問題に対し、選手ごとの倍率を補正する手法を採っている。
+problem: 既存のショット期待値モデルが選手の姿勢(守備者の手の上げ下げなど)を考慮できず、直感に反する予測になっていた
+result: 姿勢特徴量の追加により、守備者の手が下がっている場面の予測が38.7%から41.6%に上がり、手を上げられている場面は36.4%から32.2%に下がったと報告
+tags: {task: [image-recognition], domain: [], method: [deep-learning], data_type: [video, tabular]}
+confidence: 0.75

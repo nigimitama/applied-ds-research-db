@@ -1,0 +1,16 @@
+id: 2026-meta-andromeda-ads-retrieval-gpu
+url: https://engineering.fb.com/2026/10/28/ml-applications/meta-andromeda-next-gen-ads-retrieval-gpu-co-design/
+title: "Meta Andromeda: Powering the Next Generation of Ads Retrieval Through Model-System Co-Design"
+title_ja: "Meta Andromeda: モデルとシステムの協調設計による次世代の広告リトリーバル"
+published: 2026-10-28
+collected: 2026-11-09
+companies: [meta]
+collab_academia: false
+source: {type: techblog, venue: Engineering at Meta}
+evidence: blog
+lang: en
+summary_ja: 広告推薦の第1段であるリトリーバルに、モデル・システム・GPUハードウェアを協調設計して、ランキング段に近い品質のモデルを適用した。本番で全適格広告をスコアリングし、同じレイテンシ予算で上位候補を絞り込む。
+problem: ランキング段の高品質なモデルはリトリーバルの規模では計算コストが高すぎた
+result: 毎秒10億件超の広告を処理(2024年版の100倍)、2025年以降Facebookでコンバージョンが2.4%増加したと報告
+tags: {task: [ad-optimization, recommendation], domain: [advertising], method: [deep-learning], data_type: [log]}
+confidence: 0.85
