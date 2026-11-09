@@ -159,3 +159,9 @@ def test_valid_proposal_ok(root):
         yaml.safe_dump([{"axis": "method", "id": "new-method", "ja": "新手法", "en": "New", "reason": "r"}])
     )
     assert errs(root) == []
+
+
+def test_load_yaml_keeps_dates_as_strings(tmp_path):
+    p = tmp_path / "a.yml"
+    p.write_text("published: 2026-01-02\n", encoding="utf-8")
+    assert validate.load_yaml(p) == {"published": "2026-01-02"}

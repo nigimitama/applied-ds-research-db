@@ -1,0 +1,15 @@
+id: 2026-lycorp-shopping-ads-auto-bidding-accuracy
+url: https://techblog.lycorp.co.jp/ja/20261109b
+title: 検索連動型ショッピング広告の自動入札における予測精度改善（インターンレポート）
+published: 2026-11-09
+collected: 2026-11-09
+companies: [lycorp]
+collab_academia: false
+source: {type: techblog, venue: LINEヤフー Tech Blog}
+evidence: blog
+lang: ja
+summary_ja: 就業型インターンで、検索連動型ショッピング広告の自動入札を構成する内部処理の誤差を調べ、誤差が生じる理由の仮説に基づく改善案を設計・実装した。変更前の方式と過去データで同条件比較し、誤差が大きいケースも個別に確認して合意形成した。
+problem: 自動入札を構成する内部処理で、限られた情報量から後段の判断に必要な情報を十分正確に残せていなかった
+result: "過去データでの評価で、平均相対誤差を約10分の1(例: 4.67%→0.44%)、p99相対誤差を約7分の1(例: 35.01%→5.37%)に低減したと報告。オンライン実験の記述はない"
+tags: {task: [ad-optimization], domain: [advertising], method: [], data_type: [log]}
+confidence: 0.75

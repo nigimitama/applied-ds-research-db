@@ -40,9 +40,19 @@ def normalize_url(url: str) -> str:
     return urlunsplit(("https", host, path, query, ""))
 
 
+class _StrDateLoader(yaml.SafeLoader):
+    """日付(2026-01-02)を date ではなく文字列のまま読む。スキーマは日付を string で定義しているため。"""
+
+
+_StrDateLoader.yaml_implicit_resolvers = {
+    k: [(tag, rx) for tag, rx in v if tag != "tag:yaml.org,2002:timestamp"]
+    for k, v in yaml.SafeLoader.yaml_implicit_resolvers.items()
+}
+
+
 def load_yaml(path: Path):
     with path.open(encoding="utf-8") as f:
-        return yaml.safe_load(f)
+        return yaml.load(f, Loader=_StrDateLoader)
 
 
 def load_schema(root: Path, name: str) -> Draft202012Validator:

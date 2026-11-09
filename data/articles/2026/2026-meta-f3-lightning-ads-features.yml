@@ -1,0 +1,16 @@
+id: 2026-meta-f3-lightning-ads-features
+url: https://engineering.fb.com/2026/11/03/ml-applications/f3-lightning-how-meta-accelerates-ads-ml-features-to-production/
+title: "F3 Lightning: How Meta Accelerates Ads ML Features to Production at Scale"
+title_ja: "F3 Lightning: 広告MLの特徴量を本番へ高速に届ける仕組み"
+published: 2026-11-03
+collected: 2026-11-09
+companies: [meta]
+collab_academia: false
+source: {type: techblog, venue: Engineering at Meta}
+evidence: blog
+lang: en
+summary_ja: 広告ランキングモデル向け特徴量基盤F3の上に、特徴量ごとに独立してコンパイル・検証・デプロイ・ロールバックできる層を構築した。共有計算を保つため、計算識別子の安定化や実行計画・メモリバッファの共有などの最適化を行っている。
+problem: 全特徴量を1つのマージ済みグラフとしてリリースしていたため、1つの不正な定義がリリース全体を止めていた
+result: 同等の抽出特徴量が従来のF3より約3.6倍速く本番に到達し、インフラの計算コストは増えなかったと報告
+tags: {task: [data-quality], domain: [advertising], method: [], data_type: [log]}
+confidence: 0.7
