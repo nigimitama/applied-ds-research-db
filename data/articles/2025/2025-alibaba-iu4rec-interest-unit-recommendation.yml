@@ -1,0 +1,32 @@
+id: 2025-alibaba-iu4rec-interest-unit-recommendation
+url: https://doi.org/10.1145/3711896.3737237
+title: 'IU4Rec: Interest Unit-Based Product Organization and Recommendation for E-Commerce Platform'
+title_ja: 'IU4Rec: ECプラットフォームのための興味ユニットに基づく商品整理と推薦'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: AlibabaのC2CプラットフォームXianyuで、一点物の出品が多く相互作用が溜まりにくい課題に対し、商品を興味ユニットに束ねてユニット単位で推薦する2段階の枠組みIU4Recを提案した。実データでの評価とオンラインA/Bテストでベースラインを上回っている。
+problem: Xianyuでは個人出品の一点物が多く、各商品の在庫が限られて相互作用が蓄積しにくいため、ユーザと商品の相互作用に依存する通常の推薦が機能しにくい。
+approach: 第1段階でカテゴリ・画像・意味などの属性に基づき商品を興味ユニット(IU)にまとめる。第2段階でユニット単位で広い興味を捉えて推薦し、選ばれたユニット内で最適な商品を見つけられるようにする。ユーザとIUの相互作用は時間をまたいで蓄積されるため、在庫限りの問題を緩和し、ランキングモデルに利用する。
+result: 本番データセットとオンラインA/Bテストで、ベースラインを上回ったと報告(具体値は原文参照)。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+  - image
+  - text
+has_online_experiment: true
+confidence: 0.8

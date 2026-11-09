@@ -1,0 +1,32 @@
+id: 2025-airbnb-interleaving-counterfactual-search-ranking
+url: https://doi.org/10.1145/3711896.3737232
+title: Harnessing the Power of Interleaving and Counterfactual Evaluation for Airbnb Search Ranking
+title_ja: Airbnb検索ランキングにおけるインターリービングと反事実評価の活用
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- airbnb
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Airbnbの検索ランキング改善で、予約のような稀なイベントではA/Bテストの検出に時間がかかる問題に対し、インターリービングと反事実評価を導入した。有望な候補を素早く絞り込み、本番運用での知見も共有している。
+problem: A/Bテストは予約などの稀な指標で統計的検出力に達するまで時間がかかり、オフライン評価は速いが精度が低くA/Bテスト候補の選別に向かないため、ランキング開発の反復が遅くなる。
+approach: インターリービングと反事実評価の手法を整備し、A/Bテストにかける前に有望なランキング候補をオンラインで迅速に評価する実験プロセスを構築した。
+result: 手法やメトリクスにより、従来のA/Bテストに比べて実験の感度が最大100倍向上したと報告。
+tags:
+  task:
+  - experimentation
+  - search-ranking
+  domain:
+  - travel
+  - e-commerce
+  method:
+  - ab-testing
+  - off-policy-evaluation
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

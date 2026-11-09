@@ -1,0 +1,34 @@
+id: 2025-kuaishou-great-trie-query-generation
+url: https://doi.org/10.1145/3711896.3737230
+title: 'GREAT: Guiding Query Generation with a Trie for Recommending Related Search about Video at Kuaishou'
+title_ja: 'GREAT: Kuaishouにおける動画の関連検索推薦のためのトライ誘導型クエリ生成'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 動画視聴中に表示する関連検索クエリの推薦(item-to-query)に、LLMベースの生成モデルを適用した。高露出・高クリックのクエリから作ったトライで生成を誘導し、Kuaishouの実データでオフライン・オンライン実験により有効性を示している。
+problem: 短尺動画アプリでは視聴中に関連クエリを提示するが、従来は動画とクエリの埋め込み類似度で対応づけるため、動画内容とクエリ文の深い相互作用を捉えにくい。この課題向けの公開データも乏しかった。
+approach: 高露出かつ高クリック率のクエリからトライ(接頭辞木)を構築し、学習時と推論時のトークン生成の両方でLLMを誘導する。さらに後処理モジュールで関連性と文面の品質を調整する。併せてKuaishouのアプリ由来の大規模データセットKuaiRSを公開している。
+result: オフライン・オンライン実験で手法の有効性を確認したと報告(具体値は原文参照)。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - media
+  - social
+  method:
+  - llm
+  - transformer
+  data_type:
+  - text
+  - video
+  - log
+has_online_experiment: true
+confidence: 0.8

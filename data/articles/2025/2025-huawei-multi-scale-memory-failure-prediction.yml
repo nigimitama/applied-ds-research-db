@@ -1,0 +1,31 @@
+id: 2025-huawei-multi-scale-memory-failure-prediction
+url: https://doi.org/10.1145/3711896.3737243
+title: 'M^2-MFP: A Multi-Scale and Multi-Level Memory Failure Prediction Framework for Reliable Cloud
+  Infrastructure'
+title_ja: 'M^2-MFP: 信頼性の高いクラウド基盤のためのマルチスケール・マルチレベルなメモリ故障予測フレームワーク'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: クラウド基盤のメモリ故障を訂正可能エラー(CE)ログから予測するM2-MFPを提案。CEを多段の2値行列に変換して空間特徴を学習し、時間方向は2系統のモデルで扱う。ベンチマークと実環境での導入で既存手法を上回ったと報告している。
+problem: メモリ故障はクラウドシステムの安定性を脅かす。CEログに基づく従来のルールベース手法は汎化性が低く故障の見逃しが多く、自動特徴抽出も十分な性能が出ていなかった。
+approach: CEを複数レベルの2値行列に変換し、Binary Spatial Feature ExtractorでDIMMレベルとビットレベルの高次特徴を学習する。時間側は、観測窓内の特徴を集約するtime-patchモジュールと、ビットパターンから解釈可能なルール生成木を学習するtime-pointモジュールの二経路で構成する。
+tags:
+  task:
+  - predictive-maintenance
+  - anomaly-detection
+  domain:
+  - cloud-infra
+  method:
+  - deep-learning
+  - explainable-ai
+  data_type:
+  - log
+confidence: 0.7
+result: ベンチマークデータと実環境導入の双方で最先端手法を大きく上回ったと報告(具体値は原文参照)。

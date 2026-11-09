@@ -1,0 +1,32 @@
+id: 2025-ant-group-multi-period-fund-sales-forecasting
+url: https://doi.org/10.1145/3690624.3709422
+title: Multi-period Learning for Financial Time Series Forecasting
+title_ja: 金融時系列予測のためのマルチ期間学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数の長さの入力期間を同時に使う金融時系列予測フレームワークMLFを提案した。Alipayのファンド販売予測に適用し、本番システムへ導入して既存のPatchTSTより精度を改善したと報告している。
+problem: 金融の時系列は短期の市場心理と長期の政策・トレンドの双方を反映するが、単一の入力長では捉えきれない。入力長の選定コストも大きく、期間間で情報が重複する問題がある。
+approach: 期間間の冗長情報を除くフィルタリング、各期間の予測を学習重みで統合するモジュール、期間ごとにパッチ数を揃える適応パッチング、パッチ数を減らすPatch Squeezeを組み合わせる。
+result: Alipayのファンド管理システムに2024年2月末から導入。5週間でPatchTST比、WMAPE改善率が平均5.16%、GMV改善率が平均0.84%と報告。
+tags:
+  task:
+  - time-series-forecasting
+  - demand-forecasting
+  domain:
+  - finance
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.8
+alt_urls:
+- https://arxiv.org/abs/2511.08622

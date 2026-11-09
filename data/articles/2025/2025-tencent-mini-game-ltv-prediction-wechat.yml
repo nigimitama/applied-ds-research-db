@@ -1,0 +1,33 @@
+id: 2025-tencent-mini-game-ltv-prediction-wechat
+url: https://doi.org/10.1145/3711896.3737248
+title: Mini-Game Lifetime Value Prediction in Wechat
+title_ja: WeChatにおけるミニゲームのライフタイムバリュー予測
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: WeChatミニゲーム広告向けに、ユーザーのLTVを予測するGRePO-LTVを提案した。グラフ表現学習でデータ疎性に対処し、期間の異なる予測タスク間の依存をパレート最適化で扱う。オフラインデータ評価とオンラインA/Bテストで効果を確認している。
+problem: 広告主にとってLTV予測は重要だが、登録ユーザーのうち購入するのは約0.1%と疎で、教師信号が乏しい。また3日・7日など期間の異なる予測タスクは強く相関しており、外れ値が双方の精度を損なう。
+approach: グラフ表現学習でデータ疎性を緩和し、期間別のLTV予測を相互依存するマルチタスクとみなしてパレート最適化でバランスさせるGRePO-LTVを用いる。
+tags:
+  task:
+  - ad-optimization
+  - personalization
+  domain:
+  - gaming
+  - advertising
+  method:
+  - embedding
+  - graph-neural-network
+  data_type:
+  - log
+  - graph
+confidence: 0.85
+result: 自社のミニゲーム推薦データで有意な改善を示し、オンラインA/Bテストで平均GMVが8.4%増加したと報告。
+has_online_experiment: true

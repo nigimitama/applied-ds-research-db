@@ -137,3 +137,6 @@
 {"url": "https://doi.org/10.1145/3711896.3737258", "reason": "insufficient-info: WebSearch/WebFetchでabstractを確認できず(ACM DLは403、検索にも該当なし)。適用の有無を判断できない", "date": "2026-11-10"}
 {"url": "https://doi.org/10.1145/3690624.3709406", "reason": "no-real-world-application: abstract確認済み。Weibo/GossipCop/CHEF等の公開データのみで評価、実サービス適用の記載なし", "date": "2026-11-10"}
 {"url": "https://doi.org/10.1145/3690624.3709417", "reason": "no-real-world-application: abstract確認済み(arXiv 2409.13860)。NVIDIAのデータ選択手法だが実運用・実データ適用の具体的記載を確認できず", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737241", "reason": "insufficient-info: abstractでは実験がオフラインのみ・データ出所が不明で、実サービスでの適用/運用が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737246", "reason": "not-technical: Booking.comのML品質・ガバナンスの成熟度フレームワーク(評価手法・組織導入の知見)が主題で、具体的なモデル適用事例ではない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3690624.3709412", "reason": "no-real-world-application: abstract上はAMiner APIの複製環境で作ったベンチマーク中心の評価で、企業実運用での適用・効果検証の記述を確認できない(著者は主に大学、Zhipu AIが共著)", "date": "2026-11-10"}

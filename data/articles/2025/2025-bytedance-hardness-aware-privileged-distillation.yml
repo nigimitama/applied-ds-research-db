@@ -1,0 +1,31 @@
+id: 2025-bytedance-hardness-aware-privileged-distillation
+url: https://doi.org/10.1145/3711896.3737231
+title: Hardness-aware Privileged Features Distillation with Latent Alignment for CVR Prediction
+title_ja: CVR予測のための潜在アライメント付き難易度考慮型特権特徴蒸留
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- bytedance
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 広告のCVR予測で、学習時のみ使える特権特徴を教師モデルから蒸留する手法HA-PFDを提案した。難しいサンプルを重視する損失と潜在層の整合を組み合わせ、Douyinの大規模データで評価し、メインのオンライン配信モデルに導入している。
+problem: オンライン配信時に使えない特権特徴を蒸留で活用する既存手法は、教師の助けが最も効く難しいサンプルに焦点を当てられず、簡単なサンプルで過信しやすいという限界がある。
+approach: サンプルごとの難しさに応じて重みを変えるfocal型の損失で順位性能とキャリブレーションを改善する。加えて層間の単純なアライメントによる潜在レベルの蒸留を導入し、ラベルとの関連性に基づいて特権特徴を選ぶ。
+result: Douyinの大規模データで最先端手法と同等以上の性能・キャリブレーションを示し、本番モデルへの導入で広告主のコンバージョン価値が有意に向上したと報告。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  - media
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+has_online_experiment: true
+confidence: 0.85

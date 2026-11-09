@@ -1,0 +1,34 @@
+id: 2025-alibaba-multitask-offline-rl-advertising
+url: https://doi.org/10.1145/3711896.3737250
+title: Multi-task Offline Reinforcement Learning for Online Advertising in Recommender Systems
+title_ja: 推薦システムにおけるオンライン広告のためのマルチタスクオフライン強化学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦プラットフォーム上の広告で、チャネル推薦と予算配分を同時に扱うマルチタスクのオフライン強化学習モデルMTORLを提案した。Taobaoでの導入を想定した実験で、既存手法より良い結果とオンラインA/Bテストでの改善を報告している。
+problem: 広告が疎な環境では既存のオフライン強化学習が過大評価や分布シフトに弱く、予算制約も十分に扱えない。チャネル推薦と予算配分は互いに関係するが別々に扱われがちだった。
+approach: 広告向けのマルコフ決定過程を定義し、因果的な状態エンコーダと因果アテンションでユーザー興味の変化を捉える。行動と報酬をマルチタスクで同時にデコードし、チャネル推薦と予算配分を一つのモデルで学習する。
+result: オフライン・オンラインの実験で最先端手法を上回ると報告。Taobaoの1%トラフィックで48時間のA/Bテストを行い、RPMが0.23%向上したと記載。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - e-commerce
+  - advertising
+  method:
+  - reinforcement-learning
+  - transformer
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.8
+alt_urls:
+- https://arxiv.org/abs/2506.23090
