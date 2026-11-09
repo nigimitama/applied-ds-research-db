@@ -1,0 +1,34 @@
+id: 2025-pinterest-omnisage-heterogeneous-graph-representation
+url: https://doi.org/10.1145/3711896.3737253
+title: 'OmniSage: Large Scale, Multi-Entity Heterogeneous Graph Representation Learning'
+title_ja: 'OmniSage: 大規模・マルチエンティティの異種グラフ表現学習'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- pinterest
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Pinterestで、グラフニューラルネットワーク、コンテンツモデル、ユーザー行動系列モデルを複数の対照学習目的で統合し、汎用的なエンティティ表現を学習するOmniSageを構築した。数十億ノード規模のグラフを扱う基盤も整備し、複数アプリケーションで利用している。
+problem: サービス内の各種エンティティ(ピン、ボードなど)の表現は用途ごとに個別に作られがちで、グラフ構造・コンテンツ・ユーザー行動の情報を横断的に活かせていなかった。巨大グラフでの学習も難しい。
+approach: GNN、コンテンツベースのモデル、ユーザー系列モデルを組み合わせ、エンティティ間・エンティティと特徴・ユーザーとエンティティの対照学習タスクで共同学習する。数十億ノードのグラフを処理する学習基盤も構築した。
+result: 5つのアプリケーションでサイト全体の保存(repin)が約2.5%向上したと報告。
+tags:
+  task:
+  - recommendation
+  domain:
+  - social
+  method:
+  - graph-neural-network
+  - embedding
+  - transformer
+  data_type:
+  - graph
+  - log
+has_online_experiment: true
+confidence: 0.85
+alt_urls:
+- https://arxiv.org/abs/2504.17811

@@ -1,0 +1,30 @@
+id: 2025-meta-delayed-label-nonpayment-prediction
+url: https://doi.org/10.1145/3711896.3737247
+title: 'Mind the Gap: Delayed Label Bias–Variance Tradeoffs in Predicting Likelihood of Nonpayment'
+title_ja: 'ギャップに注意: 未払い確率予測における遅延ラベルのバイアス・分散トレードオフ'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: オンライン決済で未払いを予測するモデルは、ラベルが数週間から数か月遅れて得られる。取引後のシグナルから擬似ラベルを作ってこの遅延に対処し、バイアスと分散のトレードオフを整理した。Metaの複数システムのオフライン実験と実トラフィックでの検証を報告している。
+problem: 未払い予測では正解ラベルの到着が数週間〜数か月遅れる。その間にユーザー行動が非定常に変化しラベル分布もドリフトするため、古いラベルで学習したモデルが劣化する。
+approach: 取引後に得られるシグナルから擬似ラベルを生成する。短期プロキシとサロゲート指標の考え方に基づき、ラベルドリフトによるバイアスの低減と、擬似ラベルのノイズによる分散増加のトレードオフを扱う。
+tags:
+  task:
+  - risk-scoring
+  - fraud-detection
+  domain:
+  - finance
+  method: []
+  data_type:
+  - tabular
+  - log
+confidence: 0.75
+result: オフライン実験でトレードオフを確認し、実トラフィックへの展開で統計的に有意な収益改善を報告(具体値は原文では示されていない)。
+has_online_experiment: true

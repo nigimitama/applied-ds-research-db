@@ -1,0 +1,29 @@
+id: 2025-intesa-sanpaolo-multicriteria-anomaly-detection-aml
+url: https://doi.org/10.1145/3711896.3737244
+title: 'MAD: Multicriteria Anomaly Detection of Suspicious Financial Accounts from Billions of Cash Transactions'
+title_ja: 'MAD: 数十億件の現金取引からの不審口座のマルチクライテリア異常検知'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- intesa-sanpaolo
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: マネーロンダリング対策として、Intesa Sanpaoloの20億件超の匿名化取引に対する教師なし異常検知パイプラインを開発し、同行の取引モニタリングシステムに本番導入した。専門家による検証で既存のルールベースを上回る成果を確認している。
+problem: AML(資金洗浄対策)の取引監視は従来ルールベースが中心で、見逃しが多い。ラベルが乏しい大規模取引データから不審口座を見つける必要がある。
+approach: 8か月分、20億件超の匿名化された銀行取引データで教師なし異常検知パイプラインを設計・チューニングし、銀行の専門家がルールベースシステムとの比較や新規検知案件のレビューで評価した。
+tags:
+  task:
+  - anomaly-detection
+  - fraud-detection
+  domain:
+  - finance
+  method: []
+  data_type:
+  - tabular
+  - log
+confidence: 0.85
+result: 高リスク案件の適合率・再現率が6倍に向上。支店長が手作業で見つけていたがルールでは検知できなかった200件超のアラートを追加で検知し、未報告の100件の手動レビューで28件の重要案件を発見したと報告。

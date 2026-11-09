@@ -1,0 +1,32 @@
+id: 2025-amazon-instruction-tuned-lm-use-case-shopping
+url: https://doi.org/10.1145/3690624.3709411
+title: Using Instruction-Tuned LMs for Scalable Use Case-Based Shopping – Where Customers Meet Their Needs
+title_ja: 指示チューニング済みLMによる利用シーン起点ショッピングの大規模化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- amazon
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 商品レビューから利用シーン(ユースケース)を抽出し、クラスタリングして商品と結びつける利用シーン起点のショッピング機能を、LLMでスケールさせた。FLAN-T5でユースケースと感情を同時抽出し、クラスタリングにはClaude
+  2を使用している。
+problem: ECの商品は出品者が付けた属性で整理されるため、顧客が頭に描く利用目的では探しにくい。利用シーン別の探索を全カテゴリに広げるには、学習データ作成のコストが大きな障壁だった。
+approach: レビューからユースケースと感情を共同抽出するタスクを定義し、FLAN-T5を指示チューニング・マルチタスク学習・少数例の再学習で訓練する。主要ユースケースの検出は、Claude 2による教師なしの階層的クラスタリングで行う。
+result: アノテーション工数を約90%削減。上位7カテゴリのオンライン実験で収益が検索0.77%、ブラウズ0.94%、商品ページ0.44%向上、平均クリック率は0.15%向上と報告。
+tags:
+  task:
+  - search-ranking
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - text
+has_online_experiment: true
+confidence: 0.85
