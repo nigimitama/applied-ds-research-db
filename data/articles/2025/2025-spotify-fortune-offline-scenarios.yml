@@ -1,0 +1,28 @@
+id: 2025-spotify-fortune-offline-scenarios
+url: https://doi.org/10.1145/3690624.3709431
+title: 'ForTune: Running Offline Scenarios to Estimate Impact on Business Metrics'
+title_ja: 'ForTune: オフラインシナリオ実行による事業指標への影響推定'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- spotify
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦システムの変更が事業指標に与える影響を、オンライン実験の前にオフラインのシナリオ実行で推定するSpotifyの手法ForTuneを提案した。
+problem: 推薦モデルの改善はオフライン指標が良くても事業指標に結びつくとは限らず、オンライン実験は時間とコストがかかるため、事前に影響を見積もる方法が必要になる。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - media
+  method:
+  - off-policy-evaluation
+  - simulation
+  data_type:
+  - log
+confidence: 0.72

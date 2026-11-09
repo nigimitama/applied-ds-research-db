@@ -1,0 +1,32 @@
+id: 2025-linkedin-star-job-matching-signals
+url: https://doi.org/10.1145/3711896.3737185
+title: A Scalable and Efficient Signal Integration System for Job Matching
+title_ja: 求人マッチングのための拡張可能で効率的なシグナル統合システム
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- linkedin
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: LinkedInの求人マッチングで、LLMによるテキスト理解とGNNによる関係情報を組み合わせた埋め込み構築システムSTARを提案した。適応的サンプリングやバージョン管理など産業規模の工夫を含み、本番推薦への展開方法と知見をまとめている。
+problem: 求人推薦ではコールドスタート、フィルターバブル、候補者と求人のマッチングに生じるバイアスが課題となる。会員プロフィールや求人票のテキストと、ネットワーク上の関係情報の両方を活かす必要があった。
+approach: 会員・求人のテキストをLLMで扱い、GNNでグラフ上の関係を捉えてネットワーク効果によりコールドスタートを緩和する。適応的サンプリングとバージョン管理を備え、大規模推薦システムで埋め込みを構築・運用する手順としてまとめた。
+tags:
+  task:
+  - recommendation
+  - matching-market
+  domain:
+  - hr
+  method:
+  - llm
+  - graph-neural-network
+  - embedding
+  data_type:
+  - text
+  - graph
+confidence: 0.75
+alt_urls:
+- https://arxiv.org/abs/2507.09797

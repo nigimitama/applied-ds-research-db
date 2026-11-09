@@ -1,0 +1,29 @@
+id: 2025-tencent-scenario-shared-instance-ctr
+url: https://doi.org/10.1145/3690624.3709390
+title: Scenario Shared Instance Modeling for Click-through Rate Prediction
+title_ja: CTR予測のためのシナリオ共有インスタンスモデリング
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数シナリオのCTR予測で、全シナリオに有益な学習インスタンスを選ぶ共有インスタンスマスクを学習するSSIMを提案。選ばれた共有サブセットは再利用でき、公開データ2種とオンラインA/Bテストで評価している。
+problem: マルチシナリオ推薦は特徴を分割するアプローチが中心で、全シナリオに共通して有用な学習インスタンスの選別は十分に扱われていない。
+approach: 全シナリオに有益なインスタンスを選択する共有インスタンスマスクを学習し、選ばれた共有サブセットを様々なマルチシナリオモデルの学習に再利用できるようにする。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - finance
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.6
+result: 公開ベンチマーク2種とオンラインA/Bテストで有効性を報告(具体値は原文参照)。
+has_online_experiment: true

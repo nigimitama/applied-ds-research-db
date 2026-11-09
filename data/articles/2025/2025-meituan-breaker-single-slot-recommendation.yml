@@ -1,0 +1,30 @@
+id: 2025-meituan-breaker-single-slot-recommendation
+url: https://doi.org/10.1145/3690624.3709387
+title: 'Breaker: Removing Shortcut Cues with User Clustering for Single-slot Recommendation System'
+title_ja: 'Breaker: ユーザークラスタリングによる単一スロット推薦のショートカット手がかり除去'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meituan
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 単一スロット推薦では、アイテム側より情報量の多いユーザー側特徴にモデルが偏るショートカットが生じる。ユーザー表現のクラスタリング補助タスクとマルチタワー構造を組み合わせて解消し、Meituanに適用してオフライン・オンライン実験で改善を報告している。
+problem: 1回に1アイテムだけ提示する単一スロット推薦では、ユーザーの固有傾向がアイテム非依存のショートカット的な偏りとして学習され、推薦精度を損なう。
+approach: ユーザー表現に対する深層埋め込みクラスタリングの補助タスクと、クラスタごとの嗜好を扱うマルチタワー構造を組み合わせ、学習安定化のための遅延パラメータ更新を導入する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - food
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.8
+result: オフライン・オンライン実験でベースラインを上回ったと報告。Meituanに導入され日々多数のユーザーに提供されている。
+has_online_experiment: true

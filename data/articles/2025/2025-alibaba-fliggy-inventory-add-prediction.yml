@@ -1,0 +1,28 @@
+id: 2025-alibaba-fliggy-inventory-add-prediction
+url: https://doi.org/10.1145/3690624.3709384
+title: Contrastive Learning for Inventory Add Prediction at Fliggy
+title_ja: Fliggyにおける在庫追加予測のための対照学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 旅行プラットフォームFliggyで、売り切れた客室タイプに在庫を臨時追加すべきかを予測する課題に対し、支払い受諾の同時予測、データ拡張、対照学習を組み合わせたフレームワークCL4IAPを提案している。
+problem: 在庫を追加するホテルが少なく、さらに追加が予約に結びつく例はもっと少ないため、学習データがスパースで予測が難しい。
+approach: 支払い・受諾を同時に予測するモジュール、データ拡張モジュール、インスタンス単位とクラスタ単位の損失を使う対照学習モジュールで特徴表現を強化する。
+tags:
+  task:
+  - classification
+  domain:
+  - travel
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.7

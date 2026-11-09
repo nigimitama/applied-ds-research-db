@@ -1,0 +1,33 @@
+id: 2025-netflix-decision-rules-weak-experiments
+url: https://doi.org/10.1145/3711896.3737217
+title: Evaluating Decision Rules Across Many Weak Experiments
+title_ja: 多数の微弱な実験にわたる意思決定ルールの評価
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- netflix
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: A/Bテストの意思決定ルールを、ビジネスの北極星指標への累積リターンで評価する枠組みを提案。微弱なシグナルでも偏りを抑える交差検証型の推定量を開発し、Netflixの過去の実験で新ルールを検証、採用に至った。
+problem: 個々の実験の効果が小さくノイズが大きいため、意思決定ルールの累積的な価値を単純なプラグイン推定で評価すると偏りが大きい。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - media
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - log
+confidence: 0.85
+alt_urls:
+- https://arxiv.org/abs/2502.08763
+approach: ルールの累積リターンを推定する交差検証ベースの推定量を設計し、プラグイン推定より偏りを小さくする。
+result: 123件のNetflix過去A/Bテストで、新しい決定ルールにより累積リターンが推定33%向上し、ルールの採用につながった。
+has_online_experiment: true
+collab_academia: true

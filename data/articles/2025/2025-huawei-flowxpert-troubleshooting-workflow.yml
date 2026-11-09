@@ -1,0 +1,33 @@
+id: 2025-huawei-flowxpert-troubleshooting-workflow
+url: https://doi.org/10.1145/3711896.3737221
+title: 'FlowXpert: Expertizing Troubleshooting Workflow Orchestration with Knowledge Base and Multi-Agent
+  Coevolution'
+title_ja: 'FlowXpert: ナレッジベースとマルチエージェント共進化によるトラブルシュート手順の自動構成'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: クラウドのインシデント対応で、障害対応の手順(ワークフロー)をLLMで自動構成するFlowXpertを提案。オフラインのナレッジベースと、プランナーとスコアラーが互いを改善する共進化を組み合わせ、Huawei
+  Cloudのデータセンターネットワークで10週間運用した。
+problem: LLMによるワークフロー構成は、障害対応に必要な専門知識やドメイン要件、AIによるフィードバックの信頼性を十分に扱えていない。
+tags:
+  task:
+  - conversational-ai
+  - resource-optimization
+  domain:
+  - cloud-infra
+  method:
+  - llm
+  - reinforcement-learning
+  - rag
+  data_type:
+  - text
+confidence: 0.7
+approach: 運用文書からオフラインのナレッジベースを構築し、プランナーとスコアラーのマルチエージェント共進化で学習する。スコアラー出力をPPOの報酬、手順の選好ペアをDPOに用いる(発表スライドの記述)。
+result: Huawei Cloudのデータセンターネットワークで10週間展開し、オンコール担当者とAI実行器を支援。Huawei Cloudのスイッチ運用文書によるベンチマークOpsFlowBenchで評価。
+collab_academia: true

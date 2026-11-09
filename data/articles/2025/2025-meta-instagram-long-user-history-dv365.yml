@@ -1,0 +1,30 @@
+id: 2025-meta-instagram-long-user-history-dv365
+url: https://doi.org/10.1145/3711896.3737209
+title: 'DV365: Extremely Long User History Modeling at Instagram'
+title_ja: 'DV365: Instagramにおける超長期ユーザー履歴のモデリング'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Instagramの推薦で、平均4万・最大7万に及ぶ超長期のユーザー履歴を、オフラインで生成する埋め込みとして取り込むDV365を提案。単一の基盤モデルから得た埋め込みをInstagramとThreadsの複数モデルに展開し、1年以上本番運用している。
+problem: 長い履歴は推薦に有用だが、データセンターの電力とGPUのコストが大きく、エンドツーエンドで系列長を伸ばす方法は現実的でない。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - social
+  - media
+  method:
+  - embedding
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.85
+approach: 系列長を直接伸ばす代わりに、複数スライスへの分割と要約(multi-slicing and summarization)でユーザー履歴をオフラインの埋め込みにまとめ、単一の上流基盤モデルから各下流モデルへ供給する。
+result: 履歴長は最大70,000(平均40,000)を扱え、既存の注意機構ベース系列モデルに上乗せの価値を与える。InstagramとThreadsの15モデルで稼働し、初回投入から1年超本番運用。

@@ -1,0 +1,29 @@
+id: 2025-webank-multi-expert-tabular-lm-banking
+url: https://doi.org/10.1145/3690624.3709400
+title: Efficient Multi-Expert Tabular Language Model for Banking
+title_ja: 銀行業務向けの効率的なマルチエキスパート表形式言語モデル
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- webank
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: WeBankの非公開な企業データベースを用いて、100億パラメータ規模の表形式言語モデルを限られた計算資源で事前学習・微調整するためのマルチエキスパート構造を提案。リスク評価などの銀行業務タスクでベースラインを上回ると報告している。
+problem: 銀行の独自の表形式データで大規模言語モデルを学習するには計算資源の制約が大きく、効率的な事前学習・微調整の方法が必要になる。
+approach: ドメインエキスパートと区分エキスパートを用意し、ゲート関数で適切なエキスパートを選択する。表は列と値のテキスト形式に直列化して言語モデルに入力する。
+tags:
+  task:
+  - risk-scoring
+  - classification
+  domain:
+  - finance
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - tabular
+confidence: 0.65

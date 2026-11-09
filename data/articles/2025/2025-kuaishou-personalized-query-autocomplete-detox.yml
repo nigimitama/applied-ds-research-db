@@ -1,0 +1,32 @@
+id: 2025-kuaishou-personalized-query-autocomplete-detox
+url: https://doi.org/10.1145/3711896.3737256
+title: Personalized Query Auto-Completion for Long and Short-Term Interests with Adaptive Detoxification
+  Generation
+title_ja: 長短期興味とアダプティブ解毒生成によるパーソナライズ検索クエリ補完
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Kuaishou検索のクエリ補完に、長期・短期の興味を使ったパーソナライズと、有害な補完を避ける仕組みを組み合わせたLaDを提案した。オンライン学習による選好最適化で有害生成を抑え、実サービスに展開されている。
+problem: クエリ接頭辞は短く誤字や機微情報を含みやすいため、パーソナライズしつつ有害な補完を生成しないことが難しい。
+approach: 粗粒度で長期興味を保持し細粒度で短期興味を反映する二段階のパーソナライズ生成モデルに、[Reject]トークンとRPOによるオンライン学習で適応的な解毒を行う。
+tags:
+  task:
+  - search-ranking
+  - personalization
+  domain:
+  - media
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - text
+  - log
+confidence: 0.75
+result: Kuaishou検索に展開され数億規模のアクティブユーザーのトラフィックを担うと報告(具体的な改善値は原文参照)。

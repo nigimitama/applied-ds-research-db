@@ -1,0 +1,32 @@
+id: 2025-spotify-audio-centric-multitask-ads
+url: https://doi.org/10.1145/3711896.3737190
+title: An Audio-centric Multi-task Learning Framework for Streaming Ads Targeting on Spotify
+title_ja: Spotifyのストリーミング広告ターゲティングのための音声中心マルチタスク学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- spotify
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 音声が中心のSpotifyで音声・動画・ディスプレイ広告のCTRを予測するため、モダリティを考慮したMoEベースのCAMoEを提案した。広告配信基盤に導入し、音声広告と動画広告のCTR改善とeCPC低下を報告している。
+problem: 広告モデルの多くは画面を見ている前提の配信を想定しており、音声中心のプラットフォームでは音声・動画・ディスプレイの各形式を一体で扱う必要があるが既存モデルは合わない。
+approach: Mixture-of-Expertsをモダリティを考慮したタスクグルーピング、適応的な損失マスク、Deep-Cross Networkで拡張したCAMoEを設計し、複数形式のCTRを同時に学習する。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  - media
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - audio
+confidence: 0.85
+result: 導入後、音声広告のCTRが約14.5%、動画広告が約1.3%上昇し、音声枠の期待CPCが約4.8%低下した。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2506.18735

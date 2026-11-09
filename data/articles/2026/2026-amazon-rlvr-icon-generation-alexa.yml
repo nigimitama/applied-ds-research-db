@@ -1,0 +1,29 @@
+id: 2026-amazon-rlvr-icon-generation-alexa
+url: https://arxiv.org/abs/2611.06123
+title: 'From Handcrafted to Generative: RLVR-Optimized Icon Generation for Alexa+'
+title_ja: 手作りから生成へ:Alexa+向けRLVR最適化アイコン生成
+published: '2026-11-04'
+collected: '2026-11-09'
+companies:
+- amazon
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: Alexa+の画面付きデバイスで会話に合わせて表示する動画アイコンを、テキスト記述から自動生成するパイプラインを本番運用している。最初の画像生成段階を検証可能な報酬による強化学習で改善し、デザイン規約を満たす生成の割合を高めた。
+problem: 会話中に表示するアニメーションアイコンはデザイナーが1点ずつ手描きしており、品質は高いが、自由な話題に対応できる規模に拡張できない。小さな表示領域と厳しいデザイン規約のもとでは、生成画像が本番に使えないことが多く、該当するラインアート画像のデータセットがないため教師あり微調整も使えない。
+approach: アイコン作成を画像生成・意味分解・ベクタ化・装飾・アニメーションの段階に分け、他の段階の土台となる最初の画像生成を改善対象とした。デザイン規約違反を自動判定する客観的な検証器を作り、その結果を報酬としてフローマッチング型の画像生成モデルを強化学習(RLVR)で微調整した。検証器は最終デザインレビュー前の品質ゲートとしても使う。
+result: 規約を満たす生成の割合が15.7%から58.7%(約3.7倍)に向上(報酬モデルと独立したVLM審査による)。
+tags:
+  task:
+  - text-generation
+  domain:
+  - media
+  method:
+  - reinforcement-learning
+  - fine-tuning
+  data_type:
+  - image
+confidence: 0.8

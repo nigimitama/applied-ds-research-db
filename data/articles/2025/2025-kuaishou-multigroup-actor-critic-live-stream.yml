@@ -1,0 +1,30 @@
+id: 2025-kuaishou-multigroup-actor-critic-live-stream
+url: https://doi.org/10.1145/3711896.3737264
+title: Supervised Learning-enhanced Multi-Group Actor Critic for Live Stream Allocation in Feed
+title_ja: フィードにおけるライブ配信割当のための教師あり学習強化マルチグループActor-Critic
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 短尺動画とライブ配信が混在するフィードで、ライブ配信を差し込む判断を強化学習で行うSL-MGACを提案した。教師あり報酬学習と状態分解でTD誤差の蓄積と分散を抑え、オフライン評価とオンラインA/Bテストで検証している。
+problem: ライブ配信の割当は直後のフィードバックだけでは長期的な悪影響を見落としやすく、プラットフォーム全体の制約下で安定した方策が必要。
+approach: 批評家学習に教師あり報酬学習を加えTD誤差の蓄積を抑え、アクターと批評家にマルチグループ状態分解を導入。過度に貪欲な割当を防ぐ報酬関数も設計した。
+tags:
+  task:
+  - recommendation
+  - resource-optimization
+  domain:
+  - media
+  method:
+  - reinforcement-learning
+  data_type:
+  - log
+confidence: 0.8
+result: オフライン方策評価とオンラインA/Bで、制約下でベースラインを上回り安定性も向上と報告。
+has_online_experiment: true

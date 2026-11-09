@@ -1,0 +1,29 @@
+id: 2025-satrec-skysearch-satellite-video-search
+url: https://doi.org/10.1145/3711896.3737263
+title: 'SkySearch: Satellite Video Search at Scale'
+title_ja: SkySearch:大規模な衛星動画検索
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- satrec-initiative
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 気象予報官が現在の状況に似た過去の衛星動画を探せる検索システムSkySearchを開発した。自己教師あり学習で動画を埋め込みにし、グラフで高速検索する。韓国気象庁で運用されたとされる。
+problem: 高解像度の衛星動画は量が大きく、ラベルもなく、10年超のアーカイブから類似の気象状況を素早く探すのが難しい。
+approach: 自己教師あり学習で動画を低次元埋め込みに圧縮し、グラフを構築して近傍探索を行う。予測した将来フレームでクエリを拡張もできる。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - public-sector
+  method:
+  - embedding
+  - vector-search
+  data_type:
+  - video
+  - image
+confidence: 0.65

@@ -1,0 +1,31 @@
+id: 2025-jd-unierf-embedding-retrieval-ecommerce-search
+url: https://doi.org/10.1145/3711896.3737270
+title: 'UniERF: A uniform embedding-based retrieval framework for E-commerce search'
+title_ja: UniERF:ECサイト検索のための統一的な埋め込み検索フレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- jd
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ECサイト検索で、パーソナライズ・意味・類似商品の各検索モジュールを統一アーキテクチャで同時学習するUniERFを提案した。JDのアプリとサイトでのオンラインA/Bテストで効果を確認している。
+problem: 検索の各リトリーバを個別に学習すると、モジュール間で知見を共有できず汎化性能の面でも不利になる。
+approach: ユーザー・クエリ塔とアイテム塔の二塔構成で複数の検索モジュールを共同学習し、一様安定性に基づく汎化誤差の上界も示す。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - embedding
+  - vector-search
+  data_type:
+  - text
+  - log
+confidence: 0.75
+result: JDでのオンラインA/Bで表示+0.96%、クリック+1.37%、コスト+2.24%(二次資料による)。
+has_online_experiment: true

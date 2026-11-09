@@ -4,3 +4,158 @@
 {"url": "https://techblog.lycorp.co.jp/ja/20261109c", "reason": "not-technical: インターン記事の一覧ページ", "date": "2026-11-09"}
 {"url": "https://developers.cyberagent.co.jp/blog/archives/67267/", "reason": "not-technical: イベント参加レポート", "date": "2026-11-09"}
 {"url": "https://engineering.fb.com/2026/10/27/developer-tools/python-typing-survey-2026-ai-tools-checker-landscape/", "reason": "off-topic: Pythonの型チェッカーに関するアンケート結果", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09728v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09698v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09344v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09278v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08959v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08578v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08334v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08216v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08133v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07845v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07693v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07558v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07393v2", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07319v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07247v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07133v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06819v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06055v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05355v2", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05309v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05128v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05115v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.04867v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09701v1", "reason": "no-real-world-application: 回帰解析中心の理論研究で実サービス適用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09516v1", "reason": "insufficient-info: 著者の所属企業が特定できず、企業主体か判断不能", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09505v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09402v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09326v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09294v1", "reason": "no-real-world-application: 公開データ(MovieLens等)での理論・アブレーション中心", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09194v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09102v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.09075v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08937v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08831v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08693v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08469v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08566v1", "reason": "insufficient-info: 本番導入はあるが企業名が特定できない匿名のFP&A SaaS事業者", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08236v1", "reason": "no-company-author: 著者が大学・公的機関のみ、または企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08231v1", "reason": "no-real-world-application: LLM幻覚検知のベンチマーク構築が中心", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08219v1", "reason": "no-company-author: 企業所属の著者が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.08088v1", "reason": "no-company-author: 著者はFraunhofer HHIなど研究機関のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07854v1", "reason": "no-company-author: 企業所属が確認できずベンチ中心", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07783v1", "reason": "no-real-world-application: Metaの手法論文で実サービスへの適用の記述なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07695v1", "reason": "no-company-author: 大学・研究機関のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07495v1", "reason": "no-company-author: Emory/SJTUのみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07473v1", "reason": "no-real-world-application: Bosch著者だが時系列予測の手法論文で実運用適用の記述なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07372v1", "reason": "no-company-author: 所属が企業と確認できず、ベンチマーク手法", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07203v1", "reason": "no-real-world-application: LILTによる多言語ベンチマーク構築のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07149v1", "reason": "no-company-author: 所属不明、LLM推論エンジンのベンチ評価", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07126v1", "reason": "no-real-world-application: Otto Group著者だが公開ベンチFairBotBenchでの評価のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07123v1", "reason": "no-real-world-application: Otto Group著者だがプロンプト最適化の統制実験のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07071v1", "reason": "no-company-author: 所属がGoodfire等で実サービス適用なし(基礎研究)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.07051v1", "reason": "insufficient-info: 所属不明で実運用での適用が確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06828v1", "reason": "no-real-world-application: Google著者だがTPUカーネル設計で事例性に乏しい", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06990v1", "reason": "no-company-author: 大学のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06777v2", "reason": "no-company-author: 大学のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06661v1", "reason": "no-company-author: 独立研究者のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06612v1", "reason": "no-company-author: 所属不明のセンサ補完手法", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06597v1", "reason": "no-real-world-application: 小企業著者だが核融合代理モデルの手法で実運用適用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06498v1", "reason": "no-real-world-application: 小企業著者、攻撃評価の手法論文で実サービス適用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06323v2", "reason": "insufficient-info: 著者所属が確認できず企業主体か不明、本番導入やA/Bの記述もない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06307v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06265v1", "reason": "no-company-author: SolverX等、ベンチマーク中心でGNN理論", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06219v2", "reason": "off-topic: 理論研究", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06173v1", "reason": "no-real-world-application: 公開・合成データ中心、企業著者なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06170v1", "reason": "no-company-author: 企業著者なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06132v1", "reason": "no-company-author: 個人の通訳者による報告", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06116v1", "reason": "no-real-world-application: 模擬銀行環境での評価で実運用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.06084v1", "reason": "no-real-world-application: NVIDIAの推論高速化研究で自社実サービス適用の記述なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05901v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05862v1", "reason": "no-real-world-application: ベンチマーク提案が中心で運用適用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05838v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05835v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05828v1", "reason": "no-real-world-application: 概念的フレームワーク中心で実運用の検証が不明", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05771v1", "reason": "no-company-author: 企業著者なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05543v1", "reason": "no-company-author: 企業著者なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05277v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05270v1", "reason": "no-real-world-application: in silico研究で実業務への適用の記述なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05449v1", "reason": "no-company-author: 大学所属のみ", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05227v1", "reason": "off-topic: 理論研究", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05184v1", "reason": "no-company-author: 所属は大学のみで理論解析", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05079v1", "reason": "no-company-author: 量子回路の理論的研究で企業・実データ適用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05036v1", "reason": "no-company-author: 大学所属のみ(人民大学・復旦大学・上海交大)", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05442v1", "reason": "no-company-author: 公開臨床データのQMLベンチマークで企業著者・実運用なし", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.05006v1", "reason": "no-real-world-application: 公開データKuaiRandでの監査で自社実運用への適用ではない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.04885v1", "reason": "no-company-author: 大学所属のみ・汎用手法", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.04835v1", "reason": "no-real-world-application: 公開ベンチ(MLPerf Tiny)のみで企業著者も確認できない", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.04805v1", "reason": "no-company-author: 研究機関所属のみ・公開ベンチ評価", "date": "2026-11-09"}
+{"url": "https://arxiv.org/abs/2611.04715v1", "reason": "insufficient-info: 実運用・実データでの適用がabstractから確認できず、システム最適化中心", "date": "2026-11-09"}
+{"url": "https://developers.cyberagent.co.jp/blog/archives/67259/", "reason": "off-topic: 社内知識基盤(Knowledge Catalog)のインターン体験記で、ML/分析の適用事例ではない", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261105a", "reason": "not-technical: Vue Fesクイズ解説でML無関係", "date": "2026-11-09"}
+{"url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/", "reason": "no-real-world-application: ユーザースタディのプロトタイプ評価のみで実サービス適用なし", "date": "2026-11-09"}
+{"url": "https://developers.cyberagent.co.jp/blog/archives/67298/", "reason": "off-topic: React Compiler導入のフロントエンド記事", "date": "2026-11-09"}
+{"url": "https://developers.cyberagent.co.jp/blog/archives/66932/", "reason": "off-topic: Next.js/EKS移行のインフラ記事", "date": "2026-11-09"}
+{"url": "https://engineering.dena.com/blog/2026/10/cloudsql-backupvault/", "reason": "off-topic: Cloud SQLバックアップのインフラ記事", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261129b", "reason": "not-technical: カンファレンス参加レポート", "date": "2026-11-09"}
+{"url": "https://developers.cyberagent.co.jp/blog/archives/66969/", "reason": "off-topic: Lambda一括管理の社内運用記事でML/分析の事例ではない", "date": "2026-11-09"}
+{"url": "https://research.google/blog/the-sleep-framework-a-new-way-for-llms-to-retain-knowledge-in-continual-learning/", "reason": "no-real-world-application: ベンチマークのみの研究で実サービス適用なし", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261027b", "reason": "off-topic: AI生成Webアプリのセキュリティ検証インターンレポート", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261027a", "reason": "not-technical: AI駆動開発のプロセス再設計で、ML/分析の事例ではない", "date": "2026-11-09"}
+{"url": "https://engineering.mercari.com/blog/entry/20261027-1ac9405984/", "reason": "off-topic: 精算サービスのリアーキテクチャ(ML無関係)", "date": "2026-11-09"}
+{"url": "https://engineering.fb.com/2026/10/27/security/privacylib/", "reason": "off-topic: プライバシー制御ライブラリのインフラ記事", "date": "2026-11-09"}
+{"url": "https://engineering.dena.com/blog/2026/10/intern-edge-poker-exploit/", "reason": "no-real-world-application: インターン試作でシミュレーション評価のみ、実サービス導入なし", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261026c", "reason": "not-technical: AI駆動開発ワークショップの振り返り", "date": "2026-11-09"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261026a", "reason": "not-technical: カンファレンス出展レポート", "date": "2026-11-09"}
+{"url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/", "reason": "off-topic: ネットワーク機器・イベント報告", "date": "2026-11-09"}
+{"url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4", "reason": "insufficient-info: 本文取得不可(403)。summaryからはLLM化の中身が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737183", "reason": "insufficient-info: Fliggy(Alibaba系)の論文だが本文・abstractを確認できず適用有無を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737184", "reason": "insufficient-info: JD Logisticの共著者はいるが、abstractを確認できず実運用適用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737186", "reason": "insufficient-info: JD Logistic所属の共著あり。abstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737187", "reason": "insufficient-info: Ant Group論文だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737191", "reason": "insufficient-info: Alibaba共著だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737192", "reason": "insufficient-info: Huawei共著だがabstract未確認で実データ運用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737193", "reason": "insufficient-info: Tencent論文だがabstract未確認で適用詳細を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737196", "reason": "no-real-world-application: ベンチマーク中心で企業著者はMeituanの2名のみ、運用適用の確認なし", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737199", "reason": "insufficient-info: Taobao共著だがabstract未確認(検索結果が別論文)で判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737201", "reason": "no-company-author: 大学・研究機関・非営利のみで主要な営利企業の著者なし", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737204", "reason": "insufficient-info: Taobao検索のクエリ書き換え。KDD版のabstractを確認できず(類似の前作は別論文)", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737205", "reason": "insufficient-info: Alibaba共著だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737206", "reason": "insufficient-info: 中国証券(証券会社)共著だがabstract未確認で実運用の有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737213", "reason": "insufficient-info: 概要を確認できず(Ant Group、保険請求予測のGNN)。実運用の有無を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737215", "reason": "no-real-world-application: LoRAのコントラスティブデコーディングとAscend NPUカーネルの手法論文で、実サービス適用の記述を確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737218", "reason": "no-company-author: 著者は北京航空航天大学・マカオ大学・鉄道科学研究院(公的研究機関)で企業著者なし", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737219", "reason": "insufficient-info: 中国金融向けエンコーダの事前学習が主で、abstractから実サービス適用を確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737220", "reason": "no-company-author: 著者所属がIndependent Researcher/大学のみで企業所属が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737222", "reason": "insufficient-info: abstractを確認できず、フードデリバリー向けLLM後学習の実運用への適用有無を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737223", "reason": "insufficient-info: abstractを確認できず、画像生成のCTR改善が実サービス検証かを判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737224", "reason": "insufficient-info: abstractを確認できず、階層時系列予測の実運用適用を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737228", "reason": "insufficient-info: 坑井検層による地層推定のライブラリ紹介で、SLBでの実運用適用を確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737233", "reason": "no-real-world-application: 公開ベンチでのRAG評価が中心と推定、適用の確認不可", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737234", "reason": "insufficient-info: JD Logisticは1名のみで大学主導、実運用の確認不可", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737239", "reason": "insufficient-info: 公開データ評価が中心の可能性、実適用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737242", "reason": "insufficient-info: Huawei自社での運用適用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737245", "reason": "insufficient-info: 公開ベンチ中心の可能性、実適用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737249", "reason": "insufficient-info: ベンチマーク評価中心の可能性、実運用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737251", "reason": "insufficient-info: 公開データ中心の可能性、実運用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737254", "reason": "insufficient-info: 実運用適用を確認できず", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737258", "reason": "insufficient-info: Baidu著者のweb検索LTR論文だが、abstract/実運用の記述を確認できなかった", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737262", "reason": "insufficient-info: Huawei Noah's Ark著者だが、手法中心で実運用適用をabstract等から確認できなかった", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737275", "reason": "insufficient-info: Kuaishou著者だが、該当論文のabstractを確認できず適用有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709388", "reason": "no-real-world-application: Deloitte所属を含むが公開型の予知保全ベンチマーク中心で実運用適用が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709391", "reason": "no-real-world-application: 時空間予測の手法論文で、実サービスへの適用が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709392", "reason": "no-real-world-application: 合成画像検出の汎化に関する手法・ベンチマーク評価が中心", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709394", "reason": "no-company-author: MerRecはMercariのデータセット論文だが著者所属が Independent と大学のみで企業著者が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709404", "reason": "no-real-world-application: 画像生成基盤モデルの開発と人手評価が中心で、実運用適用が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709405", "reason": "no-company-author: 著者は研究機関・大学・病院のみ", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709406", "reason": "insufficient-info: Tencent所属だが本文・概要を確認できず、実運用の適用有無が不明", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709381", "reason": "no-real-world-application: 知識グラフQA等の公開ベンチマーク評価が中心", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709417", "reason": "insufficient-info: NVIDIAのデータ選択手法で、実サービス・実運用での適用が題名と所属から確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709418", "reason": "no-company-author: 著者は大学・病院のみ(Ohio State, Cleveland Clinic)で企業所属なし", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709427", "reason": "insufficient-info: KnowDis AIの属性値抽出手法で、実運用の適用が題名と所属から確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709433", "reason": "no-real-world-application: 電力潮流調整モデルの手法提案が中心で、実運用での適用が確認できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709435", "reason": "no-real-world-application: Baidu所属著者あり。ただし独自データでのオフライン評価のみで、本番導入やオンライン実験の記述を確認できない(境界ケース)", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709436", "reason": "no-company-author: 著者はすべて大学・公的研究機関(KIT, TU Dresden, DLR等)", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3690624.3709439", "reason": "insufficient-info: Cainiao(Alibaba)所属著者ありだが、abstract・本文を確認できず実データ適用の有無を判断できない", "date": "2026-11-09"}

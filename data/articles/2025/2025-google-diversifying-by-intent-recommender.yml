@@ -1,0 +1,26 @@
+id: 2025-google-diversifying-by-intent-recommender
+url: https://doi.org/10.1145/3690624.3709429
+title: 'Beyond Item Dissimilarities: Diversifying by Intent in Recommender Systems'
+title_ja: 'アイテム間の非類似度を超えて: 推薦システムにおける意図に基づく多様化'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- google
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦の多様化を、アイテム間の非類似度ではなくユーザー意図の多様性に基づいて行う手法を提案した。GoogleのYouTube推薦でのオンライン実験で検証している。
+problem: 従来の多様化はアイテム同士の非類似度に頼るが、ユーザー体験にとって意味のある多様性はユーザーの意図の幅であり、これとは必ずしも一致しない。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8

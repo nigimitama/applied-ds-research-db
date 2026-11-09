@@ -1,0 +1,35 @@
+id: 2025-alibaba-bid2x-bidding-foundation-model
+url: https://doi.org/10.1145/3711896.3737197
+title: 'Bid2X: Revealing Dynamics of Bidding Environment in Online Advertising from A Foundation Model
+  Lens'
+title_ja: 'Bid2X: 基盤モデルの観点から捉える広告入札環境のダイナミクス'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 自動入札で、入札額に対する消化額や売上などの結果を推定する関数を、多シナリオのデータで学習する入札基盤モデルBid2Xを提案した。Taobaoの広告プラットフォームに展開し、オフライン評価とオンラインA/Bテストで改善を確認している。
+problem: 従来の自動入札モデルは特定の入札シナリオ向けで汎化性が低い。入札データにはゼロ値が多く、変数間と時間方向の両方のダイナミクスを扱う必要がある。
+approach: 変数間と時間方向の2種類のアテンションに加え、分類と回帰を同時に最適化するゼロ過剰射影モジュールを備えた基盤モデルとして、入札と結果の関係を学習する。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  - e-commerce
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - log
+  - time-series
+confidence: 0.85
+collab_academia: true
+result: 8つのオフラインデータセットでベースラインを上回り、オンラインA/BテストでGMVが4.65%、ROIが2.44%向上した。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2510.23410

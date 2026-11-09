@@ -1,0 +1,33 @@
+id: 2025-amazon-multitask-combinatorial-bandit-budget
+url: https://doi.org/10.1145/3690624.3709434
+alt_urls:
+- https://arxiv.org/abs/2409.00561
+title: Multi-Task Combinatorial Bandits for Budget Allocation
+title_ja: 予算配分のためのマルチタスク組合せバンディット
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- amazon
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 広告主が多数のキャンペーンの広告ライン間で限られた予算をどう配分するかを、マルチタスクの組合せバンディットとして定式化したオンライン配分システム。階層ベイズモデルで情報を共有しトンプソンサンプリングで探索と活用を調整する。
+problem: 大手広告主は数百のキャンペーンを同時運用し、年間を通じて新規キャンペーンも立ち上げる。担当者は限られた予算を各キャンペーンの広告ラインに配分する必要があるが、各ラインの成果は不確実性が大きく、新しいラインにはデータも乏しい。
+approach: 予算配分を組合せバンディットとして扱い、キャンペーンや広告ラインのメタデータと予算規模を使う階層ベイズモデルでタスク間の情報を共有する。環境の複雑さに応じて線形回帰・ガウス過程・ニューラルネットを差し替え可能で、トンプソンサンプリングで探索と活用のバランスを取る。
+result: オフライン評価とオンライン実験で、頑健で適応性が高く累積リターンが改善すると報告(具体値は未確認)
+tags:
+  task:
+  - ad-optimization
+  - resource-optimization
+  domain:
+  - advertising
+  method:
+  - bandit
+  - bayesian
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.8

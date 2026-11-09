@@ -1,0 +1,30 @@
+id: 2025-tencent-hierarchical-multilabel-app-classification
+url: https://doi.org/10.1145/3711896.3737216
+title: Enhancing Text-Based Hierarchical Multilabel Classification for Mobile Applications via Contrastive
+  Learning
+title_ja: 対照学習によるモバイルアプリのテキスト階層型マルチラベル分類の強化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: アプリ名と説明文から階層的な複数ラベルを付与する分類ネットワークHMCNと、アプリ表現を判別しやすくする対照学習HMCLを提案。Tencent App Storeと公開データで評価し、Tencentに1年以上導入されている。
+problem: アプリのカテゴリは階層構造を持ち複数ラベルが付くため、テキストだけから正確に分類するのは難しい。
+tags:
+  task:
+  - classification
+  domain:
+  - finance
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - text
+confidence: 0.8
+approach: 階層制約の有無の両方に対応する分類ネットワークと、アプリ表現の識別性を高める対照学習を組み合わせる。
+result: Tencent App Storeと2つの公開データで競争力のある性能。付与ラベルは下流の与信リスク管理タスクでKS指標が10.70%改善した。
+collab_academia: true

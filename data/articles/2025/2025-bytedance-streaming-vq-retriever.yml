@@ -1,0 +1,29 @@
+id: 2025-bytedance-streaming-vq-retriever
+url: https://doi.org/10.1145/3711896.3737259
+title: Real-time Indexing for Large-scale Recommendation by Streaming Vector Quantization Retriever
+title_ja: ストリーミングVQリトリーバによる大規模推薦のリアルタイムインデックス
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- bytedance
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦の候補検索で、アイテムをリアルタイムにクラスタへ割り当てるストリーミングベクトル量子化インデックスを提案した。新興トレンドへ素早く追従でき、Douyin等で主要なリトリーバを置き換えて運用されている。
+problem: 数十億規模のコーパスから厳しいレイテンシで候補を絞るリトリーバでは、インデックス更新が遅いと新しい傾向に追従できず、バランスや修復性の確保も難しい。
+approach: アイテムをストリーミングで量子化クラスタに割り当てるインデックス構造を設計し、インデックスの均衡と修復性を保つ工夫を加えた。複雑なランキングモデルも併用できる。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  method:
+  - vector-search
+  - embedding
+  data_type:
+  - log
+confidence: 0.75
+result: DouyinおよびDouyin Liteに展開され、主要なリトリーバを置き換えたと報告(数値は原文参照)。

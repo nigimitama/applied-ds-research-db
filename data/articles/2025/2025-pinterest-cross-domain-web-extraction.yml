@@ -1,0 +1,29 @@
+id: 2025-pinterest-cross-domain-web-extraction
+url: https://doi.org/10.1145/3711896.3737207
+title: Cross-Domain Web Information Extraction at Pinterest
+title_ja: Pinterestにおけるクロスドメインなウェブ情報抽出
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- pinterest
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ECサイトのページから商品属性を抽出するため、HTML要素のテキスト・スタイル・レイアウトを表現しXGBoostで判定するシステムをPinterestで構築した。GPT系より高精度で、毎秒1,000件超のURLを処理でき、コストも大幅に低いと報告している。
+problem: 多様なECサイトから構造化された商品情報を抽出する必要があるが、サイトごとに構造が異なり、LLMによる抽出は大量のURL処理ではコストが高い。
+approach: 各可視HTML要素をテキスト、スタイル、レイアウトの特徴で表現し、LLMではなく小型のXGBoostで属性を分類する。
+tags:
+  task:
+  - classification
+  domain:
+  - e-commerce
+  method:
+  - gradient-boosting
+  data_type:
+  - text
+confidence: 0.8
+result: GPT系手法より高精度で、毎秒1,000件超のURLを処理し、最安のGPT選択肢と比べ約1,000倍コスト効率が高いと報告。
+alt_urls:
+- https://arxiv.org/abs/2508.01096

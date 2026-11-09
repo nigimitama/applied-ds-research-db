@@ -1,0 +1,28 @@
+id: 2025-tencent-retrieval-augmented-cross-domain-lifelong-ctr
+url: https://doi.org/10.1145/3711896.3737261
+title: Retrieval Augmented Cross-Domain LifeLong Behavior Modeling for Enhancing Click-through Rate Prediction
+title_ja: 検索拡張によるクロスドメイン生涯行動モデリングでCTR予測を強化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 対象ドメインの行動履歴が乏しい場合に、他ドメインの長期行動を検索して利用するRAL-CDNetを提案した。事前学習言語モデルによるアイテムのテキスト情報で検索を改善し、WeChat広告でオンライン検証したとされる。
+problem: 対象ドメインで履歴が豊富でないことが多く、クロスドメインの生涯的な行動モデリングが見過ごされてきた。
+approach: クロスドメイン検索ユニット、アライメントユニット、クロスネットで構成。検索ユニットは言語モデルによるアイテムテキスト表現で他ドメイン行動を取得する。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - transformer
+  - embedding
+  data_type:
+  - log
+confidence: 0.65

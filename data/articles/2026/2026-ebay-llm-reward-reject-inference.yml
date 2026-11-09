@@ -1,0 +1,33 @@
+id: 2026-ebay-llm-reward-reject-inference
+url: https://arxiv.org/abs/2611.08706
+title: Dual-Stream LLM-Guided Reward Design for Reject-Inference-Aware Reinforcement Learning in E-Commerce
+  Payment Fraud Detection
+title_ja: EC決済不正検知におけるリジェクト推論を考慮した二系統LLM報酬設計の強化学習
+published: '2026-11-05'
+collected: '2026-11-09'
+companies:
+- ebay
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: ブロックされた取引にラベルが付かないという選択バイアスを、LLMが設計する二系統の報酬で扱うEC決済不正検知の強化学習手法。ラベル付き取引にはドル加重適合率、ブロック済み取引には新旧リスクスコアの対比で報酬を与える。
+problem: 本番の不正検知モデルは旧システムが承認した取引のみにラベルがあるという検閲された偏った分布で学習しており、ブロックされた取引の情報が活用できない(リジェクト推論問題)。
+approach: LLMがコードとして報酬関数を設計する既存枠組みを拡張。ラベル付き取引にはドル加重適合率目的、旧システムがブロックした未ラベル取引には最新の勾配ブースティングのリスク信号と旧スコアを対比する報酬を与える二系統とし、どの信号を使うかは評価フィードバックを基にLLM自身が選ぶ。
+result: 4か月のアウトオブタイム検証で、再現率80/85/90%においてラベルのみのエージェントを+4.7/+2.4/+3.0ポイント(ドル加重適合率)上回った。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - e-commerce
+  - finance
+  method:
+  - reinforcement-learning
+  - llm
+  - gradient-boosting
+  data_type:
+  - tabular
+  - log
+confidence: 0.8

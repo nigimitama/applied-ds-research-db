@@ -1,0 +1,35 @@
+id: 2025-xiaohongshu-notellm2-multimodal-representation
+url: https://doi.org/10.1145/3690624.3709440
+alt_urls:
+- https://arxiv.org/abs/2405.16789
+title: 'NoteLLM-2: Multimodal Large Representation Models for Recommendation'
+title_ja: 'NoteLLM-2: 推薦のためのマルチモーダル大規模表現モデル'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- xiaohongshu
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: アイテム間推薦のため、既存のLLMと画像エンコーダを組み合わせて効率的なマルチモーダル表現を得るファインチューニング手法。LLMが画像を軽視する問題に対し、プロンプトによる視覚・テキストの分離と後段融合で対処し、オフライン・オンライン実験で有効性を示した。
+problem: LLMはテキスト理解や埋め込みに強いが、マルチモーダルなアイテム間推薦の表現学習への活用は十分に検討されていない。既存のマルチモーダルLLMは公開がテキストLLMより遅れ、表現学習には非効率でもある。また、ファインチューニングしたLLMは画像情報を軽視しがちである。
+approach: 任意のLLMと視覚エンコーダを組み合わせたエンドツーエンドの微調整を行う。視覚とテキストを分離するプロンプトとマルチモーダルのin-context learningで両モダリティへの注意を均衡させ、さらに視覚情報を最終表現へ直接加える後期融合を併用する。
+result: オフライン・オンライン双方の実験で有効性を報告(具体値は未確認)
+tags:
+  task:
+  - recommendation
+  domain:
+  - social
+  method:
+  - llm
+  - multimodal
+  - embedding
+  - fine-tuning
+  data_type:
+  - text
+  - image
+has_online_experiment: true
+confidence: 0.7

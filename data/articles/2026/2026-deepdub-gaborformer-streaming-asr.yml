@@ -1,0 +1,29 @@
+id: 2026-deepdub-gaborformer-streaming-asr
+url: https://arxiv.org/abs/2611.08092
+title: 'Gabor Gabor: E-Gaborformer, a Strictly Causal Speech Recognizer with Gabor-Dictionary Convolutions
+  and Delta-Rule Memory'
+title_ja: 'Gabor Gabor: Gabor辞書畳み込みとデルタ則メモリを用いた厳密因果型音声認識器E-Gaborformer'
+published: '2026-11-05'
+collected: '2026-11-09'
+companies:
+- deepdub
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: リアルタイム音声エージェント向けに、将来の音声を待たず通話長に比例してメモリが増えない厳密因果型の音声認識エンコーダE-Gaborformerを提案。LibriSpeechでの検証に加え、本番規模のヘブライ語・英語ストリーミング転写モデルで既存システムと比較した。
+problem: リアルタイム音声エージェントには未来の音声を待たず、通話が長くなってもメモリが増大しない音声認識器が必要だが、因果的注意機構のエンコーダは状態が通話長とともに肥大する。
+approach: Gated DeltaNet-2の再帰層とスライディングウィンドウ注意を3:1で組み合わせ、すべての時間畳み込みを固定の因果Gabor原子の辞書から構成するエンコーダを設計。これを基にした0.6Bパラメータのヘブライ語・英語ストリーミングトランスデューサを構築した。
+result: 英語の音声エージェント通信量でNVIDIAのNemotron 3.5 ASR Streamingより単語誤り率が28-31%低く、ヘブライ語では従来の本番システムより最大20%低い。状態は通話あたり約19MB。
+tags:
+  task:
+  - speech-processing
+  domain: []
+  method:
+  - deep-learning
+  - transformer
+  data_type:
+  - audio
+confidence: 0.7

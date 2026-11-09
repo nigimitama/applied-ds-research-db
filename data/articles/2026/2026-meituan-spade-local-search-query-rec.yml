@@ -1,0 +1,34 @@
+id: 2026-meituan-spade-local-search-query-rec
+url: https://arxiv.org/abs/2611.04662
+title: 'SPADE: Spatiotemporal Preference Alignment and Diversity Enhancement for Local Search'
+title_ja: 'SPADE: ローカル検索のための時空間的嗜好アラインメントと多様性強化'
+published: '2026-11-03'
+collected: '2026-11-09'
+companies:
+- meituan
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: ローカルサービスアプリのホームで検索クエリを先回りして提案するため、クエリ生成を生成モデルで行う枠組みSPADEを提案した。ロングテール語の生成、細かい時空間の表現、本番のインプレッション・クリック分布への嗜好整合、重複の少ない候補出力の4要素で構成する。本番データでのオフライン評価と1週間のオンラインA/Bで改善を示している。
+problem: ローカルサービスアプリのホームでのクエリ推薦は、数百万語彙からのオープンセット生成が必要で、ユーザー嗜好・細かい時空間文脈・ロングテール意図・少数スロット内の多様性を同時に満たさなければならない。既存手法はこれらを個別に扱い、標準的なトークン化はロングテールを抑え、粗い位置表現は細かい地理的需要を捉えられず、通常のビームサーチは近似重複の出力に陥る。
+approach: 四要素から成るエンドツーエンドの生成フレームワーク。事業価値の信号に沿ってサブワード統合を行うBPE(OA-BPE)でロングテールクエリの生成確率を高め、連続的な多段スケール位置表現とソフトゲートで時空間文脈を表現する。本番のインプレッション・クリックデータに対し複合報酬と適応的ハードネガティブサンプリングを用いたDPOで嗜好整合し、シグモイド型の多様性ビームサーチで意図の網羅性を高める。
+result: 最強の生成ベースライン比でオフラインHR@5 +5.6%、GeoC@5 -40.3%、Exec@5 +1.9%。1週間のオンラインA/BでモジュールCTR +1.88%、検索ボリューム +0.177%、検索DAU
+  +0.105%と報告。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - food
+  - e-commerce
+  method:
+  - llm
+  - reinforcement-learning
+  data_type:
+  - log
+  - geospatial
+has_online_experiment: true
+confidence: 0.8

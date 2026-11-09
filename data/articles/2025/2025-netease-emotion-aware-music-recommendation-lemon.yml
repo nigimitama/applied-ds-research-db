@@ -1,0 +1,31 @@
+id: 2025-netease-emotion-aware-music-recommendation-lemon
+url: https://doi.org/10.1145/3711896.3737212
+title: Enhanced Emotion-aware Music Recommendation via Large Language Models
+title_ja: LLMによる感情考慮型の音楽推薦の高度化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- netease
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: NetEase Cloud Musicで、楽曲の感情的な意味合いをLLMで埋め込みに変換して推薦に用いる感情考慮型モデルを提案。感情傾向の異なる曲に時間帯特有の聴取パターンがある点に着目し、オンラインA/Bテストで検証している。
+problem: 従来の音楽推薦は過去の視聴行動に偏り、ユーザーの現在の気分や楽曲の多面的な感情を捉えにくい。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  method:
+  - llm
+  - embedding
+  data_type:
+  - text
+  - log
+confidence: 0.7
+approach: 楽曲の要約とメタデータ(曲名・アーティスト・ジャンル)をLLMに入力して感情を強化したコンテンツ埋め込みを得て、オフラインで計算・保存し推薦モデルで利用する。
+result: NetEase Cloud MusicのオンラインA/Bテストでユーザーエンゲージメント指標が1%向上と報告。
+has_online_experiment: true
+collab_academia: true
