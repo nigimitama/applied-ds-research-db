@@ -26,6 +26,7 @@ const cname = (c) => companies[c]?.name_ja ?? companies[c]?.name ?? c;
 
     <p>{a.summary_ja}</p>
     {a.problem && (<><h2>課題</h2><p>{a.problem}</p></>)}
+    {a.approach && (<><h2>方法</h2><p>{a.approach}</p></>)}
     {a.result && (<><h2>報告されている成果</h2><p>{a.result}</p></>)}
 
     <h2>情報</h2>
