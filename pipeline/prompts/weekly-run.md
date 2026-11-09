@@ -11,6 +11,8 @@
 2. 収集: `python pipeline/collect.py --limit 50`
    - `work/candidates.jsonl`(新着候補)と `work/collect_report.json`(ソース別結果)が出力される。
    - 終了コード2はソースの一部失敗。続行してよい(PR本文に記載)。
+   - 続けて `python pipeline/affiliations.py` を実行する(約2分)。arXiv候補に著者所属を補完し、全所属が大学・公的機関と読み取れた論文だけを `data/rejected.jsonl` に `no-company-author` で記録して除く。所属が読めない論文は残る。除外件数をPR本文に書く。
+   - 補完された所属は候補の `summary` 先頭の `[所属]` にある。triage ではこれを根拠にする。
 3. 判定と付与: 候補を1件ずつ処理する。
    - まず `taxonomy/*.yml` と `companies/*.yml` を読む(タグ・企業はここにあるidのみ使用可)。
    - `pipeline/prompts/triage.md` に従って採用可否を判定する。
