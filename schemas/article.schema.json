@@ -28,7 +28,8 @@
     "evidence": {"enum": ["peer_reviewed", "industry_paper", "preprint", "blog"]},
     "lang": {"enum": ["ja", "en"]},
     "summary_ja": {"type": "string", "minLength": 20, "maxLength": 600},
-    "problem": {"type": "string", "maxLength": 300},
+    "problem": {"type": "string", "maxLength": 1000},
+    "approach": {"type": "string", "maxLength": 1000},
     "result": {"type": "string", "maxLength": 400},
     "tags": {
       "type": "object",

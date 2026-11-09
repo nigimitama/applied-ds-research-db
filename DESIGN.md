@@ -71,7 +71,8 @@ source:
 evidence: peer_reviewed | industry_paper | preprint | blog   # 信頼度の区分
 lang: en | ja
 summary_ja: "2〜3文の独自要約"       # 原文の転載はしない
-problem: "解決したい課題(1文)"
+problem: "解決したい課題(背景・既存手法の限界を含む、1000字以内)"
+approach: "方法: 使った技術とその解き方(1000字以内)"
 result: "報告されている成果(あれば。数値は原文のまま)"
 tags:
   task: [recommendation, demand-forecasting]
