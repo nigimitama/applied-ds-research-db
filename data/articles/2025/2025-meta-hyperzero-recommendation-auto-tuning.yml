@@ -1,0 +1,28 @@
+id: 2025-meta-hyperzero-recommendation-auto-tuning
+url: https://doi.org/10.1145/3690624.3709409
+title: 'HyperZero: A Customized End-to-End Auto-Tuning System for Recommendation with Hourly Feedback'
+title_ja: 'HyperZero: 時間単位のフィードバックを用いる推薦向けエンドツーエンド自動チューニングシステム'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Metaの推薦システム向けに、ハイパーパラメータを時間単位のオンライン指標フィードバックで自動調整するシステムHyperZeroを構築した。本番の推薦モデルのチューニングに適用している。
+problem: 推薦システムの多数のハイパーパラメータは手動調整や長い実験サイクルに頼りがちで、オンライン指標の観測にも時間がかかる。限られた試行回数で効率よく最適化する仕組みが求められる。
+tags:
+  task:
+  - recommendation
+  - experimentation
+  domain:
+  - social
+  method:
+  - bayesian
+  - online-learning
+  data_type:
+  - log
+confidence: 0.75

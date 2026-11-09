@@ -1,0 +1,28 @@
+id: 2025-linkedin-producer-side-interleaving-experiments
+url: https://doi.org/10.1145/3690624.3709428
+title: Producer-Side Experiments Based on Counterfactual Interleaving Designs for Online Recommender Systems
+title_ja: オンライン推薦システムのための反実仮想インターリーブ設計による生産者側実験
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦システムで、コンテンツ生産者側への影響を測る実験を、反実仮想的なインターリーブ設計で実現する方法を提案した。LinkedInでの実験に適用している。
+problem: 消費者側のA/Bテストでは、生産者側への影響(投稿への反応など)が干渉により正しく測れない。生産者単位で分ける実験は分散が大きい。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - social
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - log
+confidence: 0.8

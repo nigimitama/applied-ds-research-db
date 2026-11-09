@@ -1,0 +1,32 @@
+id: 2025-alibaba-aliboost-cold-item-boosting
+url: https://doi.org/10.1145/3711896.3737188
+title: 'AliBoost: Ecological Boosting Framework in Alibaba Platform'
+title_ja: 'AliBoost: Alibabaプラットフォームにおけるエコロジカル・ブースティング'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Alibabaの大規模プラットフォームで、露出の少ない新規アイテムを既存の人気コンテンツやユーザー主導の推薦を損なわず押し上げるAliBoostを提案した。階層的なブースティングとコールドアイテム用のCTR予測、アイテム側入札で配信し、複数の主要プラットフォームに展開している。
+problem: 新規・低露出アイテムは履歴が乏しく推薦で露出を得にくい。単純に露出を増やすと人気アイテムやパーソナライズ品質を損なうため、全体のエコシステムを保ちながらコールドスタートさせる必要がある。
+approach: 階層的なブースティング構造と、コールドアイテム向けにファインチューニングしたクリック予測モデルを用い、アイテム側の入札機構で適切なユーザーに割り当てる。速度とパーソナライズのバランスを取る設計である。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.85
+collab_academia: true
+result: 報告によると10億超のアイテムをコールドスタートし、180日以内にコールドアイテムのクリックとGMVが60%超増加した(オンライン分析とA/Bテスト)。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2506.00954

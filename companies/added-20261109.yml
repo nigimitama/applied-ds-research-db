@@ -1,0 +1,144 @@
+# 2026-11-09 の収集で追加(サブエージェントが付与。aliases・country は要レビュー)
+- id: shopify
+  name: Shopify
+  aliases: [Shopify Inc.]
+  country: CA
+  industry: E-commerce
+- id: ebay
+  name: eBay
+  aliases: [eBay Inc.]
+  country: US
+  industry: E-commerce
+- id: visa
+  name: Visa
+  aliases: [Visa Inc., Visa Research]
+  country: US
+  industry: Finance
+- id: deepdub
+  name: Deepdub
+  aliases: [Deepdub AI]
+  country: IL
+  industry: AI
+- id: alibaba
+  name: Alibaba
+  aliases: [Alibaba Cloud, Alibaba Group, DAMO Academy, Fliggy, Rajax Network Technology,
+    Taobao, Taobao & Tmall Group, Taobao & Tmall Group of Alibaba, Tmall, Xianyu of
+      Alibaba, ele.me]
+  country: CN
+  industry: E-commerce
+- id: kuaishou
+  name: Kuaishou
+  aliases: [KuaiShou Inc., KuaiShou Technology, Kuaishou Inc., Kuaishou Technology,
+    Kwai, 快手]
+  country: CN
+  industry: Internet
+- id: bytedance
+  name: ByteDance
+  aliases: [ByteDance Inc., Douyin, TikTok, 字节跳动]
+  country: CN
+  industry: Internet
+- id: meituan
+  name: Meituan
+  aliases: [Meituan Group, 美团]
+  country: CN
+  industry: Local services
+- id: linkedin
+  name: LinkedIn
+  aliases: [LinkedIn Corporation]
+  country: US
+  industry: HR
+- id: pinterest
+  name: Pinterest
+  aliases: [Pinterest Inc., 'Pinterest, Inc.']
+  country: US
+  industry: Social
+- id: didi
+  name: DiDi
+  aliases: [Didi International Business Group, Didi Research, 滴滴]
+  country: CN
+  industry: Mobility
+- id: netease
+  name: NetEase
+  aliases: [NetEase Cloud Music, Netease Cloud Music]
+  country: CN
+  industry: Media
+- id: tencent
+  name: Tencent
+  aliases: ['FiT, Tencent', Tencent FiT, Tencent Inc., WeChat, 腾讯]
+  country: CN
+  industry: Internet
+- id: huawei
+  name: Huawei
+  aliases: [Huawei Cloud, Huawei Noah's Ark Lab, Huawei Technologies]
+  country: CN
+  industry: Telecom
+- id: snap
+  name: Snap
+  aliases: [Snap Inc., Snapchat]
+  country: US
+  industry: Social
+- id: jd
+  name: JD.com
+  aliases: [JD, JD Logistics, JD Technology, JD iCity, JD.COM, 京东, 京东物流, 京東]
+  country: CN
+  industry: E-commerce
+- id: intesa-sanpaolo
+  name: Intesa Sanpaolo
+  aliases: []
+  country: IT
+  industry: Finance
+- id: booking
+  name: Booking.com
+  aliases: [Booking Holdings]
+  country: NL
+  industry: Travel
+- id: ant-group
+  name: Ant Group
+  aliases: [Alipay, Ant Financial, 蚂蚁集团]
+  country: CN
+  industry: Finance
+- id: dns-belgium
+  name: DNS Belgium
+  aliases: []
+  country: BE
+  industry: Internet
+- id: ubisoft
+  name: Ubisoft
+  aliases: ['La Forge, Ubisoft']
+  country: FR
+  industry: Gaming
+- id: china-mobile
+  name: China Mobile
+  aliases: [中国移动]
+  country: CN
+  industry: Telecom
+- id: satrec-initiative
+  name: Satrec Initiative
+  aliases: ['Satrec Initiative Co., Ltd']
+  country: KR
+  industry: Aerospace
+- id: baidu
+  name: Baidu
+  aliases: [Baidu Inc., Baidu Research, 百度]
+  country: CN
+  industry: Internet
+- id: webank
+  name: WeBank
+  aliases: ['WeBank Co., Ltd.']
+  country: CN
+  industry: Finance
+- id: naver
+  name: NAVER
+  aliases: [Naver Corp., Naver Corporation]
+  country: KR
+  industry: Internet
+- id: zhipu-ai
+  name: Zhipu AI
+  aliases: [Z.ai, 智谱AI]
+  country: CN
+  industry: AI
+- id: xiaohongshu
+  name: Xiaohongshu
+  aliases: [RED, Xiaohongshu Inc., 小红书]
+  country: CN
+  industry: Social

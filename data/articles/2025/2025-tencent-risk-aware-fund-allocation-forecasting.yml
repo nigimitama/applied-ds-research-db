@@ -1,0 +1,31 @@
+id: 2025-tencent-risk-aware-fund-allocation-forecasting
+url: https://doi.org/10.1145/3711896.3737268
+title: 'Timing is important: Risk-aware Fund Allocation based on Time-Series Forecasting'
+title_ja: タイミングが重要:時系列予測に基づくリスク考慮型の資金配分
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 一定量の資産を将来期間に最小コストで取得する資金配分問題で、予測と最適化を端末間で学習するRTS-PnOを提案した。予測の不確実性を適応的に補正し、Tencentの国際送金事業でオンライン評価している。
+problem: 予測のみ、あるいは予測後に最適化する方法は目的の不一致があり、予測モデル自体の不確実性も加わるため、資金配分のタイミング決定が難しい。
+approach: 予測モデルに依存しない枠組みで、目的との整合を測る指標でエンドツーエンドに学習し、予測の不確実性を適応的に較正する。
+tags:
+  task:
+  - time-series-forecasting
+  - resource-optimization
+  domain:
+  - finance
+  method:
+  - time-series-model
+  - mathematical-optimization
+  data_type:
+  - time-series
+confidence: 0.8
+result: 通貨・株式・暗号資産の8つのオフラインデータで優位。Tencentの越境決済事業のオンライン試験で、従来の製品ライン手法に比べ後悔が8.4%減。
+has_online_experiment: true

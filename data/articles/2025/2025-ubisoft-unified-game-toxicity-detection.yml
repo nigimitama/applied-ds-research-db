@@ -1,0 +1,31 @@
+id: 2025-ubisoft-unified-game-toxicity-detection
+url: https://doi.org/10.1145/3711896.3737271
+title: 'Unified Game Moderation: Soft-Prompting and LLM-Assisted Label Transfer for Resource-Efficient
+  Toxicity Detection'
+title_ja: 統合ゲームモデレーション:ソフトプロンプトとLLM支援ラベル転移による省資源な有害発言検知
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- ubisoft
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数ゲーム・多言語に対する有害チャット検知を、ゲーム文脈トークンのソフトプロンプトと、GPT-4o-miniによるラベル転移で拡張した。実際のゲームチャットで評価し、Ubisoftで運用している。
+problem: ゲームコミュニティの有害発言検知は、ゲームや言語の数が増えるほどモデル・ラベルのコストが膨らみ拡張が難しい。
+approach: ゲーム文脈トークンを加えたソフトプロンプトで1つのモデルを複数ゲームに対応させ、LLMでラベルを転移して7言語を追加した。
+tags:
+  task:
+  - classification
+  domain:
+  - gaming
+  method:
+  - fine-tuning
+  - llm
+  - transformer
+  data_type:
+  - text
+confidence: 0.8
+result: 仏独葡露の実チャットでマクロF1は32.96〜58.88%。Ubisoftで1ゲームあたり1日平均50人の違反プレイヤーを特定と報告。

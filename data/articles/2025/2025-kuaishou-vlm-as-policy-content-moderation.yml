@@ -1,0 +1,31 @@
+id: 2025-kuaishou-vlm-as-policy-content-moderation
+url: https://doi.org/10.1145/3711896.3737273
+title: 'VLM as Policy: Common-Law Content Moderation Framework for Short Video Platform'
+title_ja: VLMをポリシーとして:短尺動画プラットフォームの判例法型コンテンツモデレーション
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 短尺動画の有害コンテンツ審査に、判例に基づく考え方を取り入れ、視覚言語モデルと思考連鎖で判定するKuaiModを提案した。Kuaishouの複数シナリオでA/Bテストを行っている。
+problem: 未成年に有害な動画などの審査は、固定ルールでは社会の変化に追随しにくく、動画の量が膨大である。
+approach: 過去の事例を判例として参照する枠組みで、社内VLMにChain-of-Thought推論を行わせて審査し、利用者フィードバックと人手審査から評価データを作る。
+tags:
+  task:
+  - classification
+  domain:
+  - media
+  - social
+  method:
+  - multimodal
+  - llm
+  data_type:
+  - video
+confidence: 0.8
+result: 数千万ユーザー規模のシナリオのA/Bで動画の通報率が20%減少と報告。
+has_online_experiment: true

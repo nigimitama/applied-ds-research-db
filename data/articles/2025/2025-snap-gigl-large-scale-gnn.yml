@@ -1,0 +1,31 @@
+id: 2025-snap-gigl-large-scale-gnn
+url: https://doi.org/10.1145/3711896.3737229
+title: 'GiGL: Large-Scale Graph Neural Networks at Snapchat'
+title_ja: 'GiGL: Snapchatにおける大規模グラフニューラルネットワーク'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- snap
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 数十億規模のグラフでGNNを扱うためのオープンソースライブラリGiGLを紹介。関係DBからのグラフ前処理、サブグラフサンプリング、分散学習、推論、オーケストレーションを一貫して提供し、Snapchatの友人推薦・コンテンツ推薦・広告で運用している。
+problem: 多くのGNNライブラリはグラフが1台に載る前提で、数十億規模の実世界グラフには適用しにくく、産業利用が研究に遅れている。
+tags:
+  task:
+  - recommendation
+  - ad-optimization
+  domain:
+  - social
+  - advertising
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+confidence: 0.85
+alt_urls:
+- https://arxiv.org/abs/2502.15054
+approach: サブグラフサンプリングによる分散学習・推論とパイプラインのオーケストレーションを備えたライブラリとして設計し、PyTorch Geometricと連携する。
+result: 過去2年で複数の事業領域にわたり35件超のローンチを支えた。

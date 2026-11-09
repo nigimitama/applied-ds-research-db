@@ -1,0 +1,31 @@
+id: 2025-huawei-tayfcs-feature-combination-selection
+url: https://doi.org/10.1145/3711896.3737266
+title: 'TayFCS: Towards Light Feature Combination Selection for Deep Recommender Systems'
+title_ja: TayFCS:深層推薦のための軽量な特徴組合せ選択
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: CTR予測などで有効な特徴の組合せを、テイラー展開による寄与推定とロジスティック回帰での冗長除去で、少ない計算で選ぶ手法を提案した。公開データで評価し、オンラインA/Bテストも報告している。
+problem: 精度の高い特徴組合せ選択は、特徴の追加・削除と大規模データでの再学習の繰り返しが必要で計算コストが大きい。
+approach: フィールド単位のテイラー展開で1回の逆伝播から組合せの寄与を見積もるスコアラーと、冗長特徴を除くロジスティック回帰による削減を組み合わせる。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+confidence: 0.7
+result: AvazuでMaskNetのAUCが0.7964から0.8046に向上。オンラインA/Bテストも報告。
+has_online_experiment: true

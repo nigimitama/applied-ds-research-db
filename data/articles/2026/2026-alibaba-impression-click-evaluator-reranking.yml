@@ -1,0 +1,30 @@
+id: 2026-alibaba-impression-click-evaluator-reranking
+title_ja: ブラウジング過程を学習する系列レベル再ランキング
+companies:
+- alibaba
+collab_academia: true
+summary_ja: 再ランキングの評価器が各アイテムのクリックを独立に予測する点を問題視し、表示→インプレッション→クリックの過程を同時に扱うICEを提案した。閲覧深度の分布から到達確率を推定し、見られていない文脈の影響を抑えつつ系列内の依存を学習する。タオバオでの14日間のA/Bテストを経て全トラフィックに展開された。
+problem: 産業用の再ランキングではGenerator-Evaluator構成が広く使われ、評価器の精度が推薦品質を左右する。しかし既存の評価器は各アイテムのCTRを独立に予測するため、クリックはアイテムが到達・表示された後にのみ起こること、アイテム同士が限られたユーザー注意を奪い合うことを無視し、系列評価に偏りが生じる。
+approach: 表示→インプレッション→クリックを一連の過程として同時にモデル化するJBMの考え方に基づくプラグアンドプレイの評価器ICEを構築。閲覧深度の分布を予測して各位置のインプレッション確率を推定し、見られていないアイテムの文脈をクリック予測から抑制する。さらに系列内のクリック分布を合わせる目的関数で依存関係を捉える。
+result: タオバオアプリの14日間オンラインA/Bテストでクリック+0.70%、収益+3.67%を報告し、全トラフィックへ展開。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.9
+url: https://arxiv.org/abs/2611.07591
+title: 'Beyond Independent Predictions: Learning the Browsing Journey for Sequence-Level Re-ranking'
+published: '2026-11-05'
+collected: '2026-11-09'
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en

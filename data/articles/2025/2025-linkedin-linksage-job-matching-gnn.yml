@@ -1,0 +1,32 @@
+id: 2025-linkedin-linksage-job-matching-gnn
+url: https://doi.org/10.1145/3690624.3709396
+title: 'LinkSAGE: Optimizing Job Matching Using Graph Neural Networks'
+title_ja: 'LinkSAGE: グラフニューラルネットワークによる求人マッチングの最適化'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: LinkedInの求人推薦・検索に、数十億規模の求人マーケットプレイスグラフを用いたGNNを導入するフレームワーク。GNNの学習を既存DNNから分離し、エンコーダをニアラインで推論することで、低遅延に運用している。複数のオンラインA/Bテストで効果を確認。
+problem: 大規模な求人マッチングにGNNを使うには、巨大で変化し続ける異種グラフの学習・更新コストと、オンライン推論の遅延が障壁になる。
+approach: 異種グラフ上のエンコーダ・デコーダ型GNNを帰納的に学習し、既存のDNNとは別に訓練する。GNNエンコーダはニアライン推論システムで提供し、オンラインではその出力を特徴として使う。
+tags:
+  task:
+  - recommendation
+  - matching-market
+  domain:
+  - hr
+  method:
+  - graph-neural-network
+  - embedding
+  data_type:
+  - graph
+  - log
+confidence: 0.9
+result: 複数のオンラインA/Bテストで、会員のエンゲージメント、関連性マッチング、リテンションの改善を報告。訪問頻度の低い会員にも関連性が向上したとされる。
+has_online_experiment: true

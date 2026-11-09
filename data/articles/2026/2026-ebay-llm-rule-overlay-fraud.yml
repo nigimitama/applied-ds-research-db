@@ -1,0 +1,31 @@
+id: 2026-ebay-llm-rule-overlay-fraud
+url: https://arxiv.org/abs/2611.08714
+title: 'Patching the Blind Spots: Reversible LLM Rule Overlay for Frozen Fraud Detectors'
+title_ja: 凍結された不正検知モデルのための可逆的LLMルールオーバーレイ
+published: '2026-11-05'
+collected: '2026-11-09'
+companies:
+- ebay
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: デプロイ済みの勾配ブースティング不正検知モデルを再学習せずに補正する枠組み。SHAPで過小評価されている特徴に基づきLLMが規則を提案し、経験的な裏付けで選別・較正して加算的なオーバーレイとして本番カットオフに適用する。
+problem: 産業用の表形式不正分類では勾配ブースティングが強力だが、学習済みモデルにも死角があり、選択バイアスのあるデータでの追加学習は性能を悪化させることがあり、再学習は必ずしも安全ではない。
+approach: SHAPでモデルが軽視している特徴を特定し、それを手がかりに複数LLMが規則を提案。ノイズを含む候補を経験的支持で選別し、加算的で可逆なlog-liftオーバーレイに較正する。LLM単体の効果はばらつくため3つのバックボーンをロジット平均で統合する。
+result: 実際のECの不正検知器で、本番カットオフ(適合率30-57%、再現率23-63%)において同一適合率での再現率が平均+2.26%、同一再現率での適合率が+1.60%向上した。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - e-commerce
+  - finance
+  method:
+  - llm
+  - gradient-boosting
+  - explainable-ai
+  data_type:
+  - tabular
+confidence: 0.8

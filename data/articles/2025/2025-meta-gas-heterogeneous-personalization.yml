@@ -1,0 +1,27 @@
+id: 2025-meta-gas-heterogeneous-personalization
+url: https://doi.org/10.1145/3711896.3737225
+title: 'GAS: Large-scale Heterogeneous Personalization in Social Network Applications at Meta'
+title_ja: 'GAS: Metaのソーシャルアプリにおける大規模・異種パーソナライゼーション'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Metaの複数ドメインにまたがるパーソナライゼーションを統合するエンドツーエンドのプラットフォームGAS(Generalized Auto Segmentation)を紹介。オンライン実験向けにパーソナライズ施策を調整する用途を想定する。
+problem: ドメインごとに別々に作られるパーソナライズ施策を、大規模かつ異種なアプリ群で一貫して調整・実験するのが難しい。
+tags:
+  task:
+  - personalization
+  - experimentation
+  domain:
+  - social
+  method:
+  - ab-testing
+  data_type:
+  - log
+confidence: 0.6
+collab_academia: true

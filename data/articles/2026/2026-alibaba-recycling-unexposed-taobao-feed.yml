@@ -1,0 +1,28 @@
+id: 2026-alibaba-recycling-unexposed-taobao-feed
+url: https://arxiv.org/abs/2611.05997
+title: 'From Waste to Discovery: Recycling High-Scored Unexposed Candidates in Taobao Feed Recommendation'
+title_ja: 無駄から発見へ:Taobaoフィード推薦における高スコア未露出候補の再利用
+published: '2026-11-04'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: Taobaoのフィード推薦で、ランカーが高く評価しながら一度も露出されなかった候補を再利用し、リコール段階に再投入する訓練不要の仕組みURED。6か月以上本番稼働し、オンラインA/Bテストで発見カテゴリ数とコンテンツの豊かさが向上した。
+problem: ユーザーの新しい関心を発見させるため、探索不足のコンテンツの露出を単純に増やす手法は、本番では逆効果になりやすい。コールドで情報の乏しい候補が混入し、ランカーがそれらを過大評価するため、発見の効果が得られず、エンゲージメントを損なうおそれがある。
+approach: 産業パイプラインで通常捨てられる、スコアは高いが未露出の候補群に着目し、30日間の範囲で集約してリコール時に再投入する。オフライン保存、分散集約、低遅延オンライン配信から成る軽量な構成で、1リクエストあたりO(1)の参照のみのためモデルの再学習は不要。
+result: オンラインA/Bテストで発見カテゴリ数+3.47%、コンテンツの豊かさ+8.47%を報告し、エンゲージメントは維持。レイテンシ増加は1%未満。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method: []
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

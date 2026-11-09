@@ -1,0 +1,28 @@
+id: 2025-baidu-vision-language-model-aigc-image-ads
+url: https://doi.org/10.1145/3690624.3709401
+title: Large Vison-Language Foundation Model in Baidu AIGC Image Advertising
+title_ja: Baidu AIGC画像広告における大規模視覚言語基盤モデル
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- baidu
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Baiduの画像広告(AIGC)向けに視覚言語基盤モデルを構築・適用した事例。本文を確認できていないため、詳細はタイトルと関連研究に基づく概略に留まる。
+problem: 広告で画像を扱うには、画像とテキストを統合して理解する視覚言語基盤モデルが必要となる。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - multimodal
+  - deep-learning
+  data_type:
+  - image
+  - text
+confidence: 0.55

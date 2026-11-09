@@ -1,0 +1,29 @@
+id: 2025-ant-group-antakso-health-insurance-claims
+url: https://doi.org/10.1145/3690624.3709398
+title: 'AntAkso: Claims Management System for Health Insurance in Alipay'
+title_ja: 'AntAkso: Alipayにおける医療保険クレーム管理システム'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- ant-group
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Alipay上の医療保険について、申請から調査・交渉までのクレーム処理全体を自動意思決定モジュールで支える管理システム。案件のリスク層別化と、予算制約下での調査リソース配分を組み合わせ、不正請求と運用コストの抑制を狙う。
+problem: 医療保険のクレーム処理では不正請求への対応と管理コストの抑制が課題で、限られた調査リソースをどの案件に割り当てるかの最適化が必要になる。
+approach: 案件ごとのリスクを初期審査で評価する層別化モジュールと、高リスク案件に予算内で調査リソースを割り当てる配分モジュールを、クレーム処理の各段階に組み込む。
+tags:
+  task:
+  - risk-scoring
+  - resource-optimization
+  domain:
+  - insurance
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.65
+result: 数万件規模の案件に関する最適化問題を数時間で解けると報告。

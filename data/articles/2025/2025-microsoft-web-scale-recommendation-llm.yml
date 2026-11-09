@@ -1,0 +1,29 @@
+id: 2025-microsoft-web-scale-recommendation-llm
+url: https://doi.org/10.1145/3690624.3709413
+title: 'Towards Web-scale Recommendations with LLMs: From Quality-aware Ranking to Candidate Generation'
+title_ja: 'LLMによるウェブ規模の推薦: 品質を考慮したランキングから候補生成まで'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- microsoft
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: MicrosoftのウェブコンテンツMicrosoft推薦に、LLMを品質を考慮したランキングと候補生成の両方へ組み込む取り組みを報告した。大規模トラフィックでの評価を含む。
+problem: ウェブ規模の推薦では候補が膨大で、クリック指標だけでは品質の低いコンテンツが上位に出てしまう。LLMの意味理解を活かしつつ、遅延やコストの制約内で運用する必要がある。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - media
+  method:
+  - llm
+  - embedding
+  data_type:
+  - text
+  - log
+confidence: 0.7

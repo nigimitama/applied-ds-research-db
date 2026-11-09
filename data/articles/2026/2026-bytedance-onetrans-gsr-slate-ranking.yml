@@ -1,0 +1,33 @@
+id: 2026-bytedance-onetrans-gsr-slate-ranking
+url: https://arxiv.org/abs/2611.04720
+title: 'OneTrans-GSR: A Generative Slate Ranking Paradigm Unifying Reranking and Mix-Ranking with One
+  Autoregressive Transformer'
+title_ja: 'OneTrans-GSR: 再ランキングとミックスランキングを単一の自己回帰Transformerで統合する生成的スレートランキング'
+published: '2026-11-03'
+collected: '2026-11-09'
+companies:
+- bytedance
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: ECの推薦で別々に作り込まれていた再ランキングとミックスランキングを、デコーダのみの単一ポリシーが表示スレートを一括生成する枠組みに置き換えた。報酬モデルで完成スレートを評価し強化学習で学習、デコード時に事業制約を課す。オンラインA/Bで効果を確認している。
+problem: 産業用推薦では候補の個別スコアリングに多くの計算を割く一方、最終スレートを作る再ランキングとミックスランキング(商品カード・ショート動画・ライブ・広告など異なる事業チャネルの混在)は手作りルールと小型モデルに依存している。これらはスレートの組合せ空間を狭め、目的間のトレードオフも手動調整となり、データや計算を増やしても性能が伸びにくい。
+approach: 両段階を計算量に応じて性能が伸びる一つの学習問題として定式化し、既存のOneTransバックボーンを拡張したデコーダのみの単一ポリシーでスレートをエンドツーエンドに生成する。学習では完成スレートを評価する報酬モデルを使い、スレート全体と長期目標に向けて強化学習を行う。デコード時には事業上の制約を明示的に反映させる。
+result: オンラインA/Bでユーザーあたり GMV +2.63%、広告主価値 +2.06%、再購入率 +2.03%、再ランキング〜ミックスランキングのエンドツーエンド遅延 -13%と報告。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - e-commerce
+  - advertising
+  method:
+  - transformer
+  - reinforcement-learning
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

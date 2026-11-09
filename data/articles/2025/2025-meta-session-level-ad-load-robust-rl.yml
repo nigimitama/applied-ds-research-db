@@ -1,0 +1,34 @@
+id: 2025-meta-session-level-ad-load-robust-rl
+url: https://doi.org/10.1145/3690624.3709437
+alt_urls:
+- https://arxiv.org/abs/2501.05591
+title: Session-Level Dynamic Ad Load Optimization using Offline Robust Reinforcement Learning
+title_ja: オフラインロバスト強化学習によるセッション単位の動的広告量最適化
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ユーザーのセッション中の広告の密度や種類を個別に調整し、体験と収益化のバランスを取る問題を、マルコフ決定過程として扱いオフライン強化学習で解いた。分布シフトに強いロバストなデュエリングDQNを提案し、本番データで評価後にA/Bテストで検証している。
+problem: 広告の量をセッションごとに動的に決めることで、ユーザー体験と広告収益を両立させたい。しかし過去ログは過去の広告配信方針に由来する交絡バイアスを含み、オンラインで自由に探索もできないため、ログのみで学習する必要があり分布シフトにも弱い。
+approach: セッション単位の広告量決定をMDPとして定式化し、オフラインDQNで学習する。交絡バイアスの対策として過去セッションでの広告量決定を状態に含め、分布シフトへの対策としてオフラインのロバストなデュエリングDQNを導入した。
+result: 本番データでロバストDQNのAUCCが非ロバストDQNに対し5%、メタラーナーに対し25%改善。ローンチ後のA/Bテストでエンゲージメントと広告スコアのトレードオフ効率が二桁改善と報告
+tags:
+  task:
+  - ad-optimization
+  - personalization
+  domain:
+  - advertising
+  - social
+  method:
+  - reinforcement-learning
+  - off-policy-evaluation
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

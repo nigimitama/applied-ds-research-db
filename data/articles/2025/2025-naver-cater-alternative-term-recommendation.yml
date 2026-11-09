@@ -1,0 +1,27 @@
+id: 2025-naver-cater-alternative-term-recommendation
+url: https://doi.org/10.1145/3690624.3709426
+title: 'CATER: A Cluster-Based Alternative-Term Recommendation Framework for Large-Scale Web Search at
+  NAVER'
+title_ja: 'CATER: NAVERの大規模ウェブ検索向けクラスタベース代替語推薦フレームワーク'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- naver
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: NAVERの検索で、ユーザーが入力した語に対する代替語を提示するため、クラスタリングに基づく推薦フレームワークCATERを提案した。実サービスでの検証を含む。
+problem: 代替語の推薦は検索意図の言い換えや探索を助けるが、語彙が膨大で、単純な類似度では意図に沿わない候補が混ざる。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  method:
+  - embedding
+  data_type:
+  - log
+  - text
+confidence: 0.75

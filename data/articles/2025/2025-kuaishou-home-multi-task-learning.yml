@@ -1,0 +1,28 @@
+id: 2025-kuaishou-home-multi-task-learning
+url: https://doi.org/10.1145/3690624.3709416
+title: 'HoME: Hierarchy of Multi-Gate Experts for Multi-Task Learning at Kuaishou'
+title_ja: 'HoME: Kuaishouにおけるマルチタスク学習のための階層型マルチゲートエキスパート'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Kuaishouの短尺動画推薦のマルチタスク学習で見られる問題を分析し、階層的なマルチゲートエキスパート構造HoMEを提案した。本番のサービスに展開している。
+problem: 多数のタスクを同時に予測する推薦モデルでは、エキスパートの偏りや勾配の衝突、タスク間の干渉が起こり、一部のタスクの性能が落ちる。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  - social
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - video
+confidence: 0.78

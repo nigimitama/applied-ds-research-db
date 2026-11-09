@@ -1,0 +1,29 @@
+id: 2025-alibaba-xianyu-multi-entity-cross-domain
+url: https://doi.org/10.1145/3711896.3737210
+title: Effective Two-Stage Knowledge Transfer for Multi-Entity Cross-Domain Recommendation
+title_ja: マルチエンティティ・クロスドメイン推薦のための2段階知識転移
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 商品・短尺動画・投稿など異なる種類のエンティティが混在するフィードで、エンティティ間の知識を転移する事前学習+ファインチューニング型の枠組みMKTを提案。XianyuのデータでオフラインとオンラインのA/B実験により既存手法を上回ったと報告している。
+problem: エンティティごとにデータ分布が異なり負の転移が起きやすく、価格のように一部のエンティティにしかない特徴があるため、ネットワークを共有した同時学習が難しい。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.75
+approach: 特徴を整列・スケーリングする事前学習モジュールと、共通知識とエンティティ固有知識を分離する抽出器を用い、共通知識を使って対象エンティティのモデルを学習する2段階の転移を行う。
+result: オフライン・オンライン実験で複数の最先端手法を上回ると報告(具体値は原文参照)。
+has_online_experiment: true

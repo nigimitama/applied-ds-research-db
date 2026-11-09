@@ -1,0 +1,31 @@
+id: 2025-bytedance-audio-vlm-latent-broadening
+url: https://doi.org/10.1145/3711896.3737195
+title: Audio-Enhanced Vision-Language Modeling with Latent Space Broadening for High Quality Data Expansion
+title_ja: 高品質データ拡張のための潜在空間拡張を伴う音声強化ビジョン言語モデル
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- bytedance
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦・検索・広告のコンテンツ理解向けに、能動学習の効率を高めるkNNベースの潜在空間拡張と、既存のビジョン言語モデルへ音声を足す中間融合VLMAEを提案した。本番環境に展開し事業上の効果があったと報告している。
+problem: ラベル付きデータの質と各モダリティの融合が精度を左右するが、従来の能動学習は自信を持って誤る例や類似アイテムの区別に弱い。ショート動画では音声が重要だが、事前学習モデルの多くはテキストと画像のみを扱う。
+approach: kNNに基づく潜在空間拡張でラベリング対象を選ぶ能動学習を改善し、VLMAEで音声特徴を既存のビジョン言語モデルに中間融合する。
+tags:
+  task:
+  - classification
+  domain:
+  - media
+  method:
+  - multimodal
+  - active-learning
+  data_type:
+  - video
+  - audio
+confidence: 0.7
+result: 本番展開で事業上の有意な改善があったと報告(具体値は未確認)。
+alt_urls:
+- https://arxiv.org/abs/2503.17551

@@ -1,0 +1,32 @@
+id: 2025-didi-llm-ridehailing-assistant-dima
+url: https://doi.org/10.1145/3711896.3737208
+title: 'DiMA: An LLM-Powered Ride-Hailing Assistant at DiDi'
+title_ja: 'DiMA: DiDiのLLM搭載配車アシスタント'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- didi
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: DiDiの配車アプリに組み込まれたLLMベースの対話型アシスタントDiMAを提案した論文。時空間を考慮した注文計画、応答品質と遅延を両立する対話設計、実ユーザーとの対話とシミュレーション対話による継続的ファインチューニングを組み合わせ、実アプリ上での挙動を評価している。
+problem: 配車では時刻や場所に依存する複雑な要望を、対話を通じて正確に注文へ落とし込む必要があるが、既存のエージェント枠組みでは時空間推論や応答遅延の制約への対応が難しい。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - mobility
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - text
+  - geospatial
+confidence: 0.85
+alt_urls:
+- https://arxiv.org/abs/2503.04768
+approach: 外部ツールを使って時空間の推論と段階的な計画を行う注文計画モジュール、複数の応答種別とコスト配慮型のモデル構成を持つ対話システム、実ユーザー対話とシミュレーション対話を併用した継続的ファインチューニングで構成する。
+result: DiDiアプリでの実対話で注文計画の精度93%、応答生成の精度92%を報告。既存の3つのエージェント枠組みに対し、注文計画で最大70.23%、応答生成で最大321.27%の改善。
+collab_academia: true

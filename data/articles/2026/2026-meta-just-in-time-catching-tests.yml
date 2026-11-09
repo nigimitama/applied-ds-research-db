@@ -1,0 +1,30 @@
+id: 2026-meta-just-in-time-catching-tests
+url: https://engineering.fb.com/2026/10/29/security/catching-bugs-before-they-land-jittestings-human-on-the-loop-approach-at-full-scale/
+title: 'Catching Bugs Before They Land: JiTTesting’s Human-on-the-Loop Approach at Full Scale'
+title_ja: バグを着地前に捕捉する:JiTTestingのヒューマン・オン・ザ・ループ方式を全社規模で運用
+published: '2026-10-29'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: false
+source:
+  type: techblog
+  venue: Engineering at Meta
+evidence: blog
+lang: en
+summary_ja: Metaが、コード差分ごとにLLMでバグを顕在化させるテストを自動生成する仕組み(Catching JiTTests)を本番運用した事例。LLM審査員とルールベース判定で候補を絞り、上位のみエンジニアに通知することで負担を抑えている。
+problem: Metaのコードベースは巨大で絶えず変更されるため、従来のテストでは追従が難しい。各差分がマージされる前に重大なバグを高い真陽性率で見つけつつ、エンジニアの作業を妨げないことが課題だった。
+approach: 前日の差分のうちリスクスコアが高いものを夜間の余剰計算資源で対象にする。差分の意図から起こり得るバグ(ミュータント)を作ってテスト生成する流れと、差分自体をミュータントとみなして挙動変化を暴く流れを並行実行する。失敗テストは複数LLMによるLLM-as-Judgeとルールベース評価(RubFake)で偽陽性を判定・順位付けし、上位候補のみ人に確認させる。
+result: エンジニアの報告で真陽性率は60%。2026年上半期に重大なプライバシー障害74件を差分段階で捕捉し、プライバシーSEVは同期間に20%減少したと報告。
+tags:
+  task:
+  - text-generation
+  - classification
+  domain:
+  - social
+  method:
+  - llm
+  data_type:
+  - text
+has_online_experiment: false
+confidence: 0.72

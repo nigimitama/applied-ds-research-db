@@ -1,0 +1,28 @@
+id: 2025-kuaishou-mutual-information-distillation-video-rec
+url: https://doi.org/10.1145/3690624.3709403
+title: Mutual Information-aware Knowledge Distillation for Short Video Recommendation
+title_ja: ショート動画推薦のための相互情報量を考慮した知識蒸留
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- kuaishou
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ショート動画推薦で、文脈の影響とユーザーフィードバックの依存関係を相互情報量で考慮しつつ、教師モデルから実運用向けの生徒モデルへ知識を蒸留する手法MIKDを提案している。
+problem: 通常の知識蒸留は、ユーザーごとに異なる文脈効果とフィードバックの依存関係を捉えられず、実運用のランキングモデルの蒸留で効果が限定される。
+approach: 相互情報量により文脈情報とコンテンツ情報の寄与を重み付けし、教師モデルのソフトラベルをデプロイ可能な生徒モデルに伝える。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  method:
+  - model-compression
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.6

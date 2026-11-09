@@ -1,0 +1,35 @@
+id: 2025-huawei-multi-granularity-interest-ctr
+url: https://doi.org/10.1145/3690624.3709438
+alt_urls:
+- https://arxiv.org/abs/2411.15005
+title: Multi-granularity Interest Retrieval and Refinement Network for Long-Term User Behavior Modeling
+  in CTR Prediction
+title_ja: CTR予測における長期行動モデリングのための多粒度興味の検索・精緻化ネットワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: CTR予測で長期のユーザー行動系列を扱う際、ターゲット商品だけでなく複数の時間スケールの行動から検索クエリを作り、取得した部分系列内の関係もモデル化するMIRRNを提案した。Huawei
+  Music Appでのオンライン検証で効果を確認している。
+problem: 長期行動を使うCTR予測は、対象アイテムに関連する部分系列を検索し、その系列を対象アイテムとの関係でモデル化する二段構成が主流である。しかし検索クエリが対象アイテムの情報のみで、ユーザーの多様な興味を捉えにくい。また部分系列内の系列的・相互作用的な関係も見落とされがちである。
+approach: 異なる時間スケールの行動からクエリを作って多粒度の興味を検索する。部分系列内の関係はマルチヘッドのフーリエTransformerで学習し、マルチヘッドのターゲットアテンションで各興味が対象アイテムに与える影響を適応的に重み付けする。
+result: 最先端ベースラインを上回り、Huawei Music AppのA/Bテストで平均再生曲数が1.32%、平均再生時間が0.55%増加
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - media
+  method:
+  - deep-learning
+  - transformer
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

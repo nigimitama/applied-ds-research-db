@@ -1,0 +1,27 @@
+id: 2025-meta-bayesian-optimization-long-term-outcomes
+url: https://doi.org/10.1145/3690624.3709419
+title: 'Experimenting, Fast and Slow: Bayesian Optimization of Long-term Outcomes with Online Experiments'
+title_ja: '速く、遅く実験する: オンライン実験による長期成果のベイズ最適化'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 長期の成果を直接測るには時間がかかるため、短期実験の結果と長期実験を組み合わせてベイズ最適化を行う手法を提案した。Metaのオンライン実験で適用している。
+problem: 長期の効果を狙った最適化は、結果が出るまで待つと試行回数が限られる。一方、短期指標だけでは長期成果とずれる可能性がある。
+tags:
+  task:
+  - experimentation
+  domain:
+  - social
+  method:
+  - bayesian
+  - ab-testing
+  data_type:
+  - log
+confidence: 0.8

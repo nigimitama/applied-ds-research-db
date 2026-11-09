@@ -1,0 +1,33 @@
+id: 2026-shopify-sid-llm-search-recommendation
+url: https://arxiv.org/abs/2611.08804
+title: Generative Search and Recommendation at Shopify
+title_ja: ShopifyにおけるGenerative検索・推薦
+published: '2026-11-05'
+collected: '2026-11-09'
+companies:
+- shopify
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: 商品をコンテンツ由来の短いトークン列(セマンティックID)で表し、検索と推薦を同じ生成タスクとして扱うSID-LLMを提案。カタログと行動データで共同事前学習し、強化学習や蒸留、マルチトークン予測で品質と遅延を改善、Shopifyの本番検索・推薦システムの構成要素としても評価した。
+problem: 数十億規模で変化し続けるカタログから、厳しいレイテンシ制約下で関連商品を取得する必要がある。検索と推薦が別々のモデル群で構成されており、表現や学習目的が共有されていない。
+approach: 商品をセマンティックIDの列として生成するLLM(SID-LLM)で検索と推薦を統一。カタログと行動データで共同事前学習し、検索関連度は強化学習、推薦はタスク別エキスパートからの蒸留で改善。提供効率のためマルチトークン予測と軽量ランカーを組み合わせた。
+result: 単体の検索システムとして既存のマルチモデル構成と同等の品質を本番のレイテンシ要件内で達成。本番の検索・推薦への組み込みも評価した(詳細な数値は原文参照)。
+tags:
+  task:
+  - search-ranking
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - embedding
+  - reinforcement-learning
+  - model-compression
+  data_type:
+  - text
+  - log
+confidence: 0.8

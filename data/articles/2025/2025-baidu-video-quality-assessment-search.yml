@@ -1,0 +1,27 @@
+id: 2025-baidu-video-quality-assessment-search
+url: https://doi.org/10.1145/3690624.3709408
+title: Multi-Branch Collaborative Learning Network for Video Quality Assessment in Industrial Video Search
+title_ja: 産業向け動画検索における動画品質評価のためのマルチブランチ協調学習ネットワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- baidu
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Baiduの動画検索で、低品質な動画が上位に表示される問題に対し、複数の枝で品質の側面を分担して学習する品質評価ネットワークを提案した。検索システムに組み込んで評価している。
+problem: 動画検索では、画質や内容の質が低い動画が結果に混ざるとユーザー体験が悪化する。品質には複数の側面があり、単一のスコアでは捉えにくく、産業規模の動画群に対する評価も難しい。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - media
+  method:
+  - deep-learning
+  - multimodal
+  data_type:
+  - video
+confidence: 0.72

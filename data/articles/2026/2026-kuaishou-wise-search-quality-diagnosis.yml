@@ -1,0 +1,32 @@
+id: 2026-kuaishou-wise-search-quality-diagnosis
+title_ja: 'WISE: 検索体験全体の品質をエージェントで帰属診断するフレームワーク'
+companies:
+- kuaishou
+collab_academia: false
+summary_ja: 検索・推薦・広告の多段パイプラインでは、システムが正常稼働していても結果品質が悪いことがある。この問題を品質診断タスクとして定式化し、ユーザー側に見える問題を発見して原因となるアルゴリズム要素へ遡るエージェントWISEを提案した。実運用の検索でのベンチマーク構築と本番での品質監査への利用を報告している。
+problem: 検索などのアルゴリズム駆動サービスは多段のモデルパイプラインで成り立つが、通常の監視は稼働状況の確認にとどまる。システムが健全でも検索結果の質が低い場合があり、悪い結果の検出だけでなく、その原因となる構成要素まで特定する手段が不足している。
+approach: ユーザーから見える問題を見つけ、内部のパイプライン痕跡をたどって原因のアルゴリズム要素に帰属するエージェント型フレームワークWISEを構築。根拠に整合した軌跡の教師データを作るReTraceと、失敗を手がかりにエージェントのハーネスとモデル方策を最適化するAHPOを導入した。実サービスのマルチモーダル検索を対象に評価ベンチWISE-BENCHも構築。
+result: Qwen3.5-35B-A3Bでend-to-end精度75.20%を報告。本番では品質監査・オンライン品質保証・モデル最適化に使われ、診断コスト低減と関連性モデルの改善に寄与したと述べる(具体値は未確認)。
+tags:
+  task:
+  - search-ranking
+  - data-quality
+  domain:
+  - media
+  method:
+  - llm
+  - multimodal
+  data_type:
+  - log
+  - text
+has_online_experiment: false
+confidence: 0.7
+url: https://arxiv.org/abs/2611.06991
+title: Robust Stream Classification using Time Neutralising Decision Trees
+published: '2026-11-04'
+collected: '2026-11-09'
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en

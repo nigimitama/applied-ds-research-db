@@ -1,0 +1,32 @@
+id: 2025-bytedance-coef-vq-video-quality
+url: https://doi.org/10.1145/3711896.3737203
+title: $COEF-VQ:$ Cost-Efficient Video Quality Understanding through a Cascaded Multimodal LLM Framework
+title_ja: 'COEF-VQ: カスケード型マルチモーダルLLMによる低コストな動画品質理解'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- bytedance
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ショート動画の品質判定にマルチモーダルLLMを使いつつGPU負荷を抑えるため、軽量モデルで確信度の高い動画を先に除外し、曖昧な動画だけを重いモデルで判定するCOEF-VQを提案した。動画プラットフォームの管理システムに導入している。
+problem: マルチモーダルLLMは動画品質の判定に有効だが、大量の動画に適用するにはGPUコストが高すぎる。
+approach: 軽量モデルで不確実性を測って確信度の高い例を除き、残りだけをマルチモーダルLLMで解析するカスケード構成。社内の動画品質タスク2件で評価した。
+tags:
+  task:
+  - classification
+  domain:
+  - media
+  method:
+  - llm
+  - multimodal
+  - model-compression
+  data_type:
+  - video
+confidence: 0.85
+result: オンラインA/Bテストで不適切動画の視聴率が9.9%低下し、エンゲージメントは損なわれなかった。リリース後も効果は維持された。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2412.10435

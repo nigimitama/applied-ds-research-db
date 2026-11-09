@@ -1,0 +1,30 @@
+id: 2025-jd-llm4har-ondevice-activity-recognition
+url: https://doi.org/10.1145/3711896.3737226
+title: 'LLM4HAR: Generalizable On-device Human Activity Recognition with Pretrained LLMs'
+title_ja: 'LLM4HAR: 事前学習LLMによる汎化性の高いオンデバイス人間行動認識'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- jd
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 事前学習LLMの知識をセンサーデータに転移し、ドメインをまたぐ行動認識の性能を高めるLLM4HARを提案。センサーと言語のギャップ、センサー知識の注入、オンデバイスでの軽量化に取り組み、4つの実データセットで評価しJD
+  Logisticsに導入した。
+problem: センサー信号と言語のドメイン差が大きく、端末のメモリ・計算制約下で動かす必要もあるため、ドメイン横断で汎化する行動認識が難しい。
+tags:
+  task:
+  - classification
+  domain:
+  - logistics
+  method:
+  - llm
+  - model-compression
+  data_type:
+  - time-series
+confidence: 0.65
+approach: 事前学習LLMをセンサーデータ向けに適応させ、モデルを縮小して推論コストを下げる効率化モジュールを備える。
+result: 4つの実データセットで評価し、JD Logisticsで展開(具体値は原文参照)。
+collab_academia: true

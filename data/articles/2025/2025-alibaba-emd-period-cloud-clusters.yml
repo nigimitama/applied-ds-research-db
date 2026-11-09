@@ -1,0 +1,27 @@
+id: 2025-alibaba-emd-period-cloud-clusters
+url: https://doi.org/10.1145/3711896.3737211
+title: 'EMD-Period: Detecting Multi-periodicity in Industrial Cloud Clusters via Time-Frequency Decomposition'
+title_ja: 'EMD-Period: 時間周波数分解による産業クラウドクラスタの多重周期検出'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Alibaba CloudのMaxCompute等の産業用クラウドクラスタの非定常な指標から複数の周期を検出するため、経験的モード分解(EMD)に基づく手法EMD-Periodを提案した。分解、ノイズ・トレンド除去、モード混合を補正した周期推定の順で処理する。
+problem: クラウドクラスタの指標は非定常で複数の周期が重なるため、従来の周期検出では精度が落ちる。
+tags:
+  task:
+  - time-series-forecasting
+  - anomaly-detection
+  domain:
+  - cloud-infra
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6
+approach: 信号を固有モード関数に分解し、ノイズとトレンドを除いたうえで周期を推定する。隣接モードの周波数比が2未満のものを統合してモード混合を補正する。

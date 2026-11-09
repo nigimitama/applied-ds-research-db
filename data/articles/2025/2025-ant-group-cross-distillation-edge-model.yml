@@ -1,0 +1,30 @@
+id: 2025-ant-group-cross-distillation-edge-model
+url: https://doi.org/10.1145/3711896.3737257
+title: 'Put Teacher in Student''s Shoes: Cross-Distillation for Ultra-compact Model Compression Framework'
+title_ja: 教師を生徒の立場に置く:超小型モデル圧縮のためのクロス蒸留
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: エッジ端末向けNLUモデルを約2MBまで圧縮するため、トークン刈り込み・クロス蒸留・量子化を組み合わせたEI-BERTを提案。公開ベンチと自社データで評価し、Alipayのエッジ推薦に導入されている。
+problem: エッジNLPでは極小モデルが必要だが、既存の圧縮は15〜20MB程度が限界で、さらに小さくすると性能劣化が大きい。
+approach: ハードトークン刈り込み、教師が生徒の容量に合わせて適応するクロス蒸留(パラメータ統合と相互作用)、パラメータ量子化を組み合わせる。
+tags:
+  task:
+  - recommendation
+  - classification
+  domain:
+  - finance
+  method:
+  - model-compression
+  - transformer
+  data_type:
+  - text
+confidence: 0.75
+result: BERT系NLUモデルを約1.91MB(BERT-baseより約99.5%小)に圧縮。Alipayのエッジ推薦に導入済みで、日次約840万デバイスに提供と報告。

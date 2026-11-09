@@ -1,0 +1,31 @@
+id: 2025-meta-multitask-multihead-item-retrieval
+url: https://doi.org/10.1145/3711896.3737255
+title: Optimizing Recall or Relevance? A Multi-Task Multi-Head Approach for Item-to-Item Retrieval in
+  Recommendation
+title_ja: 再現率か関連性か?推薦のItem-to-Item検索に対するマルチタスク・マルチヘッド手法
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Item-to-Item推薦の検索段で、共起エンゲージメントだけに偏る問題を、共有エンコーダに複数ヘッドを持たせて解決した。エンゲージメント用と関連性用のヘッドを分けて学習し、商用プラットフォームの実データとオンライン実験で検証している。
+problem: 産業界のItem-to-Item検索は共起データで学習され再現率重視になりがちで、意味的な関連性が捉えられず、短期的な共起傾向への過適合で新規興味発見や多様性といった長期価値が損なわれる。
+approach: 共有エンコーダの上にエンゲージメントのみで学習するヘッドと、マルチタスク損失で関連かつ共起する項目を選ぶ関連性ヘッドを置くMTMHを提案。
+tags:
+  task:
+  - recommendation
+  domain:
+  - social
+  method:
+  - embedding
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8
+result: 独自データで再現率が最大14.4%、意味的関連性が最大56.6%向上。ライブ実験で長期のユーザー体験指標も改善したと報告。
+has_online_experiment: true

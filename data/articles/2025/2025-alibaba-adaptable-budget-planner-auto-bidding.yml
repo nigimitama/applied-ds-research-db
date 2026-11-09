@@ -1,0 +1,29 @@
+id: 2025-alibaba-adaptable-budget-planner-auto-bidding
+url: https://doi.org/10.1145/3690624.3709414
+title: An Adaptable Budget Planner for Enhancing Budget-Constrained Auto-Bidding in Online Advertising
+title_ja: オンライン広告の予算制約付き自動入札を強化する適応型予算プランナー
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 広告主の予算制約下での自動入札で、期間全体の予算を時間帯などに配分する適応型プランナーを提案した。Alibabaの広告プラットフォームでの運用を想定して評価している。
+problem: 自動入札は予算制約の下で価値を最大化するが、入札器単体では時間ごとの予算配分が最適化されにくい。トラフィックの変動にも適応する必要がある。
+tags:
+  task:
+  - ad-optimization
+  - resource-optimization
+  domain:
+  - advertising
+  - e-commerce
+  method:
+  - reinforcement-learning
+  - mathematical-optimization
+  data_type:
+  - log
+confidence: 0.75

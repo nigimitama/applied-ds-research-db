@@ -1,0 +1,29 @@
+id: 2025-microsoft-titan-graph-mining-threat-intel
+url: https://doi.org/10.1145/3711896.3737274
+title: Web Scale Graph Mining for Cyber Threat Intelligence
+title_ja: サイバー脅威インテリジェンスのためのWebスケールグラフマイニング
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- microsoft
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 脅威インテリジェンスを大規模に生成するグラフマイニング基盤TITANを提案した。動的グラフ、古い情報の減衰と削除、評判伝播を備え、Microsoftのセキュリティ運用基盤に統合されている。
+problem: サイバー脅威の情報は膨大で変化が速く、大規模に最新の脅威インテリジェンスを維持するのが難しい。
+approach: 動的な脅威インテリジェンスグラフ、リアルタイム更新で古い情報を減衰・剪定する仕組み、評判伝播(ラベル伝播が有効)を組み合わせる。
+tags:
+  task:
+  - anomaly-detection
+  - classification
+  domain:
+  - cloud-infra
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+confidence: 0.8
+result: マクロF1平均0.89、PR-AUC 0.94。インシデント阻止率が21%向上し、阻止までの時間が1.9倍短縮、精度99%と報告。

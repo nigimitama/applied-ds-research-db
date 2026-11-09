@@ -1,0 +1,32 @@
+id: 2026-visa-persona-memory-anomaly-scoring
+url: https://arxiv.org/abs/2611.08094
+title: 'PersonaAgent: Retrieval-Augmented Transaction Anomaly Scoring with Refreshable Multi-Entity Persona
+  Memory'
+title_ja: 'PersonaAgent: 更新可能な複数エンティティのペルソナ記憶による検索拡張型の取引異常スコアリング'
+published: '2026-11-05'
+collected: '2026-11-09'
+companies:
+- visa
+collab_academia: true
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: 決済ネットワークの取引異常検知で、カードや加盟店などの最新の振る舞いをペルソナとして更新可能なメモリに保存し、推論時に軽量アダプタで検索して既存の異常分類器のスコアを補強する。Visaでの評価と本番導入で効果を確認した。
+problem: 決済ネットワークではエンティティ間の取引パターンが本番モデルの更新周期より速く変化し、エンティティ埋め込みテーブルは高カーディナリティで疎な相互作用に悩まされる。
+approach: 週次バッチで最新の行動シグナルを抽出してペルソナ記憶を更新し、推論時にアダプタが各取引に対応するシグナルを記憶から取り出して基盤の異常分類器のスコアを補強する。
+result: CPUで1,000取引のバッチを1-2msでスコアリング。PR-AUCが0.65-6.58%向上し、本番のビジネス指標が相対で8.93-14.24%向上した。
+tags:
+  task:
+  - anomaly-detection
+  - fraud-detection
+  domain:
+  - finance
+  method:
+  - embedding
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+confidence: 0.8

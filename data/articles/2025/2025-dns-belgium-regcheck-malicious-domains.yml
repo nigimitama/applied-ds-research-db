@@ -1,0 +1,29 @@
+id: 2025-dns-belgium-regcheck-malicious-domains
+url: https://doi.org/10.1145/3711896.3737260
+title: 'RegCheck: A Real-Time Approach for Flagging Potentially Malicious Domain Name Registrations'
+title_ja: RegCheck:悪意ある可能性のあるドメイン登録をリアルタイムで検出する手法
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- dns-belgium
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ドメイン登録時点で入手できる情報から機械学習で不正リスクを採点し、疑わしい登録に追加確認を求めるRegCheckを開発した。.beレジストリで2024年3月からリアルタイム運用されている。
+problem: 悪意あるドメインは登録後に悪用されてから対処されがちで、登録時点で事前に不審な申請を見つけて抑止することが求められる。
+approach: 過去の登録データから、新規登録が不審かを予測する分類器を学習し、登録時のリアルタイム判定に組み込む。フラグが立った登録は有効化前に追加検証を受ける。
+tags:
+  task:
+  - fraud-detection
+  - classification
+  domain:
+  - cloud-infra
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+confidence: 0.7
+result: 導入初期の結果として、取り消されるドメイン登録がほぼ30%減ったと報告。

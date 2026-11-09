@@ -1,0 +1,31 @@
+id: 2025-jd-aoi-level-parcel-volume-prediction
+url: https://doi.org/10.1145/3690624.3709441
+title: 'Effective AOI-level Parcel Volume Prediction: When Lookahead Parcels Matter'
+title_ja: 'AOI単位の荷物量予測: 先行荷物情報の活用'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ラストワンマイル配送のAOI(関心領域)単位の荷物量を予測するため、物流上の意味を取り込むテンプレート学習と、すでに判明している先行荷物量を信号として使うDualPNsを提案した。ゼロ過剰ポアソン分布で予測し、下流の配送員割当の事例で効果も確認している。
+problem: AOI単位の荷物量予測では、一般的な時系列モデルはAOI分割の機能的な論理を捉えられず、データが完全に観測される前提も置いている。さらにAOIデータはゼロが多く、通常のポアソンやガウス分布では扱いにくい。
+approach: 事前学習でAOIデータからテンプレート群を学習する。時間系列と先行荷物系列に対するデュアルアテンションエンコーダとベクトル量子化を用い、別モデルが履歴・先行荷物量を条件にゼロ過剰ポアソン分布で荷物量を予測する。
+result: 下流の配送員割当の実事例で、定時配達率が平均1.51%改善と報告
+tags:
+  task:
+  - demand-forecasting
+  - time-series-forecasting
+  domain:
+  - logistics
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - time-series
+  - geospatial
+confidence: 0.7

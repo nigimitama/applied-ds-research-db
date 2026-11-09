@@ -1,0 +1,28 @@
+id: 2025-baidu-ldmapnet-u-lane-map-updating
+url: https://doi.org/10.1145/3690624.3709383
+title: 'LDMapNet-U: An End-to-End System for City-Scale Lane-Level Map Updating'
+title_ja: 'LDMapNet-U: 都市規模の車線レベル地図更新のためのエンドツーエンドシステム'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- baidu
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 鳥瞰図(BEV)画像と過去の地図を入力に、更新後のベクトル地図と変化ラベルを一段階で出力する車線レベル地図更新システム。Baidu Mapsの地図更新業務への適用を想定した都市規模のシステムとして提案されている。
+problem: 車線レベル地図の更新は、変化検出と地図生成を分ける従来の多段パイプラインでは手間とコストが大きく、都市規模で高頻度に更新するのが難しい。
+approach: BEV画像と過去地図を入力とし、事前地図を符号化するモジュールとインスタンスの変化を予測するモジュールを備えたエンドツーエンドモデルで、ベクトル化結果と変化ラベルを同時に出力する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - mobility
+  method:
+  - deep-learning
+  data_type:
+  - image
+  - geospatial
+confidence: 0.75

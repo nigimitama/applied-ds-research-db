@@ -1,0 +1,27 @@
+id: 2025-baidu-rankelectra-web-search-ltr
+url: https://doi.org/10.1145/3690624.3709395
+title: 'RankElectra: Semi-supervised Pre-training of Learning-to-Rank Electra for Web-scale Search'
+title_ja: 'RankElectra: Web規模検索のための半教師あり事前学習Learning-to-Rank Electra'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- baidu
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ELECTRA型の識別器による事前学習をLearning-to-Rankに初めて取り入れたとする枠組みRankElectraを提案。ラベル不足を補うため、グラフ拡張とベクトル化、事前学習、ファインチューニングの3段階でWeb規模検索の順位付けを改善する。
+problem: Web検索のランキングでは人手ラベルが不足しており、大規模な未ラベルのクリックグラフなどを活用した事前学習が求められる。
+approach: グラフ拡張・ベクトル化で擬似的な訓練データを作り、ELECTRA風の識別器を事前学習した上でLTRタスクにファインチューニングする。
+tags:
+  task:
+  - search-ranking
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - text
+  - log
+confidence: 0.6

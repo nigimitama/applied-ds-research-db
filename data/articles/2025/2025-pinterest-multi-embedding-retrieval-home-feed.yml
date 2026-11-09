@@ -1,0 +1,31 @@
+id: 2025-pinterest-multi-embedding-retrieval-home-feed
+url: https://doi.org/10.1145/3711896.3737265
+title: 'Synergizing Implicit and Explicit User Interests: A Multi-Embedding Retrieval Framework at Pinterest'
+title_ja: 暗黙・明示的なユーザー興味の統合:Pinterestのマルチ埋め込み検索フレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- pinterest
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ユーザーごとに複数の埋め込みを生成し、履歴由来の暗黙の興味と、フォロー等の明示的な興味を併用する検索フレームワークをPinterestのホームフィードに導入した。A/Bテストでエンゲージメントと多様性の改善を確認している。
+problem: 従来の二塔モデルはユーザーとアイテムの特徴相互作用が限られ、主要な興味に偏りロングテールの興味を捉えにくい。
+approach: 微分可能クラスタリングモジュールで行動履歴から暗黙の興味埋め込みを得て、フォロー中トピックなど明示的興味は条件付き検索で扱う。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - social
+  method:
+  - embedding
+  - vector-search
+  data_type:
+  - log
+confidence: 0.85
+result: 実験とA/Bでエンゲージメントとフィード多様性が有意に向上。両経路の候補の重複は3.2%と補完的。
+has_online_experiment: true

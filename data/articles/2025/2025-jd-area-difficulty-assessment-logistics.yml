@@ -1,0 +1,27 @@
+id: 2025-jd-area-difficulty-assessment-logistics
+url: https://doi.org/10.1145/3690624.3709407
+title: Scalable Area Difficulty Assessment with Knowledge-enhanced AI for Nationwide Logistics Systems
+title_ja: 全国物流システム向けの知識強化AIによるスケーラブルな配送エリア難易度評価
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ラストマイル配送で、配達員の知識を取り入れ、エリアごとの配送難易度を評価するAIの枠組み。絶対評価より相対順位の方が信頼できるという考えを使い、IoTによる負荷計測や再学習なしに既存モデルの評価を改善すると紹介されている。
+problem: 配送エリアの難易度は配達員の負荷や報酬の公平性に関わるが、正解ラベルの収集は高コストで主観的であり、既存の機械学習手法の精度が頭打ちになる。
+approach: 配達員の評価値は水増しされやすい一方で相対順位は信頼できるという前提で、順位情報を集約・較正して既存モデルの難易度評価を補正する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  method:
+  - deep-learning
+  data_type:
+  - geospatial
+confidence: 0.6
