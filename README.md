@@ -40,6 +40,8 @@ python pipeline/collect.py --limit 50          # work/candidates.jsonl を出力
 python pipeline/collect.py --only <source_id> --since 2023-01-01   # 単一ソース・期間指定
 ```
 
+JSAI(人工知能学会全国大会)は J-STAGE API が所属を返さないため、`python pipeline/affiliations.py` が論文ページの `citation_author_institution` を読み、全所属が大学・公的機関の論文を除外する(arXiv と同じ仕組み)。
+
 その後の判定・要約・タグ付け・PR作成は Claude が `pipeline/prompts/weekly-run.md` に従って行う
 (定期タスクの実行内容。過去分の取り込みは `backfill.md`)。
 ソース定義は初期状態で `enabled: false`。実フィードで `--only` 実行して確認してから `true` にする。

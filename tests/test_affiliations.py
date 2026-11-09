@@ -60,3 +60,47 @@ def test_run_keeps_unavailable_and_drops_academic(tmp_path):
     assert out[0]["summary"].startswith("[所属] ")
     rej = (tmp_path / "data" / "rejected.jsonl").read_text()
     assert "2.2v1" in rej and "no-company-author" in rej
+
+
+JHTML = (
+    '<meta name="citation_author_institution" content="株式会社Foo">'
+    '<meta name="citation_author_institution" content="東京大学">'
+    '<meta name="citation_author_institution" content="東京大学">'
+    '<meta name="citation_keywords" content="推薦"><meta name="abstract" content="要旨です">'
+)
+
+
+def test_parse_jstage_meta_dedups_affiliations():
+    m = af.parse_jstage_meta(JHTML)
+    assert m["affiliations"] == ["株式会社Foo", "東京大学"]
+    assert m["keywords"] == ["推薦"] and m["abstract"] == "要旨です"
+
+
+def test_company_signal_list_ja():
+    terms = ["メルカリ"]
+    assert af.has_company_signal_list(["東京大学", "株式会社Foo"], terms)
+    assert af.has_company_signal_list(["ソニーCSL研究所"], terms)  # 「研究所」だけでは落とさない
+    assert af.has_company_signal_list(["メルカリ R4D"], terms)
+    assert af.has_company_signal_list([], terms)
+    assert not af.has_company_signal_list(["東京大学", "産業技術総合研究所"], terms)
+
+
+def test_run_jstage_filters(tmp_path):
+    (tmp_path / "work").mkdir()
+    (tmp_path / "data").mkdir()
+    (tmp_path / "companies").mkdir()
+    rows = [
+        {"url": f"https://www.jstage.jst.go.jp/article/pjsai/{k}/_article/-char/ja/", "title": k, "summary": "", "source_id": "jsai-jstage"}
+        for k in ("corp", "univ")
+    ]
+    (tmp_path / "work" / "candidates.jsonl").write_text("".join(json.dumps(r) + "\n" for r in rows), encoding="utf-8")
+
+    def fake(url):
+        assert url.endswith("/_article")
+        return JHTML if "corp" in url else '<meta name="citation_author_institution" content="京都大学">'
+
+    s = af.run(tmp_path, jstage_fetcher=fake, workers=1)
+    assert s["dropped"] == 1 and s["with_signal"] == 1
+    kept = [json.loads(l) for l in (tmp_path / "work" / "candidates.jsonl").read_text(encoding="utf-8").splitlines()]
+    assert [k["title"] for k in kept] == ["corp"] and "[所属]" in kept[0]["summary"]
+    assert "J-STAGE" in (tmp_path / "data" / "rejected.jsonl").read_text(encoding="utf-8")
