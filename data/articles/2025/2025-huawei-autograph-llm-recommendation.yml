@@ -1,0 +1,33 @@
+id: 2025-huawei-autograph-llm-recommendation
+url: https://doi.org/10.1145/3711896.3737192
+title: An Automatic Graph Construction Framework based on Large Language Models for Recommendation
+title_ja: 大規模言語モデルによる推薦向けグラフ自動構築フレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦用のグラフをLLMで自動構築するAutoGraphを提案。LLMで得たユーザー嗜好とアイテム知識のベクトルを量子化して潜在因子ノードを作り、ユーザーとアイテムを結ぶ。Huaweiの広告プラットフォームに導入された。
+problem: GNN推薦は事前定義のグラフに依存し、既存のLLM活用手法は全体視点を欠き構築も非効率である。
+approach: LLMでユーザー嗜好とアイテム知識を意味ベクトル化し、ベクトル量子化で潜在因子を抽出して追加ノードとしてグラフに組み込み、メタパスに基づくメッセージ集約で意味情報と協調情報を統合する。モデル非依存。
+tags:
+  task:
+  - recommendation
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - llm
+  - graph-neural-network
+  - embedding
+  data_type:
+  - graph
+  - log
+confidence: 0.88
+result: 3つの実データセットで有効性と効率を示し、Huawei広告プラットフォームのオンラインA/BテストでRPM +2.69%、eCPM +7.31%、主力トラフィックモデルとして稼働と報告。
+has_online_experiment: true

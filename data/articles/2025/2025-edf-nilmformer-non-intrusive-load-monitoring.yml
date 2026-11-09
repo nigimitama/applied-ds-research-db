@@ -1,0 +1,32 @@
+id: 2025-edf-nilmformer-non-intrusive-load-monitoring
+url: https://doi.org/10.1145/3711896.3737251
+alt_urls:
+- https://arxiv.org/abs/2506.05880
+title: 'NILMFormer: Non-Intrusive Load Monitoring that Accounts for Non-Stationarity'
+title_ja: 'NILMFormer: 非定常性を考慮した非侵入型負荷モニタリング'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- edf
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: スマートメータの総消費電力から家電別の消費を推定するNILMで、窓ごとに分布がずれる非定常性に対処するTransformer型モデルを提案した。4つの実データで最先端手法を上回り、EDFの電力消費可視化サービスに実際に組み込まれている。
+problem: 既存の深層学習NILMは世帯の時系列を固定長の窓に切って処理するが、実際のスマートメータデータは非定常で窓内の分布がドリフトし、精度が落ちる。
+approach: Transformerに、部分系列を標準化・逆標準化する仕組みを組み込んで分布ドリフトを抑え、さらに部分系列のタイムスタンプのみから作る位置エンコーディング(TimeRPE)を導入した。
+result: 4つの実世界データセットで最先端手法を大きく上回ると報告。EDFの消費モニタリングサービス(Mon Suivi Conso)に導入済み。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - time-series
+has_online_experiment: false
+confidence: 0.85

@@ -1,0 +1,29 @@
+id: 2025-jd-blind-shipment-fraud-detection-llm
+url: https://doi.org/10.1145/3711896.3737184
+title: A Fraudulent Blind Shipment Detection Framework in Logistics
+title_ja: 物流における不審な押し付け配送の検知フレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: JD物流で、受取人の苦情対話から不審な押し付け(ブラインド)配送を見つけるLLMベースのBLOFFを提案。匿名化、対話の構造化と軽量モデルへの蒸留、文脈拡張を組み合わせ、実運用でも不正荷物を検出した。
+problem: 低額の未注文荷物を大量に送る不正が代金引換などを悪用して行われるが、被害者が苦情を出しにくく確定ラベルが少ないため、既存の検知手法が機能しにくい。
+approach: 受取人の苦情対話を匿名化し、教師LLMの知識を軽量な学生モデルへ蒸留して対話を構造化表現に変換、さらに多面的な文脈を加えて新しい不正パターンへ適応させる。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - logistics
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - text
+confidence: 0.75
+result: JD物流の約56,000件の苦情データで既存手法を上回り(precision +10.19%)、2024年12月の実運用で90件超の不正荷物をprecision 91.4%で検出したと報告。

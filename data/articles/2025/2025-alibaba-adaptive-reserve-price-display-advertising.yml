@@ -1,0 +1,30 @@
+id: 2025-alibaba-adaptive-reserve-price-display-advertising
+url: https://doi.org/10.1145/3690624.3709439
+title: Learning Adaptive Reserve Price in Display Advertising
+title_ja: ディスプレイ広告における適応的な最低落札価格の学習
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: リアルタイム入札の広告取引で、媒体側が設定する最低落札価格(リザーブプライス)を強化学習で適応的に決める手法を提案した。広告枠の本質的価値を推定する価値バケットと専用の報酬設計、およびリスクを考慮した版を備え、実運用環境の実データで有効性を示している。
+problem: RTBでは複数のDSPが戦略的かつ動的に入札するため、媒体の収益に大きく影響するリザーブプライスを適切に決めることが難しい。
+approach: 強化学習に基づき、価値バケットで広告枠の本質的価値を推定し、有益な学習信号を与える報酬関数を設計する。さらに実績データ、専門家知識、リアルタイムの市場状況を組み合わせた、媒体側のリスク考慮版も提案する。
+result: 運用環境の実データセットでの実験で有効性を確認と報告(具体値は未確認)。
+tags:
+  task:
+  - ad-optimization
+  - pricing
+  domain:
+  - advertising
+  method:
+  - reinforcement-learning
+  data_type:
+  - log
+has_online_experiment: false
+confidence: 0.7

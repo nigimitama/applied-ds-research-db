@@ -111,51 +111,29 @@
 {"url": "https://techblog.lycorp.co.jp/ja/20261026a", "reason": "not-technical: カンファレンス出展レポート", "date": "2026-11-09"}
 {"url": "https://engineering.fb.com/2026/10/26/open-source/ocp-summit-2026-meta-networking-talks/", "reason": "off-topic: ネットワーク機器・イベント報告", "date": "2026-11-09"}
 {"url": "https://netflixtechblog.com/making-failure-diagnosis-reliable-with-pensive-ai-6b0811a1c015?source=rss----2615bd06b42e---4", "reason": "insufficient-info: 本文取得不可(403)。summaryからはLLM化の中身が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737183", "reason": "insufficient-info: Fliggy(Alibaba系)の論文だが本文・abstractを確認できず適用有無を判断できない", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737184", "reason": "insufficient-info: JD Logisticの共著者はいるが、abstractを確認できず実運用適用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737186", "reason": "insufficient-info: JD Logistic所属の共著あり。abstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737187", "reason": "insufficient-info: Ant Group論文だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737191", "reason": "insufficient-info: Alibaba共著だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737192", "reason": "insufficient-info: Huawei共著だがabstract未確認で実データ運用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737193", "reason": "insufficient-info: Tencent論文だがabstract未確認で適用詳細を判断できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737196", "reason": "no-real-world-application: ベンチマーク中心で企業著者はMeituanの2名のみ、運用適用の確認なし", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737199", "reason": "insufficient-info: Taobao共著だがabstract未確認(検索結果が別論文)で判断できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737201", "reason": "no-company-author: 大学・研究機関・非営利のみで主要な営利企業の著者なし", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737204", "reason": "insufficient-info: Taobao検索のクエリ書き換え。KDD版のabstractを確認できず(類似の前作は別論文)", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737205", "reason": "insufficient-info: Alibaba共著だがabstract未確認で実運用適用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737206", "reason": "insufficient-info: 中国証券(証券会社)共著だがabstract未確認で実運用の有無が不明", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737213", "reason": "insufficient-info: 概要を確認できず(Ant Group、保険請求予測のGNN)。実運用の有無を判断できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737215", "reason": "no-real-world-application: LoRAのコントラスティブデコーディングとAscend NPUカーネルの手法論文で、実サービス適用の記述を確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737218", "reason": "no-company-author: 著者は北京航空航天大学・マカオ大学・鉄道科学研究院(公的研究機関)で企業著者なし", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737219", "reason": "insufficient-info: 中国金融向けエンコーダの事前学習が主で、abstractから実サービス適用を確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737220", "reason": "no-company-author: 著者所属がIndependent Researcher/大学のみで企業所属が確認できない", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737222", "reason": "insufficient-info: abstractを確認できず、フードデリバリー向けLLM後学習の実運用への適用有無を判断できない", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737223", "reason": "insufficient-info: abstractを確認できず、画像生成のCTR改善が実サービス検証かを判断できない", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737224", "reason": "insufficient-info: abstractを確認できず、階層時系列予測の実運用適用を判断できない", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737228", "reason": "insufficient-info: 坑井検層による地層推定のライブラリ紹介で、SLBでの実運用適用を確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3711896.3737233", "reason": "no-real-world-application: 公開ベンチでのRAG評価が中心と推定、適用の確認不可", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737234", "reason": "insufficient-info: JD Logisticは1名のみで大学主導、実運用の確認不可", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737239", "reason": "insufficient-info: 公開データ評価が中心の可能性、実適用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737242", "reason": "insufficient-info: Huawei自社での運用適用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737245", "reason": "insufficient-info: 公開ベンチ中心の可能性、実適用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737249", "reason": "insufficient-info: ベンチマーク評価中心の可能性、実運用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737251", "reason": "insufficient-info: 公開データ中心の可能性、実運用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737254", "reason": "insufficient-info: 実運用適用を確認できず", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737258", "reason": "insufficient-info: Baidu著者のweb検索LTR論文だが、abstract/実運用の記述を確認できなかった", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737262", "reason": "insufficient-info: Huawei Noah's Ark著者だが、手法中心で実運用適用をabstract等から確認できなかった", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3711896.3737275", "reason": "insufficient-info: Kuaishou著者だが、該当論文のabstractを確認できず適用有無が不明", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709388", "reason": "no-real-world-application: Deloitte所属を含むが公開型の予知保全ベンチマーク中心で実運用適用が確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709391", "reason": "no-real-world-application: 時空間予測の手法論文で、実サービスへの適用が確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709392", "reason": "no-real-world-application: 合成画像検出の汎化に関する手法・ベンチマーク評価が中心", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709394", "reason": "no-company-author: MerRecはMercariのデータセット論文だが著者所属が Independent と大学のみで企業著者が確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709404", "reason": "no-real-world-application: 画像生成基盤モデルの開発と人手評価が中心で、実運用適用が確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709405", "reason": "no-company-author: 著者は研究機関・大学・病院のみ", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3690624.3709406", "reason": "insufficient-info: Tencent所属だが本文・概要を確認できず、実運用の適用有無が不明", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709381", "reason": "no-real-world-application: 知識グラフQA等の公開ベンチマーク評価が中心", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3690624.3709417", "reason": "insufficient-info: NVIDIAのデータ選択手法で、実サービス・実運用での適用が題名と所属から確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709418", "reason": "no-company-author: 著者は大学・病院のみ(Ohio State, Cleveland Clinic)で企業所属なし", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3690624.3709427", "reason": "insufficient-info: KnowDis AIの属性値抽出手法で、実運用の適用が題名と所属から確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709433", "reason": "no-real-world-application: 電力潮流調整モデルの手法提案が中心で、実運用での適用が確認できない", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709435", "reason": "no-real-world-application: Baidu所属著者あり。ただし独自データでのオフライン評価のみで、本番導入やオンライン実験の記述を確認できない(境界ケース)", "date": "2026-11-09"}
 {"url": "https://doi.org/10.1145/3690624.3709436", "reason": "no-company-author: 著者はすべて大学・公的研究機関(KIT, TU Dresden, DLR等)", "date": "2026-11-09"}
-{"url": "https://doi.org/10.1145/3690624.3709439", "reason": "insufficient-info: Cainiao(Alibaba)所属著者ありだが、abstract・本文を確認できず実データ適用の有無を判断できない", "date": "2026-11-09"}
+{"url": "https://doi.org/10.1145/3711896.3737186", "reason": "no-real-world-application: abstractで確認できたのはオフライン評価のみ(JD Logistics著者)。本番適用の記述を確認できず", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737187", "reason": "no-real-world-application: 公式abstract未取得(ミラーのみ)。公開データ中心で、自社データ/本番適用の記述を確認できず", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737219", "reason": "no-real-world-application: arXiv/OpenAlex abstract確認済み。金融BERTの事前学習とベンチマーク評価が中心で、本番導入・実運用の記述なし", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737228", "reason": "insufficient-info: abstract本文をACM/HAL/LISN等で取得できず(HALはbot遮断)、SLBデータでの実運用適用の有無を確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737239", "reason": "no-real-world-application: abstract/本文を確認、評価はKPI/Yahoo/WSDの公開ベンチのみで本番導入の記述なし", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737249", "reason": "insufficient-info: WebSearch/WebFetchでabstractを確認できず(ACM DLは403、arXiv版特定不可)。適用の有無を判断できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3711896.3737258", "reason": "insufficient-info: WebSearch/WebFetchでabstractを確認できず(ACM DLは403、検索にも該当なし)。適用の有無を判断できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3690624.3709406", "reason": "no-real-world-application: abstract確認済み。Weibo/GossipCop/CHEF等の公開データのみで評価、実サービス適用の記載なし", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3690624.3709417", "reason": "no-real-world-application: abstract確認済み(arXiv 2409.13860)。NVIDIAのデータ選択手法だが実運用・実データ適用の具体的記載を確認できず", "date": "2026-11-10"}

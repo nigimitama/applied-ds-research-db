@@ -1,0 +1,36 @@
+id: 2025-alibaba-serendipity-recommendation-aligned-llm
+url: https://doi.org/10.1145/3711896.3737199
+alt_urls:
+- https://arxiv.org/abs/2502.13539
+doi: 10.1145/3711896.3737199
+title: 'Bursting Filter Bubble: Enhancing Serendipity Recommendations with Aligned Large Language Models'
+title_ja: フィルターバブルを破る:人間の判断に整合させたLLMによるセレンディピティ推薦
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦システムのフィードバックループが生むフィルターバブルに対し、LLMでセレンディピティ(意外だが関連のある商品)を予測するSERALを提案。Taobaoアプリのホームの推薦枠に本番導入し、オンライン実験で効果を確認している。
+problem: 推薦モデルは自身の過去の推薦結果で学習するためフィードバックループに陥り、似たコンテンツばかりが提示されて満足度が下がる。LLMはセレンディピティ予測に有望だが、人間の判断との整合、長い行動履歴の処理、産業システムのレイテンシ制約という3つの課題がある。
+approach: 3段階のSERALを構築。(1)ユーザー行動を多段階のプロファイルに圧縮するCognition Profile Generation、(2)人間のセレンディピティ判断にLLMを整合させるSerenGPTのアラインメント、(3)SerenGPTをニアラインで既存の多段推薦パイプラインに組み込むNearline
+  Adaptation。
+result: オンライン実験でセレンディピティ商品の露出比率+5.7%、クリック+29.56%、取引+27.6%。全体収益への影響は小さい。Taobaoの「Guess What You Like」に全面展開。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - log
+  - text
+has_online_experiment: true
+confidence: 0.9

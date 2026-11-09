@@ -1,0 +1,32 @@
+published: '2025-08-03'
+collected: '2026-11-09'
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+id: 2025-alibaba-foodgpt-reinforcement-post-training
+url: https://doi.org/10.1145/3711896.3737222
+title: 'FoodGPT: Reinforcement Post-Training of Large Language Models in the Food Delivery Domain'
+title_ja: 'FoodGPT: フードデリバリー領域における大規模言語モデルの強化学習ポストトレーニング'
+companies:
+- alibaba
+collab_academia: false
+summary_ja: Ele.meのフードデリバリー向けに、中国語の指示データセットFoodInstructと領域特化LLM「FoodGPT」を構築した。強化学習を含む効率的なポストトレーニングで、少ないデータと反復で汎用LLMを上回る性能を得て、実サービスに展開している。
+problem: フードデリバリーでは、ユーザー意図の理解や商品テキストの処理に自然言語処理が必要だが、汎用モデルは領域データの不足と学習コストの高さのため十分な性能が出にくい。
+approach: 12種類のデリバリー関連NLPタスクにわたる大規模な中国語指示データ(FoodInstruct)を作り、SFT、DPO、PPOを組み合わせ、ルールベース報酬も加えたポストトレーニングで領域特化LLMを学習した。
+result: Qwen 2.5、Llama3.1、DeepSeek-LLMを領域タスクで上回り、オンライン実験でクリック率+0.57%、訪問から購入への転換率+0.32%を報告。
+tags:
+  task:
+  - text-generation
+  - conversational-ai
+  domain:
+  - food
+  method:
+  - llm
+  - fine-tuning
+  - reinforcement-learning
+  data_type:
+  - text
+has_online_experiment: true
+confidence: 0.8

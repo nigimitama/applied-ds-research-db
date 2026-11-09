@@ -1,0 +1,31 @@
+id: 2025-tencent-llm-relevance-search-qq-browser
+url: https://doi.org/10.1145/3711896.3737193
+title: Applying Large Language Model For Relevance Search In Tencent
+title_ja: Tencentの検索関連度へのLLM適用
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- tencent
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 商用検索の関連度ランキングにLLMを使う方法を、目的関数・モデルサイズ・継続事前学習・事前知識の4観点で評価し、LLMの能力をBERT系モデルへ移す手法を提案。QQブラウザ検索にニアライン方式で導入した。
+problem: 検索の関連度判定にLLMを使えば精度向上が期待できるが、計算コストと低遅延要件のためオンライン検索への直接導入は難しく、その能力も十分に検証されていない。
+approach: LLMの関連度ランキング能力を複数観点で評価する枠組みを作り、限られた予算での最適構成を探索。さらにLLMの能力を既存のBERTモデルに移す。導入時は、クエリ単位のオンデマンド計算と量子化によるニアライン運用を採用。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - media
+  method:
+  - llm
+  - transformer
+  - model-compression
+  data_type:
+  - text
+confidence: 0.8
+result: 実データ実験とオンラインA/Bテストで検索性能が有意に改善し、運用も現実的と報告(数値は未確認)。
+has_online_experiment: true

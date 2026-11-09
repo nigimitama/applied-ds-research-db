@@ -1,0 +1,30 @@
+id: 2025-alibaba-auto-coupon-advertiser-retention
+url: https://doi.org/10.1145/3711896.3737191
+title: An Auto-Coupon Framework for Advertiser Retention in Online Advertising
+title_ja: オンライン広告における広告主維持のための自動クーポンフレームワーク
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 広告プラットフォームで広告主の離脱を防ぐため、入札中にインプレッション単位の仮想クーポンを配布するAuto-Couponモジュールを提案。フィードバック制御と強化学習で配布を個別化し、大規模オンラインテストで広告主の継続意向が高まったとしている。
+problem: 広告プラットフォームでは広告主の維持が長期成長に重要だが、広告主を引き留める手法はほとんど研究されていない。
+approach: 広告主調査とデータ分析から短期の広告成果指標を維持目標として定義し、問題を二段階に分解。フィードバック制御と強化学習で、入札時の仮想クーポン配布を個別化した。
+tags:
+  task:
+  - ad-optimization
+  - churn-prediction
+  domain:
+  - advertising
+  method:
+  - reinforcement-learning
+  data_type:
+  - log
+confidence: 0.78
+result: オフライン実験で離脱しそうな広告主の広告成果が改善し、大規模オンラインテストでも広告主が留まりやすくなったと報告(数値は未確認)。
+has_online_experiment: true

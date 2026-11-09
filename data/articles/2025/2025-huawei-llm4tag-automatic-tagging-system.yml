@@ -1,0 +1,32 @@
+id: 2025-huawei-llm4tag-automatic-tagging-system
+url: https://doi.org/10.1145/3711896.3737242
+alt_urls:
+- https://arxiv.org/abs/2502.13481
+title: 'LLM4Tag: Automatic Tagging System for Information Retrieval via Large Language Models'
+title_ja: 'LLM4Tag: 大規模言語モデルによる情報検索向け自動タグ付けシステム'
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- huawei
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 検索・推薦で使うコンテンツのタグ付けにLLMを用い、候補タグの網羅性、ドメイン知識への追随、信頼度の信頼性という既存手法の弱点に取り組んだ。3つの大規模産業データで評価し、オンラインのコンテンツタグ付けにも展開して数億人規模のユーザーに提供している。
+problem: 検索や推薦のための自動タグ付けでは、既存のLLM活用手法は候補タグの取りこぼしが多く、新しいドメイン知識に適応しづらく、出力タグの信頼度も当てにならないという課題があった。
+approach: 3モジュール構成。グラフに基づくタグ再現で関連性の高い小さな候補集合を作り、長期・短期の知識を注入するタグ生成で精度を高め、信頼度キャリブレーションで信頼できるスコアを出す。
+result: 3つの大規模産業データセットで最先端のベースラインを大きく上回り、オンラインのコンテンツタグ付けに展開済みと報告(数値は原文参照)。
+tags:
+  task:
+  - classification
+  domain:
+  - media
+  method:
+  - llm
+  - knowledge-graph
+  data_type:
+  - text
+has_online_experiment: false
+confidence: 0.8

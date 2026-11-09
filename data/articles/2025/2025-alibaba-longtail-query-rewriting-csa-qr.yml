@@ -1,0 +1,35 @@
+id: 2025-alibaba-longtail-query-rewriting-csa-qr
+url: https://doi.org/10.1145/3711896.3737204
+doi: 10.1145/3711896.3737204
+title: Complicated Semantic Alignment for Long-Tail Query Rewriting in Taobao Search Based on Large Language
+  Model
+title_ja: Taobao検索における複雑な意味を持つロングテールクエリ書き換えのためのLLMによる意味アラインメント
+published: '2025-08-03'
+collected: '2026-11-09'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: EC検索で、ユーザーの表現と出品者の商品名のずれが大きいロングテールクエリを、LLMで書き換えて検索精度を高めるCSA-QRを提案。Taobaoに導入され、オンラインA/Bテストで成果を確認している。
+problem: EC検索ではユーザーの言い回しと出品者の商品名に乖離があり検索がうまくいかない。既存のLLM書き換えは大半のクエリでは有効だが、複雑な意味を持つロングテールクエリには効果が薄い。
+approach: 3段階のCSA-QR。汎用LLMで書き換え候補を生成し人手で判別、既存アノテーションを使ったRAGで高品質なSFTデータを作成。フィードバックをユーザー意味整合性と出品者表現整合性の2次元に分解して整合データを収集し、二値フィードバックで報酬モデルを学習して、PPOで強化学習によるアラインメントを行う。
+result: オフラインで検索性能が向上し、オンラインA/Bテストでロングテールの複雑クエリのCTR、GMV、取引数が有意に改善(具体値は原文参照)。2024年9月からTaobaoに導入。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - fine-tuning
+  - reinforcement-learning
+  - rag
+  data_type:
+  - text
+  - log
+has_online_experiment: true
+confidence: 0.9
