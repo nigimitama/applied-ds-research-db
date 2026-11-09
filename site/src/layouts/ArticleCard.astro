@@ -7,7 +7,8 @@ const tax = loadTaxonomy();
 const companies = loadCompanies();
 const tags = articleTags(a, tax);
 ---
-<div class="card">
+<div class="card article-card">
+  <div class="body">
   <h3><a href={`${base}/articles/${a.id}/`}>{a.title_ja ?? a.title}</a></h3>
   <div class="muted">
     {a.published} ・
@@ -16,4 +17,16 @@ const tags = articleTags(a, tax);
   </div>
   <p>{a.summary_ja}</p>
   <div>{tags.map((t) => (<a class="chip" href={`${base}/tag/${t.axis}/${t.id}/`}>{t.label}</a>))}</div>
+  </div>
+  {a.image && (<a class="thumb" href={`${base}/articles/${a.id}/`} tabindex="-1" aria-hidden="true"><img src={a.image} alt="" loading="lazy" referrerpolicy="no-referrer" /></a>)}
 </div>
+<style>
+  .article-card { display: flex; gap: 16px; align-items: center; }
+  .article-card .body { flex: 1 1 0; min-width: 0; }
+  .article-card .thumb { flex: 0 0 30%; max-width: 30%; }
+  .article-card .thumb img { width: 100%; aspect-ratio: 1.91 / 1; object-fit: cover; border-radius: 6px; border: 1px solid var(--line); display: block; }
+  @media (max-width: 600px) {
+    .article-card { flex-direction: column-reverse; }
+    .article-card .thumb { flex-basis: auto; max-width: 100%; width: 100%; }
+  }
+</style>

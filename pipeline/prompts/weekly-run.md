@@ -17,6 +17,7 @@
    - 不採用 → `data/rejected.jsonl` に1行追記: `{"url": "...", "reason": "...", "date": "YYYY-MM-DD"}`
    - 採用 → `pipeline/prompts/enrich.md` に従い `data/articles/<年>/<id>.yml` を作成する。
    - 本文が必要なときだけ元URLを取得する。取得できなければ、候補の title/summary の範囲で判断し、confidence を下げる。
+3.5. OGP画像: `python pipeline/fetch_ogp.py` を実行し、新規記事に `image:` を追加する(取得失敗は無視してよい)。
 4. 検証: `python pipeline/validate.py` を実行し、エラーがなくなるまで直す。タグの上限や語彙違反を無理に通さない。
 5. コミットしてpush: `bot/weekly-YYYYMMDD` ブランチへ。mainへは直接pushしない。
 6. PR作成(タイトル: `weekly: YYYY-MM-DD 収集 (採用N / 不採用M)`)。本文に以下を含める:

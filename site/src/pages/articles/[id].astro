@@ -18,6 +18,12 @@ const cname = (c) => companies[c]?.name_ja ?? companies[c]?.name ?? c;
     <h1 data-pagefind-meta="title">{a.title_ja ?? a.title}</h1>
     {a.title_ja && <p class="muted">{a.title}</p>}
 
+    {a.image && (
+      <a href={a.url} rel="noopener noreferrer" target="_blank" class="hero">
+        <img src={a.image} alt="" loading="lazy" referrerpolicy="no-referrer" />
+      </a>
+    )}
+
     <p>{a.summary_ja}</p>
     {a.problem && (<><h2>課題</h2><p>{a.problem}</p></>)}
     {a.result && (<><h2>報告されている成果</h2><p>{a.result}</p></>)}
@@ -42,3 +48,7 @@ const cname = (c) => companies[c]?.name_ja ?? companies[c]?.name ?? c;
     </p>
   </article>
 </Base>
+<style>
+  .hero { display: block; max-width: 640px; margin: 12px auto 16px; }
+  .hero img { width: 100%; height: auto; border-radius: 8px; border: 1px solid var(--line); display: block; }
+</style>

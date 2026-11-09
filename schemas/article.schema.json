@@ -9,6 +9,7 @@
     "url": {"type": "string", "pattern": "^https?://"},
     "alt_urls": {"type": "array", "items": {"type": "string", "pattern": "^https?://"}, "uniqueItems": true},
     "doi": {"type": "string"},
+    "image": {"type": "string", "pattern": "^https?://"},
     "title": {"type": "string", "minLength": 1},
     "title_ja": {"type": "string"},
     "published": {"type": "string", "format": "date", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
