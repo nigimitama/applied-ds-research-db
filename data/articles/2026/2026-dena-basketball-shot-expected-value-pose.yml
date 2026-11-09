@@ -1,5 +1,6 @@
 id: 2026-dena-basketball-shot-expected-value-pose
 url: https://engineering.dena.com/blog/2026/11/kbt-shot-expected-value/
+image: "https://engineering.dena.com/blog/2026/11/kbt-shot-expected-value/cover.png"
 title: 姿勢推定を用いたバスケットボールにおけるショット期待値モデルの改善
 published: 2026-11-05
 collected: 2026-11-09
