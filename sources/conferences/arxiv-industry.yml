@@ -4,7 +4,7 @@ venue: arXiv
 method: arxiv_api
 query: (cat:cs.IR OR cat:cs.LG OR cat:stat.ML OR cat:cs.CL) AND (abs:"A/B test" OR
   abs:"online experiment" OR abs:"deployed" OR abs:"production")
-filter_hint: 企業所属の著者を含み、実サービス/実データへの適用が書かれた論文のみ。所属は本文/arXivページで確認
+filter_hint: 企業所属の著者を含み、実サービス/実データへの適用が書かれた論文のみ。所属は pipeline/affiliations.py が summary 先頭の [所属] に補完する
 lang: en
 schedule: weekly
 max_items: 100
