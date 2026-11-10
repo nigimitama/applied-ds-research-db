@@ -1,0 +1,30 @@
+id: 2026-insight-edge-anomaly-response-multimodal-rag-action-recommendation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4YinA04/_article
+title: 異常対応を支援する AI：マルチモーダル RAG による説明生成とアクションレコメンドモデル
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- insight-edge
+- scsk
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 画像ベースの異常検知モデルとLLMを組み合わせ、異常の説明と対応アクションの推薦を生成する異常対応支援のAIフレームワークを提案した。
+problem: 製造や医療で異常検知は広く使われるが、出力が数値で抽象的なため、原因や適切な対応を理解しにくい。
+approach: 従来の言語駆動の説明可能AIを拡張し、マルチモーダルRAGで説明生成とアクション推薦を行う。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - manufacturing
+  method:
+  - rag
+  - multimodal
+  - explainable-ai
+  data_type:
+  - image
+  - text
+confidence: 0.55

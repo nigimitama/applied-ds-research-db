@@ -1,0 +1,27 @@
+id: 2026-daiwa-institute-time-series-foundation-model-tepco-grid-benchmark
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_3E2GS2g01/_article
+title: 東京電力パワーグリッドのエリア需給実績データを用いた時系列基盤モデルの性能比較分析
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- daiwa-institute
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 公開されている主要な時系列基盤モデルの性能を、東京電力パワーグリッドのエリア需給実績データで体系的・再現可能な形で比較するベンチマークを示した。
+problem: 時系列基盤モデルが次々公開されているが、その相対的な性能と有効な適用条件が十分に整理されていない。
+approach: 東京電力パワーグリッドが公表した地域別の需給実績データで、主要な公開時系列基盤モデルを比較する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - time-series-model
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.5

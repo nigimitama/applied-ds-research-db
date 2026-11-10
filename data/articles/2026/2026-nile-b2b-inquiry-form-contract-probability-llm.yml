@@ -1,0 +1,28 @@
+id: 2026-nile-b2b-inquiry-form-contract-probability-llm
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1G5OS13c03/_article
+title: お問い合わせフォームからの成約確率予測
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- nile
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: B2Bのお問い合わせフォームは入力項目が少なく、特徴量やサンプルが乏しい。Claude 3 Haikuで自由記述から動機と能力のスコアを抽出し、AIエージェントのWeb検索で企業属性を自律収集して、成約確率を予測する手法を提案した。
+problem: B2Bのフォームは離脱を防ぐため情報が少なく、従来の機械学習では特徴量・サンプル不足で難しい。
+approach: 自由記述から動機・能力のスコアをLLMで抽出し、AIエージェントのWeb検索で企業属性を集めて成約確率を予測する。
+tags:
+  task:
+  - classification
+  - risk-scoring
+  domain:
+  - retail
+  method:
+  - llm
+  data_type:
+  - text
+  - tabular
+confidence: 0.6

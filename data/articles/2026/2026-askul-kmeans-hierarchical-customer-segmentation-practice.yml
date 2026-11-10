@@ -1,0 +1,28 @@
+id: 2026-askul-kmeans-hierarchical-customer-segmentation-practice
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1J3GS10d04/_article
+title: K-means階層的クラスタリングを用いた顧客セグメンテーションの実践
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ECで購買傾向に基づく顧客セグメントを作るため、K-means階層的クラスタリングを実務で使った事例。需要タイプを示すラベルがないため購買行動の類似度でクラスタリングする。
+problem: マーケティング施策や推薦のため購買傾向で顧客をセグメント化したいが、需要タイプのラベルはほとんど得られない。
+approach: 購買行動の類似性に基づく階層的クラスタリングにK-meansを組み合わせて顧客セグメントを作る。
+tags:
+  task:
+  - classification
+  - personalization
+  domain:
+  - e-commerce
+  method:
+  - embedding
+  data_type:
+  - log
+  - tabular
+confidence: 0.55

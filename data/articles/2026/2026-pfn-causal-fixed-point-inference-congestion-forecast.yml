@@ -1,0 +1,28 @@
+id: 2026-pfn-causal-fixed-point-inference-congestion-forecast
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA28/_article
+title: 介入としての予測：渋滞予報のための因果不動点推論
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- pfn
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 渋滞予報では情報提供がドライバーの行動を変えて渋滞自体に影響する。予報の提供を介入とみなし、その影響を考慮する因果不動点推論の枠組みを提案した。
+problem: 予測を教師あり学習で扱うと予測結果が現象に影響しないと暗黙に仮定するが、渋滞予報ではその仮定が成り立たず、学習時と展開時の分布が一致しない。
+approach: 予報の展開を介入として扱い、予報が現象に与える影響を考慮した不動点を求める。
+tags:
+  task:
+  - time-series-forecasting
+  - causal-effect-estimation
+  domain:
+  - mobility
+  method:
+  - causal-inference
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.55

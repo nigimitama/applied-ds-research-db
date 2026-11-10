@@ -1,0 +1,29 @@
+id: 2026-jri-securities-report-llm-knowledge-graph-qa
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4YinB01/_article
+title: 有価証券報告書を対象としたLLMによるナレッジグラフの自動構築と質問応答タスクへの活用手法
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- jri
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 複雑で冗長な有価証券報告書を使いやすくするため、LLMによる知識グラフの自動構築と、それを使った質問応答を行う手法を提案した。
+problem: 有価証券報告書は企業の事業内容や財務の把握に重要だが、複雑で長く、個人が十分に理解して使うのは難しい。
+approach: LLMで報告書から情報を抽出して知識グラフを構築し、質問応答に利用する。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - finance
+  method:
+  - knowledge-graph
+  - llm
+  - rag
+  data_type:
+  - text
+  - graph
+confidence: 0.55

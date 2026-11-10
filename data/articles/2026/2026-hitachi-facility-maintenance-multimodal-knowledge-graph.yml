@@ -1,0 +1,30 @@
+id: 2026-hitachi-facility-maintenance-multimodal-knowledge-graph
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2F5OS19a06/_article
+title: 設備保全支援を高信頼化するマルチモーダルデータの知識グラフ統合技術
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 設備の保全・点検業務を支援するため、複雑な技術図面とテキスト情報を論理的に結びつける知識構造化・検索の手法を提案した。4段階の知識グラフ構築と、効率的な検索手法(Multi G-Retriever)からなる。
+problem: 設備保全の支援には、技術図面とテキストなど複数のデータを関連づけて検索できる必要がある。
+approach: オントロジー拡張、知識グラフ生成、オントロジーマッピング、知識グラフ統合の4段階で構築し、Multi G-Retrieverで検索する。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - manufacturing
+  method:
+  - knowledge-graph
+  - rag
+  - multimodal
+  data_type:
+  - graph
+  - image
+  - text
+confidence: 0.55

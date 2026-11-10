@@ -1,0 +1,26 @@
+id: 2026-daiichi-sankyo-molecular-complex-structure-prediction-secure-environment
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1YinA55/_article
+title: 創薬研究プロセス効率化のための分子複合体立体構造予測モデルの実装
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- daiichi-sankyo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: AlphaFold-3などの分子複合体立体構造予測モデルを、社内の安全な環境で研究者が使えるシステムとして実装した事例。創薬研究の効率化を狙う。
+problem: 構造予測モデルは分子間相互作用の解析を速めるが、第一三共には安全な環境でこれらのモデルを使って複合体構造予測を行う仕組みがなかった。
+approach: 商用・公開の構造予測モデルを研究者が円滑に使える環境を構築した。
+tags:
+  task:
+  - classification
+  domain:
+  - healthcare
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+confidence: 0.55

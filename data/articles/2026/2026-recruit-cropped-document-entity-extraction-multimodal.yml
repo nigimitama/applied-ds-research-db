@@ -1,0 +1,28 @@
+id: 2026-recruit-cropped-document-entity-extraction-multimodal
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2F6OS19b01/_article
+title: 見切れ文書に対するマルチモーダルモデルのエンティティ抽出
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 画像の端で見切れて欠けた文書から、マルチモーダルLLMでエンティティを抽出し欠けた情報を補う方法を検討した。
+problem: OCRは認識したテキストを出力するだけでは実用に足りず、見切れて欠けた情報の補完が効率的な情報管理に重要。
+approach: OCRとマルチモーダルLLMを用いて、見切れ文書のエンティティを抽出する。
+tags:
+  task:
+  - entity-matching
+  domain:
+  - real-estate
+  method:
+  - multimodal
+  - llm
+  data_type:
+  - image
+  - text
+confidence: 0.5

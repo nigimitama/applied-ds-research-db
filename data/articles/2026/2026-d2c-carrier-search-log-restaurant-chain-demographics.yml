@@ -1,0 +1,28 @@
+id: 2026-d2c-carrier-search-log-restaurant-chain-demographics
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA03/_article
+title: 通信キャリアの検索ログに基づいた飲食チェーンの客層の時系列分析
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- d2c
+- ntt
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 通信キャリアの検索ログと性別・年齢データから、飲食チェーンの興味層を、共起する検索語の正規化PMI(NPMI)で時系列に分析した。月次のNPMIの推移から興味の層が移る様子を可視化できた。
+problem: ブランドの具体的な客層データはほとんど公開されないが、検索ログは自発的な関心を反映する。
+approach: 共起するクエリのNPMIを属性セグメントごとに計算し、月次の推移を可視化する。
+tags:
+  task:
+  - classification
+  domain:
+  - retail
+  - food
+  method: []
+  data_type:
+  - log
+  - text
+confidence: 0.55

@@ -1,0 +1,27 @@
+id: 2026-recruit-model-router-sequential-llm-selection-damage-reduction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2F6OS19b03/_article
+title: Model Router を使った逐次 LLM 選択による毀損低減効果の検証
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 商用サービスに組み込んだLLMの出力がユーザーの成約などの報酬に影響する状況で、モデルルーターによる逐次的なLLM選択が、劣るモデルによる毀損をどれだけ減らせるかを検証した。
+problem: 報酬を保つには最適なモデルを継続的に選ぶ必要があるが、モデルの種類が多く特性も様々で、性能の進化が速く短期間で提供終了する。
+approach: バンディット的なモデルルーターでLLMを逐次選択し、毀損低減の効果を検証する。
+tags:
+  task:
+  - experimentation
+  domain:
+  - hr
+  method:
+  - bandit
+  - llm
+  data_type:
+  - log
+confidence: 0.5
