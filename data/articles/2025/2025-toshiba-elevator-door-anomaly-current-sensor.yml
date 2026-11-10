@@ -1,0 +1,28 @@
+id: 2025-toshiba-elevator-door-anomaly-current-sensor
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4F3OS30c02/_article
+title: 低コスト電流センサとROCLTSによる昇降機ドア異常予兆診断
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- toshiba
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 低コスト電流センサの波形からエレベーターのドア異常の予兆を検知する診断システムの試作を報告している。波形の再現性が低い問題に、ローパスフィルタと波形抽出を加えたROCLTS(頑健な一クラス時系列シェイプレット学習)で対応し、正常波形20本の学習でも十分な検知性能を得た。
+problem: 昇降機の稼働台数と経年が増える一方で保守要員は不足しており、安全を保ちながら保守を効率化する必要がある。低コストセンサの波形は再現性が低く、検知性能が下がる。
+approach: 電流波形にローパスフィルタと波形抽出を施し、Robust One-Class Learning Time-series Shapelets(ROCLTS)で異常予兆を検知する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.65
+result: 正常波形20本のみの学習でも十分な検知性能を達成。

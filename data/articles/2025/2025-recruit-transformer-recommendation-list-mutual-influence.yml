@@ -1,0 +1,26 @@
+id: 2025-recruit-transformer-recommendation-list-mutual-influence
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3E1GS1004/_article
+title: Transformer を用いたアイテム間の相互影響を考慮したレコメンドリスト生成
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 同時に表示される商品同士が互いに選択に影響することを考慮して、Transformerでリスト内の他アイテムの特徴を踏まえたスコアを予測し、貪欲法でレコメンドリストを生成する手法を提案した。
+problem: 従来のバンドル推薦はリスト全体の最適化を狙うが、ユーザーが実際に見る範囲でのアイテム間の相互影響を明示的に扱う研究は少ない。リスト最適化は組合せ爆発も起きる。
+approach: ユーザーが同時表示の商品を見比べて選ぶ行動をモデルに組み込み、Transformerで他アイテムの特徴を踏まえてスコアを予測する。リスト生成は計算可能な時間で済む貪欲法を使う。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - transformer
+  data_type:
+  - log
+confidence: 0.55

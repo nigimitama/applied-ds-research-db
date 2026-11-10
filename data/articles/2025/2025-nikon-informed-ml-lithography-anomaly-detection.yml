@@ -1,0 +1,25 @@
+id: 2025-nikon-informed-ml-lithography-anomaly-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4F1OS30a03/_article
+title: 半導体製造装置におけるInformed Machine Learningに基づく異常検知フレイムワークの構築
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- nikon
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 半導体露光装置の故障検知に、ドメイン知識を取り込むInformed Machine Learning(IML)の枠組みを適用した。故障の発生が少なくラベル付きデータが得にくいため、従来の故障検知手法が使えない問題に対応する。
+problem: 製造現場でデータ活用が広がっても、実用にはドメイン知識の統合が欠かせない。露光装置では故障の発生が少なく、ラベル付きデータが十分に得られない。
+approach: ドメイン知識を機械学習に組み込む枠組みを体系化し、半導体露光装置の異常検知システムに適用した。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - manufacturing
+  method: []
+  data_type:
+  - time-series
+confidence: 0.6

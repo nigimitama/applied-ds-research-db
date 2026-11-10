@@ -1,0 +1,28 @@
+id: 2025-ntt-ad-creative-behavior-model-effect-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2M1GS1005/_article
+title: 広告クリエイティブ情報を用いた大規模行動モデルでの広告配信効果予測
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- ntt
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 新しい広告クリエイティブは過去の配信実績がなく効果予測が難しい。過去の別キャンペーンのクリエイティブ情報と配信結果を学習した大規模行動モデルで、新クリエイティブの配信効果を間接的に予測できることを確認した。
+problem: 広告主は配信効果の高いクリエイティブを選びたいが、新規クリエイティブには配信実績がなく予測できない。
+approach: 過去キャンペーンのクリエイティブ情報と配信結果を用いて大規模行動モデル(Transformer)を学習し、新クリエイティブの効果を間接的に予測する。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - transformer
+  data_type:
+  - log
+  - tabular
+confidence: 0.6
+result: 検証で新規広告の配信効果を予測できること、予測スコアの重みとクリエイティブ情報が精度に寄与することを確認。

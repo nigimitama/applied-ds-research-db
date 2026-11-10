@@ -1,0 +1,26 @@
+id: 2025-askul-veteran-driver-parking-location-recommendation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2I1GS305/_article
+title: ベテランドライバーナレッジに基づく駐車場所推薦アルゴリズム
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ベテランドライバーが選ぶ駐車場所の知識を使い、新人ドライバー向けに駐車場所を推薦するアルゴリズムを提案した。配送先住所と駐車位置のデータベースから信頼できる駐車位置を選び、未登録の建物には近隣の駐車位置を当て、複数配送先は駐車位置を共有できるようクラスタリングで集約する。
+problem: ドライバーの時間外労働規制(2024年問題)でEC物流の人手不足が深刻になり、新人の採用が必要だが、新人は最適な駐車場所を知らず効率が下がる。
+approach: 過去の駐車実績から近接性に着目して信頼できる駐車位置を選定し、未登録建物には近隣位置を割り当て、複数の配送先が1つの駐車位置にまとめられる場合はクラスタリングで集約する。
+tags:
+  task:
+  - recommendation
+  - resource-optimization
+  domain:
+  - logistics
+  method: []
+  data_type:
+  - geospatial
+confidence: 0.6

@@ -1,0 +1,28 @@
+id: 2025-mitsubishi-heavy-machine-abnormal-sound-classification-noisy
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win565/_article
+title: 深層学習モデルによる雑音環境下における機械音の異常分類
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- mitsubishi-heavy
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 雑音環境下で産業機械の異常音を頑健に検知する深層学習モデルを検討した。4種類の機械の稼働音データでACRNNとLiquid Neural Networkをベースライン(ResNet18)と比較し、間欠的な音にはACRNN、連続的な音にはLNNが有効であることを確認した。
+problem: 異常音は機械の製品や部品の種類によって異なり、騒音の中で発生する。故障の早期検知で保全を効率化するため、雑音に頑健な検知が必要。
+approach: 産業機械の稼働音(正常・異常、4種類)で、ACRNN(Attention付き畳み込みリカレント)とLiquid Neural Networkを構築し、ResNet18と比較した。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  data_type:
+  - audio
+confidence: 0.65
+result: バルブやスライドレールのような間欠音にはACRNN、連続音にはLNNが有効と確認。

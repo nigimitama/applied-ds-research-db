@@ -1,0 +1,27 @@
+id: 2025-grid-inc-power-supply-demand-planning-optimization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4P1OS17a02/_article
+title: 市場取引と多様な電源を扱う需給計画最適化
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- grid-inc
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 電力会社の週次計画業務に数理最適化を適用した事例。天候・需要・電力価格の予測から複数シナリオを作り、火力・水力・揚水・原子力・太陽光・購入電力を詳細にモデル化して、発電機の起動停止計画を求める。
+problem: 市場取引と多様な電源を扱う需給計画は、実運用の制約を反映するために各発電所の詳細なモデル化が要る。
+approach: 予測に基づく複数シナリオを作り、各シナリオで発電機の起動停止計画を算出する2段階の最適化を行う。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - energy
+  method:
+  - mathematical-optimization
+  - simulation
+  data_type:
+  - time-series
+confidence: 0.6

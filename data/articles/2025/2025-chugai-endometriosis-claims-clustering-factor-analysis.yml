@@ -1,0 +1,26 @@
+id: 2025-chugai-endometriosis-claims-clustering-factor-analysis
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3Win519/_article
+title: クラスタリング手法を用いた子宮内膜症の早期診断と包括的治療計画のための要因分析
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- chugai
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 医療データベース(MDV)の病院請求データを使い、子宮内膜症の新規診断前後のパターンをクラスタリングで分析した。診断前に誤診されやすい疾患の診断が増える傾向や、鎮痛薬処方の増加に伴うエコー検査の有用性、精神疾患の併存を示唆している。
+problem: 子宮内膜症は早期診断と身体面・精神面を含む包括的な治療計画が求められる。
+approach: 日本の病院請求データベースで、診断前後の診断・処方・処置パターンを記述的に分析し、クラスタリングで要因を探る。
+tags:
+  task:
+  - classification
+  domain:
+  - healthcare
+  method: []
+  data_type:
+  - tabular
+confidence: 0.6
+result: 診断前に誤診されうる疾患の診断が増える、鎮痛薬処方が増えた患者でのエコー検査が診断に有用でありうる、精神疾患の診断が併存して増えるといった傾向を示唆。

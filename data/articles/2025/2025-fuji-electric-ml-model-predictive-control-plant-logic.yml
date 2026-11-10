@@ -1,0 +1,29 @@
+id: 2025-fuji-electric-ml-model-predictive-control-plant-logic
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win575/_article
+title: 機械学習とプラント内部の制御ロジックに基づくモデル予測制御
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- fuji-electric
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プラントは内部制御ロジックが設定値に追従するため、単純に機械学習モデルを当てはめても将来状態を予測しにくい。機械学習モデルと制御ロジックを組み合わせた予測法と、それを用いた最適な設定値の算出法を提案し、評価した。
+problem: オペレータが設定する値を内部の制御ロジックが追従する構造のプラントでは、設定値の変更で挙動が大きく変わる。既存の機械学習モデルをそのまま使うと将来状態の予測が難しく、運転支援に使えない場合がある。
+approach: 機械学習モデルとプラント内部の制御ロジックを組み合わせて将来状態を予測し、その予測を用いて最適な設定値を計算するモデル予測制御を構成する。
+tags:
+  task:
+  - resource-optimization
+  - time-series-forecasting
+  domain:
+  - manufacturing
+  - energy
+  method:
+  - time-series-model
+  - mathematical-optimization
+  data_type:
+  - time-series
+confidence: 0.6

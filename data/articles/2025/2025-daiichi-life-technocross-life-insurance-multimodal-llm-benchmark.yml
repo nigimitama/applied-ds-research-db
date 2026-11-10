@@ -1,0 +1,29 @@
+id: 2025-daiichi-life-technocross-life-insurance-multimodal-llm-benchmark
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3A6GS1002/_article
+title: 生命保険業務データによるマルチモーダルLLMの性能評価
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- daiichi-life-technocross
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 生命保険の問い合わせ対応業務にマルチモーダルLLMを適用するため、業務データで独自ベンチマークを作り、Claude 3.5 Sonnet・Gemini 1.5 Pro・GPT-4oを比較した。文書QAではClaude、画像内容のテキスト化ではGeminiが最高精度で、社内文書の図表で認識が難しい特徴も整理した。
+problem: 公開ベンチマークの結果が自社の業務データでも成り立つとは限らず、業務への適用可否を判断するには実データでの性能評価が必要。
+approach: 業務データから文書QAと画像内容のテキスト化のベンチマークを構築し、3つのマルチモーダルLLMを比較した。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - insurance
+  method:
+  - llm
+  - multimodal
+  data_type:
+  - text
+  - image
+confidence: 0.7
+result: 文書QAでClaude 3.5 Sonnet、画像内容のテキスト化でGemini 1.5 Proが最高精度。業務データでの評価は公開ベンチマークと異なる結果になった。

@@ -1,0 +1,27 @@
+id: 2025-nissui-aquaculture-fish-weight-estimation-features
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1Q4GS1001/_article
+title: 養殖魚の体重推定精度を向上させる新規特徴量
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- nissui
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: いけす内の養殖ブリの体重を非接触で推定するため、尾叉長・体高に加えて新たな体の特徴量を探索した。約10万個体のデータセットを構築し、精度向上に効く特徴量を機械学習で特定している。
+problem: 養殖では給餌量を魚群の重量から決めるため、体重推定の精度が重要。水中ステレオカメラの尾叉長と体高が主流の特徴量で、さらに精度を上げるには新しい特徴量が要る。
+approach: ブリ約10万個体について尾叉長・体高・体幅と11個の候補特徴量の長さ、体重を計測したデータセットを作り、機械学習の特徴量探索で精度を高める特徴量を調べた。
+tags:
+  task:
+  - classification
+  domain:
+  - food
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+  - image
+confidence: 0.6

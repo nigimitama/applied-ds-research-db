@@ -1,0 +1,29 @@
+id: 2025-recruit-online-travel-agency-user-booking-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3E6GS1003/_article
+title: オンライン旅行代理店におけるユーザー単位の宿泊予約予測
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: オンライン旅行代理店で、ユーザーの過去の予約・キャンセル履歴と属性から次の宿泊予約の時期と確率を予測する手法を検討した。実データで複数のモデルと確率較正手法を比較している。
+problem: 大規模サービスでは新規獲得だけでなく既存ユーザーとの関係維持が長期収益に重要だが、全ユーザーに一律の施策を打つのは非効率。
+approach: 予約・キャンセル履歴と人口統計情報からユーザー単位の次回予約時期を予測し、確率較正手法を比べて予約確率を適切に推定する。
+tags:
+  task:
+  - churn-prediction
+  - personalization
+  domain:
+  - travel
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+  - log
+confidence: 0.6
+result: 実データでの評価で、モデルや確率較正手法による差を確認(具体値は要旨に記載なし)。

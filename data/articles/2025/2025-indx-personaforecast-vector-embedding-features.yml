@@ -1,0 +1,30 @@
+id: 2025-indx-personaforecast-vector-embedding-features
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2Win590/_article
+title: PersonaForecast：ベクトル埋込による解釈可能な特徴量開発
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- indx
+- insight-edge
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 多様な顧客データをベクトル化し、クラスタリングでペルソナを自動発見・可視化して、解釈しやすい特徴量を作るPersonaForecastを提案した。商品購買履歴などの複合データで新しいペルソナを見つけられることを示している。
+problem: 異種の顧客データを統合して分析し、マーケティングに使える解釈可能な特徴量を得るのは難しい。
+approach: 生成AIも使って異種の顧客情報を共通の数値空間にベクトル化し、類似度でクラスタリングしてペルソナを抽出、解釈可能な特徴量を作る。
+tags:
+  task:
+  - personalization
+  - classification
+  domain:
+  - retail
+  method:
+  - embedding
+  - llm
+  data_type:
+  - tabular
+  - text
+confidence: 0.55
