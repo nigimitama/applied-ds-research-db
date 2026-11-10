@@ -1,0 +1,28 @@
+id: 2024-honda-fiber-orientation-surrogate-model-resin-parts
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3F5GS1002/_article
+title: 繊維強化樹脂部品の繊維配向予測サロゲートモデルの開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- honda
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 自動車の衝突安全シミュレーションに必要な繊維強化樹脂部品の繊維配向を、従来の樹脂流動解析と同等の情報で出力するサロゲートモデルを開発した。流動解析の長い計算時間が開発サイクルへの組み込みの障壁になっていた。
+problem: 樹脂部品の強度は繊維の配向で大きく変わり、衝突シミュレーションに繊維配向の影響を含める必要があるが、樹脂流動解析は時間がかかり定常的な開発サイクルに組み込みにくい。
+approach: 樹脂流動解析の結果を学習し、繊維配向を出力するサロゲートモデルを構築した。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - manufacturing
+  - mobility
+  method:
+  - deep-learning
+  - simulation
+  data_type:
+  - tabular
+confidence: 0.55

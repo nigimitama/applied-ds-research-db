@@ -1,0 +1,27 @@
+id: 2024-ga-technologies-property-facility-score-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2O4OS25a03/_article
+title: 機械学習を用いた物件設備スコアの推定：不動産データを使用したケーススタディ
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- ga-technologies
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 分譲マンションの設備の評価を、不動産のプロの主観的な評価を数値化して、販売図面データの特徴から機械学習で再現した。専門家へのヒアリングで採点シートを作り、実物件を評価して学習データにした。
+problem: 設備の評価は買い手・借り手の重要な情報で将来の収益性評価にも使われるが、専門家の主観に依存する。
+approach: ヒアリングで設備採点シートを作成して実物件を評価し、販売図面データの特徴量から設備スコアを推定するモデルを構築した。
+tags:
+  task:
+  - classification
+  domain:
+  - real-estate
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+  - image
+confidence: 0.6

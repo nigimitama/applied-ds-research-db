@@ -1,0 +1,27 @@
+id: 2024-bizreach-ziln-elapsed-time-customer-ltv
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin221/_article
+title: 経過時間を考慮したZILNモデルによる顧客生涯価値予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- bizreach
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 売上が発生しない顧客が多い状況で使われるZILNモデルの、観測期間が固定という制約を取り除き、経過時間を考慮した顧客生涯価値(LTV)予測を提案した。
+problem: ZILNは学習データの観測期間が固定で、予測時に期間を変えられない。そのため十分な学習データを集めにくい。
+approach: 経過時間を入力に取り込んだZILNモデルで、観測期間の異なるデータでも学習・予測できるようにする。
+tags:
+  task:
+  - time-series-forecasting
+  - churn-prediction
+  domain:
+  - hr
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+confidence: 0.6

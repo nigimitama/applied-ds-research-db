@@ -1,0 +1,28 @@
+id: 2024-lycorp-uplift-modeling-cost-effective-coupon-targeting
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1F5GS1002/_article
+title: アップリフトモデリングに基づく費用対効果の高いクーポン配布対象者の決定法
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- lycorp
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ECの割引クーポンは購買意欲を高める一方、値引きで収益を減らす。アップリフトモデリングで費用対効果の高い配布対象者を決める方法を検討した。
+problem: クーポンは顧客獲得に有効だが、値引き分が収益を圧迫する。配布対象の選び方次第で費用対効果が大きく変わる。
+approach: アップリフトモデリングで配布による購買の増分効果を推定し、費用対効果の高い対象者を決める。
+tags:
+  task:
+  - causal-effect-estimation
+  - personalization
+  domain:
+  - e-commerce
+  method:
+  - uplift-modeling
+  data_type:
+  - tabular
+  - log
+confidence: 0.55

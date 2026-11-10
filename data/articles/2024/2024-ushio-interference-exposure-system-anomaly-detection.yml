@@ -1,0 +1,29 @@
+id: 2024-ushio-interference-exposure-system-anomaly-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3F5GS1004/_article
+title: 干渉露光機の異常検知
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- ushio
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 干渉露光機のステージ動作の異常検知を、LSTMのseq2seqモデルで検討した。機器の出力とモデルの出力を比較して異常を検知し、予測値が正常な装置の挙動をよく再現した。
+problem: 装置の運用安定性と保守性を高めるため、運転データによる異常検知と故障予知が必要。
+approach: 入出力が時系列であるステージ動作に対し、LSTMのseq2seqモデルで正常動作を学習し、実機との差で異常を検知する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6
+result: 予測値は正常な装置の挙動を精度よく再現できた。

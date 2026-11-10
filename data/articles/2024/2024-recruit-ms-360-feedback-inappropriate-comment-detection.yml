@@ -1,0 +1,29 @@
+id: 2024-recruit-ms-360-feedback-inappropriate-comment-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin266/_article
+title: 360度評価における不適切コメントの自動判定とテキスト生成モデルによる学習データ拡張効果の検証
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- recruit-ms
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 360度評価の自由記述コメントから不適切・攻撃的な内容を自動判定するモデルを作った。実アノテーションデータで微調整したBERTは再現率80%を達成し、テキスト生成モデルによる学習データ拡張の効果も検証している。
+problem: 360度評価のコメントには、スキル開発を妨げる不適切な内容が含まれることがあり、人事担当者が手作業で確認する負担が大きい。
+approach: 実際のアノテーションデータでBERTを微調整して不適切コメントを判定し、テキスト生成モデルでデータを拡張した効果を検証した。
+tags:
+  task:
+  - classification
+  domain:
+  - hr
+  method:
+  - transformer
+  - fine-tuning
+  - llm
+  data_type:
+  - text
+confidence: 0.7
+result: 微調整したBERTで再現率80%を確認。

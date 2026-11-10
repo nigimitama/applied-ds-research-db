@@ -1,0 +1,30 @@
+id: 2024-recruit-llm-tuning-ocr-unstructured-document-images
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4A1GS601/_article
+title: 大規模言語モデルチューニングによる非構造ドキュメント画像向けOCRテキスト解析
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- recruit
+- beans-labo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 表構造のない非構造文書画像のOCR結果から、キーと値の関係を持つ構造化データへ整理する課題に、LLMのチューニングで取り組んだ。
+problem: OCRの出力を並べるだけでは足りず、情報サイトへの掲載データ作成などでは、キーと値の関係を抽出して構造化する必要がある。表がない文書では位置情報から関係を抽出するのが難しい。
+approach: OCRテキストをLLMに入力し、チューニングによってキーと値の関係を持つ構造化データへ変換する。
+tags:
+  task:
+  - entity-matching
+  - text-generation
+  domain:
+  - hr
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - image
+  - text
+confidence: 0.55

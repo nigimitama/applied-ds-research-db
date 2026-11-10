@@ -1,0 +1,27 @@
+id: 2024-ntt-com-split-time-series-design-low-frequency-intervention
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin271/_article
+title: 分割時系列デザインに基づく低頻度繰り返し介入の効果推定手法
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- ntt-com
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 工場の定期メンテナンスのような低頻度で繰り返す介入の効果を、観測データから推定するために、分割時系列分析(ITSA)を各介入の前後の短い期間で行う手法を提案した。
+problem: 従来のITSAは全体が非線形な場合の扱いと、異なる介入の結果の解釈に難がある。
+approach: 各介入の前後の短い期間だけをモデル化して全体の非線形な効果を線形近似し、介入前のトレンドに基づく反事実予測と観測値の比較で効果を推定する。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - manufacturing
+  method:
+  - causal-inference
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.55

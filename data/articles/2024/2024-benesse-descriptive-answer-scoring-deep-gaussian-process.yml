@@ -1,0 +1,27 @@
+id: 2024-benesse-descriptive-answer-scoring-deep-gaussian-process
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1M4OS14a05/_article
+title: 記述式解答データの自動採点における深層ガウス過程回帰の適用
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- benesse
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 記述式解答の自動採点に、予測値の不確実性を出せるガウス過程回帰と深層ガウス過程回帰を適用した。公開ベンチマークと自社の大規模データで、精度を保ちながら不確実性を算出できることを検証している。
+problem: テストサービスの運用では予測値の不確実性を把握したい場面が多いが、従来の言語モデルベースの回帰では難しく、分類モデルでは精度が落ちることがある。
+approach: 言語モデルの特徴量にガウス過程回帰および深層ガウス過程回帰を適用し、ベンチマークと自社の大規模データで評価した。
+tags:
+  task:
+  - classification
+  domain:
+  - education
+  method:
+  - bayesian
+  - deep-learning
+  data_type:
+  - text
+confidence: 0.6

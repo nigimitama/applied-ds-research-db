@@ -1,0 +1,26 @@
+id: 2024-asahi-kasei-genai-residential-design-summary-generation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin263/_article
+title: 生成AIによる設計要旨の自動生成
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- asahi-kasei
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 戸建住宅の外観提案書に添える設計要旨を、生成AIで自動生成する手法を検討した。要旨の特徴を分析して必須要素を抽出し、プロンプトの手順を提案して比較評価している。
+problem: 設計要旨は顧客に訴求する重要な書類だが、作成には専門家の知識が必要で、作成者の技量により品質がばらつく。
+approach: 設計要旨の特徴から必須要素を抽出し、生成AIに段階的に作らせるプロンプト手順を提案する。
+tags:
+  task:
+  - text-generation
+  domain:
+  - real-estate
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.55

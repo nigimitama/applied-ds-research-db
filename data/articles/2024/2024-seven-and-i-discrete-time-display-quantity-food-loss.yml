@@ -1,0 +1,30 @@
+id: 2024-seven-and-i-discrete-time-display-quantity-food-loss
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1F5GS1005/_article
+title: 小売店舗のフードロス削減と収益向上に向けた離散時間陳列数最適化アルゴリズムの開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- seven-and-i
+- ntt-data
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 小売店舗のフードロス削減と収益向上のため、需要予測に基づく離散時間の陳列数最適化アルゴリズムを開発した。過去の販売データから需要傾向を学習し、仕入過多によるロスと販売機会損失を最小化する陳列数を単位時間ごとに1つの値として出力する。
+problem: 小売店では大量のフードロスが生じ、環境負荷や経済的損失が問題。過剰な仕入と販売機会の損失の両方を抑える陳列数が必要。
+approach: 過去の販売実績から需要の傾向を学習し、需要予測に基づいて陳列数を最適化する。
+tags:
+  task:
+  - demand-forecasting
+  - resource-optimization
+  domain:
+  - retail
+  method:
+  - time-series-model
+  - mathematical-optimization
+  data_type:
+  - tabular
+  - time-series
+confidence: 0.6

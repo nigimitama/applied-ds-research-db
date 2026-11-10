@@ -1,0 +1,28 @@
+id: 2024-jwa-solar-irradiance-nowcast-cloud-dynamics
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2K1GS1002/_article
+title: 雲力学と深層学習を用いた日射量短時間予測手法の開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- jwa
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 太陽光発電の運用に向け、衛星観測データを直接使う雲力学と深層学習を組み合わせて6時間先までの日射量を予測するモデルを開発した。数値予報や衛星動画予測の初期値精度や雲変化の表現の限界を補う。
+problem: 数値気象予報や衛星観測の動画予測では、初期値の精度と雲の複雑な変化の記述に限界がある。
+approach: 衛星観測データから初期値を高精度に推定し、雲力学と深層学習を組み合わせて6時間先までの日射量を予測する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - deep-learning
+  - simulation
+  data_type:
+  - image
+  - time-series
+confidence: 0.6

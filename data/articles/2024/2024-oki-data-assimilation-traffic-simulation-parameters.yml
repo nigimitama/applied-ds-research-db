@@ -1,0 +1,28 @@
+id: 2024-oki-data-assimilation-traffic-simulation-parameters
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2A5GS1002/_article
+title: データ同化を用いた交通流シミュレーションモデルのパラメータ推定
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 交通流シミュレーションの精度を保つため、プローブデータを用いたデータ同化でモデルのパラメータを統計的に推定した。試行錯誤で決めていたパラメータ設定を置き換える。
+problem: シミュレーションで施策を仮想検証するには高い精度が必要だが、適切なパラメータは事前に分からず、試行錯誤で決めることが多い。
+approach: プローブデータを観測としたデータ同化で、交通流シミュレーションモデルのパラメータを推定する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - simulation
+  - bayesian
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.55

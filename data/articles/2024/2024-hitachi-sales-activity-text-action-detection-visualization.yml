@@ -1,0 +1,26 @@
+id: 2024-hitachi-sales-activity-text-action-detection-visualization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin282/_article
+title: 営業活動のテキストデータに基づく営業行動の検出と可視化
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 営業支援システム(SFA)に非構造テキストで記録される営業活動の記述から、営業担当者や顧客の行動を検出して可視化するアプリケーションを紹介している。
+problem: 営業活動の詳細は非構造テキストで記録されるため、大量のデータから全体を把握するのに手間がかかる。
+approach: テキストデータから営業行動を検出して可視化する営業アプリケーションを構築した。
+tags:
+  task:
+  - classification
+  domain:
+  - retail
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.55

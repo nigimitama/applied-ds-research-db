@@ -1,0 +1,30 @@
+id: 2024-cyberagent-abema-heterogeneous-treatment-effect-ab-test
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2O1GS305/_article
+title: ABEMAにおけるコンテンツ紹介の機械学習を用いた異質処置効果推定
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- cyberagent
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 動画配信サービスABEMAのA/Bテストデータで、平均処置効果だけでなく機械学習による異質処置効果(HTE)を推定した。実験前に視聴していたコンテンツの傾向によって処置効果が異なることを確認した。
+problem: ABEMAは日々A/Bテストで改善を検証しているが、平均処置効果だけではユーザー間の効果のばらつきが分からない。
+approach: A/Bテストのデータに機械学習ベースの異質処置効果推定を適用し、実験前の視聴傾向別の効果を分析する。
+tags:
+  task:
+  - causal-effect-estimation
+  - experimentation
+  domain:
+  - media
+  method:
+  - causal-inference
+  - ab-testing
+  data_type:
+  - log
+confidence: 0.7
+result: 実験前の視聴コンテンツの傾向によって処置効果に異質性があることを確認し、ユーザー行動に関する示唆を得た。
+has_online_experiment: true

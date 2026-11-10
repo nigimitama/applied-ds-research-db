@@ -1,0 +1,27 @@
+id: 2024-askul-cardboard-box-size-design-bayesian-optimization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2D6GS205/_article
+title: ベイズ最適化を用いた段ボール箱サイズ設計による配送コスト削減手法の提案
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: EC物流で配送コストを下げる段ボール箱サイズ自体の設計を、ベイズ最適化で解く手法を提案した。注文の全商品が入る最小の箱を選ぶ組合せ最適化と、箱寸法の最適化の2つに分けて扱う。
+problem: 箱サイズの設計は配送費に直結するが、組合せが膨大で、箱サイズ設計そのものを数理問題として最適化した研究は少ない。
+approach: 問題を、注文に合う最小の箱の選択と箱寸法の探索に分け、後者にベイズ最適化を用いて配送コストを最小化する寸法を求める。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - e-commerce
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

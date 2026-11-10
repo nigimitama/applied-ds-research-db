@@ -1,0 +1,27 @@
+id: 2024-askul-ecommerce-packing-box-selection-practical
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1B5GS205/_article
+title: 実運用に即した梱包箱選択法によるEC物流の配送費削減に関する研究
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ECの配送費削減のため、同種商品をまとめて入れる条件や重量を考慮した実運用に即した梱包箱選択アルゴリズムを開発した。3次元ビンパッキングを実務制約つきで扱う。
+problem: 配送料は梱包箱の三辺合計で決まることが多く、小さい箱ほど安い。3次元ビンパッキングはNP困難で、既存のヒューリスティックは実運用上の制約を見落としがち。
+approach: 同種商品を近くに置く条件と重量を定式化し、注文ごとに適切な箱を選ぶアルゴリズムを構成した。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - e-commerce
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

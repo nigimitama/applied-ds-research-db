@@ -1,0 +1,28 @@
+id: 2024-uzabase-llm-augmentation-tagging-metric-learning
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin265/_article
+title: 大規模言語モデルによるデータ拡張を利用した文章タグ付けタスクの距離学習への転換
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- uzabase
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 専門家とユーザーの質問を結びつけるFlash Opinionサービスで、質問へのタグ付けを、LLMによるデータ拡張を使った距離学習に転換した。タグの追加・削除のたびに再学習が必要な多ラベル分類の問題を避ける。
+problem: タグ付けの作業負荷を減らしたいが、多ラベル分類として定式化するとタグが増減するたびにモデルの再学習が必要になる。
+approach: タグ付けを距離学習の問題に変え、LLMでデータ拡張して学習する。
+tags:
+  task:
+  - classification
+  - search-ranking
+  domain:
+  - media
+  method:
+  - llm
+  - embedding
+  data_type:
+  - text
+confidence: 0.6
