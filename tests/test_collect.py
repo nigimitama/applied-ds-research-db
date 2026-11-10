@@ -168,7 +168,7 @@ def test_parse_title_author_table_and_resolve_dois():
     items = collect.parse_title_author_table(html, "https://x.example/p/")
     assert [i["title"] for i in items] == ["Foo Bar Baz", "Other Paper"]
     assert items[0]["summary"] == "A (Acme Inc.); B (MIT)"
-    assert items[0]["url"] == "https://x.example/p/#foo-bar-baz"
+    assert items[0]["url"] == "https://x.example/p/?paper=foo-bar-baz"
 
     def fake(url):
         assert "S1" in url and "2024" in url
@@ -179,7 +179,7 @@ def test_parse_title_author_table_and_resolve_dois():
     src = {"openalex_source": "S1", "openalex_year": 2024}
     assert collect.resolve_dois(items, src, fake) == 1
     assert items[0]["url"] == "https://doi.org/10.1145/1"
-    assert items[1]["url"].startswith("https://x.example/p/#")
+    assert items[1]["url"].startswith("https://x.example/p/?paper=")
 
 
 def test_resolve_dois_survives_rate_limit():
