@@ -1,0 +1,27 @@
+id: 2026-suzuki-memory-bank-anomalous-sound-detection-score-correction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1YinA31/_article
+title: 少数異音サンプルを用いたメモリバンク型異音検知のスコア補正
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- suzuki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: メモリバンク型の異音検知で、運用中に得られる少数の異音サンプルを、再学習なしに活用するスコア補正手法を提案した。
+problem: メモリバンク型は性能と計算コストに優れるが、正常データの分布だけをモデル化し、運用中に得られる少数の異音データを使う仕組みがない。少数ショットの先行手法は再学習が必要で、損失設計も複雑。
+approach: 少数の異音サンプルを使って、再学習せずに異常スコアを補正する。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - manufacturing
+  - mobility
+  method:
+  - deep-learning
+  data_type:
+  - audio
+confidence: 0.55

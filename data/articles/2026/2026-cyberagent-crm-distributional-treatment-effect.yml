@@ -1,0 +1,30 @@
+id: 2026-cyberagent-crm-distributional-treatment-effect
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA01/_article
+title: 分布的処置効果に基づくCRM施策効果の分析
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- cyberagent
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: CRM施策のA/Bテストで、売上のように離散と連続が混在しゼロ過剰な結果変数を、平均処置効果だけでなく分布的処置効果で分析する手法を示した。
+problem: 平均処置効果だけの評価では、反応しない顧客が多いゼロ過剰な結果の分布構造を捉えられない場合がある。
+approach: CRM施策のA/Bテストのデータに分布的処置効果の推定を適用する。
+tags:
+  task:
+  - causal-effect-estimation
+  - experimentation
+  domain:
+  - retail
+  method:
+  - causal-inference
+  - ab-testing
+  data_type:
+  - tabular
+  - log
+confidence: 0.6
+has_online_experiment: true

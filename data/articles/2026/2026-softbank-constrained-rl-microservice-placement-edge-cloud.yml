@@ -1,0 +1,27 @@
+id: 2026-softbank-constrained-rl-microservice-placement-edge-cloud
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5H2OS18a04/_article
+title: 制約付き強化学習によるエッジクラウド連続体へのマイクロサービス配置最適化
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- softbank
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: スマートシティや自動運転向けの低遅延処理のため、エッジとクラウドにまたがる地理的に分散した異種の計算資源へ、複数の制約を満たしつつ運用コストを最小化するマイクロサービス配置を、制約付き強化学習で解いた。
+problem: マイクロサービスの配置問題はNP困難で、従来の厳密解法ではリアルタイムの判断が難しい。
+approach: 制約付き強化学習で、制約を満たしながらコストを最小化する配置を学習する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - cloud-infra
+  - telecom
+  method:
+  - reinforcement-learning
+  data_type:
+  - tabular
+confidence: 0.55

@@ -1,0 +1,28 @@
+id: 2026-inpex-lightweight-time-series-model-renewable-generation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2YinB46/_article
+title: 軽量汎用時系列モデルを用いた再生可能エネルギーの発電予測
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- inpex
+- sumitomo-corp
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 再生可能エネルギーの発電予測に、軽量な汎用時系列基盤モデルを適用した。大規模なモデルは学習データと計算資源が必要で推論遅延も大きく、リアルタイム性が要る予測には不向き。
+problem: 時系列基盤モデルは膨大な学習データと計算資源を要し、推論遅延が大きいためリアルタイムの予測に向かない。
+approach: 軽量な汎用時系列モデルを再生可能エネルギーの発電予測に使って評価する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - time-series-model
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.55

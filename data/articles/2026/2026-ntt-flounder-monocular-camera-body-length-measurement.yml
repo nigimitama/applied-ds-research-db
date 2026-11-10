@@ -1,0 +1,26 @@
+id: 2026-ntt-flounder-monocular-camera-body-length-measurement
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2YinA56/_article
+title: 単眼カメラからの養殖ヒラメ実寸計測に向けた画像セグメンテーションの活用
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- ntt
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 陸上養殖ヒラメの体長を、水槽上部の単眼カメラ画像から自動計測する手法を提案した。頭や尾などの部位に分けるパートアウェアなパノプティックセグメンテーションで体長を推定する。
+problem: 体長計測は手作業だと手間がかかりヒラメに生理的ストレスを与える。ヒラメは水槽底面にいるため、画像上の画素長を実寸に換算できる。
+approach: 部位を識別するセグメンテーションで頭・尾などに分割し、画像上の長さから実寸の体長を推定する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - food
+  method:
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.55

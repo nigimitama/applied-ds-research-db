@@ -1,0 +1,27 @@
+id: 2026-hitachi-similar-product-demand-forecast-rationale
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1YinA01/_article
+title: 類似製品情報を活用した製品需要予測と根拠生成
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 出荷需要予測で、Gompertzモデルに出荷傾向の似た製品の情報を統合し、予測の根拠も生成する手法を提案した。業務担当者の納得感を高める。
+problem: 機械学習による需要予測を実務に導入する際は、予測の解釈性と業務担当者の受容性の向上が課題になる。
+approach: Gompertzモデルに類似製品の情報を取り入れ、予測とともに根拠の説明を生成する。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  - llm
+  data_type:
+  - time-series
+confidence: 0.6

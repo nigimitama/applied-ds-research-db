@@ -1,0 +1,26 @@
+id: 2026-insight-edge-used-android-smartphone-price-formation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2H6OS2c03/_article
+title: 本邦中古Androidスマートフォン市場における価格形成に対する機種ブランドと為替レートの影響
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- insight-edge
+- sumitomo-corp
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 日本の中古Androidスマートフォン市場で、機種のブランドと為替レートが価格にどう影響するかを分析した。買取企業の価格設定や消費者の判断に役立てる。
+problem: 半導体価格上昇や円安で新品が値上がりし中古市場が拡大しているが、Android機種のブランドや為替の影響についての実証は乏しい。
+approach: 中古スマートフォンの取引価格データで、ブランド・為替レートと価格の関係を分析する。
+tags:
+  task:
+  - pricing
+  domain:
+  - e-commerce
+  method: []
+  data_type:
+  - tabular
+confidence: 0.5

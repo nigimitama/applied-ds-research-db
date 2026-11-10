@@ -1,0 +1,27 @@
+id: 2026-lion-detergent-self-supervised-transfer-learning
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2YinA18/_article
+title: 自己教師あり学習を用いた洗浄剤の転移学習
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- lion
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 洗浄剤の開発で、自己教師あり学習による転移学習を使った仮想スクリーニングによる品質予測の手法を、大規模データが得にくい状況に向けて発展させた。
+problem: 消費者ニーズの多様化で開発期間の短縮が求められるが、洗浄剤は界面活性剤・ポリマー・溶剤からなる複雑な系で、研究者の勘と試行錯誤に頼ってきた。
+approach: 自己教師あり学習による転移学習で、少量の実験データから品質を高精度に予測する。
+tags:
+  task:
+  - classification
+  - resource-optimization
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+confidence: 0.55

@@ -1,0 +1,29 @@
+id: 2026-yachiyo-hvac-anomaly-prediction-time-series-embeddings
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4O5IS2c03/_article
+title: Hybrid Feature Learning with Time Series Embeddings for Equipment Anomaly Prediction
+title_ja: ''
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- yachiyo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: en
+summary_ja: 空調設備の異常予兆予測で、Granite TinyTimeMixerの64次元の時系列埋め込みと、ドメイン知識に基づく28次元の統計特徴量を組み合わせたハイブリッドな特徴学習を提案した。
+problem: 設備の予知保全で、深層学習だけでは実データで十分な精度が出ないことが多い。
+approach: 時系列基盤モデルの埋め込みと統計特徴量を結合して異常予兆予測を行う。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.55

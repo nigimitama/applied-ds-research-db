@@ -1,0 +1,28 @@
+id: 2026-pacific-consultants-in-house-rag-risk-assessment-agile-development
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5O3IS5b06/_article
+title: Agile In-House Development of a Risk Assessment AI Application for Field Surveys
+title_ja: ''
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- pacific-consultants
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: en
+summary_ja: 建設コンサルティング業務の事前安全リスク評価を支援するため、過去の事故事例と社内のリスク評価データを使ったRAGアプリケーションを、アジャイルに内製開発した事例。Azure OpenAIなどを使う。
+problem: 経験の浅い若手技術者が、急傾斜地、河川、港湾、上下水道、地下など多様な現場で、現地調査の前に安全リスクを正確に評価するのは難しい。
+approach: Azure OpenAI、Azure AI Searchなどのクラウド構成で、過去の事故事例とリスク評価データを検索して回答するRAGアプリを開発する。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - public-sector
+  method:
+  - rag
+  - llm
+  data_type:
+  - text
+confidence: 0.6

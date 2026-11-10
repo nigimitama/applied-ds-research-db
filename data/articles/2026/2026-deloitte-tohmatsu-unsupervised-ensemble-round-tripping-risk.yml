@@ -1,0 +1,26 @@
+id: 2026-deloitte-tohmatsu-unsupervised-ensemble-round-tripping-risk
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4N4GS10e04/_article
+title: 教師なしアンサンブル学習による循環取引リスクの多面的評価
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- deloitte-tohmatsu
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 会計不正の一種である循環取引を、単一企業の会計データだけで、教師なしで、異常検知と原因の特定ができる条件で検出する手法を提案した。40種類の指標を定義してスコア化する。
+problem: 実用には、単一企業の会計データのみ、異常検知と原因特定の両立、教師なし、という条件を満たす必要がある。
+approach: 循環取引の兆候を表す40種の指標のスコアを計算し、教師なしのアンサンブル学習で多面的にリスクを評価する。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - finance
+  method:
+  - bayesian
+  data_type:
+  - tabular
+confidence: 0.55

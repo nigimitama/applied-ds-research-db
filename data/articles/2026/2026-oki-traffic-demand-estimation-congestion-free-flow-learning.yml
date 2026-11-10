@@ -1,0 +1,27 @@
+id: 2026-oki-traffic-demand-estimation-congestion-free-flow-learning
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_3M2GS10u05/_article
+title: 過去自由流交通量の学習に基づく渋滞時の観測制約下における交通需要推定手法
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 渋滞時は下流を通過できる台数が制限されて、観測交通量が本来の交通需要より小さくなる。過去の自由流交通量の学習に基づいて、渋滞時の交通需要を推定する手法を提案した。
+problem: 渋滞予測の精度には交通需要の把握が欠かせないが、渋滞時は車両検知器の交通量と需要が乖離する。
+approach: プローブ車両の時空間速度データと過去の自由流の交通量の学習を使い、観測制約下の交通需要を推定する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - time-series-model
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.55

@@ -1,0 +1,28 @@
+id: 2026-recruit-ota-point-campaign-sales-uplift-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA23/_article
+title: オンライン旅行代理店におけるポイント付与キャンペーンの売上アップリフト予測
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: オンライン旅行代理店で、宿泊予約を促すポイント付与キャンペーンの効果を、ユーザー単位でアップリフトモデリングにより事前に予測する手法を提案した。ポイント付与の有無や額をユーザーごとに調整して効率的に施策を打てる。
+problem: ポイントの有無・付与量をユーザーごとに調整すれば効率的なマーケティングができるが、キャンペーンの効果を事前に正確に予測するのは難しい。
+approach: アップリフトモデリングでポイント付与による宿泊予約売上の増分を予測する。
+tags:
+  task:
+  - causal-effect-estimation
+  - personalization
+  domain:
+  - travel
+  method:
+  - uplift-modeling
+  data_type:
+  - tabular
+  - log
+confidence: 0.6

@@ -1,0 +1,27 @@
+id: 2026-recruit-metaheuristic-solver-requirement-robustness
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2J5OS36a04/_article
+title: 最小限のドメイン知識注入と柔軟な定式化によって要件複雑化に頑健な性能を持つメタヒューリスティックソルバー
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- recruit
+- susmed
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 実世界の最適化で要件が複雑化しても頑健な性能を保つメタヒューリスティックソルバーを開発した。決定変数に最小限のドメイン知識を入れ、if文やreduce関数を使う柔軟な定式化で要件の追加に対応する。
+problem: 実務の最適化では要件が追加・複雑化し、近傍操作や補助変数の修正が必要になる。
+approach: 決定変数への最小限のドメイン知識注入と、if文・reduce関数・中間変数を使う柔軟な定式化により、要件追加を評価式の変更で吸収する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - hr
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.55

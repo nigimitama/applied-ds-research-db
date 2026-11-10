@@ -1,0 +1,26 @@
+id: 2026-mitsubishi-heavy-hci-driven-air-conditioning-comfort-energy
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1L4GS9b01/_article
+title: 在室者の主観的快適性と省エネを両立するHCI駆動型空調制御方式
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- mitsubishi-heavy
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 空調で、物理センサを使わず居住者のリモコン操作という既存の入力だけから主観的な快適性を捉え、省エネと両立させるHCI駆動の制御方式を提案した。
+problem: 従来の空調制御は客観的なセンサ測定に頼り、居住者の主観的な快適性を捉えられない。
+approach: リモコン操作のフィードバックを動的に取り込み、空調側からの介入を通じて快適性と省エネを調整する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - energy
+  method:
+  - reinforcement-learning
+  data_type:
+  - log
+confidence: 0.55

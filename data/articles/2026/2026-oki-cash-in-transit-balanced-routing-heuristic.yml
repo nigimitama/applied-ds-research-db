@@ -1,0 +1,27 @@
+id: 2026-oki-cash-in-transit-balanced-routing-heuristic
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5H3OS18b04/_article
+title: 回収現金の再利用を可能とするバランス警送問題の定式化とヒューリスティックアプローチ
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ATMなどの現金切れ・満杯を防ぐ現金装填・回収の警備輸送で、回収した現金を再利用して装填する運用を可能にするバランス警送問題を定式化し、ヒューリスティックで解いた。
+problem: 従来の運用では装填用の現金を事前にデポで準備し、回収した紙幣はデポに持ち帰る必要があり、現金処理(計数・確認)のコストが大きい。
+approach: 回収現金の再利用を組み込んだ配送計画問題として定式化し、ヒューリスティックで求解する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - finance
+  - logistics
+  method:
+  - mathematical-optimization
+  data_type:
+  - geospatial
+confidence: 0.55

@@ -1,0 +1,29 @@
+id: 2026-persol-career-feedback-text-optimization-fixed-allocation-ab-test
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA15/_article
+title: ユーザー単位の固定配分ABテストへの応用を見据えた、フィードバックに基づくテキスト最適化手法の検討
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- persol-career
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ユーザー単位の固定配分A/Bテストを繰り返して文章を手作業で最適化する負担を減らすため、評価結果のフィードバックに基づいてテキストを最適化する手法を検討した。
+problem: 固定配分のA/Bテストで評価結果に合わせて文章を最適化するには人手の試行錯誤が必要で、手間が大きい。
+approach: 評価のフィードバックに基づいてテキストを自動で改良する手法を検討し、逐次A/Bテストの自動化を狙う。
+tags:
+  task:
+  - experimentation
+  - text-generation
+  domain:
+  - hr
+  method:
+  - llm
+  - ab-testing
+  data_type:
+  - text
+  - log
+confidence: 0.5

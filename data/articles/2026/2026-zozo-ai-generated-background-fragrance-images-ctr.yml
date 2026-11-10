@@ -1,0 +1,30 @@
+id: 2026-zozo-ai-generated-background-fragrance-images-ctr
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4YinA24/_article
+title: 画像生成AIによる背景生成を用いた最適なフレグランス商品画像の検討
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- zozo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 日本のファッションECで、フレグランス商品画像に画像生成AIで背景を付けることがクリック率に与える影響を、オンラインA/Bテストで検証した。
+problem: 香りのような視覚で伝わらない属性が重要なフレグランスで、拡散モデルによる背景生成が実際のユーザー行動に与える影響は分かっていない。
+approach: 拡散モデルで商品テキストから背景画像を生成して商品画像に使い、オンラインA/Bテストでクリック率を比較する。
+tags:
+  task:
+  - experimentation
+  domain:
+  - e-commerce
+  method:
+  - ab-testing
+  - multimodal
+  data_type:
+  - image
+  - log
+confidence: 0.6
+result: A/Bテストで、AI生成背景付き画像のCTRへの影響を観察(具体値は要旨からは確認していない)。
+has_online_experiment: true

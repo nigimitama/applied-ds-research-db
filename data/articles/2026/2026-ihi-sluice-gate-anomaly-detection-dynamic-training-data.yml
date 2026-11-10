@@ -1,0 +1,27 @@
+id: 2026-ihi-sluice-gate-anomaly-detection-dynamic-training-data
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_3E2GS2g03/_article
+title: 学習データを動的に選択することによる、水門設備の高精度な異常検知・異常予兆検知技術について
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- ihi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 水害対策のため、水門設備の運転データによる異常検知・予兆検知で、運転状況に応じて学習データを動的に選択する技術を開発した。従来の定常運転中心の監視を超える。
+problem: 気候変動で水害リスクが高まる中、水門設備の継続的で正確な監視と故障の早期検知が重要。データの特性は運転状況で変わる。
+approach: 運用状況に合わせて学習データセットを動的に選択して、異常検知・予兆検知を行う。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - public-sector
+  method:
+  - online-learning
+  data_type:
+  - time-series
+confidence: 0.6
