@@ -1,0 +1,12 @@
+id: kdd-ads-2024
+type: conference
+venue: KDD Applied Data Science Track
+method: html_title_table
+url: https://kdd2024.kdd.org/applied-data-science-track-papers/
+filter_hint: "著者所属に企業を含む論文のみ。summary は著者(所属)の列。DOI は題名から OpenAlex で解決(未解決はページURL#スラッグ)。企業名は companies/ のaliasesで名寄せ"
+lang: en
+schedule: yearly
+max_items: 300
+openalex_source: S4363608767
+openalex_year: 2024
+enabled: true
