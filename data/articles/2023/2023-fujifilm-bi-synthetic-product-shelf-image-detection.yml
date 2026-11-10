@@ -1,0 +1,26 @@
+id: 2023-fujifilm-bi-synthetic-product-shelf-image-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4T2GS1005/_article
+title: 疑似的に生成した商品棚画像を用いた商品物体検出
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- fujifilm-bi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 商品棚画像で商品検出モデルを学習する際の、実店舗画像の収集・アノテーションの手間とコストを減らすため、棚を構成する部品画像の合成で本物に近い疑似商品棚画像を自動生成するシステムを構築した。
+problem: 実店舗の商品棚画像を大量に集めてアノテーションするには手間とコストがかかる。
+approach: 棚を構成する部品の画像を合成して、実物に近い疑似商品棚画像を自動生成し、検出モデルを学習する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - retail
+  method:
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.55

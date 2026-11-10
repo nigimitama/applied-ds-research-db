@@ -1,0 +1,29 @@
+id: 2023-geomarketing-twitter-follow-brand-user-interest-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M4GS1002/_article
+title: Twitterにおけるフォロー関係を用いたブランド利用者の趣味・嗜好の推定
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- geomarketing
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: Twitterのフォロー関係を使い、ブランド利用者の趣味・嗜好を推定する手法を提案した。フォローしているインフルエンサーは、本人の投稿よりも嗜好を表すとみなす。
+problem: ユーザーの嗜好はその人の投稿だけでなくフォロー先の投稿にも現れ、特定の話題を高頻度で発信するインフルエンサーは重要な手がかりになる。
+approach: ユーザーのフォロー先アカウントの情報から趣味・嗜好を推定する。
+tags:
+  task:
+  - classification
+  - personalization
+  domain:
+  - advertising
+  - social
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+  - text
+confidence: 0.5

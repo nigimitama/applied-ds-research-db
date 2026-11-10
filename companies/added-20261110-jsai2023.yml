@@ -1,0 +1,136 @@
+# 2026-11-10 JSAI2023 取り込みで追加(要レビュー)
+- id: benesse-style-care
+  name: Benesse Style Care
+  name_ja: ベネッセスタイルケア
+  aliases:
+  - 株式会社ベネッセスタイルケア
+  country: JP
+  industry: Nursing Care
+- id: irep
+  name: iREP
+  name_ja: アイレップ
+  aliases:
+  - 株式会社アイレップ
+  country: JP
+  industry: Advertising
+- id: softbank
+  name: SoftBank
+  name_ja: ソフトバンク
+  aliases:
+  - ソフトバンク株式会社
+  - SoftBank Corp.
+  country: JP
+  industry: Telecom
+- id: negocia
+  name: negocia
+  name_ja: ネゴシア
+  aliases:
+  - negocia株式会社
+  country: JP
+  industry: Advertising
+- id: geomarketing
+  name: Geo Marketing
+  name_ja: ジオマーケティング
+  aliases:
+  - ジオマーケティング株式会社
+  country: JP
+  industry: Marketing
+- id: klab
+  name: KLab
+  name_ja: KLab
+  aliases:
+  - KLab株式会社
+  country: JP
+  industry: Gaming
+- id: rohm
+  name: ROHM
+  name_ja: ローム
+  aliases:
+  - ローム株式会社
+  country: JP
+  industry: Semiconductor
+- id: agc
+  name: AGC
+  name_ja: AGC
+  aliases:
+  - AGC株式会社
+  country: JP
+  industry: Glass/Chemicals
+- id: hakuhodo
+  name: Hakuhodo DY Holdings
+  name_ja: 博報堂DYホールディングス
+  aliases:
+  - 株式会社博報堂DYホールディングス
+  - 博報堂DYホールディングス
+  - 博報堂DYメディアパートナーズ
+  - 博報堂テクノロジーズ
+  - 博報堂
+  country: JP
+  industry: Advertising
+- id: fujifilm-bi
+  name: Fujifilm Business Innovation
+  name_ja: 富士フイルムビジネスイノベーション
+  aliases:
+  - 富士フイルムビジネスイノベーション株式会社
+  - 富士ゼロックス
+  country: JP
+  industry: Office Equipment
+- id: air-closet
+  name: airCloset
+  name_ja: エアークローゼット
+  aliases:
+  - 株式会社エアークローゼット
+  country: JP
+  industry: Fashion Rental
+- id: ateam-lifedesign
+  name: Ateam Life Design
+  name_ja: エイチームライフデザイン
+  aliases:
+  - 株式会社エイチームライフデザイン
+  country: JP
+  industry: Media
+- id: livesense
+  name: Livesense
+  name_ja: リブセンス
+  aliases:
+  - 株式会社リブセンス
+  country: JP
+  industry: Internet
+- id: nikkei
+  name: Nikkei
+  name_ja: 日本経済新聞社
+  aliases:
+  - 株式会社日本経済新聞社
+  - 日本経済新聞社
+  country: JP
+  industry: Media
+- id: fukuoka-seitai
+  name: Fukuoka Seitai Kogyo
+  name_ja: 福岡製袋工業
+  aliases:
+  - 福岡製袋工業株式会社
+  country: JP
+  industry: Manufacturing
+- id: shiseido
+  name: Shiseido
+  name_ja: 資生堂
+  aliases:
+  - 株式会社資生堂
+  country: JP
+  industry: Cosmetics
+- id: lion
+  name: Lion
+  name_ja: ライオン
+  aliases:
+  - ライオン株式会社
+  - ライオン株式会社 研究開発本部
+  country: JP
+  industry: Consumer Goods
+- id: yachiyo
+  name: Yachiyo Engineering
+  name_ja: 八千代エンジニヤリング
+  aliases:
+  - 八千代エンジニヤリング株式会社
+  - Yachiyo Engineering Co.,Ltd.
+  country: JP
+  industry: Engineering Consulting

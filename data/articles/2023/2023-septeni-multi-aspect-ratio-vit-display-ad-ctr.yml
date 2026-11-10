@@ -1,0 +1,28 @@
+id: 2023-septeni-multi-aspect-ratio-vit-display-ad-ctr
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1O5GS705/_article
+title: マルチアスペクト比Vision Transformerを用いたディスプレイ広告効果の予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- septeni
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 任意のアスペクト比の画像を扱えるよう相対位置バイアスを使ったVision Transformerを提案し、実際の広告配信データを使ったクリック率予測に適用した。
+problem: ネット配信のディスプレイ広告画像はアスペクト比が様々で、比を考慮した方が効果予測の精度が上がると考えられる。
+approach: 相対位置バイアスを用いて任意のアスペクト比を扱えるViTを構築し、実広告配信データのCTR予測に適用する。
+tags:
+  task:
+  - ad-optimization
+  - image-recognition
+  domain:
+  - advertising
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.6

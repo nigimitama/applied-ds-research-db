@@ -1,0 +1,29 @@
+id: 2023-negocia-keyword-level-online-bid-optimization-bayes
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M4GS1001/_article
+title: ベイズ推定によるスポンサードサーチ広告のキーワード単位でのオンライン入札額最適化
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- negocia
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: クリック課金型の検索連動広告のキーワード単位入札額を、ベイジアンネットワークによるベイズ推論で成果指標を分布として予測し、バンディットとオンライン最適化で決める手法を提案した。
+problem: 広告入札の最適化は不確実性が高く難しい。
+approach: 広告指標間の関係をベイジアンネットワークでモデル化して成果を分布として予測し、バンディットアルゴリズムとオンライン最適化で入札額を出力する。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - bayesian
+  - bandit
+  - online-learning
+  data_type:
+  - log
+  - tabular
+confidence: 0.6

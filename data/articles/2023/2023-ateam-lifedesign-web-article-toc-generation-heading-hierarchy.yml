@@ -1,0 +1,26 @@
+id: 2023-ateam-lifedesign-web-article-toc-generation-heading-hierarchy
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3M1GS1001/_article
+title: 見出し階層性を考慮したウェブ記事目次テキストの自動生成
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- ateam-lifedesign
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 商用Web記事の骨子となる目次(見出し)の作成を自動化するため、見出しの階層性を考慮した目次テキスト生成を提案した。
+problem: 記事の骨子を手作業で作る負担を減らし、品質を揃えたい。一般的な文生成モデルは文頭だけを入力する前提で見出し階層を扱えない。
+approach: 見出しの階層を考慮して目次テキストを生成するモデルを構築する。
+tags:
+  task:
+  - text-generation
+  domain:
+  - media
+  method:
+  - transformer
+  data_type:
+  - text
+confidence: 0.55

@@ -1,0 +1,26 @@
+id: 2023-softbank-aerial-image-specialized-object-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1O5GS703/_article
+title: 空撮画像における検出対象物の写り方を考慮した特化型物体検出モデルの一検討
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- softbank
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 航空機搭載の通信プラットフォームに載せたカメラの空撮画像で、カメラと対象物の位置関係によって写り方が変わる問題に対し、写り方のパターンで分類した画像ごとに特化型の物体検出モデルを作る方法を検討した。
+problem: 空撮画像では、カメラと対象物の位置関係により対象物の見え方が変わり、物体検出が難しい。
+approach: 撮影時の位置関係でパターン分類した画像で、特化型の物体検出モデルを作成する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - telecom
+  method:
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.55

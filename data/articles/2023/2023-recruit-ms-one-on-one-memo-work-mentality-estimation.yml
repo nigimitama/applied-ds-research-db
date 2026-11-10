@@ -1,0 +1,26 @@
+id: 2023-recruit-ms-one-on-one-memo-work-mentality-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3Xin406/_article
+title: 1on1ミーティング時のメモを用いたワークメンタリティの好不調の推定
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- recruit-ms
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 従業員のワークメンタリティの好不調を、上司との1on1ミーティングのメモから推定するモデルを開発した。頻繁なサーベイによる従業員負担を避けられる。
+problem: 人的資本管理のため従業員のメンタリティを把握したいが、頻繁なサーベイは従業員の負担になる。
+approach: 1on1ミーティングのメモのテキストから、ワークメンタリティの状態を推定するモデルを構築する。
+tags:
+  task:
+  - classification
+  domain:
+  - hr
+  method:
+  - transformer
+  data_type:
+  - text
+confidence: 0.55

@@ -1,0 +1,27 @@
+id: 2023-aucnet-used-car-appraisal-price-recommendation-system
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2N5GS1002/_article
+title: 中古自動車の査定価格決定支援システムの実装
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- aucnet
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 中古車オークションの査定価格決定を、経験者の手作業からAutoMLを用いた価格推薦システムに置き換え、落札価格を予測するモデルを実オークションデータで構築して人の査定と比較した。
+problem: 2020年以前は価格を経験豊富な担当者が車種・走行距離・車体状態から決めていたが、問い合わせの増加で速度と精度の改善が必要になった。
+approach: AutoMLで落札価格を予測する価格推薦システムを構築し、人の査定との性能を比較する。
+tags:
+  task:
+  - pricing
+  domain:
+  - mobility
+  - e-commerce
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+confidence: 0.65

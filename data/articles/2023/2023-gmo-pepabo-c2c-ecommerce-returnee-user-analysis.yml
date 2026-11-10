@@ -1,0 +1,26 @@
+id: 2023-gmo-pepabo-c2c-ecommerce-returnee-user-analysis
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M4GS1003/_article
+title: C2C eコマースにおける復帰ユーザの分析
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- gmo-pepabo
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ハンドメイドC2C ECのminneで、過去に離脱した後に復帰したユーザーの購買行動データを分析し、復帰ユーザーは新規ユーザーより購入回数が多く、獲得にも価値があることを示した。
+problem: 離脱ユーザーは再び使い始める期待があるが、復帰ユーザーについての詳細な研究はなかった。
+approach: minneの購入者の行動データから復帰ユーザーの特徴を分析し、復帰を促す方法の意義を明らかにする。
+tags:
+  task:
+  - churn-prediction
+  domain:
+  - e-commerce
+  method: []
+  data_type:
+  - log
+confidence: 0.6
+result: 復帰ユーザーは新規ユーザーより購入回数が多い傾向を確認。

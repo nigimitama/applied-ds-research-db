@@ -1,0 +1,28 @@
+id: 2023-klab-self-supervised-vit-3d-motion-retrieval-game
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M5GS1003/_article
+title: 自己教師ありViTによる類似3Dモーションデータの検索とゲーム開発現場での応用
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- klab
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ゲームやCGの制作費に占める3Dキャラクターのモーションデータ制作を効率化するため、自己教師あり学習のViTで類似3Dモーションを検索する手法を提案し、実際のゲーム製品のモーションデータで従来のCNN手法や教師ありViTと比較した。
+problem: 3Dコンテンツの大規模化で、モーションデータの制作費が総コストの大きな割合を占め、類似モーションの検索による効率化が必要。
+approach: 自己教師ありのVision Transformerで3Dモーションの特徴を学習し、類似モーションを検索する。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - gaming
+  method:
+  - transformer
+  - embedding
+  data_type:
+  - time-series
+confidence: 0.65
+result: 実ゲーム製品のモーションデータで従来法より精度が向上したと報告。

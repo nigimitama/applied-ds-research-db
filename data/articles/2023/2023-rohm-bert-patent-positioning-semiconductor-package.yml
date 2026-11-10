@@ -1,0 +1,27 @@
+id: 2023-rohm-bert-patent-positioning-semiconductor-package
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2L5GS303/_article
+title: BERTによる半導体企業の特定技術に対するポジショニング分析
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- rohm
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 半導体2社の公開特許からBERTで文書ベクトルを作り、t-SNEで2次元マップ化して、2社の保有するパッケージ技術の違いを把握する手法を提案した。クラスタごとの用語出現をWord2vecで調べ、エンジニアが違いを特定する。
+problem: 競合との技術の違いを特許から把握したい。
+approach: BERTによる特許の文書ベクトル化、t-SNEによる次元削減、クラスタごとの技術用語の出現頻度をWord2vecで分析する。
+tags:
+  task:
+  - classification
+  domain:
+  - manufacturing
+  method:
+  - embedding
+  - transformer
+  data_type:
+  - text
+confidence: 0.5

@@ -1,0 +1,27 @@
+id: 2023-shionogi-monte-carlo-bayes-management-resource-simulation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1M4GS1001/_article
+title: モンテカルロ法とベイズ推定を用いた経営リソースのシミュレーション
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- shionogi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 製薬の営業リソースの適正な量と配分を検討するため、顧客をセグメント化してベイズ推定で製品シェアの事後分布を求め、モンテカルロ・シミュレーションで経営リソースの効果を推定した。
+problem: 事業目標の達成には人・物・金・情報などの資源の活用が必要で、製薬では医薬品の適正使用情報の提供が重要な経営資源。資源の量と配分の意思決定を支援したい。
+approach: 顧客をセグメント化し、ベイズ推定で製品シェアの事後分布を計算してから、モンテカルロ法でリソース量・配分の影響をシミュレーションする。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - healthcare
+  method:
+  - bayesian
+  - simulation
+  data_type:
+  - tabular
+confidence: 0.55
