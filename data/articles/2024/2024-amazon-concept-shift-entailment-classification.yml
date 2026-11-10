@@ -1,0 +1,33 @@
+id: 2024-amazon-concept-shift-entailment-classification
+url: https://doi.org/10.1145/3637528.3671541
+title: Tackling Concept Shift in Text Classification using Entailment-style Modeling
+title_ja: 含意関係形式のモデリングによるテキスト分類のコンセプトシフト対策
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- amazon
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 通常の分類問題を含意関係判定の形に書き換え、分類概念が変化した際の再学習に必要なラベル量を減らす手法を提案。小売クエリのコンセプトシフトデータで評価し、導入でラベリングコストを削減した。
+problem: 分類の概念が変わるたびに大量の新規ラベルで再学習すると、ラベリングのコストと時間が膨大になる。
+approach: 分類ラベルを仮説文として扱う含意関係(entailment)形式へ再定式化し、少数ショットでも新概念へ適応できるようにする。AG Newsの合成シフトと実小売クエリのデータで評価した。
+tags:
+  task:
+  - classification
+  domain:
+  - retail
+  - e-commerce
+  method:
+  - transformer
+  - fine-tuning
+  data_type:
+  - text
+confidence: 0.75
+doi: 10.1145/3637528.3671541
+result: 少数ショットでF1が最大数%〜30%台向上し、導入でラベリングコストを削減したと報告(数値はarXiv版と学会版で差があり原文参照)
+alt_urls:
+- https://arxiv.org/abs/2311.03320

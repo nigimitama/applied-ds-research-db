@@ -1,0 +1,32 @@
+id: 2024-alibaba-deep-bag-of-words-relevance
+url: https://doi.org/10.1145/3637528.3671559
+doi: 10.1145/3637528.3671559
+title: 'Deep Bag-of-Words Model: An Efficient and Interpretable Relevance Architecture for Chinese E-Commerce'
+title_ja: '深層Bag-of-Wordsモデル: 中国EC向けの効率的で解釈可能な関連性アーキテクチャ'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: EC検索のクエリ・商品間の関連性判定で、クエリと商品をスパースな単語重み表現に変換し、一致語の重み和でスコアを出すDeepBoWを提案。BERT系の遅さと2塔モデルの不透明さを同時に解消する。
+problem: BERT等の事前学習モデルは高精度だがオンライン推論が遅く、2塔モデルは効率的だが解釈・調整が困難で、EC検索の関連性判定に不向きである。
+approach: クエリと商品を単語ごとの重みを持つスパース表現に符号化し、一致した単語の重みを合計して関連性を算出する。これにより説明と調整が容易になる。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - text
+confidence: 0.65
+result: オンライン効率が最も効率的な密ベクトル内積方式を上回ると報告。
+alt_urls:
+- https://arxiv.org/abs/2407.09395

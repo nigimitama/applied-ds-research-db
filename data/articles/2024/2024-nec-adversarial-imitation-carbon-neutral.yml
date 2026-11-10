@@ -1,0 +1,32 @@
+id: 2024-nec-adversarial-imitation-carbon-neutral
+url: https://doi.org/10.1145/3637528.3671611
+title: 'PAIL: Performance based Adversarial Imitation Learning Engine for Carbon Neutral Optimization'
+title_ja: カーボンニュートラル最適化のための性能ベース敵対的模倣学習エンジンPAIL
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- nec
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 事前定義の報酬関数がない産業現場で、排出削減のための運用方針を学習する敵対的模倣学習PAILを提案。Transformer方策と環境シミュレータ、識別器、Q学習ベースの性能推定器を組み合わせている。
+problem: 産業のカーボンニュートラル運用では深層強化学習が有効だが、実環境では行動の報酬関数を事前に定義できないことが多い。
+approach: Transformerで履歴を符号化し行動を予測する方策生成器と、環境シミュレータで行動列を更新。識別器で実データのSDG成果が高い系列に近づけ、Q学習の性能推定器で各行動の影響を測り、両者の報酬を合成する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - energy
+  - manufacturing
+  method:
+  - reinforcement-learning
+  - transformer
+  - simulation
+  data_type:
+  - time-series
+confidence: 0.65
+doi: 10.1145/3637528.3671611
+result: 複数の実事例・データセットで最先端のベースラインを上回り、解釈性も得られると報告(具体値は原文参照)。

@@ -1,0 +1,30 @@
+id: 2024-google-choosing-proxy-metric-experiments
+url: https://doi.org/10.1145/3637528.3671543
+title: Choosing a Proxy Metric from Past Experiments
+title_ja: 過去の実験からのプロキシ指標の選択
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- google
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 長期アウトカムの代理となる短期プロキシ指標を、過去の実験群から最適に構成する統計的枠組み。産業用レコメンドシステムの実験データで評価している。
+problem: 長期指標は計測に時間がかかりノイズも大きいため短期の代理指標に頼るが、良い代理の選び方が定まっていない。
+tags:
+  task:
+  - experimentation
+  - recommendation
+  domain:
+  - media
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - log
+confidence: 0.75
+approach: プロキシ構築をポートフォリオ最適化に帰着し、過去実験の処置効果をノイズ除去して潜在効果を推定。最適プロキシは実験のサンプルサイズに依存することを示す。
+result: 産業用レコメンドシステムの実験で、複数のベースラインに対し良好な性能を報告。

@@ -1,0 +1,32 @@
+id: 2024-kuaishou-non-autoregressive-reranking
+url: https://doi.org/10.1145/3637528.3671645
+title: Non-autoregressive Generative Models for Reranking Recommendation
+title_ja: 再ランキング推薦のための非自己回帰型生成モデル
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 再ランキングの生成モデルを自己回帰ではなく非自己回帰で構成するNAR4Recを提案し、アイテム間依存の欠落を対照デコーディングで補った。オフラインで既存手法を上回り、日次利用者3億人超のKuaishouの動画アプリに導入されていると報告している。
+problem: 再ランキングでは順次生成するモデルが推論の遅さと系列全体の最適化の難しさを抱え、オンラインの厳しいレイテンシ制約に合いにくい。
+approach: 候補全体を一度に生成する非自己回帰型生成器で順序を決め、非自己回帰で弱くなりやすいアイテム間の依存を対照デコーディングで補う。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - media
+  method:
+  - deep-learning
+  - transformer
+  data_type:
+  - log
+confidence: 0.8
+doi: 10.1145/3637528.3671645
+result: Kuaishou動画アプリに展開されオンラインでも効果を報告
+has_online_experiment: true

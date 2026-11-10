@@ -1,0 +1,31 @@
+id: 2024-tencent-ads-recommendation-collapsed-entangled
+url: https://doi.org/10.1145/3637528.3671607
+title: Ads Recommendation in a Collapsed and Entangled World
+title_ja: 崩壊と絡み合いの世界における広告推薦
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Tencentの広告推薦での長年の実践をもとに、多様な特徴の符号化、埋め込みの次元崩壊、タスク・シナリオ間の興味の絡み合いという2つの課題への実践的な解決策と分析手法をまとめた。
+problem: 広告推薦では系列・数値・事前学習埋め込み等の特徴を事前情報を保って符号化する必要があり、さらに埋め込みの次元崩壊と複数タスク間の興味の絡み合いが性能を損なう。
+approach: 多様な特徴型の符号化方法を整理し、崩壊と絡み合いの診断のための分析ツールと複数の学習技術を示す。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.7
+doi: 10.1145/3637528.3671607
+result: Tencentの広告プラットフォームでの実務に基づく知見を報告(具体的数値は本文確認できず)。

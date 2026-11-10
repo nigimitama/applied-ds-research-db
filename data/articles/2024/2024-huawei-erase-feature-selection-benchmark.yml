@@ -1,0 +1,31 @@
+id: 2024-huawei-erase-feature-selection-benchmark
+url: https://doi.org/10.1145/3637528.3671571
+doi: 10.1145/3637528.3671571
+alt_urls:
+- https://arxiv.org/abs/2403.12660
+title: 'ERASE: Benchmarking Feature Selection Methods for Deep Recommender Systems'
+title_ja: 'ERASE: 深層推薦システムにおける特徴選択手法のベンチマーク'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 深層推薦モデルの特徴選択手法11種を統一条件で比較するベンチマークERASEを構築した。公開データ4種に加え、非公開の産業データと実商用プラットフォームでも評価し、特徴数に対する頑健性を測るAUKC指標を導入している。
+problem: 特徴選択の研究は実験設定がまちまちで公平な比較が難しく、大規模データや複数のバックボーンでの検証が少ない。また最良値のみの報告が多く、調整コストや頑健性が見えにくい。
+approach: 従来手法と深層学習ベースの手法を含む11の特徴選択法を、共通の実験設定で複数のバックボーン・データに対して比較する。特徴数を変えたときの安定性を評価する指標AUKCを提案し、コードも公開している。
+tags:
+  task:
+  - recommendation
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+confidence: 0.65

@@ -1,0 +1,31 @@
+id: 2024-alibaba-backtrackstl-online-decomposition
+url: https://doi.org/10.1145/3637528.3671510
+title: 'BacktrackSTL: Ultra-Fast Online Seasonal-Trend Decomposition with Backtrack Technique'
+title_ja: 'BacktrackSTL: バックトラック手法による超高速オンライン季節・トレンド分解'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: オンラインで季節・トレンド分解を行う非反復型アルゴリズムBacktrackSTLを提案。外れ値耐性のある平滑化と非局所の季節フィルタ、ジャンプ補正のバックトラック機構を組み合わせ、Alibaba
+  CloudのFlink上で監視メトリクスの分解に1年以上運用している。
+problem: 監視メトリクスの異常検知や予測の前処理となる季節・トレンド分解を、外れ値・季節性のずれ・トレンドの急変に頑健なまま、ストリームで高速に行う必要がある。既存のオンライン手法は計算量や精度に課題があった。
+approach: 外れ値に強い平滑化、非局所な季節フィルタ、トレンドのジャンプを補正するバックトラック機構を組み合わせ、更新計算量が周期長に依存しない非反復型のオンライン分解を実現した。
+tags:
+  task:
+  - time-series-forecasting
+  - anomaly-detection
+  domain:
+  - cloud-infra
+  method:
+  - time-series-model
+  - online-learning
+  data_type:
+  - time-series
+confidence: 0.75
+result: 1値あたり1.6マイクロ秒の遅延でOneShotSTLの約15倍高速。精度はオフラインのRobustSTLと同程度と報告。

@@ -1,0 +1,33 @@
+id: 2024-meituan-udistr-search-recommendation
+url: https://doi.org/10.1145/3637528.3671519
+title: Unified Dual-Intent Translation for Joint Modeling of Search and Recommendation
+title_ja: 検索と推薦の統合モデリングのための統一デュアルインテント変換
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meituan
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 検索クエリを教師として推薦におけるユーザの需要意図を学習し、固有意図・需要意図・対話アイテムの関係を共有空間の埋め込み変換で表すUDITSRを提案。Meituan Waimaiに導入し、GMVとCTRの向上を報告している。
+problem: 検索と推薦を別々に扱うとユーザの時々の需要意図を推薦に活かせず、両タスクのデータも連携できない。
+approach: 検索クエリを需要意図生成器の教師信号とし、ユーザの固有意図と需要意図からアイテムへの関係を埋め込み変換でモデル化、意図変換の対照学習で制約を加える。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - food
+  - e-commerce
+  method:
+  - embedding
+  - deep-learning
+  data_type:
+  - log
+  - text
+confidence: 0.8
+result: Meituan Waimaiで1か月の平均でGMV+1.46%、CTR+0.77%と報告。
+has_online_experiment: true

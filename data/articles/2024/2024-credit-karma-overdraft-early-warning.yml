@@ -1,0 +1,28 @@
+id: 2024-credit-karma-overdraft-early-warning
+url: https://kdd2024.kdd.org/applied-data-science-track-papers/?paper=know-grow-protect-using-ml-for-asset-protection-by-preventing-overdraft-fees
+title: 'Know, Grow, Protect: Using ML for Asset Protection by preventing Overdraft Fees'
+title_ja: '資産保護のための機械学習: 当座貸越手数料の防止'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- credit-karma
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 銀行口座・取引データを使い、今後1週間以内に口座が貸越になるリスクを推定する早期警告システム(ODEWS)をMintアプリ向けに構築した。ユーザーに個別化した金融アドバイスを提供する取り組みの一部として位置づけられている。
+problem: 米国では年間約150億ドルとも言われる不要な当座貸越手数料が発生しており、利用者が事前に貸越リスクを知る手段が乏しい。
+approach: 利用者の銀行取引データを入力に、近い将来(1週間以内)の貸越リスクをニューラルネットワークで予測し、早期に警告する。
+tags:
+  task:
+  - risk-scoring
+  domain:
+  - finance
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+confidence: 0.65

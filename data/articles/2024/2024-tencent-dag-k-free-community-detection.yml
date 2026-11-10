@@ -1,0 +1,30 @@
+id: 2024-tencent-dag-k-free-community-detection
+url: https://doi.org/10.1145/3637528.3671615
+title: 'DAG: Deep Adaptive and Generative K-Free Community Detection on Attributed Graphs'
+title_ja: 'DAG: 属性付きグラフ向けのK不要な深層コミュニティ検出'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: コミュニティ数Kを事前に与えずに属性付きグラフでコミュニティ検出を行う深層モデルDAG。公開5データセットとTencentのオンラインモバイルゲームのデータで評価している。
+problem: 既存手法はコミュニティ数Kの事前指定を要するが、Kの取得はコストやプライバシーの面で現実的でないことが多い。
+tags:
+  task:
+  - classification
+  domain:
+  - gaming
+  - social
+  method:
+  - graph-neural-network
+  - deep-learning
+  data_type:
+  - graph
+confidence: 0.7
+approach: 属性マスク再構成によるノード表現学習、コミュニティ所属の読み出し、グループスパース性を用いたコミュニティ数探索を組み合わせ、探索を微分可能にする。
+result: Tencentのオンラインゲームで最良の競合手法に対しチーム数が相対7.35%増加と報告。

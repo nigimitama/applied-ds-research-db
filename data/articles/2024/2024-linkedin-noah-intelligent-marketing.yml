@@ -1,0 +1,35 @@
+id: 2024-linkedin-noah-intelligent-marketing
+url: https://doi.org/10.1145/3637528.3671591
+title: Neural Optimization with Adaptive Heuristics for Intelligent Marketing System
+title_ja: 知的マーケティングシステムのための適応的ヒューリスティクス付きニューラル最適化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 予測・最適化・適応的ヒューリスティクスの3モジュールからなる汎用マーケティング最適化フレームワークNOAHを提案。LinkedInのメールマーケティングに適用し、従来のランキングを上回る成果を得た。
+problem: マーケティングでは、BtoB/BtoC、自社チャネル/有料チャネルといった多様な文脈で施策を選ぶ必要があるが、これらを一貫して扱える汎用的な最適化の枠組みが不足していた。
+approach: 施策候補ごとの事業指標を予測するモジュールと、制約下で施策を選ぶ最適化モジュール、両者のフィードバックを補完する適応的ヒューリスティクスを組み合わせる。メール配信では候補取得とメール最適化の2段構成とする。
+tags:
+  task:
+  - personalization
+  - ad-optimization
+  domain:
+  - social
+  - advertising
+  method:
+  - mathematical-optimization
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.78
+doi: 10.1145/3637528.3671591
+result: 既存ランキングに対し大きな改善を報告(数値は原文参照)
+alt_urls:
+- https://arxiv.org/abs/2405.10490
+has_online_experiment: true

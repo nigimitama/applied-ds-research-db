@@ -1,0 +1,30 @@
+id: 2024-tencent-controllable-multi-behavior-skins
+url: https://doi.org/10.1145/3637528.3671572
+doi: 10.1145/3637528.3671572
+title: Controllable Multi-Behavior Recommendation for In-Game Skins with Large Sequential Model
+title_ja: 大規模系列モデルによるゲーム内スキンの制御可能なマルチ行動推薦
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ゲーム内ショップのキャラクタースキン推薦で、クリック・使用・購入など複数の行動とシーンを制御しながら推薦するCMBRを提案。大規模系列モデルを事前学習し、刺激プロンプトでシーンに応じた関心を引き出す。
+problem: ゲーム内のスキン推薦では複数の行動種別・シーンが混在するが、既存モデルは単一行動の予測か単一の目標行動のみを対象とし、シーンや行動ごとに予測を制御できなかった。
+approach: ユーザの複数行動系列を大規模系列モデルで事前学習して汎用的な関心表現に圧縮し、設計した刺激プロンプト機構で目的のシーン・行動に関連する関心を抽出して購入やクリックを予測する。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - gaming
+  method:
+  - transformer
+  - fine-tuning
+  data_type:
+  - log
+confidence: 0.65

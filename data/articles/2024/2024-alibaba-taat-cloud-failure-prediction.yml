@@ -1,0 +1,32 @@
+id: 2024-alibaba-taat-cloud-failure-prediction
+url: https://doi.org/10.1145/3637528.3671547
+title: Time-Aware Attention-Based Transformer (TAAT) for Cloud Computing System Failure Prediction
+title_ja: クラウドシステム障害予測のための時間認識アテンションTransformer(TAAT)
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ログ中の例外の意味情報と、例外間の時間間隔の情報を同時に扱う時間認識アテンションのTransformer(TAAT)で、クラウドノードの障害を予測する。Alibaba Cloudの実データで評価し、日常運用で使われている。
+problem: クラウドのサーバ障害予測では、ログの意味だけでなく、連続する例外の時間間隔(異常の緊急度や深刻度を反映する)も重要だが、既存手法は十分に活用していなかった。
+approach: 生ログを例外にトークン化し、例外系列の埋め込み、時間関係の推定、時間認識アテンションを組み合わせたTransformerで障害を予測する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - cloud-infra
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - text
+  - time-series
+  - log
+confidence: 0.8
+result: 最先端手法に対し約10%の性能向上と報告。約30万ノードコントローラ・4か月・約27億件のsyslogの実データセットも公開。

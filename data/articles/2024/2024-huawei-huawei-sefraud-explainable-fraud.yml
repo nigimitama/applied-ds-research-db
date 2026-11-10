@@ -1,0 +1,35 @@
+id: 2024-huawei-huawei-sefraud-explainable-fraud
+url: https://doi.org/10.1145/3637528.3671534
+doi: 10.1145/3637528.3671534
+title: 'SEFraud: Graph-based Self-Explainable Fraud Detection via Interpretative Mask Learning'
+title_ja: 'SEFraud: 解釈マスク学習によるグラフベースの自己説明型不正検知'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- huawei
+- icbc
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 不正検知と説明生成を一つのモデルに統合するSEFraudを提案。異種グラフTransformer上で特徴マスクとエッジマスクを学習し、教師ありコントラスト三つ組損失でマスクの品質を高める。中国工商銀行(ICBC)に導入された。
+problem: 事後的な説明手法はインスタンスごとの再学習が必要で、不正検知の精度と解釈性を同時に満たすのが難しい。
+approach: 異種グラフTransformerネットワークに学習可能な特徴マスク・エッジマスクを組み込み、マスク自体を説明として出力する。教師ありコントラスト三つ組損失でマスクが重要な特徴・辺を反映するようにする。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - finance
+  method:
+  - graph-neural-network
+  - explainable-ai
+  - transformer
+  data_type:
+  - graph
+  - tabular
+confidence: 0.85
+result: 各種データセットで検知性能と解釈性が向上し、説明をミリ秒で生成でき、ICBCの説明可能な不正検知サービスとして導入されたと報告。
+alt_urls:
+- https://arxiv.org/abs/2406.11389

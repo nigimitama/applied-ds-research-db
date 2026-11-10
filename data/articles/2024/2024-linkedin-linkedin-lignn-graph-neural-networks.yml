@@ -1,0 +1,34 @@
+id: 2024-linkedin-linkedin-lignn-graph-neural-networks
+url: https://doi.org/10.1145/3637528.3671566
+doi: 10.1145/3637528.3671566
+title: 'LiGNN: Graph Neural Networks at LinkedIn'
+title_ja: 'LiGNN: LinkedInにおけるグラフニューラルネットワーク'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: LinkedInで大規模GNNを開発・本番導入した知見をまとめた論文。適応的近傍サンプリングや学習バッチの工夫などで学習を高速化し、求人・広告・フィード等の推薦で本番指標を改善した。
+problem: LinkedInの巨大なグラフで、GNNを学習効率と本番指標の改善の両面から実運用に載せる必要があった。
+approach: 適応的な近傍サンプリング、学習データのバッチ化・スライス、専用の共有メモリキュー、ローカル勾配最適化などで大規模GNN学習を高速化し、複数のプロダクトに展開した。
+tags:
+  task:
+  - recommendation
+  domain:
+  - social
+  - hr
+  - advertising
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+confidence: 0.88
+result: 学習が7倍高速化。求人応募の返信率が約1%、広告CTRが約2%、フィードのエンゲージド日次アクティブが約0.5%相対改善したと報告。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2402.11139

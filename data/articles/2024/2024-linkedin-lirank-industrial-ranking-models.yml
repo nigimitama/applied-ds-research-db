@@ -1,0 +1,35 @@
+id: 2024-linkedin-lirank-industrial-ranking-models
+url: https://doi.org/10.1145/3637528.3671561
+title: 'LiRank: Industrial Large Scale Ranking Models at LinkedIn'
+title_ja: 'LiRank: LinkedInの産業規模ランキングモデル'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: LinkedInの大規模ランキング基盤の本番システム。DCNv2の改良、複数アーキテクチャの組合せ、キャリブレーション、探索と活用、量子化・語彙圧縮によるモデル圧縮を扱う。
+problem: Feed・Jobs・Adsなど複数プロダクトの大規模ランキングで、精度と運用効率を両立したい。
+tags:
+  task:
+  - search-ranking
+  - recommendation
+  - ad-optimization
+  domain:
+  - social
+  - hr
+  - advertising
+  method:
+  - deep-learning
+  - model-compression
+  - bandit
+  data_type:
+  - log
+confidence: 0.9
+approach: DCNv2のアーキテクチャ改良と最新手法の統合・調整、キャリブレーション、深層学習ベースの探索・活用、量子化と語彙圧縮による圧縮を組み合わせる。
+result: Feed、Jobs、AdsでA/Bテスト上の改善を報告(数値は未確認)。
+has_online_experiment: true

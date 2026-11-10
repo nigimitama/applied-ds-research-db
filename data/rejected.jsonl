@@ -140,3 +140,65 @@
 {"url": "https://doi.org/10.1145/3711896.3737241", "reason": "insufficient-info: abstractでは実験がオフラインのみ・データ出所が不明で、実サービスでの適用/運用が確認できない", "date": "2026-11-10"}
 {"url": "https://doi.org/10.1145/3711896.3737246", "reason": "not-technical: Booking.comのML品質・ガバナンスの成熟度フレームワーク(評価手法・組織導入の知見)が主題で、具体的なモデル適用事例ではない", "date": "2026-11-10"}
 {"url": "https://doi.org/10.1145/3690624.3709412", "reason": "no-real-world-application: abstract上はAMiner APIの複製環境で作ったベンチマーク中心の評価で、企業実運用での適用・効果検証の記述を確認できない(著者は主に大学、Zhipu AIが共著)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671623", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671552", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671564", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671533", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671626", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671582", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671527", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671536", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://kdd2024.kdd.org/applied-data-science-track-papers/?paper=chili-chemically-informed-large-scale-inorganic-nanomaterials-dataset-for-advanc", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671546", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671589", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671587", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671624", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671590", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671594", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671558", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671613", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671629", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671617", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671622", "reason": "no-company-author: 全著者の所属が大学・研究機関(機械判定)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671627", "reason": "no-real-world-application: SATソルバ選択手法で、産業回路設計ベンチマークと公開コンペ事例での評価が中心", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671573", "reason": "no-real-world-application: 連合学習LLMファインチューニングのツールキット/ベンチマークで、実サービス適用の記述が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671592", "reason": "no-real-world-application: LLMのAPI利用能力の評価データ生成手法で、実運用適用の具体記述が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671644", "reason": "no-real-world-application: 医療文書QAのベンチマーク構築が主題で、サービス適用ではない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671650", "reason": "no-real-world-application: Android環境のLLMエージェント評価ベンチマーク(AndroidArena)で、実運用適用ではない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671656", "reason": "no-real-world-application: RAGの事実整合性評価のベンチマークと手法で、実サービス適用の記述が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671520", "reason": "no-company-author: 所属は大学と「Researcher」のみで企業が特定できず、公開ベンチ中心", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671548", "reason": "no-real-world-application: LaDe は Cainiao の実運用データを公開するデータセット論文で、評価はベースライン比較のみ。サービスへの適用・導入の記述が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671578", "reason": "no-real-world-application: UrbanGPT は公開データセットでの評価が中心で、Baidu の実サービス・実データへの適用が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671639", "reason": "no-company-author: 著者は大学と気象災害防止の公的センターのみで、企業所属がない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3672354", "reason": "no-real-world-application: OAG-Bench は公開の学術グラフに基づく人手構築ベンチマークで、Zhipu AI の実サービスへの適用は確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671545", "reason": "no-real-world-application: FedSecurity は連合学習の攻撃・防御ベンチマーク(FedML拡張)で、実サービスへの適用が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671581", "reason": "no-company-author: 著者はNTU・A*STAR・大学のみで企業所属がない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671616", "reason": "no-company-author: 著者は大学のみで企業所属がない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671655", "reason": "no-real-world-application: 推薦アルゴリズムのベンチマーク手法論で、公開データ30種での比較が中心。Sber の実サービスへの適用が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671553", "reason": "insufficient-info: 概要から実データ・実運用での適用有無を確認できず(ゲームのマッチメイキング最適化手法)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671603", "reason": "no-real-world-application: 汎用GMLフレームワークの紹介で、個別の事例適用が主題でない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671636", "reason": "insufficient-info: 概要に実サービスでの適用・評価の記述が確認できず、手法提案が中心", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671638", "reason": "insufficient-info: 抽象に『実世界シナリオ』とあるのみで、企業の実サービスへの適用内容が確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671620", "reason": "no-real-world-application: Webナビゲーションエージェントのモデル/ベンチマーク(AutoWebBench)提案が主で、企業の実サービス・業務への適用は確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671653", "reason": "no-real-world-application: 公開データセット上でのCurLLM-Reasonerの精度評価が主で、企業の実サービスへの適用は確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671596", "reason": "no-company-author: 著者はGeorgia Tech、Caltech/NASA JPLで企業所属なし", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671575", "reason": "no-real-world-application: LLMの臨床能力の評価指標・データ・自動評価アルゴリズムの提案で、実サービス運用への適用は確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671576", "reason": "no-company-author: 所属は大学・病院のみ", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671642", "reason": "insufficient-info: 診断企業(Diagens)所属だが実運用適用が確認できず、実データ評価のみ・企業情報も不確か", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671652", "reason": "no-company-author: 大学・研究機関のみ", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671532", "reason": "no-company-author: 大学のみ", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671539", "reason": "no-company-author: 大学・独立研究者のみ", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671586", "reason": "no-real-world-application: IBM所属は共著のみで病院データの研究が主、企業での運用適用なし", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671600", "reason": "no-real-world-application: Emotiv所属だが公開ベンチ中心の表現学習手法", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671641", "reason": "no-real-world-application: Home Depot所属は共著のみ、医用画像の手法研究が主", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671551", "reason": "no-company-author: 著者はETH Zurich・LMU等の大学所属のみ", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671515", "reason": "no-real-world-application: 企業類似度のグラフデータセット/ベンチマークの提示が中心で、運用適用の記述がない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671554", "reason": "no-real-world-application: 金融LLMのバイリンガル命令データ・ベンチマーク構築が中心で、企業の実運用適用がない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671584", "reason": "insufficient-info: abstractを確認できず(arXiv等に見当たらず)、題名と所属のみでは適用有無を判断できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671621", "reason": "insufficient-info: arXiv(2405.10640)のabstractを直接確認できず、実運用の有無を判断できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671649", "reason": "insufficient-info: 一次情報(arXiv等)のabstractを確認できず、実運用適用の記述を確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671602", "reason": "insufficient-info: 抄録からは顧客データでの本番運用の有無が確認できず、ベンチマーク評価が中心に見える", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671609", "reason": "no-real-world-application: HumanEval等の公開ベンチ中心で実サービスへの適用が抄録から確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671517", "reason": "insufficient-info: 取得できた抄録は課題記述のみで、手法の実運用・実験結果を確認できない", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671567", "reason": "no-company-author: 著者所属は大学と独立研究者のみ(企業所属の著者なし)", "date": "2026-11-10"}
+{"url": "https://doi.org/10.1145/3637528.3671654", "reason": "insufficient-info: 取得できた抄録は課題・背景のみで、手法の中身と本番評価を確認できない", "date": "2026-11-10"}

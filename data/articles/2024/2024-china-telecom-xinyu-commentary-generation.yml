@@ -1,0 +1,30 @@
+id: 2024-china-telecom-xinyu-commentary-generation
+url: https://doi.org/10.1145/3637528.3671537
+title: 'Xinyu: An Efficient LLM-based System for Commentary Generation'
+title_ja: 'Xinyu: 論評記事生成のための効率的なLLMベースのシステム'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- china-telecom
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 中国語の論評記事執筆を支援するLLMベースのシステムXinyuを提案する。主張生成・根拠生成・記事統合に分解し、主張のランキングモデルとElasticSearchによる根拠検索を組み合わせる。実際の論評執筆者の作業時間の短縮を報告している。
+problem: 論評は主張の新規性や根拠の裏付けが求められ、人手で書くには時間がかかる一方、LLMに一括生成させると品質や根拠の確からしさが保ちにくい。
+approach: 生成を主張生成・根拠生成・記事統合の段階に分け、BERT系のスコアラで主張の新規性と客観性をランキングし、ネット上の人気情報源から構築したDBをElasticSearchで検索して根拠を付与する。
+tags:
+  task:
+  - text-generation
+  domain:
+  - media
+  method:
+  - llm
+  - rag
+  - transformer
+  data_type:
+  - text
+confidence: 0.7
+result: 論評作成の平均所要時間が4時間から20分に短縮、品質は損なわれないと報告。

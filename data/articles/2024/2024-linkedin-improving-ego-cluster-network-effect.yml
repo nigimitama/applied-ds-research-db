@@ -1,0 +1,31 @@
+id: 2024-linkedin-improving-ego-cluster-network-effect
+url: https://doi.org/10.1145/3637528.3671557
+title: Improving Ego-Cluster for Network Effect Measurement
+title_ja: ネットワーク効果測定のためのEgo-Clusterの改善
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ソーシャルネットワークでユーザー間の影響を考慮するクラスタレベル実験を、クリエイター側指標の測定向けに拡張した。クラスタリングを効率化・柔軟化している。
+problem: ランダム化単位と測定単位が異なるため、ネットワーク効果下でクリエイター指標を正しく測れない。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - social
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - graph
+confidence: 0.7
+approach: LinkedInの既存研究を基に、ランダム化単位と測定単位のずれを扱うクラスタレベル実験手法とクラスタリングアルゴリズムの改善を行う。
+result: クリエイター指標の測定が改善し、クリエイター関連実験が加速すると報告。
+has_online_experiment: true

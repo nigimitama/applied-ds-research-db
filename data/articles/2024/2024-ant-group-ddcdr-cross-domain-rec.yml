@@ -1,0 +1,29 @@
+id: 2024-ant-group-ddcdr-cross-domain-rec
+url: https://doi.org/10.1145/3637528.3671605
+title: 'DDCDR: A Disentangle-based Distillation Framework for Cross-Domain Recommendation'
+title_ja: 'DDCDR: 分離表現に基づく蒸留によるクロスドメイン推薦'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 豊富なソース領域から疎なターゲット領域へ知識を移すクロスドメイン推薦で、負の転移を避けつつ領域固有情報を保つDDCDRを提案した。ドメイン識別器との敵対学習で教師モデルを作り、ターゲット領域向けの生徒モデルへ蒸留する。公開・産業データセットで評価している。
+problem: クロスドメイン推薦では、関連するソース知識だけを選択的に移し、ドメイン固有の情報を損なわないことが課題。
+approach: ドメイン識別器と敵対的に学習する教師モデルを作り、そこからターゲット領域特化の生徒モデルへ知識蒸留する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - finance
+  method:
+  - deep-learning
+  - model-compression
+  data_type:
+  - log
+confidence: 0.6
+doi: 10.1145/3637528.3671605

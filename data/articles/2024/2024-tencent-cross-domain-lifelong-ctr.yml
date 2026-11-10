@@ -1,0 +1,34 @@
+id: 2024-tencent-cross-domain-lifelong-ctr
+url: https://doi.org/10.1145/3637528.3671601
+title: Cross-Domain LifeLong Sequential Modeling for Online Click-Through Rate Prediction
+title_ja: オンラインCTR予測のためのクロスドメイン生涯系列モデリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: WeChat Channelsのライブ配信推薦で、短いライブ行動履歴を動画ドメインの長い履歴で補うLifelong Cross Network(LCN)を提案。公開データと実業務データで評価し、オンラインA/Bテストでも改善を得た。
+problem: ライブ配信ドメインのユーザー行動履歴は動画ドメインよりはるかに短く(中央値約500)、長期的な興味を捉えにくい。
+approach: 対照学習でドメイン間のアイテム埋め込みを橋渡しするCross Representation Productionモジュールと、3段のカスケード注意で多様な興味を捉えるLifelong
+  Attention Pyramidを組み合わせる。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - media
+  - social
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - log
+confidence: 0.9
+doi: 10.1145/3637528.3671601
+result: ライブ推薦のオンラインA/BテストでCTRが相対+2.93%、滞在時間が+3.27%向上と報告。
+has_online_experiment: true

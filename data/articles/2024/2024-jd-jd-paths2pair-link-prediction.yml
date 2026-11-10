@@ -1,0 +1,31 @@
+id: 2024-jd-jd-paths2pair-link-prediction
+url: https://doi.org/10.1145/3637528.3671563
+doi: 10.1145/3637528.3671563
+title: 'Paths2Pair: Meta-path Based Link Prediction in Billion-Scale Commercial Heterogeneous Graphs'
+title_ja: 'Paths2Pair: 10億規模の商用異種グラフにおけるメタパスに基づくリンク予測'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 10億規模の商用異種グラフで、全ペアを調べずに有望な候補ペアを絞り、ペア間のメタパス上の内容情報から関係の有無を予測するPaths2Pairを提案。JD Logisticsで新規法人顧客の獲得に活用された。
+problem: 大規模グラフでは全エンティティペアの検査が非現実的で、ノード単位の集約では2ノード間の直接的な接続情報が失われる。
+approach: まず有望なペアを選別し、各ペア間のメタパスが持つ多様な内容情報を用いて目的の関係が存在するかを予測する。
+tags:
+  task:
+  - entity-matching
+  - classification
+  domain:
+  - logistics
+  - e-commerce
+  method:
+  - graph-neural-network
+  data_type:
+  - graph
+confidence: 0.82
+result: JD Logisticsに導入し、発見した関係から108,709件の連絡先を特定、既存手法比で成功率が84%向上したと報告。

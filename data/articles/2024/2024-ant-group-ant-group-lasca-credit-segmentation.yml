@@ -1,0 +1,29 @@
+id: 2024-ant-group-ant-group-lasca-credit-segmentation
+url: https://doi.org/10.1145/3637528.3671550
+doi: 10.1145/3637528.3671550
+title: 'LASCA: A Large-Scale Stable Customer Segmentation Approach to Credit Risk Assessment'
+title_ja: 'LASCA: 与信リスク評価のための大規模で安定した顧客セグメンテーション'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 信用スコアに基づくリスクレベルのビン分割で、安定性の高い解を探す二段階手法LASCAを提案。進化的アルゴリズムで良質なビン分割解を集め、代理モデルで最も安定な解を探索する。Alipayの与信リスク評価システムに導入。
+problem: リスク評価の顧客セグメンテーションでは、ブラックボックス性と膨大なユーザデータによる計算負荷のため、安定性の評価が難しい。
+approach: 高品質データセット構築(進化的アルゴリズムでビン分割解を収集)と、信頼できる代理モデルを構築して最安定解を探索するデータ駆動最適化の2段階。
+tags:
+  task:
+  - risk-scoring
+  domain:
+  - finance
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.85
+result: 最大8億件の実データで最先端のビニング手法を上回り、データ品質50%向上、安定性36%向上、最適化25倍高速化と報告。Alipayに導入。

@@ -1,0 +1,30 @@
+id: 2024-amazon-pembot-multitask-boosted-trees
+url: https://doi.org/10.1145/3637528.3671619
+title: 'PEMBOT: Pareto-Ensembled Multi-task Boosted Trees'
+title_ja: 'PEMBOT: パレート最適な勾配ブースティング木のアンサンブルによるマルチタスク学習'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- amazon
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数の目的変数を持つ分類問題向けに、パレート最適な勾配ブースティング木を複数生成し、行列式点過程(DPP)で多様な部分集合を選んでアンサンブルする枠組みを提案した。Amazonで注文時に荷物の紛失・破損などの配送不良を予測する課題で評価し、公開のワイン品質データでも汎用性を確認している。
+problem: 複数ターゲットを同時に扱うと、あるタスクの最適化が他のタスクの最適とは限らず、単純な共同学習では両立しにくい。
+approach: 勾配ブースティング木によるパレート最適な木の複数インスタンス生成、DPPによる多様な部分集合の選択、それらのアンサンブルで最終出力を得る。
+tags:
+  task:
+  - classification
+  - risk-scoring
+  domain:
+  - e-commerce
+  - logistics
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+confidence: 0.75
+doi: 10.1145/3637528.3671619

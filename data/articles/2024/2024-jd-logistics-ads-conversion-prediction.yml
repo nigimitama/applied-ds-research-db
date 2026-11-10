@@ -1,0 +1,33 @@
+id: 2024-jd-logistics-ads-conversion-prediction
+url: https://doi.org/10.1145/3637528.3671549
+title: Multi-task Conditional Attention Network for Conversion Prediction in Logistics Advertising
+title_ja: 物流広告におけるコンバージョン予測のためのマルチタスク条件付きアテンションネットワーク
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ECサイト上で物流会社が配送サービスを広告する「物流広告」のCVR予測フレームワークMCACを提案。過去の発送履歴からオフラインの物流嗜好を抽出し、複数ステップのコンバージョンをマルチタスク条件付きアテンションで予測する。
+problem: 物流広告はオンライン購買だけでなくオフラインの物流嗜好も要因となり、コンバージョンの工程が長いためデータが疎で、各工程間の関係も考慮する必要がある。
+approach: 発送履歴からユーザーの物流嗜好を抽出するモデルと、複数ステップ間の依存を条件付きアテンションで表現するマルチタスクのCVR予測モジュールを組み合わせる。中国最大級のECプラットフォームで評価・導入した。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - logistics
+  - advertising
+  - e-commerce
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - tabular
+confidence: 0.88
+doi: 10.1145/3637528.3671549
+result: 大規模オンラインA/Bテストで既存の業界運用に対し15.22%の改善を報告
+has_online_experiment: true

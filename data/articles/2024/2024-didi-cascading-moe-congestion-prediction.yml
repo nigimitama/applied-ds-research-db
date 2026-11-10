@@ -1,0 +1,32 @@
+id: 2024-didi-cascading-moe-congestion-prediction
+url: https://doi.org/10.1145/3637528.3671507
+title: Interpretable Cascading Mixture-of-Experts for Urban Traffic Congestion Prediction
+title_ja: 都市交通渋滞予測のための解釈可能なカスケード型混合エキスパート
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- didi
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 渋滞予測にスパースゲートの適応グラフ学習エキスパート群と、安定傾向・周期パターン用の2種のエキスパートをカスケード接続したCP-MoEを提案した。集約重みで判断根拠を解釈でき、DiDiの所要時間推定システムに導入されている。
+problem: 都市の渋滞予測は欠損やノイズのある交通データの下で精度と信頼性を保つ必要があり、複雑な時空間依存の扱いと判断の透明性も求められる。
+approach: 適応グラフ学習エキスパートの混合(MAGL)を中核に、安定傾向と周期性のエキスパートを前段に配置して難しいサンプルへMAGLの注力を向ける。順序回帰で複数エキスパートの協調を促し、集約重みで解釈性を得る。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - deep-learning
+  - graph-neural-network
+  - explainable-ai
+  data_type:
+  - time-series
+  - geospatial
+confidence: 0.8
+doi: 10.1145/3637528.3671507
+result: DiDiの所要時間推定システムに導入され精度と信頼性の向上に寄与したと報告

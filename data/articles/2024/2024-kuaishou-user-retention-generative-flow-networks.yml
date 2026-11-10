@@ -1,0 +1,32 @@
+id: 2024-kuaishou-user-retention-generative-flow-networks
+url: https://doi.org/10.1145/3637528.3671531
+title: Modeling User Retention through Generative Flow Networks
+title_ja: 生成フローネットワークによるユーザー継続利用のモデリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 継続利用(リテンション)をセッション終了時の満足度の総合的な推定とみなし、確率的フローで扱うGFN4Retentionを提案した。各推薦ステップを次状態への前向きフローとし、リテンション報酬を後ろ向きフローで各ステップへ伝播する。公開データでのオフライン実験と産業プラットフォームでのオンラインA/Bテストで評価。
+problem: リテンションの最適化は、離脱と復帰を伴う挙動、報酬の疎さと遅延、即時フィードバックとの関係の不確かさのために難しい。
+approach: Generative Flow Networksを使い、推薦系列を前向きフローで、リテンション報酬の逆伝播を後ろ向きフローで表現してステップごとに割り当てる。
+tags:
+  task:
+  - recommendation
+  - churn-prediction
+  domain:
+  - media
+  method:
+  - reinforcement-learning
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.75
+doi: 10.1145/3637528.3671531
+result: オフライン(公開2データセット)とオンラインA/Bテストで有効性を報告
+has_online_experiment: true

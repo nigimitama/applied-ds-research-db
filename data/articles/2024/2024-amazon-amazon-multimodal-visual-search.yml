@@ -1,0 +1,35 @@
+id: 2024-amazon-amazon-multimodal-visual-search
+url: https://doi.org/10.1145/3637528.3671640
+doi: 10.1145/3637528.3671640
+title: Bringing Multimodality to Amazon Visual Search System
+title_ja: Amazonビジュアル検索へのマルチモーダル導入
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- amazon
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 画像のみの照合が局所的な視覚パターンによる誤検出を起こす問題に対し、画像-テキスト整合損失を距離学習に加えた3塔・4塔モデルで、画像+テキストのマルチモーダル検索も実現した。
+problem: 画像同士のマッチングは局所パターンに引きずられて誤検出が生じ、ブランドや色などの補足条件による検索結果の絞り込みもできなかった。
+approach: 画像間損失に画像-テキスト整合損失を制約として加えた深層距離学習を行い、短いテキストクエリも入力する4塔モデルに拡張。画像・テキスト埋め込みの加重和で融合クエリを作る。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - multimodal
+  - embedding
+  - deep-learning
+  data_type:
+  - image
+  - text
+confidence: 0.85
+result: 3塔モデルで画像マッチングのクリック率が相対4.95%改善、4塔モデルでさらに1.13%改善と報告。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2412.13364

@@ -1,0 +1,35 @@
+id: 2024-alibaba-generative-auto-bidding-diffusion
+url: https://doi.org/10.1145/3637528.3671526
+doi: 10.1145/3637528.3671526
+alt_urls:
+- https://arxiv.org/abs/2405.16141
+title: Generative Auto-bidding via Conditional Diffusion Modeling
+title_ja: 条件付き拡散モデルによる生成的オートビディング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: オートビディングを強化学習ではなく生成モデルの問題として捉え直し、条件付き拡散モデルDiffBidで入札軌道を生成するAIGBを提案した。実データでの評価とAlibaba広告プラットフォームでのオンラインA/Bテストで有効性を確認している。
+problem: 既存のオートビディングは強化学習が主流だが、長い時間ステップでの誤差の蓄積や学習の不安定さが課題になる。
+approach: リターンと入札軌道全体の関係を直接モデル化する条件付き拡散モデルDiffBidで、目標リターンに合う入札系列を生成する。
+result: Alibaba広告プラットフォームのオンラインA/BテストでGMV +2.81%、ROI +3.36%と報告。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  - e-commerce
+  method:
+  - deep-learning
+  - reinforcement-learning
+  data_type:
+  - log
+  - time-series
+has_online_experiment: true
+confidence: 0.88

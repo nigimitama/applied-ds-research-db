@@ -1,0 +1,31 @@
+id: 2024-jd-indoor-temperature-prediction-const
+url: https://doi.org/10.1145/3637528.3671608
+doi: 10.1145/3637528.3671608
+title: Spatio-Temporal Consistency Enhanced Differential Network for Interpretable Indoor Temperature
+  Prediction
+title_ja: 解釈可能な室内温度予測のための時空間一貫性強化差分ネットワーク
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- jd
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: セントラルヒーティングの運用判断に使う室内温度予測について、物理法則と整合する解釈性を重視したモデルCONSTを提案した。JDのSmartHeatシステムのデータで、北部中国の13の熱供給ステーションの時間別室内温度を予測する。
+problem: 暖房の制御には室内温度の予測が重要だが、深層学習モデルは解釈性が低く物理法則との整合が保証されないため、実運用での利用が難しい。要因間の多重共線性も精度と解釈性を損なう。
+approach: 多重共線性に対処する差分予測モジュールと、マルチタスク学習で拠点間の共通パターンを捉える時空間一貫性モジュールを組み合わせる。部分依存プロットに基づく既存の解釈性指標の欠点を補う新たな指標群も提案している。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - deep-learning
+  - explainable-ai
+  data_type:
+  - time-series
+  - tabular
+confidence: 0.75

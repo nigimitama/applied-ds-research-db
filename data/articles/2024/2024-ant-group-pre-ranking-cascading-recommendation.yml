@@ -1,0 +1,31 @@
+id: 2024-ant-group-pre-ranking-cascading-recommendation
+url: https://doi.org/10.1145/3637528.3671580
+title: 'Enhancing Pre-Ranking Performance: Tackling Intermediary Challenges in Multi-Stage Cascading Recommendation
+  Systems'
+title_ja: 多段カスケード推薦におけるプレランキング性能の改善
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: リコール・プレランキング・ランキングの多段推薦で、露出バイアスとランキング段との不整合を扱うため、サンプル選択・ドメイン適応・不偏蒸留の3モジュールからなる枠組みを提案。実際の産業システムに導入されている。
+problem: プレランキングは露出済みアイテムのフィードバックで学習する一方、評価はリコール全体が対象となり選択バイアスが生じる。全件を負例扱いで学習する方法はコストが高くノイズも大きい。
+approach: サンプル選択でバイアスとコストを下げ、ドメイン適応で未露出サンプルに疑似ラベルを付与し、露出非依存のスコアを使う不偏蒸留で不偏なモデルを学習する。新しい評価指標も導入。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - finance
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.75
+doi: 10.1145/3637528.3671580
+result: 実験で有効性を確認し、実産業システムに展開されたと報告(具体値は原文参照)。

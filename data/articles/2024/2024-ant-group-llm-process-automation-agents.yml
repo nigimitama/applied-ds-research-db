@@ -1,0 +1,32 @@
+id: 2024-ant-group-llm-process-automation-agents
+url: https://doi.org/10.1145/3637528.3671646
+title: Intelligent Agents with LLM-based Process Automation
+title_ja: LLMによる業務プロセス自動化を行うインテリジェントエージェント
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 高レベルの自然言語指示から、モバイルアプリ内の複数ステップ操作を実行するLLM駆動のアシスタントLLMPAを提案し、Alipay上で実運用に近い形で評価した。
+problem: 従来の音声アシスタントは複数ステップの指示や複雑な目標に弱く、LLMを使っても言い回しの揺れに頑健で信頼できる動作を実現するのは難しい。
+approach: 指示の分解、記述生成、画面要素の検出、次操作の予測、誤り検査の各モジュールを組み合わせ、LLMが画面状態を見ながら操作を進める。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - finance
+  method:
+  - llm
+  - fine-tuning
+  data_type:
+  - text
+confidence: 0.68
+doi: 10.1145/3637528.3671646
+result: Alipayで複雑な操作を自然言語で完了できたと報告
+alt_urls:
+- https://arxiv.org/abs/2312.06677

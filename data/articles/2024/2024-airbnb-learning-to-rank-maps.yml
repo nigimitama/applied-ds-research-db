@@ -1,0 +1,30 @@
+id: 2024-airbnb-learning-to-rank-maps
+url: https://doi.org/10.1145/3637528.3671648
+title: Learning to Rank for Maps at Airbnb
+title_ja: Airbnbにおける地図向けのランキング学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- airbnb
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Airbnbの地図検索結果で、リスト向けと同じ予約確率順のランキングを使う前提が成り立たないことを実験で示し、表示ピン数を選ぶBookability Filterなど、地図に適した方針を提案。実運用で大きなユーザ体験改善を報告している。
+problem: リスト表示と地図表示で同じ予約確率順ランキングを使ってきたが、地図ではユーザの注目の仕方が異なり、リスト向けの仮定が崩れる。
+approach: 地図上のピンの並べ替えは予約にほとんど影響しないことを実験で確認し、「Less Is More」原則に基づいて表示するピン数を決めるBookability Filterを導入するなど、地図専用のランキング設計とした。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - travel
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - geospatial
+confidence: 0.8
+result: Airbnbにおける最大級のユーザ体験改善の一つと報告(具体値は原文参照)。
+has_online_experiment: true

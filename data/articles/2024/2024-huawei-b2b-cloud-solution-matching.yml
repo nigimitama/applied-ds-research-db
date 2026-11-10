@@ -1,0 +1,33 @@
+id: 2024-huawei-b2b-cloud-solution-matching
+url: https://doi.org/10.1145/3637528.3671513
+title: Enhancing Multi-field B2B Cloud Solution Matching via Contrastive Pre-training
+title_ja: 対照事前学習によるマルチフィールドB2Bクラウドソリューションのマッチング強化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- huawei
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: クラウド事業者の営業が狙うべき企業を、ソリューションと企業の多フィールド特徴のマッチングとして扱うCAMAを提案。フィールド埋め込みを加えたBERTと、データ拡張を用いた対照事前学習で疎な取引データを補う。Huawei
+  Cloudに導入しCVRの向上を報告している。
+problem: B2Bのクラウドソリューションと顧客企業の対応付けでは、複雑な多フィールド特徴のモデリングと、取引データが少なく疎であることが難しい。
+approach: 階層的なマルチフィールドマッチング構造にフィールド認識埋め込みを加えたBERTエンコーダを用い、トークンマスク・フィールドマスク・企業置換の3種のデータ拡張で対照学習による事前学習を行う。
+tags:
+  task:
+  - entity-matching
+  - recommendation
+  domain:
+  - cloud-infra
+  method:
+  - transformer
+  - embedding
+  data_type:
+  - text
+  - tabular
+confidence: 0.8
+result: 実データで強いベースラインを上回り、Huawei Cloudでは従来のオンラインモデルに対しCVRが約30%向上したと報告。
+has_online_experiment: true

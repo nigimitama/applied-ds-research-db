@@ -1,0 +1,33 @@
+id: 2024-airbnb-multi-objective-ranking-distillation
+url: https://doi.org/10.1145/3637528.3671597
+title: Multi-objective Learning to Rank by Model Distillation
+title_ja: モデル蒸留によるマルチ目的ランキング学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- airbnb
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 購入などの主目的に加え、キャンセルやレビューなどの副目的も考慮するマーケットプレイスのランキングを、複数の単一目的の教師モデルから生徒モデルへ蒸留する問題として解く手法を提案。Airbnbに実装した。
+problem: 副目的のデータが疎で不均衡であり、一時的な事業目標にも対応しづらい。微分不可能なビジネス目標をランキングへ組み込むことも難しい。
+approach: 各目的の教師モデルの予測を集約したものを生徒モデルが学習する蒸留としてマルチ目的ランキングを定式化し、自己蒸留でシステムを簡素化できることも示す。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - travel
+  method:
+  - model-compression
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8
+doi: 10.1145/3637528.3671597
+result: Airbnbでの実装で予約コンバージョンの向上と配信レイテンシの低下を報告(数値は原文参照)
+alt_urls:
+- https://arxiv.org/abs/2407.07181
+has_online_experiment: true

@@ -1,0 +1,32 @@
+id: 2024-meituan-state-robust-ate-estimator
+url: https://doi.org/10.1145/3637528.3672352
+title: 'STATE: A Robust ATE Estimator of Heavy-Tailed Metrics for Variance Reduction in Online Controlled
+  Experiments'
+title_ja: 'STATE: オンライン実験の裾の重い指標向け分散削減ロバストATE推定量'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meituan
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 裾の重い分布を持つ指標のオンライン実験で、t分布と機械学習を組み合わせた頑健な平均処置効果推定量STATEを提案。Meituanの実験プラットフォームで評価している。
+problem: オンライン実験の指標は裾が重く、従来の分散削減手法(CUPAC/MLRATE等)では十分な効果が得られない。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - food
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.8
+approach: Studentのt分布を機械学習と組み合わせて指標をあてはめ、変分EM法で推定する。比率指標にも拡張。
+result: Meituanの実験プラットフォームでCUPAC/MLRATEに比べ分散を50%以上削減したと報告。
+has_online_experiment: true

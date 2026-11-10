@@ -1,0 +1,30 @@
+id: 2024-samson-ag-hierarchical-fault-intensity-diagnosis
+url: https://doi.org/10.1145/3637528.3671610
+title: Hierarchical Knowledge Guided Fault Intensity Diagnosis of Complex Industrial Systems
+title_ja: 階層的知識に導かれた複雑産業システムの故障強度診断
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- samson-ag
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 故障強度の診断でクラス間の階層関係を活かす損失関数(階層木損失とグループ木トリプレット損失)を提案。SAMSON AGのキャビテーション実データを含む産業データで評価した。
+problem: 故障強度診断の既存手法は対象クラス間の関係を無視しており、微小な故障の識別が難しく実用に限界がある。
+approach: クラスの属性共有を木構造制約で表す階層木損失(焦点版を含む)と、木距離で動的マージンを与えるグループ木トリプレット損失で、階層的に一貫した表現と予測を得る。
+tags:
+  task:
+  - predictive-maintenance
+  - classification
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.7
+doi: 10.1145/3637528.3671610
+result: SAMSON AGの3つのキャビテーションデータを含む4つの実産業データで、最近の手法を上回ったと報告。

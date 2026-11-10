@@ -1,0 +1,31 @@
+id: 2024-microsoft-novelty-topk-llm-rl
+url: https://doi.org/10.1145/3637528.3671618
+title: Optimizing Novelty of Top-k Recommendations using Large Language Models and Reinforcement Learning
+title_ja: 大規模言語モデルと強化学習によるTop-k推薦の新規性最適化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- microsoft
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: クリック履歴のない新規アイテムを推薦するため、LLMの関連性フィードバックを報酬とする強化学習でtop-kの新規性を最適化する手法を提案。大手検索エンジンのクエリ広告タスク等で評価している。
+problem: 新規性はソートを含む非微分な指標で、新規アイテムにはクリックデータがなく教師あり学習が難しい。数百万の候補ではサンプル効率も問題になる。
+approach: LLMを関連性の判定者として報酬を与える強化学習とし、リスト全体の報酬をクエリ-アイテム単位の報酬に分解して二値の判断問題に落とし込む。
+tags:
+  task:
+  - recommendation
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - llm
+  - reinforcement-learning
+  data_type:
+  - text
+confidence: 0.75
+doi: 10.1145/3637528.3671618
+result: 大手検索エンジンのクエリ広告タスクで、教師ありファインチューニングに対し再現率の損失を抑えつつ新規性が有意に向上と報告(具体値は原文参照)。

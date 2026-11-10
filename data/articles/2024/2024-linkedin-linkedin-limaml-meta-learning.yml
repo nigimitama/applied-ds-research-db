@@ -1,0 +1,35 @@
+id: 2024-linkedin-linkedin-limaml-meta-learning
+url: https://doi.org/10.1145/3637528.3671599
+doi: 10.1145/3637528.3671599
+title: 'LiMAML: Personalization of Deep Recommender Models via Meta Learning'
+title_ja: 'LiMAML: メタ学習による深層推薦モデルの個別化'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- linkedin
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: メンバーなど個別エンティティ向けにモデルを適応させるMAMLをLinkedInの推薦に導入。メタ学習した部分ネットワークを固定長のメタ埋め込みに変換し、数千億パラメータのモデルでもオンライン配信できるようにした。
+problem: 元のMAMLベースのモデルをオンライン推薦に載せるのはほぼ不可能で、個別化のための最近の行動シグナルの反映が難しかった。
+approach: メタ学習した部分ネットワークを固定サイズのベクトル(メタ埋め込み)へ変換し、推論時にオンラインで利用する。
+tags:
+  task:
+  - personalization
+  - recommendation
+  domain:
+  - social
+  - hr
+  method:
+  - deep-learning
+  - fine-tuning
+  data_type:
+  - log
+confidence: 0.82
+result: LinkedInの本番データでwide-and-deep ID個別化などのベースラインを上回り、複数アプリケーションに導入して事業指標が大きく改善したと報告。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2403.00803

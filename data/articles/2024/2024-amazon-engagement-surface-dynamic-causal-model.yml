@@ -1,0 +1,28 @@
+id: 2024-amazon-engagement-surface-dynamic-causal-model
+url: https://doi.org/10.1145/3637528.3671604
+title: Valuing an Engagement Surface using a Large Scale Dynamic Causal Model
+title_ja: 大規模動的因果モデルによるエンゲージメントサーフェスの価値評価
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- amazon
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Amazonの顧客行動データ(数十億件規模)を使い、あるエンゲージメントサーフェスが生む価値を切り分けて測る大規模な動的因果モデルを構築した。過去期間の処置効果が後続期間へ波及する構造と同期間の効果を取り込み、投資対効果の推定や価値の高い商品群の特定に使う。
+problem: 大企業では施策の長期的な因果効果を正確に測らないと投資対効果を誤って計算してしまう。エンゲージメントサーフェスの価値は、他の経路で得られる成果と切り分けにくい。
+approach: 顧客行動の大規模データで学習する動的因果モデル。以前の期間の処置効果が後の期間へ連鎖的に波及する構造と、同一期間内の同時的な顧客行動の影響を同時に表現する。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - e-commerce
+  method:
+  - causal-inference
+  data_type:
+  - log
+confidence: 0.7
+doi: 10.1145/3637528.3671604

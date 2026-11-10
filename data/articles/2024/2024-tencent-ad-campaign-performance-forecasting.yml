@@ -1,0 +1,36 @@
+id: 2024-tencent-ad-campaign-performance-forecasting
+url: https://doi.org/10.1145/3637528.3671528
+doi: 10.1145/3637528.3671528
+alt_urls:
+- https://arxiv.org/abs/2405.10681
+title: Know in $AdVance:$ Linear-Complexity Forecasting of Ad Campaign Performance with Evolving User
+  Interest
+title_ja: 'AdVance: ユーザー関心の変化を考慮した線形計算量の広告キャンペーン成果予測'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 数万件の広告オークション列から広告キャンペーンの成果を予測する課題に、局所的な注意機構と条件付き状態空間モデルを組み合わせたAdVanceを提案した。Tencent広告プラットフォームに導入され、A/Bテストで評価されている。
+problem: キャンペーン成果予測は数万件のオークションにまたがる長い系列を扱い、ユーザー関心の変化やオークション表現の難しさがある。RNN/CNNは長距離依存に弱く、自己注意は計算量が二乗になる。
+approach: オークションごとの局所表現を注意機構で作り、全系列を条件付き状態空間モデルで要約する時間考慮型の枠組み。オークション単位とキャンペーン単位のモデリングを組み合わせ、計算量を線形にした。
+result: Tencent広告に導入され、A/BテストでARPU +4.5%と報告(arXivの二次情報による)。
+tags:
+  task:
+  - ad-optimization
+  - time-series-forecasting
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  - time-series-model
+  data_type:
+  - log
+  - time-series
+has_online_experiment: true
+confidence: 0.8

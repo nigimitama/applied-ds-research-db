@@ -1,0 +1,29 @@
+id: 2024-microsoft-pretrained-kpi-anomaly-disformer
+url: https://kdd2024.kdd.org/applied-data-science-track-papers/?paper=pre-trained-kpi-anomaly-detection-model-based-on-disentangled-transformer
+title: Pre-trained KPI Anomaly Detection Model Based on Disentangled Transformer
+title_ja: 分離型Transformerによる事前学習済みKPI異常検知モデル
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- microsoft
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: KPIごとの性質差とノイズに対応するため、Transformerの射影行列を共有部と個別部に分離した事前学習済み異常検知モデルKAD-Disformerを提案。新規KPIへは教師なしの少量ファインチューニングで適応し、実クラウドシステムに導入された。
+problem: KPIは種類ごとに特性が異なりノイズも多く、KPIごとに個別モデルを学習するのは高コストで、汎用モデルでは精度が落ちる。
+approach: 射影行列を事前学習時のみ更新する共有成分と、新KPIで微調整する個別成分に分離する。教師なしfew-shot微調整(uTune)とデノイズモジュールを組み合わせる。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - cloud-infra
+  method:
+  - transformer
+  - fine-tuning
+  data_type:
+  - time-series
+confidence: 0.75
+result: 既存の汎用異常検知モデルよりF1が13%向上し、微調整サンプルが1/8でも同等性能(約25時間短縮)と報告。数百万ユーザー向けクラウドシステムで運用。

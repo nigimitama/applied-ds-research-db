@@ -1,0 +1,34 @@
+id: 2024-alibaba-fusionsf-solar-power-forecasting
+url: https://doi.org/10.1145/3637528.3671509
+title: 'FusionSF: Fuse Heterogeneous Modalities in a Vector Quantized Framework for Robust Solar Power
+  Forecasting'
+title_ja: FusionSF:ベクトル量子化で異種モダリティを融合する頑健な太陽光発電予測
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 過去の発電量、数値気象予報、衛星画像の3種類のデータをベクトル量子化で揃えて融合する太陽光発電予測モデルFusionSFを提案。新設発電所へのゼロショット予測にも対応し、eForecasterプラットフォームで運用されている。
+problem: 太陽光発電は気象に左右されて予測が難しく、新設の発電所は履歴データが少ない。情報密度が異なるモダリティを過学習せずに統合する必要がある。
+approach: 衛星画像はトークン化・マスクの上でViT、発電時系列とNWP共変量は量子化してTemporal Transformerで処理し、Cross Transformerで3モダリティを融合する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - transformer
+  - multimodal
+  data_type:
+  - time-series
+  - image
+confidence: 0.85
+doi: 10.1145/3637528.3671509
+result: 最新ベースラインに対し9.5%改善と報告。300か所超・15GW超の発電所に展開
+alt_urls:
+- https://arxiv.org/abs/2402.05823

@@ -1,0 +1,34 @@
+id: 2024-shopee-deep-ensemble-shape-calibration
+url: https://doi.org/10.1145/3637528.3671529
+doi: 10.1145/3637528.3671529
+alt_urls:
+- https://arxiv.org/abs/2401.09507
+title: 'Deep Ensemble Shape Calibration: Multi-Field Post-hoc Calibration in Online Advertising'
+title_ja: 'Deep Ensemble Shape Calibration: オンライン広告における多フィールド事後キャリブレーション'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- shopee
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: EC広告のCTR/CVR予測に対する事後キャリブレーションを、値の補正と形状の補正に分解し、基底関数のアンサンブルで表現力を高めるDESCを提案した。公開・産業データでの評価とShopeeのオンライン実験で効果を確認している。
+problem: EC広告のCTR/CVR予測は検証データで学習するキャリブレータで補正するが、既存手法は値のキャリブレーションと形状のキャリブレーションを同時に満たせない。
+approach: 多フィールドのキャリブレーションを値と形状に分解し、基底となるキャリブレーション関数を用意してアンサンブルで組み合わせることで、関数の表現力とデータ利用効率を高める。
+result: オンライン実験でCVR +2.5%、GMV +4.0%と報告。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  - e-commerce
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - tabular
+has_online_experiment: true
+confidence: 0.85

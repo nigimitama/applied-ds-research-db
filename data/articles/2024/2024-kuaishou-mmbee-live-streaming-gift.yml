@@ -1,0 +1,36 @@
+id: 2024-kuaishou-mmbee-live-streaming-gift
+url: https://doi.org/10.1145/3637528.3671511
+doi: 10.1145/3637528.3671511
+title: 'MMBee: Live Streaming Gift-Sending Recommendations via Multi-Modal Fusion and Behaviour Expansion'
+title_ja: 'MMBee: マルチモーダル融合と行動拡張によるライブ配信ギフト送信推薦'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ライブ配信で視聴者がギフトを贈る確率を予測する推薦モデルMMBeeを提案。配信の画像・コメント・音声を学習可能クエリで融合し、ギフトグラフ上の関心拡張でスパース性を緩和する。Kuaishouに導入されA/Bテストで有効性を確認。
+problem: ライブ配信では内容がリアルタイムに変化するが、従来のギフト推薦はカテゴリ特徴と過去行動に依存して内容変化を捉えられず、ギフト行動の疎性にも悩まされていた。
+approach: 学習可能クエリによるマルチモーダル融合モジュールで配信セグメントの画像・コメント・音声を統合し、マルチモーダル属性付きの大規模ギフトグラフ上でユーザ/配信者表現を学習するグラフ誘導型の関心拡張を併用する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  - social
+  method:
+  - multimodal
+  - graph-neural-network
+  data_type:
+  - video
+  - audio
+  - graph
+confidence: 0.85
+result: 公開データとKuaishouデータで大きな改善を報告し、オンラインA/Bテストでも有効性を確認。数億ユーザ規模のKuaishouに展開されている。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2407.00056

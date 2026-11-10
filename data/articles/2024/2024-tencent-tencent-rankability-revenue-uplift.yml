@@ -1,0 +1,34 @@
+id: 2024-tencent-tencent-rankability-revenue-uplift
+url: https://doi.org/10.1145/3637528.3671516
+doi: 10.1145/3637528.3671516
+title: Rankability-enhanced Revenue Uplift Modeling Framework for Online Marketing
+title_ja: オンラインマーケティング向けのランキング性を高めた収益アップリフトモデリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 連続でロングテールな収益反応に対するアップリフトモデリングで、ZILN損失による回帰と、ランキング誤差の上界を使った追加損失・リストワイズ損失を組み合わせる枠組みを提案。Tencentのフィンテックマーケティングで大規模オンライン実験を行った。
+problem: 収益アップリフトは連続・ロングテール分布で予測が不正確になりやすく、既存手法は個人間のランキング精度を軽視していた。
+approach: ZILN損失を用いた回帰ネットワークを既存アップリフトモデルに適用可能にし、ランキング誤差の理論解析から導いた2つの上界を損失項に加え、全体母集団のリストワイズ・アップリフトランキング損失で補強する。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - finance
+  - advertising
+  method:
+  - uplift-modeling
+  - deep-learning
+  data_type:
+  - tabular
+confidence: 0.8
+result: 公開・産業データ上のオフライン評価と、Tencentフィンテックのオンライン実験で有効性を確認(定量値は原文参照)。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2405.15301

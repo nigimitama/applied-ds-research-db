@@ -1,0 +1,30 @@
+id: 2024-meta-lumos-multimodal-llm-scene-text
+url: https://kdd2024.kdd.org/applied-data-science-track-papers/?paper=lumos-empowering-multimodal-llms-with-scene-text-recognition
+title: 'Lumos: Empowering Multimodal LLMs with Scene Text Recognition'
+title_ja: Lumos:シーンテキスト認識によるマルチモーダルLLMの強化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 一人称視点の画像に写る文字を端末上のシーンテキスト認識で抽出し、クラウド上のマルチモーダルLLMへ補助入力として渡して画像質問応答を行うシステムLumosを提案。スマートグラス向けの端末・クラウド協調の構成を示す。
+problem: マルチモーダルLLMは画像中の文字の読み取りが苦手で、ウェアラブル端末では遅延・メモリ・消費電力の制約も厳しい。
+approach: 端末側でROI検出、テキスト検出、認識、読み順復元のパイプラインを動かし、抽出テキストをMM-LLMの入力に加えて質問応答する。
+tags:
+  task:
+  - image-recognition
+  - conversational-ai
+  method:
+  - multimodal
+  - llm
+  data_type:
+  - image
+confidence: 0.62
+result: 端末側パイプラインで単語誤り率14.6%、遅延約0.9秒、ピークメモリ約200MBを報告。サムネイルのみのMM-LLMの回答精度は52%にとどまるとの記述
+alt_urls:
+- https://arxiv.org/abs/2402.08017

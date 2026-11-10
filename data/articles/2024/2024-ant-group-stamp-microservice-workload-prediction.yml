@@ -1,0 +1,32 @@
+id: 2024-ant-group-stamp-microservice-workload-prediction
+url: https://doi.org/10.1145/3637528.3671508
+title: Integrating System State into Spatio Temporal Graph Neural Network for Microservice Workload Prediction
+title_ja: システム状態を統合した時空間GNNによるマイクロサービスのワークロード予測
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: マイクロサービス間の呼び出し関係をグラフとして扱い、時系列分析とシステム状態の情報を取り込む時空間グラフネットワーク(STAMP)でワークロードを予測する。Alipayのマイクロサービス環境に導入して資源消費の削減を確認している。
+problem: マイクロサービス基盤ではリソース割当が硬直的でCPU利用効率が低く、柔軟な割当には動的なワークロードの高精度予測が必要である。
+approach: サービス間の相互作用をグラフで表現し、時間変動する負荷を時系列分析で捉え、さらにシステム状態の情報を時空間グラフネットワークに組み込んで予測する。
+tags:
+  task:
+  - time-series-forecasting
+  - resource-optimization
+  domain:
+  - cloud-infra
+  - finance
+  method:
+  - graph-neural-network
+  - deep-learning
+  data_type:
+  - graph
+  - time-series
+confidence: 0.8
+result: 3つの実データセットでRMSEが平均5.72%改善。Alipay環境への導入で資源消費を33.10%削減したと報告。

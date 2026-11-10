@@ -1,0 +1,33 @@
+id: 2024-china-mobile-diffusion-mobile-traffic-generation
+url: https://doi.org/10.1145/3637528.3671544
+doi: 10.1145/3637528.3671544
+title: Diffusion Model-based Mobile Traffic Generation with Open Data for Network Planning and Optimization
+title_ja: ネットワーク計画・最適化のための、オープンデータを用いた拡散モデルによるモバイルトラヒック生成
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- china-mobile
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 通信事業者の実測トラヒックが入手しにくい問題に対し、衛星画像・POI・人口といった公開データのみを条件として基地局トラヒックを生成する拡散モデルOpenDiffを提案した。生成データはChina
+  Mobileのネットワーク最適化プラットフォームで試験されている。
+problem: モバイルネットワークの計画・最適化には都市単位のトラヒックデータが必要だが、事業者の実測データは取得が難しく、既存の生成手法も事業者データへの依存が大きい。
+approach: 衛星リモートセンシング画像、POI、人口の公開データから、多正例コントラスト学習で条件情報を構築し、注意機構ベースの融合で人の活動特徴とトラヒックパターンを結び付けて、条件付き拡散モデルでトラヒックを生成する。
+result: 3都市で、生成の忠実度と制御性が既存手法より14.36%と13.05%向上したと報告。生成データをChina Mobileの最適化プラットフォームで試験した。
+tags:
+  task:
+  - time-series-forecasting
+  - resource-optimization
+  domain:
+  - telecom
+  method:
+  - deep-learning
+  data_type:
+  - geospatial
+  - time-series
+  - image
+confidence: 0.7

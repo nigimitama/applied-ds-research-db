@@ -1,0 +1,36 @@
+id: 2024-ebay-ecommerce-spelling-correction-transformer
+url: https://doi.org/10.1145/3637528.3671625
+title: Enhancing E-commerce Spelling Correction with Fine-Tuned Transformer Models
+title_ja: ファインチューニングしたTransformerによるEコマースのスペル訂正の強化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ebay
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: EC検索のスペル訂正で、既存のLSTM系判別モデルの代わりにBARTやT5を微調整して生成的に誤り訂正する。プルーニングと教師なし蒸留で遅延を抑え、米英トラフィックのA/Bテストで検証した。
+problem: 検索クエリの綴り誤りは検索結果の質を下げる。判別モデル中心の既存方式の精度を高めつつ、リアルタイム検索の厳しい遅延制約を満たす必要がある。
+approach: 事前学習済みのBART/T5を微調整して誤り訂正を生成タスクとして解き、プルーニングとno-teacher蒸留で推論を軽量化する。英語のほか欧州4言語向けの多言語モデルも微調整した。
+tags:
+  task:
+  - search-ranking
+  - text-generation
+  domain:
+  - e-commerce
+  method:
+  - transformer
+  - fine-tuning
+  - model-compression
+  data_type:
+  - text
+  - log
+confidence: 0.85
+doi: 10.1145/3637528.3671625
+result: オフラインで英語のF1が約4%向上、多言語モデルは4言語と英語で精度が16%以上向上。A/Bテストでリクエスト成功率100%を報告
+alt_urls:
+- https://chatpaper.com/paper/57094
+has_online_experiment: true
