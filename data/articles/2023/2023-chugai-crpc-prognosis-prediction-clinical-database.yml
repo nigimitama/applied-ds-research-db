@@ -1,0 +1,26 @@
+id: 2023-chugai-crpc-prognosis-prediction-clinical-database
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin119/_article
+title: 診療データベースを用いた去勢抵抗性前立腺癌患者の予後予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- chugai
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 診療データベースを使い、去勢抵抗性前立腺癌(CRPC)患者の予後を予測する検討を行った。
+problem: CRPCは治療選択肢が少なく根治が難しいため、予後予測の医学的意義が大きい。
+approach: 診療データベースのデータを用いてCRPC患者の予後を予測するモデルを構築・評価する。
+tags:
+  task:
+  - risk-scoring
+  domain:
+  - healthcare
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+confidence: 0.55

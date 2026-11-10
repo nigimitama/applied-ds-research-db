@@ -1,0 +1,27 @@
+id: 2023-ms-ad-traffic-risk-mining-damage-scale
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3Xin432/_article
+title: 被害規模を考慮した交通リスクマイニング手法
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- ms-ad
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 交通事故履歴データから、被害規模を考慮して任意の地点での事故発生を予測し、事故が起きる要因も同時に特定する手法を提案した。事故の重大度に応じてドライバーへの注意喚起レベルを変えられる。
+problem: 事故の起きたことがない地点でも、ドライバーが危険な地域に近づく際に注意喚起したい。
+approach: 事故履歴データから事故の発生と被害規模を同時にモデル化し、事故の要因を同定する。
+tags:
+  task:
+  - risk-scoring
+  domain:
+  - insurance
+  - mobility
+  method: []
+  data_type:
+  - geospatial
+  - tabular
+confidence: 0.6

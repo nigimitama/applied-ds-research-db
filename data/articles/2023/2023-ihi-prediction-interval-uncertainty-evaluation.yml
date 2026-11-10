@@ -1,0 +1,26 @@
+id: 2023-ihi-prediction-interval-uncertainty-evaluation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2L1GS1104/_article
+title: 予測区間に基づく機械学習の不確かさ評価手法
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- ihi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 機械学習の予測の不確かさを、予測区間に基づき特定のモデルに依存せず評価する手法を提案した。予測を安全側に補正する、不確かさが大きい予測は使わないといった運用に使う。
+problem: 既存の不確かさ評価はモデルが限られ、データ間の距離やパラメータ分布に基づくため、不確かさを正しく表さないことがある。
+approach: 予測区間に基づく不確かさの評価手法を提案する。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - manufacturing
+  method:
+  - bayesian
+  data_type:
+  - tabular
+confidence: 0.5

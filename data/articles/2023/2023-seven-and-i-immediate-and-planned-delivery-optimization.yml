@@ -1,0 +1,28 @@
+id: 2023-seven-and-i-immediate-and-planned-delivery-optimization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M6GS1004/_article
+title: 即時配送と計画配送の実応用にむけた配送最適化アルゴリズム開発
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- seven-and-i
+- ntt-data
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ラストワンマイルの宅配で、即時配送(Q-commerce)と計画配送の双方を扱う配送最適化アルゴリズムを、実運用の要件を踏まえて開発した。
+problem: EC拡大や人手不足で宅配の効率化が必要になり、即時配送の需要増加などで新しい要件や制約を考慮する必要がある。
+approach: 即時配送と計画配送の両方の要件に対応する配送計画の最適化アルゴリズムを開発する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - retail
+  method:
+  - mathematical-optimization
+  data_type:
+  - geospatial
+confidence: 0.6

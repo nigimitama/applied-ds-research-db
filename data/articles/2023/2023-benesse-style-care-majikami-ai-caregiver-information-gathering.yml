@@ -1,0 +1,26 @@
+id: 2023-benesse-style-care-majikami-ai-caregiver-information-gathering
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1M5GS1001/_article
+title: 「マジ神AI」実装のための介護職の情報収集の様相の解明
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- benesse-style-care
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 熟練介護職(マジ神)の技能をもとに、経験の浅い介護職の状態把握を支援する「マジ神AI」モジュールを介護記録システムに実装し、熟練介護職の視線計測とインタビューで情報収集の様子を分析して改善に生かした。
+problem: 経験の浅い介護職は利用者の状態を適切に把握しにくい。AIモジュールの表示を現場でどう使うかを理解する必要がある。
+approach: マジ神AIが認知症の行動・心理症状の発生とその背景の推定を表示する機能を記録システムに実装し、熟練介護職の視線計測とインタビューで利用実態を調べる。
+tags:
+  task:
+  - classification
+  domain:
+  - healthcare
+  method: []
+  data_type:
+  - tabular
+  - text
+confidence: 0.5

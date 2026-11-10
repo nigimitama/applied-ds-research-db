@@ -1,0 +1,28 @@
+id: 2023-askul-ecommerce-logistics-bcp-max-flow-simulation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2L4GS303/_article
+title: EC物流における災害時の事業継続計画のための最大流シミュレーション
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: EC物流で、災害による物流センターの被害が出荷能力・受注の滞留・リードタイムに与える影響を、センターをノードとするネットワークの最大流問題で定量化するシミュレータを構築した。複数の対策案を比較している。
+problem: 地震・台風・感染症などの災害で物流センターの処理能力が低下し、できるだけ速く届ける能力が落ちる。
+approach: 物流センターをノードとしたネットワークモデルを作り、最大流を解いて被害の影響を計算する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - e-commerce
+  method:
+  - simulation
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

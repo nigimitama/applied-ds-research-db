@@ -1,0 +1,30 @@
+id: 2023-askul-customer-clustering-specific-product-recommendation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1U4IS1a05/_article
+title: Customer Clustering and Customer-Specific Product Recommendation by Distance from Core Customer
+  Group in a Multidimensional Space of Purchase Behavioral Features
+title_ja: 顧客クラスタリングと顧客別商品推薦
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: en
+summary_ja: ネット通販で、業種と購買行動の特徴で顧客をグルーピングし、グループ別のプロモーションと顧客ごとの商品推薦につなげる手法を提案した。
+problem: 全顧客を同様に扱うより、業種や購買行動の特徴でグルーピングして販促を行う方が効果が高いと期待されるが、さらに顧客ごとにカスタマイズすれば効果は高まる。
+approach: 業種・購買行動の特徴で顧客をクラスタリングし、顧客別に商品を推薦する。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - e-commerce
+  method:
+  - embedding
+  data_type:
+  - log
+  - tabular
+confidence: 0.55

@@ -1,0 +1,27 @@
+id: 2023-oki-traffic-flow-prediction-method-switching
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1M3GS1001/_article
+title: 交通流の特性に応じた交通流予測方式の切り替え
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プローブデータによる交通流予測で、事故などの突発事象の影響がない流れには蓄積データの交通密度推移に基づく統計的予測を、影響がある流れには別の予測を使い、交通流の特性に応じて切り替えるアルゴリズムを提案した。
+problem: 渋滞緩和や事故削減のため正確な道路交通情報を提供したいが、突発事象の有無で適切な予測法が異なる。
+approach: 突発事象の影響がない場合は過去の交通密度推移に基づく統計的予測、影響がある場合は別の予測法を用い、交通流の特性で自動的に切り替える。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - time-series-model
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.6

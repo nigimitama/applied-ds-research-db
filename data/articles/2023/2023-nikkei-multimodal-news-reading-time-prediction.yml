@@ -1,0 +1,29 @@
+id: 2023-nikkei-multimodal-news-reading-time-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3Xin458/_article
+title: マルチモーダル機械学習によるニュース記事の閲覧時間予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- nikkei
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ニュース記事の閲覧時間をマルチモーダル機械学習で予測する手法を議論した。閲覧時間はページビューより読了の程度が分かり、コンテンツ推薦や分析に有用。
+problem: ページビューよりも詳細にユーザーの嗜好を把握できる閲覧時間を予測したい。最も単純な実装は記事の長さとの相関に基づく。
+approach: 記事のテキストなど複数の情報を入力するマルチモーダルな機械学習モデルで閲覧時間を予測する。
+tags:
+  task:
+  - recommendation
+  - time-series-forecasting
+  domain:
+  - media
+  method:
+  - multimodal
+  - deep-learning
+  data_type:
+  - text
+  - log
+confidence: 0.55

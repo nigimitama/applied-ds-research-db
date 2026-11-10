@@ -1,0 +1,26 @@
+id: 2023-shiseido-japanese-women-skin-snp-prediction-model
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4F2GS1001/_article
+title: 日本人女性の肌測定データとSNPデータを用いた肌体質予測モデルの構築と評価
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- shiseido
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 日本人女性の肌測定データと遺伝子多型(SNP)データから肌体質を予測するモデルを構築・評価し、生まれつきの肌質に合わせて最適なケアを提案する新しいDNA検査のためのアルゴリズムを開発した。
+problem: 肌は複数の遺伝要因と環境要因の相互作用で日々変わるが、日本人女性の肌を実測して環境要因を加えて多遺伝子の関係を調べた報告はなかった。
+approach: 肌測定データとSNPデータから肌体質を予測する独自の評価アルゴリズムを開発する。
+tags:
+  task:
+  - classification
+  domain:
+  - healthcare
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+confidence: 0.55

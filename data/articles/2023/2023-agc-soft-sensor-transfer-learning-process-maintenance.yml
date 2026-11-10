@@ -1,0 +1,26 @@
+id: 2023-agc-soft-sensor-transfer-learning-process-maintenance
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2M1GS1005/_article
+title: 転移学習と適応型モデリングを用いたプロセスメンテナンスを考慮したソフトセンサの開発
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- agc
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 製造プロセスのソフトセンサで、保守後の素早い適応のために転移学習と適応型モデリングを組み合わせる際、負の転移を避けるため転移学習ありなしを切り替えていた従来法の手間を減らす手法を提案した。
+problem: ソフトセンサは品質変数など測定が難しい変数を予測するが、プロセス保守の後に素早く適応させる必要がある。従来法は負の転移を避けるため切り替えが必要。
+approach: 転移学習と適応型モデリングを組み合わせ、保守を考慮したソフトセンサを構築する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - manufacturing
+  method:
+  - online-learning
+  data_type:
+  - time-series
+confidence: 0.55

@@ -1,0 +1,28 @@
+id: 2023-lycorp-disaster-information-needs-search-location-logs
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin104/_article
+title: 災害時の時々刻々と変わる情報ニーズの把握
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- lycorp
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 過去の災害を事例に、被災地域のユーザーの位置情報と検索履歴から地域ごとの避難のシグナルを調べた。2022年台風14号では、主要交通機関の運行情報や地域の食料品店の休業情報がシグナルとして見つかり、地域差もあった。
+problem: 災害時は時々刻々と情報ニーズが変わり、ユーザーの状況に合った情報の提供が必要。
+approach: 被災地域のユーザーの位置情報と検索履歴を分析して、地域ごとの避難のシグナルを特定する。
+tags:
+  task:
+  - classification
+  domain:
+  - public-sector
+  - media
+  method: []
+  data_type:
+  - log
+  - geospatial
+confidence: 0.6
+result: 台風14号では交通機関の運行情報や食料品店の休業情報が避難のシグナルと特定され、地域による差も確認。
