@@ -9,11 +9,6 @@
   aliases: [SAMSON, SAMSON AG]
   country: DE
   industry: Manufacturing
-- id: nec
-  name: NEC
-  aliases: [NEC Corporation, NEC Laboratories, NEC Labs America]
-  country: JP
-  industry: Electronics/IT
 - id: dow
   name: Dow
   aliases: [Dow Chemical, 'Dow, Inc.']
