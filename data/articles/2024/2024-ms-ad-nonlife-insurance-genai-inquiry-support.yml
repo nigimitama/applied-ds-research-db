@@ -1,0 +1,28 @@
+id: 2024-ms-ad-nonlife-insurance-genai-inquiry-support
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2A6GS1004/_article
+title: 損害保険会社における生成AIを活用した照会応答支援システムの開発事例
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- ms-ad
+- nec
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 損害保険会社の代理店からの照会に答えるオペレーターを支援するため、LLMのRAGを使った照会応答支援システムを開発し、運用した事例を報告している。
+problem: 保険商品ごとの複雑なルールを数万の代理店に正確かつ丁寧に伝える必要があり、参照すべき文書が膨大で応答業務の負担が大きい。
+approach: LLMのRAGアーキテクチャで規定文書を検索・参照して回答を支援する照会応答支援システムを構築し、運用した。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - insurance
+  method:
+  - rag
+  - llm
+  data_type:
+  - text
+confidence: 0.7

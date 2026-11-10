@@ -1,0 +1,26 @@
+id: 2024-ctie-street-space-action-detection-ai
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2A5GS1001/_article
+title: 街路空間の利用状況把握への行動検知AIの試行適用
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- ctie
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 歩きやすい街路空間づくりのため、街路での利用者の行動を把握する作業を深層学習による行動検知AIで効率化する試行適用を行った。
+problem: 街路空間の利用状況の把握を人手で行うと時間とコストの負担が大きく、品質も落ちやすい。行動検知AIの既存研究は多いが、街路での適用はほとんど確認されていない。
+approach: 深層学習の行動検知モデルを街路空間の映像に試行適用して行動を検知する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - public-sector
+  method:
+  - deep-learning
+  data_type:
+  - video
+confidence: 0.55

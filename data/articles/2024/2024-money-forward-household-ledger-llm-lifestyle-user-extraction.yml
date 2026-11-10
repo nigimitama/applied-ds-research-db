@@ -1,0 +1,28 @@
+id: 2024-money-forward-household-ledger-llm-lifestyle-user-extraction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin299/_article
+title: 家計簿データに基づく任意の生活スタイルに対応したユーザ抽出手法の検討
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- money-forward
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 家計簿データから、事業者が指定する任意の生活スタイルに合うユーザーを、事前のモデル作成なしにLLMで抽出する方法を検討した。LLMが生成する検索キーワードが家計簿の表記に合わない問題への対処も扱う。
+problem: サービス提供の対象とする生活スタイルは事業者の要件で変わるため、あらかじめモデルを作る教師あり学習では素早く対応できない。
+approach: LLMで生活スタイルに対応する検索キーワードを生成してユーザーを抽出し、家計簿特有の表記に合わせるよう工夫する。
+tags:
+  task:
+  - classification
+  - personalization
+  domain:
+  - finance
+  method:
+  - llm
+  data_type:
+  - text
+  - tabular
+confidence: 0.55

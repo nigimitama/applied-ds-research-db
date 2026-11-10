@@ -1,0 +1,30 @@
+id: 2024-cyberagent-double-machine-learning-ec-advertising-effect
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin205/_article
+title: ダブルマシンラーニングによるECサイト広告データの分析
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- cyberagent
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ECサイトの購買データに、機械学習と因果推論を組み合わせたダブル機械学習(DML)を適用し、広告効果と運用方法の効果を検証した。潜在変数を取り入れたDMLも提案している。
+problem: 広告の効果や運用方法の評価には予測ではなく因果推論が必要だが、難しい。
+approach: ダブル機械学習で購買データから広告効果を推定し、データの特徴に合わせて潜在変数を含むDMLを提案する。
+tags:
+  task:
+  - causal-effect-estimation
+  - ad-optimization
+  domain:
+  - e-commerce
+  - advertising
+  method:
+  - causal-inference
+  data_type:
+  - tabular
+  - log
+confidence: 0.6
+result: DMLで潜在的な売上効果を推定できることを示唆。

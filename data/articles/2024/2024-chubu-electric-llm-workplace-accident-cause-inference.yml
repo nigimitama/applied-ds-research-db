@@ -1,0 +1,26 @@
+id: 2024-chubu-electric-llm-workplace-accident-cause-inference
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4F3GS303/_article
+title: 大規模言語モデルを用いた労働災害の原因推論
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- chubu-electric
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 電力会社の労働災害報告書を、GPTでテキスト含意に基づくマルチラベル付与を行い、災害原因の構造化に使う実験を行った。4つの方法で比較している。
+problem: 労働災害報告は原因分析や再発防止、安全教育に役立つが、非構造化テキストのため知識の蓄積・再利用が進まない。
+approach: 汎用LLM(GPT)で、報告書のテキストに含意関係に基づくマルチラベル注釈を4通りの方法で付け、原因の抽象カテゴリを整理する。
+tags:
+  task:
+  - classification
+  domain:
+  - energy
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.55

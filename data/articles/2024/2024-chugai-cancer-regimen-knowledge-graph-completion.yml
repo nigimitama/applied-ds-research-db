@@ -1,0 +1,28 @@
+id: 2024-chugai-cancer-regimen-knowledge-graph-completion
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin270/_article
+title: 実臨床データを用いたナレッジグラフにおけるがん治療薬レジメン予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- chugai
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 医療請求データベース(MDV)から薬剤・レジメン・疾患のノードで知識グラフを作り、リンク予測でがん治療薬の併用レジメンを提案できるか検討した。
+problem: がんの薬剤併用は効果向上と副作用管理を狙うが、実臨床で使われる組合せから新たなレジメンを見つける方法が求められる。
+approach: 実臨床の請求データから薬剤・レジメン・疾患を結ぶ知識グラフを構築し、知識グラフ埋め込みによるリンク予測で新たな薬剤とレジメンの関係を予測する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - healthcare
+  method:
+  - knowledge-graph
+  - embedding
+  data_type:
+  - graph
+  - tabular
+confidence: 0.6

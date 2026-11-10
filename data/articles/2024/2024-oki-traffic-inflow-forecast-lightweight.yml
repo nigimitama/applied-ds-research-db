@@ -1,0 +1,27 @@
+id: 2024-oki-traffic-inflow-forecast-lightweight
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2A5GS1004/_article
+title: 交通流シミュレーションのための軽量かつ高精度な流入交通量予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 交通流シミュレーション向けに、短い時間間隔の流入交通量を少ない計算量で予測する手法を提案した。学習・予測のデータを分割して計算量を抑え、予測値を用いたシミュレーションが実際の渋滞を再現できることを確認している。
+problem: 従来の季節調整モデルは時間単位の予測が可能だが、細かい時間間隔の予測ではパラメータ調整の計算が重くなる。
+approach: 交通量データを分割して学習・予測し、短い間隔でも計算量を抑えて予測する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6
+result: 予測した交通量を使った交通流シミュレーションで、実際の渋滞を効率よく再現できた。

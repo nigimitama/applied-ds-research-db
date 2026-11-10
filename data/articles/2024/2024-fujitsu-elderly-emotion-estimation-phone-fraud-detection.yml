@@ -1,0 +1,28 @@
+id: 2024-fujitsu-elderly-emotion-estimation-phone-fraud-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2L4OS9b03/_article
+title: 高齢者の感情推定を活用した特殊詐欺検知AIの開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- fujitsu
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 特殊詐欺の手口が変わっても共通する被害者(高齢者)の心理状態に着目し、バイタル情報から不安感を推定して電話詐欺を検知するAIを開発した。加害者側の音声のキーワード分析では手口の変化のたびに更新が必要という運用負担を避ける。
+problem: 従来の詐欺検知は加害者の音声のキーワード分析で、手口が変わるたびにキーワードを更新する運用負担が大きい。
+approach: 高齢者のバイタル情報から不安感の感情を推定し、被害者の心理状態で詐欺を判定する。
+tags:
+  task:
+  - fraud-detection
+  - classification
+  domain:
+  - finance
+  - healthcare
+  method:
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.6

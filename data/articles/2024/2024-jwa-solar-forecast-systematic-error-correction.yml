@@ -1,0 +1,26 @@
+id: 2024-jwa-solar-forecast-systematic-error-correction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2K1GS1003/_article
+title: 深層学習を利用した日射量予測の系統誤差補正手法の検討
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- jwa
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 日射量予測のまれに生じる大きな誤差が電力系統運用に与える影響を抑えるため、深層学習による系統誤差の補正手法を検討した。NEDO受託の技術開発の一環。
+problem: 1〜2日先の日射量予測でまれに大きな誤差が出ると、電力系統の運用への影響が大きい。
+approach: 予報値を統合し、深層学習で予報の系統誤差を補正して精度を高める。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.55

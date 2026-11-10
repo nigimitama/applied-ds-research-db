@@ -1,0 +1,29 @@
+id: 2024-gmo-pepabo-c2c-market-user-return-predictability
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4C1GS1102/_article
+title: C2Cマーケットにおけるユーザ復帰の予測可能性と連動性
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- gmo-pepabo
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ハンドメイドC2Cマーケットminneで、長期間取引のないユーザーが再び購入・出品するかを予測する実験を行った。購入者では非常に高い精度が得られた一方、出品者では得られず、各説明変数の寄与も調べた。
+problem: 休眠ユーザーの復帰はサービス提供者にとって重要だが、復帰についての詳細な研究は少ない。
+approach: minneの購入者・出品者それぞれについて、長期間取引のないユーザーが再購入・再出品するかを予測し、説明変数の寄与を分析する。
+tags:
+  task:
+  - churn-prediction
+  domain:
+  - e-commerce
+  method:
+  - gradient-boosting
+  - explainable-ai
+  data_type:
+  - log
+  - tabular
+confidence: 0.65
+result: 購入者の復帰は非常に高い精度で予測できたが、出品者では同様の精度が得られなかった。

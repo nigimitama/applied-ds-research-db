@@ -1,0 +1,27 @@
+id: 2024-shionogi-covid19-sentinel-report-epidemic-forecast
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3A1GS502/_article
+title: 感染症数理モデルを用いた定点当たり報告数に基づいたCOVID-19の流行予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- shionogi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: COVID-19が5類に移行し、全数報告から週次の定点当たり報告数になって実効再生産数の算出が難しくなった。週次の定点報告から実効再生産数を推定し、流行の早期把握に使う予測モデルを感染症数理モデルで構築した。
+problem: 実効再生産数の算出には日次のデータが必要だが、5類移行後は週次の定点報告になり、感染拡大の兆候を早期に把握しにくい。
+approach: 感染症数理モデルを使い、週次の定点当たり報告数から実効再生産数を推定して流行を予測する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - healthcare
+  method:
+  - simulation
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6

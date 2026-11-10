@@ -1,0 +1,28 @@
+id: 2024-tokyo-electron-semiconductor-equipment-similar-case-retrieval
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3F5GS1001/_article
+title: 半導体製造装置のセンサデータを用いた深層距離学習による類似事例検索に関する検討
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- tokyo-electron
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 半導体製造装置のセンサデータから、深層距離学習で異常の類似事例を検索する手法を提案した。異常の種類を特定し対処策を示すことで、装置の稼働率向上を狙う。
+problem: 半導体製造では問題の早期発見と迅速な復旧が稼働率の向上に重要で、状態監視に加えて過去の類似事例から異常の種類を特定する技術が必要。
+approach: センサデータの特徴表現を深層距離学習で得て、類似事例を検索する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - time-series
+confidence: 0.6

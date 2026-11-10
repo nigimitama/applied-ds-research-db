@@ -1,0 +1,27 @@
+id: 2024-fujitsu-future-behavior-prediction-behavior-continuation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin299/_article
+title: 無理のない行動継続を支援するサービスに向けた将来行動予測モデルの提案
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- fujitsu
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 健康促進や学習などの行動継続を支援するサービスに向け、睡眠や食事などの日課的な行動の発生確率が低い時間帯を無理なく行動できる時間帯とみなし、将来の行動を予測するEncoder-Decoderモデルを提案した。
+problem: 日課の時間帯や長さは疲労などで日ごとに変わり、計画やこれまでの統計では予測できない。
+approach: 日課的な行動の将来の発生を予測するEncoder-Decoderモデルを提案する。
+tags:
+  task:
+  - time-series-forecasting
+  - personalization
+  domain:
+  - healthcare
+  method:
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.5
