@@ -193,16 +193,16 @@ def parse_title_author_table(html: str, page_url: str) -> list[dict]:
             i += 1
         i += 1
         slug = _norm_title(title).replace(" ", "-")[:80]
-        out.append({"url": f"{page_url.split('#')[0]}#{slug}", "title": title, "published": None, "summary": affil, "authors": []})
+        out.append({"url": f"{page_url.split('#')[0].split('?')[0]}?paper={slug}", "title": title, "published": None, "summary": affil, "authors": []})
     return out
 
 
-def _openalex_url(src: dict, cursor: str) -> str:
+def _openalex_url(src: dict, page: int) -> str:
     q = {
         "filter": f"primary_location.source.id:{src['openalex_source']},publication_year:{src['openalex_year']}",
         "select": "doi,title",
         "per-page": 200,
-        "cursor": cursor,
+        "page": page,
     }
     key = os.environ.get("OPENALEX_API_KEY")
     if key:
@@ -213,15 +213,18 @@ def _openalex_url(src: dict, cursor: str) -> str:
 def resolve_dois(items: list[dict], src: dict, fetcher=fetch, delay: float = 0.0) -> int:
     """会議の年のOpenAlex一覧(ページ送り)を題名で突き合わせ、正規化後に完全一致した10.1145のDOIだけ url に採用する。
     429(無料枠切れ)などで取れなければ解決せず、url はページURL#スラッグのまま。"""
-    titles, cursor = {}, "*"
+    titles, page = {}, 1
     try:
-        while cursor:
-            data = json.loads(fetcher(_openalex_url(src, cursor)))
-            for w in data.get("results", []):
+        while True:
+            data = json.loads(fetcher(_openalex_url(src, page)))
+            results = data.get("results", [])
+            for w in results:
                 doi = w.get("doi") or ""
                 if "/10.1145/" in doi and w.get("title"):
                     titles.setdefault(_norm_title(w["title"]), doi)
-            cursor = (data.get("meta") or {}).get("next_cursor")
+            if len(results) < 200 or page >= 50:
+                break
+            page += 1
             if delay:
                 time.sleep(delay)
     except Exception as e:
