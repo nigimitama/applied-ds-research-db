@@ -1,0 +1,26 @@
+id: 2024-oki-probe-data-traffic-flow-anomaly-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1D5GS1002/_article
+title: プローブデータの挙動履歴を用いた交通流の異常検知
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プローブデータの速度から渋滞発生を判定し、急ブレーキや急旋回の車両の急増、交通集中によるものかどうかを順に確認する3段階の判定で交通流の異常を検知する手法を提案し、実プローブデータに適用した。
+problem: 交通流の異常を人の監視でなく早期かつ自動で検知したい。
+approach: 渋滞発生の判定、急ブレーキ・急旋回の急増の確認、交通集中による渋滞かの確認の3段階の判定処理で異常を検知する。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - mobility
+  method: []
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.6

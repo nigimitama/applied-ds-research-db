@@ -1,0 +1,28 @@
+id: 2025-sumitomo-heavy-adjustment-process-regression-network
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1E3GS1001/_article
+title: 実測値フィードバックを含む多層回帰ネットワークを用いた調整工程の最適化手法
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- sumitomo-heavy
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 個体差を吸収する調整機構を持つ製品の最終性能調整を、回帰モデル・因果推論・数理最適化・実測値フィードバックを組み合わせて最適化する手法を提案した。熟練者の勘に頼る調整工程の自動化を狙う。
+problem: 部品の積み重ねや組立のばらつきで製品ごとに初期状態が異なり、調整パラメータと性能パラメータが複数あると調整パターンが指数的に増える。調整が作業者の熟練に依存している。
+approach: 多層回帰ネットワークで調整パラメータと性能の関係をモデル化し、因果推論と数理最適化で調整量を決める。調整後の実測値をフィードバックしてバイアスを補正する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  - causal-inference
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

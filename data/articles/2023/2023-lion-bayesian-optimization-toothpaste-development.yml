@@ -1,0 +1,26 @@
+id: 2023-lion-bayesian-optimization-toothpaste-development
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin141/_article
+title: ベイズ最適化手法を用いた歯磨剤開発の高速化
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- lion
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 歯磨剤の処方開発を、ベイズ最適化で高速化する検討を行った。複数の成分からなる処方の探索を、経験と知識に加えて最適化で支援する。
+problem: 消費者ニーズの多様化で研究者の生産性向上が重要。歯磨剤は複数成分で構成され、高品質な製品の開発に時間がかかる。
+approach: ベイズ最適化で処方の探索を効率化し、開発期間を短縮する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - manufacturing
+  method:
+  - bayesian
+  data_type:
+  - tabular
+confidence: 0.55

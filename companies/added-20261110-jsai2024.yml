@@ -1,0 +1,196 @@
+# 2026-11-10 JSAI2024 取り込みで追加(要レビュー)
+- id: nec
+  name: NEC
+  name_ja: 日本電気
+  aliases:
+  - 日本電気株式会社
+  - NEC Corporation
+  country: JP
+  industry: IT
+- id: uacj
+  name: UACJ
+  name_ja: UACJ
+  aliases:
+  - 株式会社UACJ
+  - UACJ Corporation
+  country: JP
+  industry: Aluminum
+- id: seven-and-i
+  name: Seven & i Holdings
+  name_ja: セブン&アイ・ホールディングス
+  aliases:
+  - 株式会社セブン＆アイ・ホールディングス
+  country: JP
+  industry: Retail
+- id: smfl
+  name: Sumitomo Mitsui Finance and Leasing
+  name_ja: 三井住友ファイナンス&リース
+  aliases:
+  - 三井住友ファイナンス＆リース株式会社
+  - SMFL
+  country: JP
+  industry: Leasing
+- id: benesse
+  name: Benesse
+  name_ja: ベネッセ
+  aliases:
+  - ベネッセ教育総合研究所
+  - 株式会社ベネッセコーポレーション
+  country: JP
+  industry: Education
+- id: ctie
+  name: CTI Engineering
+  name_ja: 建設技術研究所
+  aliases:
+  - 株式会社建設技術研究所
+  country: JP
+  industry: Engineering Consulting
+- id: ms-ad
+  name: Mitsui Sumitomo Insurance
+  name_ja: 三井住友海上火災保険
+  aliases:
+  - 三井住友海上火災保険株式会社
+  - 三井住友海上
+  country: JP
+  industry: Insurance
+- id: aucnet
+  name: AUCNET
+  name_ja: オークネット
+  aliases:
+  - 株式会社オークネット
+  - AUCNET INC.
+  country: JP
+  industry: Auction
+- id: jwa
+  name: Japan Weather Association
+  name_ja: 日本気象協会
+  aliases:
+  - 一般財団法人 日本気象協会
+  - 一般財団法人日本気象協会
+  country: JP
+  industry: Weather
+- id: nissan
+  name: Nissan Motor
+  name_ja: 日産自動車
+  aliases:
+  - 日産自動車株式会社
+  - 日産自動車九州株式会社
+  country: JP
+  industry: Automotive
+- id: groovenauts
+  name: Groove Nauts
+  name_ja: グルーヴノーツ
+  aliases:
+  - 株式会社グルーヴノーツ
+  country: JP
+  industry: AI/Quantum
+- id: tokyo-electron
+  name: Tokyo Electron
+  name_ja: 東京エレクトロン
+  aliases:
+  - 東京エレクトロン株式会社
+  country: JP
+  industry: Semiconductor Equipment
+- id: honda
+  name: Honda
+  name_ja: 本田技研工業
+  aliases:
+  - 本田技研工業株式会社
+  - 株式会社本田技術研究所
+  - Honda Motor Co., Ltd.
+  - 株式会社IDAJ
+  country: JP
+  industry: Automotive
+- id: ushio
+  name: Ushio
+  name_ja: ウシオ電機
+  aliases:
+  - ウシオ電機株式会社
+  country: JP
+  industry: Electrical Equipment
+- id: advics
+  name: ADVICS
+  name_ja: アドヴィックス
+  aliases:
+  - 株式会社アドヴィックス
+  country: JP
+  industry: Automotive Parts
+- id: toyota-industries
+  name: Toyota Industries
+  name_ja: 豊田自動織機
+  aliases:
+  - 株式会社豊田自動織機
+  country: JP
+  industry: Industrial Machinery
+- id: asahi-kasei
+  name: Asahi Kasei
+  name_ja: 旭化成
+  aliases:
+  - 旭化成株式会社
+  country: JP
+  industry: Chemicals
+- id: recruit-ms
+  name: Recruit Management Solutions
+  name_ja: リクルートマネジメントソリューションズ
+  aliases:
+  - 株式会社リクルートマネジメントソリューションズ
+  country: JP
+  industry: HR
+- id: money-forward
+  name: Money Forward
+  name_ja: マネーフォワード
+  aliases:
+  - 株式会社マネーフォワード
+  country: JP
+  industry: FinTech
+- id: beans-labo
+  name: Beans Lab
+  name_ja: ビーンズラボ
+  aliases:
+  - 株式会社ビーンズラボ
+  country: JP
+  industry: IT
+- id: gmo-pepabo
+  name: GMO Pepabo
+  name_ja: GMOペパボ
+  aliases:
+  - GMOペパボ株式会社
+  - ペパボ研究所
+  country: JP
+  industry: Internet
+- id: chubu-electric
+  name: Chubu Electric Power
+  name_ja: 中部電力
+  aliases:
+  - 中部電力株式会社
+  country: JP
+  industry: Energy
+- id: septeni
+  name: Septeni Japan
+  name_ja: セプテーニ・ジャパン
+  aliases:
+  - Septeni Japan株式会社
+  - Septeni Japan
+  country: JP
+  industry: Advertising
+- id: bizreach
+  name: BizReach
+  name_ja: ビズリーチ
+  aliases:
+  - 株式会社ビズリーチ
+  country: JP
+  industry: HR Tech
+- id: uzabase
+  name: Uzabase
+  name_ja: ユーザベース
+  aliases:
+  - ユーザベース株式会社
+  country: JP
+  industry: Media/Information
+- id: ntt-com
+  name: NTT Communications
+  name_ja: NTTコミュニケーションズ
+  aliases:
+  - NTTコミュニケーションズ株式会社
+  country: JP
+  industry: Telecom

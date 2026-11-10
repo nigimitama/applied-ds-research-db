@@ -1,0 +1,28 @@
+id: 2024-septeni-multi-aspect-ratio-vit-ad-effect-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4I1GS702/_article
+title: マルチアスペクト比Vision Transformerの事前学習と広告画像の効果予測への応用
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- septeni
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 任意のアスペクト比を扱えるVision TransformerをMasked Autoencoderで事前学習し、広告画像の配信効果予測に適用した。RoPEとFlash Attentionを使って高い性能のモデルを得た。
+problem: ディスプレイ広告は様々なアスペクト比があり、比を変えると見る人への印象も変わるため、アスペクト比情報を保ったまま効果を予測する必要がある。
+approach: 任意アスペクト比のViTをMAEで事前学習し、Rotary Position EmbeddingとFlash Attentionを用いて広告画像の効果を予測する。
+tags:
+  task:
+  - ad-optimization
+  - image-recognition
+  domain:
+  - advertising
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.6

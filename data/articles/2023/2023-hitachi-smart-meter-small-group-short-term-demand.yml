@@ -1,0 +1,27 @@
+id: 2023-hitachi-smart-meter-small-group-short-term-demand
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3Xin405/_article
+title: 小規模需要家グループの短期需要予測に向けた 次世代スマートメータによる需要家個別データの活用可能性の検討
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 再エネ普及で小規模な需要家グループの需要管理・予測が課題になる中、次世代スマートメータの需要家個別データが短期需要予測に使えるかを検討した。
+problem: 広域の需要予測は多数の需要家の統計的性質をまとめて扱えるが、小規模な需要家グループでは予測が難しい。
+approach: 需要家個別のスマートメータデータを使って小規模需要家グループの短期需要予測を行い、活用可能性を調べる。
+tags:
+  task:
+  - demand-forecasting
+  - time-series-forecasting
+  domain:
+  - energy
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.55

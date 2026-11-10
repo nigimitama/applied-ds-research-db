@@ -1,0 +1,26 @@
+id: 2023-shionogi-health-checkup-causal-discovery-presenteeism
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1N3GS1003/_article
+title: 健康診断データを用いた因果探索手法の適用可能性検討
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- shionogi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 従業員の健康管理のため、うつなどプレゼンティーイズムに影響する不調に関わる生活習慣の因果構造を、健康診断データの因果探索で明らかにできるかを予備的に検討した。
+problem: 予防策を講じるには生活習慣と不調の関係の因果構造が必要だが、不明。健康診断データを使えばデータ駆動で依存関係を明らかにできる可能性がある。
+approach: 健康診断データに因果探索手法を適用し、適用可能性を検討する。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - healthcare
+  method:
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.5

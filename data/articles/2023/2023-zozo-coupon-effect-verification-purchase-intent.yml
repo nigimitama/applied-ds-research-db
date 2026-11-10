@@ -1,0 +1,29 @@
+id: 2023-zozo-coupon-effect-verification-purchase-intent
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2A6GS202/_article
+title: ユーザの潜在的な購買意欲を考慮した機械学習に基づくクーポン配布施策の効果検証モデル
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- zozo
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: オンラインクーポンの効果を、ユーザーの潜在的な購買意欲を考慮して推定する機械学習ベースの検証モデルを提案した。購買意欲が低いユーザーは粗利が増えやすく、高いユーザーでは粗利が減りやすいという差を扱う。
+problem: クーポンを無差別に配ると利益率が下がるリスクがあり、効果の推定が必要。購買意欲によってクーポンの効果が異なる。
+approach: ユーザーの潜在的な購買意欲を考慮した機械学習モデルで、クーポン配布施策の効果を検証する。
+tags:
+  task:
+  - causal-effect-estimation
+  - personalization
+  domain:
+  - e-commerce
+  method:
+  - uplift-modeling
+  - causal-inference
+  data_type:
+  - log
+  - tabular
+confidence: 0.6

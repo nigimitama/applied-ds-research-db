@@ -1,0 +1,30 @@
+id: 2025-md-corp-clinic-sales-prediction-satellite-imagery
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2O4OS21a04/_article
+title: 衛星画像と地理情報を用いたデータ駆動型アプローチによるクリニック売上予測
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- md-corp
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: クリニックの出店判断のため、GPT-4oで衛星画像から都市化度や建物比率などの特徴を抽出し、地理情報と合わせてサポートベクター回帰で売上を予測した。少数サンプルでも過学習を抑える変数選択を行い、地域特性から売上を精度よく予測できることを示した。
+problem: クリニックの立地選定は経験や勘に頼ることが多く、売上データやサンプルが少ない中でデータ駆動の意思決定をするのが難しい。
+approach: GPT-4oで衛星画像から地域特性を抽出し、地理情報と合わせてSVRで売上を予測する。相関分析で交絡要因を除外し、特徴選択アルゴリズムで変数を最適化する。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - healthcare
+  - real-estate
+  method:
+  - multimodal
+  - llm
+  data_type:
+  - image
+  - geospatial
+  - tabular
+confidence: 0.65

@@ -1,0 +1,27 @@
+id: 2024-nissui-farmed-fish-weight-feature-engineering
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1B5GS204/_article
+title: 養殖魚の体重推定における特徴量エンジニアリングの重要性
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- nissui
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 養殖ブリの体重を水中カメラ計測から推定する精度を上げるため、複数の養殖場で蓄積した実測の体形・体重データを使って特徴量エンジニアリングの重要性を検討した。
+problem: 魚を取り上げて秤量する従来法は時間がかかり魚へのストレスや死亡率の上昇を招く。水中カメラによる推定法は登場したが精度に改善の余地がある。
+approach: 複数の養殖場でブリの体形と体重の実測データを蓄積し、特徴量を工夫して体重推定モデルの精度を比較した。
+tags:
+  task:
+  - classification
+  domain:
+  - food
+  method:
+  - gradient-boosting
+  data_type:
+  - tabular
+  - image
+confidence: 0.6

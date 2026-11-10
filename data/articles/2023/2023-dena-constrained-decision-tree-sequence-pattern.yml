@@ -1,0 +1,26 @@
+id: 2023-dena-constrained-decision-tree-sequence-pattern
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2L5GS302/_article
+title: 制約付き決定木による系列パターン抽出
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- dena
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 購買履歴やゲームの行動履歴のような人の意思決定の系列から、解釈しやすい系列パターンを抽出するため、時系列の順序関係を扱える制約付き決定木を提案した。
+problem: サービス改善のため人の意思決定系列からパターンを取り出したいが、決定木は時系列の順序関係を保持できない。
+approach: 系列パターンを表現できるよう制約を加えた決定木を学習する。
+tags:
+  task:
+  - classification
+  domain:
+  - gaming
+  method:
+  - explainable-ai
+  data_type:
+  - log
+confidence: 0.5

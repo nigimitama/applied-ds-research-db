@@ -1,0 +1,30 @@
+id: 2025-jins-mmm-in-house-implementation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4D3OS33c05/_article
+title: MMM内製化の実践と課題解決：ブラックボックスからの脱却
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- jins
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 外部委託していたMarketing Mix Modelingを内製化し、アルゴリズムの透明性、精度、フィードバックの速さを確保した実践と課題解決を実例とともに報告している。
+problem: MMMを外注するとアルゴリズムが不透明で、結果が不自然な場合に説明や改善依頼ができない。パス解析や回帰では時系列の複雑さを捉えにくく、期間が数か月・コストも高い。
+approach: MMMを自社で実装して、アルゴリズムの透明性と分析精度を高め、短いサイクルで結果を得られるようにする。
+tags:
+  task:
+  - ad-optimization
+  - causal-effect-estimation
+  domain:
+  - advertising
+  - retail
+  method:
+  - bayesian
+  - time-series-model
+  data_type:
+  - tabular
+  - time-series
+confidence: 0.55

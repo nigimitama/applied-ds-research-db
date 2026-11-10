@@ -1,0 +1,26 @@
+id: 2023-panasonic-electronic-device-demand-instance-domain-adaptation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2N5GS1003/_article
+title: 時系列特徴量を用いたインスタンスベース・ドメイン適応による電子デバイス需要予測モデリング
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- panasonic
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 対象製品のみのデータでは学習データが少なく実用的な精度が出ない電子デバイスの需要予測で、時系列特徴量によるクラスタリングを使ってソースドメインから学習データを選んで対象を拡張するインスタンスベースのドメイン適応を提案した。
+problem: 製造業では対象製品のデータが少なく、需要予測の精度が実用水準に達しにくい。
+approach: 需要特性を表す時系列特徴量でクラスタリングし、ソースドメインから類似データを抽出して対象ドメインの学習データを拡張する。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6

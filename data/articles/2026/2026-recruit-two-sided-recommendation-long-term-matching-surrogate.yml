@@ -1,0 +1,27 @@
+id: 2026-recruit-two-sided-recommendation-long-term-matching-surrogate
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5H2OS18a03/_article
+title: 双方向推薦システムにおける長期的マッチング最大化に向けた代理目的関数の設計と実証
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- recruit
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 双方向推薦で、現時点のマッチング確率だけを重視して未知の有望な求人の探索を妨げ、ユーザーの離脱を招く問題に対し、現在のマッチング確率と将来の増分期待値の重み付き和を代理目的関数として長期のマッチングを最大化する設計を示した。
+problem: 目先のマッチング確率の最大化は探索を妨げ、ユーザーの離脱や早期の利用停止につながる。
+approach: 現在のマッチング確率と将来の増分期待値の重み付き和を代理目的関数とし、疎なデータでも将来増分を安定して推定できる定式化を用いる。
+tags:
+  task:
+  - recommendation
+  - matching-market
+  domain:
+  - hr
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.6

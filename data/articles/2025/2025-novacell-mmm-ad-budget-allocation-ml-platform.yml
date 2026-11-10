@@ -1,0 +1,29 @@
+id: 2025-novacell-mmm-ad-budget-allocation-ml-platform
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_4D3OS33c04/_article
+title: Marketing Mix Modelingを用いた広告予算配分の最適化と実務における安定供給体制の構築
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- novacell
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: マーケティングコンサルティングの現場で、Marketing Mix Modeling(MMM)による広告予算配分最適化の実務事例と、複雑な分析を安定して提供するための機械学習基盤を紹介している。
+problem: プライバシー保護や技術的な規制が強まる中、集計データで広告の投資対効果を測るMMMが注目されている。複雑な分析を実務で安定供給する体制が必要。
+approach: MMMで広告投資対効果を算出して予算配分を最適化し、その分析を安定して提供するための機械学習プラットフォームを構築している。
+tags:
+  task:
+  - ad-optimization
+  - causal-effect-estimation
+  domain:
+  - advertising
+  method:
+  - bayesian
+  - mathematical-optimization
+  data_type:
+  - tabular
+  - time-series
+confidence: 0.55

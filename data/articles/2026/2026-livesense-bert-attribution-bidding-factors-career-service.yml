@@ -1,0 +1,28 @@
+id: 2026-livesense-bert-attribution-bidding-factors-career-service
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1YinB62/_article
+title: BERTのトークン寄与度に基づく競争入札型転職サービスにおける指名要因の抽出
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- livesense
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 競争入札型の転職サービスで、企業が求職者に入札する(給与付きスカウトを送る)かをModernBERTで履歴書テキストから予測し、LIMEやIntegrated Gradientsなど複数の特徴量寄与手法で指名要因を抽出した。
+problem: 求職者がどのような記述で指名されるかを知り、サービス改善に生かしたい。
+approach: ModernBERTを微調整して入札の有無を予測し、複数の特徴量寄与手法でトークンごとの寄与を求めて指名要因を特定する。
+tags:
+  task:
+  - classification
+  domain:
+  - hr
+  method:
+  - transformer
+  - explainable-ai
+  - fine-tuning
+  data_type:
+  - text
+confidence: 0.6

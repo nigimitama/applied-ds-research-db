@@ -1,0 +1,29 @@
+id: 2024-mitsubishi-heavy-time-series-xai-power-demand-forecast
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_4Xin273/_article
+title: 時系列XAI技術による電力需要予測モデルの性能・説明性向上
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- mitsubishi-heavy
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 大規模工場のエネルギー需要の予測に、時系列XAI技術を用いて予測モデルの性能と説明性を高めた。設備稼働や天候で変動する需要を、ブラックボックスになりがちな深層学習で扱う。
+problem: 電力自由化やカーボンニュートラルでエネルギー管理が重要になる中、工場の需要は設備稼働や天候により変動し、高精度な予測が求められる。深層学習は精度が高い反面ブラックボックスになる。
+approach: 時系列XAIで予測の根拠を把握し、その知見を使ってモデルの性能と説明性を高める。
+tags:
+  task:
+  - demand-forecasting
+  - time-series-forecasting
+  domain:
+  - energy
+  - manufacturing
+  method:
+  - explainable-ai
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.6

@@ -1,0 +1,27 @@
+id: 2023-fujifilm-bi-one-shot-deep-metric-learning-product-matching
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2T1GS1004/_article
+title: One-shot深層距離学習による商品画像照合
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- fujifilm-bi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 小売の商品棚画像から検出した個々の商品を、データベース画像と照合して識別する技術として、One-shot深層距離学習を提案した。店舗ごとの照明や陳列の違い、デザインが似た商品、頻繁な商品入れ替えに対応する。
+problem: 店舗ごとに照明や陳列が違う中で数百〜数千の商品を識別する必要があり、頻繁な商品の入れ替えにも追従したい。
+approach: 深層距離学習で商品画像の特徴表現を学び、1枚のデータベース画像との照合で商品を識別する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - retail
+  method:
+  - deep-learning
+  - embedding
+  data_type:
+  - image
+confidence: 0.55

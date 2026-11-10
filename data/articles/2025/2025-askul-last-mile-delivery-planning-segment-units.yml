@@ -1,0 +1,28 @@
+id: 2025-askul-last-mile-delivery-planning-segment-units
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2I5GS1005/_article
+title: ラストマイル配送におけるドライバーの持つ配送単位を考慮した配送計画とその時間指定対応性に関する研究
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ドライバーが実際に使う配送単位(セグメント)を考慮した配送計画手法を提案した。セグメント単位と駐車位置単位の2段階で計画し、時間指定を含む配送順序を遺伝的アルゴリズムで最適化する。荷物を途中で別車両から補充するドッキング処理にも対応する。
+problem: EC需要の増加と労働規制でドライバーが不足し、輸送力が2030年に約34%不足するとの予測がある。既存の配送計画は現場のドライバーが考える配送単位を反映していない。
+approach: 荷物をセグメントにまとめる段階と、駐車場所単位で配送順を決める段階の2段階計画とし、遺伝的アルゴリズムで時間指定を含む配送順序を最適化する。ドッキングを含め実運用に近い設計にしている。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - e-commerce
+  method:
+  - mathematical-optimization
+  data_type:
+  - geospatial
+confidence: 0.65
+result: 実データを使ったケーススタディで、既存手法と比べて改善を確認したと報告(具体値は本稿では確認していない)。

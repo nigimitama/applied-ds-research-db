@@ -1,0 +1,28 @@
+id: 2024-uacj-bayesian-network-rolling-oil-analysis-assist
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1C5GS1101/_article
+title: ベイジアンネットワークを用いた製造業における操業データの解析アシストシステムの開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- uacj
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: アルミ圧延油の油性データの解析で、pLSAとベイジアンネットワークにより専門家のドメイン知識を可視化し仮説を見直せる支援ツールを作った。ツールの利用障壁を下げる運用面の工夫も扱う。
+problem: 製造業ではドメイン知識が属人的になり、それが正しいという認知バイアスが生じやすい。分析支援ツールは使うのが難しく手間もかかる。
+approach: pLSAによるクラスタリングとベイジアンネットワークで操業データから知見と新たな仮説を導き、専門家が利用しやすい形にする。
+tags:
+  task:
+  - classification
+  - anomaly-detection
+  domain:
+  - manufacturing
+  method:
+  - bayesian
+  - explainable-ai
+  data_type:
+  - tabular
+confidence: 0.55

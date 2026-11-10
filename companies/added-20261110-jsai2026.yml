@@ -1,0 +1,131 @@
+# 2026-11-10 JSAI2026 取り込みで追加(要レビュー)
+- id: nile
+  name: Nyle
+  name_ja: ナイル
+  aliases:
+  - ナイル株式会社
+  country: JP
+  industry: Marketing
+- id: meiji-yasuda
+  name: Meiji Yasuda Life
+  name_ja: 明治安田生命保険
+  aliases:
+  - 明治安田生命保険相互会社
+  country: JP
+  industry: Insurance
+- id: suzuki
+  name: Suzuki Motor
+  name_ja: スズキ
+  aliases:
+  - スズキ株式会社
+  - スズキ
+  country: JP
+  industry: Automotive
+- id: daiichi-sankyo
+  name: Daiichi Sankyo
+  name_ja: 第一三共
+  aliases:
+  - 第一三共株式会社
+  country: JP
+  industry: Pharmaceutical
+- id: sumitomo-corp
+  name: Sumitomo Corporation
+  name_ja: 住友商事
+  aliases:
+  - 住友商事株式会社
+  country: JP
+  industry: Trading
+- id: scrumsign
+  name: ScrumSign
+  name_ja: スクラムサイン
+  aliases:
+  - 株式会社スクラムサイン
+  country: JP
+  industry: Healthcare IT
+- id: susmed
+  name: Susmed
+  name_ja: サスメド
+  aliases:
+  - サスメド株式会社
+  country: JP
+  industry: Healthcare IT
+- id: inpex
+  name: INPEX
+  name_ja: INPEX
+  aliases:
+  - 株式会社INPEX
+  country: JP
+  industry: Energy
+- id: daiwa-institute
+  name: Daiwa Institute of Research
+  name_ja: 大和総研
+  aliases:
+  - 株式会社大和総研
+  country: JP
+  industry: Research
+- id: jpx
+  name: Japan Exchange Group
+  name_ja: 日本取引所グループ
+  aliases:
+  - 株式会社日本取引所グループ
+  country: JP
+  industry: Finance
+- id: daiwa-securities
+  name: Daiwa Securities Group
+  name_ja: 大和証券グループ
+  aliases:
+  - 株式会社大和証券グループ本社
+  country: JP
+  industry: Securities
+- id: deloitte-tohmatsu
+  name: Deloitte Tohmatsu
+  name_ja: デロイト トーマツ
+  aliases:
+  - 合同会社デロイト トーマツ
+  country: JP
+  industry: Consulting
+- id: scsk
+  name: SCSK
+  name_ja: SCSK
+  aliases:
+  - SCSK株式会社
+  country: JP
+  industry: IT Services
+- id: hino
+  name: Hino Motors
+  name_ja: 日野自動車
+  aliases:
+  - 日野自動車株式会社
+  country: JP
+  industry: Automotive
+- id: jri
+  name: Japan Research Institute
+  name_ja: 日本総合研究所
+  aliases:
+  - 株式会社日本総合研究所
+  country: JP
+  industry: IT/Research
+- id: d2c
+  name: D2C
+  name_ja: D2C
+  aliases:
+  - 株式会社 D2C
+  - 株式会社D2C
+  country: JP
+  industry: Advertising
+- id: persol-career
+  name: PERSOL Career
+  name_ja: パーソルキャリア
+  aliases:
+  - パーソルキャリア株式会社
+  - パーソルキャリア
+  country: JP
+  industry: HR
+- id: pacific-consultants
+  name: Pacific Consultants
+  name_ja: パシフィックコンサルタンツ
+  aliases:
+  - PACIFIC CONSULTANTS CO., LTD.
+  - パシフィックコンサルタンツ株式会社
+  country: JP
+  industry: Engineering Consulting

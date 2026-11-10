@@ -1,0 +1,28 @@
+id: 2025-ntt-data-llm-grocery-next-purchase-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1M5GS1002/_article
+title: 大規模言語モデルを用いた食料品小売店における次回購買予測
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- ntt-data
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 食料品の購買履歴に対しLLMのゼロショットで次回購買を予測した。繰り返し購入が多く商品名が説明的という食料品データの性質を活かせる一方、履歴の中間を見落とす問題や、新近性・人気度を使えない問題で従来の機械学習より精度が低い結果を報告している。
+problem: 小売で次の買い物かごを当てることは重要。LLMの個別化予測は注目されているが、食料品のように反復購入が多いデータでの有効性は十分に検証されていない。
+approach: 購買履歴を入力にLLMで次回購買を予測し、従来の機械学習手法と比較する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - retail
+  method:
+  - llm
+  data_type:
+  - log
+  - text
+confidence: 0.6
+result: LLMは頻繁に購入された商品に高いスコアを付け、購入済み商品に似た商品も認識できる。一方で履歴中間の見落とし(Lost in the Middle)があり、従来手法より精度は低かった。

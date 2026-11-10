@@ -1,0 +1,29 @@
+id: 2026-toshiba-fault-diagnosis-knowledge-graph-bayesian-network
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4YinB05/_article
+title: 故障診断における知識グラフとベイジアンネットワークの実務的統合開発
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- toshiba
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 故障データが少なく機械学習を適用しにくい故障診断で、知識グラフで原因候補を絞り込み、ベイジアンネットワークでセンサ状態に応じて優先順位を付ける実務的な診断モデルを開発した。
+problem: 知識グラフは専門家の知識の整理に向くが、観測されたセンサ状態に応じて原因候補に動的に優先順位を付けるには足りない。
+approach: 知識グラフで関連する原因候補を絞り、ベイジアンネットワークで観測に応じた確率的な推論を行う。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - knowledge-graph
+  - bayesian
+  data_type:
+  - graph
+  - time-series
+confidence: 0.6

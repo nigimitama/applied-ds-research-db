@@ -1,0 +1,28 @@
+id: 2024-smfl-gps-population-leasing-demand-forecast
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_1L3GS1005/_article
+title: 滞在人口データを用いた取引先企業のリース需要予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- smfl
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 個人レベルのGPS位置データで製造業の主要工場の滞在人口を測り、リース契約データと合わせて取引先企業のリース需要を予測する機械学習モデルを作った。COVID-19で企業活動が大きく乱れた時期を除き、GPSの活用で予測が改善したと報告している。
+problem: リース需要を先読みしたいが、取引先の活動状況を示す指標が乏しい。
+approach: GPSから工場の滞在人口の変化を測り、リース契約データと組み合わせて取引先企業のリース需要を予測するモデルを構築した。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - finance
+  method:
+  - gradient-boosting
+  data_type:
+  - geospatial
+  - tabular
+confidence: 0.6
+result: COVID-19による混乱期を除き、GPSデータの利用が予測に有効だったと報告(具体値は要旨に記載なし)。

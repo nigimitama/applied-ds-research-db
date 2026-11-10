@@ -1,0 +1,26 @@
+id: 2026-meiji-yasuda-complaint-multilabel-distribution-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1I3GS10f03/_article
+title: 単一ラベル付き顧客苦情データからのマルチラベル分布推定に関する一考察
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- meiji-yasuda
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 顧客苦情の原因ラベルが1件に1つの単一ラベルでしか付いていないデータから、複数ラベルの分布を推定する方法を検討した。
+problem: 苦情の分析は顧客満足の改善に欠かせないが、原因ラベルの体系は経験的に作られ、1件に1ラベルのため最適とは限らない。
+approach: 単一ラベルの苦情データから、複数の原因ラベルの分布を推定する手法を検討する。
+tags:
+  task:
+  - classification
+  domain:
+  - insurance
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.5

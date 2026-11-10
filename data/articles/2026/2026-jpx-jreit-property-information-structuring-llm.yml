@@ -1,0 +1,28 @@
+id: 2026-jpx-jreit-property-information-structuring-llm
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_3K1OS27a05/_article
+title: 多様な表形式のデータに対してロバストなJ-REIT投資物件情報の構造化手法の提案
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- jpx
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 有価証券報告書に載るJ-REITの投資物件情報について、投資法人ごとに異なる表形式を、法人ごとのfew-shotプロンプトではなく単一の共通プロンプトで構造化する低コストで頑健な手法を提案した。
+problem: 物件表は投資法人ごとに大きく異なり、データセットの自動作成が難しい。従来は法人別のプロンプトを用意するため、サンプル準備のコストが大きい。
+approach: LLMに共通の単一プロンプトを与え、異なる形式の表から投資物件情報を構造化する。
+tags:
+  task:
+  - entity-matching
+  domain:
+  - real-estate
+  - finance
+  method:
+  - llm
+  data_type:
+  - text
+  - tabular
+confidence: 0.6

@@ -1,0 +1,27 @@
+id: 2023-yachiyo-rockfill-dam-riprap-inspection-image-recognition
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin169/_article
+title: 画像認識によるロックフィルダム堤体点検の実用化に向けた一考察
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- yachiyo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ロックフィルダム堤体の表面石の風化を深層学習の物体検出で自動検出する手法の実用化に向け、現地調査相当の3段階の風化レベルに適用した場合と、強風化のみに適用した場合を比較した。
+problem: 堤体の表面石の点検はダム技術者の現地調査で行われ、省力化と評価の均一化が求められている。
+approach: 深層学習の物体検出で風化した表面石を自動検出し、風化レベルの分け方を変えて性能を比較する。
+tags:
+  task:
+  - image-recognition
+  - anomaly-detection
+  domain:
+  - public-sector
+  method:
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.55

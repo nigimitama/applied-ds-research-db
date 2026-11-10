@@ -1,0 +1,26 @@
+id: 2024-toyota-industries-automated-warehouse-storage-assignment-cooccurrence
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Xin204/_article
+title: 共起性を考慮した制約付きクラスタリングによる自動倉庫の荷配置準最適化
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- toyota-industries
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 複数の搬送機が2次元平面で動く自動倉庫で、同一出荷単位の商品の共起性を考慮した制約付きクラスタリングにより、荷の配置を準最適化してスループットを高める手法を提案した。
+problem: 同じ出荷単位の商品が分散して置かれると、搬送機が共通通路を頻繁に使って待ち時間が増え、全体のスループットが下がる。
+approach: 商品の共起性に基づく制約付きクラスタリングで配置場所を割り当てる。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

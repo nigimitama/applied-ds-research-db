@@ -1,0 +1,28 @@
+id: 2026-fuji-electric-dam-inflow-forecast-neural-ode
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5F1GS10h03/_article
+title: ダム流入量予測の高度化に向けたNeural ODE活用の基礎検討
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- fuji-electric
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ダム運用を支える流入量予測に、対象系の背後にある微分方程式をニューラルネットで近似するNeural ODEを使う基礎検討を行った。
+problem: ドメイン知識をあまり必要としない機械学習の流入量予測が提案されているが、Neural ODEのような手法での精度向上が期待される。
+approach: Neural ODEで流入量の時間変化を近似して予測する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - energy
+  - public-sector
+  method:
+  - time-series-model
+  - deep-learning
+  data_type:
+  - time-series
+confidence: 0.5

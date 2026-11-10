@@ -1,0 +1,29 @@
+id: 2026-hakuhodo-rag-methods-comparison-real-business-documents
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_2E4GS10l02/_article
+title: 実業務ドキュメントコーパスを用いたRAG手法の体系的性能比較
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- hakuhodo
+- ntt-data
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 実業務の文書114件(約2000万文字)で、Multi-Vector、ツリー型検索、GraphRAG、マルチエージェントの4つのRAG手法を、難易度別・種類別の質問で検索性能を中心に比較した。
+problem: 実業務文書でRAG手法を体系的に比較した研究は限られている。
+approach: 実業務文書コーパスから難易度別(1〜5文書)と種類別の質問を作り、4つのRAG手法のRetriever性能を評価する。
+tags:
+  task:
+  - search-ranking
+  - conversational-ai
+  domain:
+  - media
+  method:
+  - rag
+  - llm
+  data_type:
+  - text
+confidence: 0.5

@@ -1,0 +1,27 @@
+id: 2025-shionogi-quantum-annealing-mr-visit-vrptw
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1Win419/_article
+title: 量子アニーリングを用いた時間窓制約付き運搬経路問題（VRPTW）の求解による医薬情報担当者の施設訪問計画の最適化
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- shionogi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 医薬情報担当者(MR)の医療施設訪問計画を、時間窓制約付き運搬経路問題(VRPTW)としてQUBOで定式化し、量子アニーリングで解いた。担当MR数・施設間距離・訪問時間制約などを考慮している。
+problem: MRは複数の医療施設を訪問する必要があり、地域によって長距離移動や訪問時間の制約がある。多数の制約下で最適な訪問計画を作るには大規模な計算が必要になる。
+approach: 担当MR数・施設間距離・訪問時間枠などをQUBOで定式化し、量子アニーリングで求解する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - healthcare
+  method:
+  - mathematical-optimization
+  data_type:
+  - geospatial
+  - tabular
+confidence: 0.6

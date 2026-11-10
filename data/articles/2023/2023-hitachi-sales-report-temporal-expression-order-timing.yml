@@ -1,0 +1,26 @@
+id: 2023-hitachi-sales-report-temporal-expression-order-timing
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin110/_article
+title: 営業報告書内の時間情報表現を手掛かりとした受注時期の予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 営業報告書に書かれた時間表現を手がかりに、受注時期を予測する手法を提案した。案件の属性情報だけで予測する従来法では考慮できない情報を使う。
+problem: 受注時期を精度よく予測できれば、営業活動や受注後の調達・製造・開発の管理を最適化できる。
+approach: 営業報告書中の時間情報の表現を抽出し、受注時期の予測に使う。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - retail
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.5

@@ -1,0 +1,26 @@
+id: 2023-irep-vinet-saliency-ad-video
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1O5GS702/_article
+title: 静止画領域を含む動きの激しい広告動画におけるViNetを用いた顕著性マップ予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- irep
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 動きの激しい広告動画と静止画領域が混在する場合の注視予測精度の低下に対応し、ViNetを用いて人の視線に近い顕著性マップを出力する広告動画向けシステムを提案した。
+problem: 広告動画では、動く物体の速さに依存して顕著性マップ予測の精度が下がる。
+approach: 動画領域と静止画領域が時空間的に混在する特性を考慮し、ViNetで顕著性マップを予測する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  data_type:
+  - video
+confidence: 0.55

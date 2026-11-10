@@ -1,0 +1,29 @@
+id: 2025-oki-hawkes-traffic-accident-risk
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_1E3GS1002/_article
+title: マーク付きHawkes過程を用いた減速波の伝播に基づく交通事故リスクの定量化
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 車両が連鎖的にブレーキを踏むことで生じる減速波の伝播に着目し、速度の変動係数をマークとしたマーク付きHawkes過程で交通事故リスクを定量化した。実際のプローブデータに適用して評価している。
+problem: 交通事故の予兆を捉えてドライバーへの注意喚起につなげたい。減速波の伝播が事故発生と強く関連することは知られているが、これをリスク値として定量化する方法が必要。
+approach: 空間内の速度が激しく時系列変化する点に注目し、速度の変動係数をマークとするマーク付きHawkes過程でリスクを算出する。
+tags:
+  task:
+  - risk-scoring
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - time-series-model
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.65
+result: 実データでの評価により、提案法で事故リスクを適切に定量化できることを確認したと報告。

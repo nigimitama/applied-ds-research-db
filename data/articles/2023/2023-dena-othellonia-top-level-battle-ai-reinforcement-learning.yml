@@ -1,0 +1,27 @@
+id: 2023-dena-othellonia-top-level-battle-ai-reinforcement-learning
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2Q4OS27b05/_article
+title: 強化学習を用いた現代型モバイルゲーム『逆転オセロニア』のトップレベル対戦 AI
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- dena
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ゲーム「逆転オセロニア」向けに深層強化学習でAIエージェントを開発し、先行研究のAIを大きく上回り、人のプレイヤーからトップレベルと評価された。毎日要素やルールが追加されるゲームで強さを保つための運用上の工夫も述べる。
+problem: 新要素の追加やルール変更が日々続くゲームでは、AIの強さを維持しながら開発効率を高める必要がある。
+approach: 深層強化学習でゲームAIを学習し、更新に追従する運用上の対策をとる。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - gaming
+  method:
+  - reinforcement-learning
+  data_type:
+  - log
+confidence: 0.65
+result: 先行研究のAIを大きく上回り、人のプレイヤーからトップレベルと評価された。

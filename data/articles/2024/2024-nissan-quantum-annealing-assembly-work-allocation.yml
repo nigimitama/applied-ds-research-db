@@ -1,0 +1,27 @@
+id: 2024-nissan-quantum-annealing-assembly-work-allocation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_2K4GS1001/_article
+title: 量子アニーリングを活用した順序制約を含む大規模な自動車組立作業割り当て最適化手法の開発
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- nissan
+- groovenauts
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 自動車組立ラインで、設備依存や作業順序などの制約下で150作業を20人に割り当てる大規模問題を、順序制約を扱えるよう定式化した量子アニーリングで解いた。
+problem: 組立ラインの作業割当は設備依存・作業順序制約・移動の最小化・工程間の負荷平準化を同時に満たす必要があり、従来の数理手法では計算に時間がかかる。従来の量子アニーリングでは順序制約を定式化できなかった。
+approach: 順序制約を含む作業割当を量子アニーリングで扱える形に定式化する手法を開発した。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - manufacturing
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6

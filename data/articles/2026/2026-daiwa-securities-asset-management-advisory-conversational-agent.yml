@@ -1,0 +1,27 @@
+id: 2026-daiwa-securities-asset-management-advisory-conversational-agent
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4N1GS10c05/_article
+title: 自然な会話に焦点を当てた資産運用アドバイザリー向け会話エージェントの開発
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- daiwa-securities
+- nec
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 資産運用アドバイザリーで、厳格な規制遵守と自然な対話を両立するため、会話分析・動的ルーティング・専門タスク・出力調整のエージェントからなるマルチエージェント構成を提案した。
+problem: 投資助言では、定められたルールや手順に沿った厳格な流れの制御と、利用者の反応に合わせた柔軟で共感的な応答の両方が必要。
+approach: 会話分析、動的ルーティング、専門タスク、出力調整の各エージェントを組み合わせ、事前定義のルールで流れを制御しながら柔軟な応答を行う。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - finance
+  method:
+  - llm
+  data_type:
+  - text
+confidence: 0.55

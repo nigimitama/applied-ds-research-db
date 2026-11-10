@@ -1,0 +1,27 @@
+id: 2026-toshiba-rocllts-timing-belt-degradation-diagnosis
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5K3OS38b01/_article
+title: 波形形状に着目したROCLTSアルゴリズムによる波形劣化診断
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- toshiba
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ピッキングロボットのタイミングベルトの劣化を、電流波形からROCLTSアルゴリズムで早期に検知する手法を提案した。FFTなど従来のスペクトル解析では捉えにくい予兆レベルの劣化を狙う。
+problem: 人手不足で設備の保守点検の効率化が必要だが、FFTなどの従来手法では電流波形の微細な予兆レベルの劣化を検知しにくい。
+approach: Robust One-Class Learning Time-series Shapelets(ROCLTS)で波形形状の変化に着目し、劣化を診断する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.6

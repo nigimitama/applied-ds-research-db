@@ -1,0 +1,29 @@
+id: 2024-askul-promotion-classification-bertopic-demand-forecast
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3Q1IS2a03/_article
+title: Classifying and Extracting Information from Promotions for Demand Forecasting Using Topic Modelling
+  with BERTopic.
+title_ja: プロモーションの分類と情報抽出による需要予測
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- askul
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: en
+summary_ja: テキストで管理されるプロモーション情報から、種別・期間・割引率・対象などを抽出して需要予測の特徴量にするため、トピックモデルBERTopicでプロモーションを分類した。過去のプロモーションデータで実験している。
+problem: ECでは販促が需要に大きく影響するが、プロモーション情報はテキストで保存されており、特徴量化が難しい。
+approach: 文脈に頑健なBERTopicで各プロモーションを分類し、分類されたトピックに基づいて需要予測用のプロモーション特徴量を作る。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - e-commerce
+  method:
+  - embedding
+  - llm
+  data_type:
+  - text
+confidence: 0.6

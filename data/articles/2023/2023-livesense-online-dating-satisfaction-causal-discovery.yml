@@ -1,0 +1,26 @@
+id: 2023-livesense-online-dating-satisfaction-causal-discovery
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_3M5GS1005/_article
+title: 提案型オンラインデーティングサービスにおける相手に対する満足度の因果探索
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- livesense
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 提案型オンラインデーティングサービス「knew」で、マッチした相手との5分間のビデオチャット後の満足度(外見・印象・性格・会話など)の因果関係を、アンケート評価データの因果探索で調べた。
+problem: 満足度の各側面の間の因果関係を把握して、マッチングの改善につなげたい。
+approach: ビデオチャット後の評価データに因果探索を適用し、満足度の要素間の因果関係を調べる。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - social
+  method:
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.55

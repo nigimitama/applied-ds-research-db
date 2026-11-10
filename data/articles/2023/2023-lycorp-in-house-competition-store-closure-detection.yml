@@ -1,0 +1,27 @@
+id: 2023-lycorp-in-house-competition-store-closure-detection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin148/_article
+title: 社内コンペティションによる閉店拠点の予測
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- lycorp
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: データベース上では検出しにくい店舗の閉店を検出するモデルを、社内コンペで作成した。様々な部署・職種の参加者が十分な精度の多様なモデルを作り、参加者の技術力向上にもなった。
+problem: 閉店は通常の業務の中では検出しにくく、人員やリソースの制約もある。
+approach: 社内コンペティションを開催し、閉店拠点を検出するモデルを参加者に作らせる。
+tags:
+  task:
+  - classification
+  - anomaly-detection
+  domain:
+  - retail
+  method: []
+  data_type:
+  - tabular
+confidence: 0.55
+result: 様々な部署・職種の参加者が十分な精度の多様なモデルを作成できた。

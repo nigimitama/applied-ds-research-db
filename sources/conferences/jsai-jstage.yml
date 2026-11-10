@@ -6,5 +6,5 @@ cdjournal: pjsai
 filter_hint: "著者に企業所属が含まれ実データ適用がある発表のみ。J-STAGE APIは所属を返さないため、題名から候補を絞り所属は論文ページで確認する"
 lang: ja
 schedule: monthly
-max_items: 100
+max_items: 500
 enabled: true

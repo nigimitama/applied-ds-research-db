@@ -1,0 +1,28 @@
+id: 2025-chino-framework-calving-monitoring-foundation-model-deployment
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_2O1GS1001/_article
+title: 映像を用いた繁殖牛分娩監視のための基盤モデルの開発と運用
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- chino-framework
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 繁殖牛の分娩を監視映像から検知する基盤モデルと、農家向け通知インターフェースを開発し、シミュレーション実験と畜産農場での実運用で評価した。予測結果とその根拠を直感的に示すことで農家の判断を支援する。
+problem: 分娩介助には予測精度だけでなく、予測の理由が農家にわかりやすく示されることが必要。
+approach: 分娩介助の判断過程を取り込んだ基盤モデルを設計し、それに基づいて分娩の兆候を検知してリアルタイムで通知するシステムを構築した。予測とその根拠を提示する。
+tags:
+  task:
+  - anomaly-detection
+  - image-recognition
+  domain:
+  - food
+  method:
+  - deep-learning
+  - explainable-ai
+  data_type:
+  - video
+confidence: 0.65

@@ -1,0 +1,27 @@
+id: 2026-hino-causal-discovery-corporate-philosophy-penetration
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4YinA21/_article
+title: 因果探索手法を用いた企業理念浸透におけるメカニズムの考察
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- hino
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: エンジン認証の不正を公表した日野自動車が、企業理念の浸透のメカニズムを因果探索で考察した。
+problem: 不正の主因は古い企業文化とされ、各社が企業理念の浸透で文化の刷新を図っているが、浸透のメカニズムは分かっていない。
+approach: 従業員の意識調査データに因果探索を適用し、企業理念浸透の因果構造を調べる。
+tags:
+  task:
+  - causal-effect-estimation
+  domain:
+  - manufacturing
+  - hr
+  method:
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.5

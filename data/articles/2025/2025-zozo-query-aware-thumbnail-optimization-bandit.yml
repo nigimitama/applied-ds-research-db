@@ -1,0 +1,31 @@
+id: 2025-zozo-query-aware-thumbnail-optimization-bandit
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2025/0/JSAI2025_3E6GS1002/_article
+title: Eコマース検索結果におけるクエリに応じたサムネイル最適化に関する実験的研究
+published: '2025-07-01'
+collected: '2026-11-10'
+companies:
+- zozo
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: ファッションECの検索結果で、同じ商品内のどのサムネイル画像がクリックされやすいかを実プラットフォームで実験した。サムネイルによりCTRに有意な差があり、検索クエリに紐づく性別で最適な画像が異なること、性別別のCTR分布に基づくトンプソンサンプリングで報酬が改善することを示した。
+problem: 検索結果のサムネイルはクリック行動に影響するが、同一商品内でどの画像が効果的か、またクエリに応じて最適な画像が変わるかは十分に調べられていない。
+approach: 実際のファッションECで複数のサムネイルを出し分けてCTRを収集・分析し、そのデータに多腕バンディット(トンプソンサンプリング)を適用して、クエリに応じたサムネイル選択を検討した。
+tags:
+  task:
+  - search-ranking
+  - experimentation
+  domain:
+  - e-commerce
+  method:
+  - bandit
+  - ab-testing
+  data_type:
+  - log
+  - image
+confidence: 0.7
+result: サムネイル間でCTRに有意な差があり、性別別CTR分布に基づくトンプソンサンプリングで報酬性能が向上。
+has_online_experiment: true

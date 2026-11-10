@@ -1,0 +1,28 @@
+id: 2026-panasonic-llm-sample-weight-demand-forecasting
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_4N4GS10e01/_article
+title: 需要予測における大規模言語モデルを用いたサンプルウェイトの同定手法
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- panasonic
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 電子デバイスの需要予測で、品番ごとに市場や顧客条件が異なる問題に対し、LLMで学習データのサンプル重みを生成して予測精度を高める手法を提案した。
+problem: 電子デバイス分野は品番も顧客も多く市場条件が違うため、品番ごとに適切な予測モデルを作るのが難しい。
+approach: LLMを使って学習データのサンプルウェイトを生成し、需要予測モデルの学習に使う。
+tags:
+  task:
+  - demand-forecasting
+  domain:
+  - manufacturing
+  method:
+  - llm
+  - gradient-boosting
+  data_type:
+  - tabular
+  - time-series
+confidence: 0.55

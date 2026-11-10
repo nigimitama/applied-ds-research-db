@@ -1,0 +1,26 @@
+id: 2024-oki-noisy-training-data-selection-visual-inspection
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2024/0/JSAI2024_3D1GS202/_article
+title: 外観検査での異常検知におけるノイズを含む学習データに対するデータ選別方法
+published: '2024-06-11'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 電子基板などの外観検査の異常検知で、学習データにノイズが混じる実運用の状況に対応するため、既存手法SoftPatchの使い勝手を改善したサンプル選別手法を提案した。
+problem: 異常検知の機械学習手法は、きれいな学習データを前提に評価されているが、実運用ではノイズを含むデータで精度が下がる。
+approach: 画像パッチ単位で選別するSoftPatchを改良し、ノイズを含む学習データから使うサンプルを選別する。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - manufacturing
+  method:
+  - deep-learning
+  data_type:
+  - image
+confidence: 0.55

@@ -1,0 +1,28 @@
+id: 2023-oki-probe-data-delay-traffic-flow-prediction
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_1M3GS1004/_article
+title: プローブデータの遅延を考慮した交通流予測方式
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- oki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: プローブデータの収集遅延で予測が悪化する問題に対処する交通流予測方式を提案し、渋滞発生時の実プローブデータで評価した。
+problem: 渋滞緩和と事故削減のため道路の交通状況を正確に伝えたいが、プローブデータの収集時間差が原因で予測がうまくいかない場合がある。
+approach: プローブデータの収集遅延を考慮して渋滞時の交通流を予測する。
+tags:
+  task:
+  - time-series-forecasting
+  domain:
+  - mobility
+  method:
+  - time-series-model
+  data_type:
+  - geospatial
+  - time-series
+confidence: 0.6
+result: 実プローブデータでの評価結果を報告(具体値は要旨に記載なし)。

@@ -1,0 +1,26 @@
+id: 2026-suzuki-vehicle-driving-waveform-clustering-document-vector
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_1YinB06/_article
+title: 車両走行波形のクラスタリングにおける文書ベクトル表現の有効性の検討
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- suzuki
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 車両の走行時系列データのクラスタリングで、波形全体の大域的な解釈と加速などの局所パターンの両方が要る点が文書ベクトル表現の設計原理に合うとして、文書ベクトル表現を適用する手法を検討した。
+problem: 車両の利用状況の把握と品質改善のため、走行データのパターンを取り出す必要がある。
+approach: 走行波形を文書とみなして文書ベクトル表現を作り、クラスタリングする。
+tags:
+  task:
+  - classification
+  domain:
+  - mobility
+  method:
+  - embedding
+  data_type:
+  - time-series
+confidence: 0.55

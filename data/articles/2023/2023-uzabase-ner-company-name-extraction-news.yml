@@ -1,0 +1,26 @@
+id: 2023-uzabase-ner-company-name-extraction-news
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_4Xin103/_article
+title: 固有表現抽出によるニューステキスト内の企業名抽出
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- uzabase
+collab_academia: true
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 経済情報サービスSPEEDAのニュースデータから、トークナイザで分割した文章中の企業名を、略称などを自動生成した企業名辞書とマッチして抽出する手法を提案した。
+problem: ニュースから企業情報を正確に取り出したいが、表記の揺れや略称が多い。
+approach: 分割後のテキストから企業名候補を抽出し、略称などを自動生成して追加した企業名辞書と照合して企業を特定する。
+tags:
+  task:
+  - entity-matching
+  domain:
+  - media
+  - finance
+  method: []
+  data_type:
+  - text
+confidence: 0.6

@@ -1,0 +1,27 @@
+id: 2026-ushio-digital-twin-fault-detection-cause-estimation
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5K2OS38a01/_article
+title: デジタルツインを用いた異常検知・原因推定システム
+published: '2026-07-17'
+collected: '2026-11-10'
+companies:
+- ushio
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: デジタルツインを用いた故障検知と原因推定で、モデル化誤差を許容し、運転データの蓄積に応じて更新しやすいシステムを提案した。高精度なデジタルツインの構築コストを抑える。
+problem: デジタルツインによる故障検知は研究されているが、原因推定は限られ、高精度なツインの構築コストが障壁になる。
+approach: 少数の物理パラメータを推定器の入力にし、モデル化誤差を許容する構成にして、運転データの蓄積で更新する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - manufacturing
+  method:
+  - simulation
+  data_type:
+  - time-series
+confidence: 0.55

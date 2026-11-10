@@ -1,0 +1,28 @@
+id: 2023-seven-and-i-supermarket-discount-optimization
+url: https://www.jstage.jst.go.jp/article/pjsai/JSAI2023/0/JSAI2023_2N5GS1004/_article
+title: スーパーマーケットにおける店舗の利益最大化のための値引き最適化アルゴリズムの開発
+published: '2023-07-10'
+collected: '2026-11-10'
+companies:
+- seven-and-i
+- ntt-data
+collab_academia: false
+source:
+  type: conference
+  venue: 人工知能学会全国大会
+evidence: peer_reviewed
+lang: ja
+summary_ja: 賞味期限が近い食品の値引きで、廃棄ロスを抑えながら値引率をできるだけ低く保つ、利益最大化のための値引き最適化アルゴリズムを開発した。
+problem: 値引率は店舗担当者の経験で決まっており、経験の浅い担当者では過剰値引きや廃棄ロスが生じる。
+approach: 状況に応じた適切な値引率を提案するアルゴリズムを開発する。
+tags:
+  task:
+  - pricing
+  domain:
+  - retail
+  - food
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.6
