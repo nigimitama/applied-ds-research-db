@@ -1,0 +1,33 @@
+id: 2024-tencent-bayesian-ranking-calibration-ctr
+url: https://doi.org/10.1145/3637528.3671577
+title: 'Beyond Binary Preference: Leveraging Bayesian Approaches for Joint Optimization of Ranking and
+  Calibration'
+title_ja: ランキングとキャリブレーションの同時最適化のためのベイズ的アプローチ(BBP)
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: クリックの二値ラベルで同順位が多発する問題に対し、ベータ分布で補助ラベルを作って比較可能なペアを増やし、ランキングとキャリブレーションをマルチタスクで同時最適化するBBPを提案。オフラインとオンライン実験で有効性を確認している。
+problem: CTR予測にペアワイズ等の順位損失を足す既存手法は、二値の選好によるタイの多さとデータスパース性のため、較正や汎化が不十分になりやすい。
+approach: ベイズ的にベータ分布を推定してタイを破るデータ拡張を行い、補助ラベルでペアを増やす。キャリブレーションを第二タスクとするマルチタスク学習で両目的を同時に最適化する。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - advertising
+  method:
+  - bayesian
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.75
+doi: 10.1145/3637528.3671577
+result: 複数データセットのオフライン実験とオンラインテストで、ランキング・較正の両面で最先端手法を上回ると報告(具体値は原文参照)。
+has_online_experiment: true

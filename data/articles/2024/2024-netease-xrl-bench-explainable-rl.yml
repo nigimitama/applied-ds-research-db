@@ -1,0 +1,32 @@
+id: 2024-netease-xrl-bench-explainable-rl
+url: https://doi.org/10.1145/3637528.3671595
+doi: 10.1145/3637528.3671595
+alt_urls:
+- https://arxiv.org/abs/2402.12685
+title: 'XRL-Bench: A Benchmark for Evaluating and Comparing Explainable Reinforcement Learning Techniques'
+title_ja: 'XRL-Bench: 説明可能な強化学習手法の評価・比較ベンチマーク'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- netease
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 強化学習の状態重要度を説明する手法を標準環境・説明器・評価器で比較できるベンチマークXRL-Benchを提供する。表形式と画像の両方の状態を扱い、提案するTabularSHAPをNetEaseの実際のオンラインゲームサービスに適用した事例を示す。
+problem: 説明可能な強化学習の手法は増えているが、状態を説明する手法を統一的に評価・比較する基盤がなく、実サービスでの有用性も検証しにくい。
+approach: 標準的なRL環境、状態重要度の説明器、評価器をそろえたオープンソースの基盤を構築する。表形式データ向けにSHAP系の手法TabularSHAPを提案し、実際のオンラインゲームサービスに適用した。
+tags:
+  task:
+  - classification
+  domain:
+  - gaming
+  method:
+  - reinforcement-learning
+  - explainable-ai
+  data_type:
+  - tabular
+  - image
+confidence: 0.62

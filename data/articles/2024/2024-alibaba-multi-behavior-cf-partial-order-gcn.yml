@@ -1,0 +1,32 @@
+id: 2024-alibaba-multi-behavior-cf-partial-order-gcn
+url: https://doi.org/10.1145/3637528.3671569
+title: Multi-Behavior Collaborative Filtering with Partial Order Graph Convolutional Networks
+title_ja: 部分順序グラフ畳み込みネットワークによるマルチ行動協調フィルタリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数の行動(閲覧・購入等)の部分順序関係を辺の重みで統合したグラフ(POG)と、それに対するGCN(POGCN)、部分順序BPRサンプリングを提案した。3つの公開データでの検証に加え、産業プラットフォームのオンラインA/BテストでUCTRとGMVの改善を報告している。
+problem: 行動ごとに別の埋め込みを学ぶと行動間でseesawが生じ、特定の行動を主として他を補助に使う従来法では主タスクに偏って補助行動の性能が落ちる。
+approach: 行動の部分順序関係を定義し、行動の組合せを重み付き辺として複数の行動グラフを一つのPOGに統合。その上でGCNと部分順序BPRサンプリングを使う。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - graph-neural-network
+  - deep-learning
+  data_type:
+  - graph
+  - log
+confidence: 0.8
+doi: 10.1145/3637528.3671569
+result: オンラインA/BテストでUCTR 2.02%、GMV 2.84%の改善と報告
+has_online_experiment: true

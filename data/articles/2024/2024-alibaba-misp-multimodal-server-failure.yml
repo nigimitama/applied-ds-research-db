@@ -1,0 +1,32 @@
+id: 2024-alibaba-misp-multimodal-server-failure
+url: https://doi.org/10.1145/3637528.3671568
+title: 'MISP: A Multimodal-based Intelligent Server Failure Prediction Model for Cloud Computing Systems'
+title_ja: 'MISP: クラウドのためのマルチモーダルなサーバ障害予測モデル'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ログとシステム状態曲線など複数モダリティのデータを多次元系列に変換し、モダリティ内外の特徴を符号化してサーバ障害確率を算出するMISPを提案。実際のクラウド環境から得た約80種類のデータからなる産業規模のデータセットで評価している。
+problem: 従来のサーバ障害予測はログまたはシステム状態曲線のどちらかの単一モダリティに依存しており、情報を十分に使えていなかった。
+approach: 構造化・非構造化の多種データを多次元系列に変換し、モダリティ内および間の特徴を抽出・符号化したうえで、統合した特徴から障害確率を計算する。
+tags:
+  task:
+  - anomaly-detection
+  - predictive-maintenance
+  domain:
+  - cloud-infra
+  method:
+  - multimodal
+  - deep-learning
+  data_type:
+  - log
+  - time-series
+  - text
+confidence: 0.7
+result: 既存の最先端手法に対し予測精度が約25%向上したと報告(著者主張)。

@@ -1,0 +1,31 @@
+id: 2024-baidu-dumapnet-lane-level-map
+url: https://doi.org/10.1145/3637528.3671579
+title: 'DuMapNet: An End-to-End Vectorization System for City-Scale Lane-Level Map Generation'
+title_ja: 'DuMapNet: 都市規模の車線レベル地図生成のためのエンドツーエンドなベクトル化システム'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- baidu
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 車線レベル地図を、標準化されたベクトル要素とトポロジーとして一括生成するDuMapNetを開発した。2023年6月からBaidu Mapsで運用されており、360を超える都市をカバーしコストを95%削減したと報告している。
+problem: 都市規模の高精度な車線地図の作成は人手の比重が大きく高コストで、路面の摩耗や遮蔽、全体の整合性の確保が難しい。
+approach: Transformerベースの車線グループ単位予測モジュールと、近傍の予測結果を参照するコンテキストプロンプトエンコーダを組み合わせ、画像からベクトル要素とトポロジーをエンドツーエンドで出力する。
+tags:
+  task:
+  - image-recognition
+  domain:
+  - mobility
+  method:
+  - transformer
+  - deep-learning
+  data_type:
+  - image
+  - geospatial
+confidence: 0.85
+doi: 10.1145/3637528.3671579
+result: Baidu Mapsで2023年6月から運用、360超の都市で、コスト95%削減と報告

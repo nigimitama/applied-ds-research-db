@@ -1,0 +1,30 @@
+id: 2024-meta-meta-multistage-recsys-personalization
+url: https://doi.org/10.1145/3637528.3671593
+doi: 10.1145/3637528.3671593
+title: Achieving a Better Tradeoff in Multi-stage Recommender Systems through Personalization
+title_ja: 個別化による多段階推薦システムのトレードオフ改善
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meta
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 多段階推薦の各段で、ユーザごとに次段へ渡す件数を個別に配分し、品質と計算量のトレードオフを改善する手法を提案。DR劣モジュラ性に基づく理論保証を持ち、Facebookの実推薦システム3つで検証した。
+problem: 多段推薦では次段に渡す項目数を増やすと目的は改善するが収益逓減があり、計算コストも増える。全員一律の予算配分は非効率である。
+approach: 予算配分をDR劣モジュラ性で定式化し、貪欲法(GreedyESR)でユーザごとに配分を個別化する。幅広い報酬関数でノイズにも頑健な理論保証を与える。
+tags:
+  task:
+  - recommendation
+  - resource-optimization
+  domain:
+  - social
+  method:
+  - mathematical-optimization
+  data_type:
+  - log
+confidence: 0.75
+result: Facebookの3つの実推薦システムで総計算量を8.8%削減と報告(品質維持、非個別化配分は0.8%の品質低下との二次情報あり)。

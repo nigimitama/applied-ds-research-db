@@ -1,0 +1,32 @@
+id: 2024-delicious-ai-personalized-product-assortment
+url: https://doi.org/10.1145/3637528.3671518
+title: Personalized Product Assortment with Real-time 3D Perception and Bayesian Payoff Estimation
+title_ja: リアルタイム3D知覚とベイズ的収益推定による商品アソートメントのパーソナライズ
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- delicious-ai
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 実店舗の棚に並べる商品の組み合わせを、3Dセンサーで得た販売状況から店舗ごとに推薦するエッジ型システムEdgeRec3Dを提案した。ノイズのあるLIDAR推定をベイズ的な収益モデルで扱い、実店舗のA/Bテストで有効性を確認している。
+problem: 実店舗の商品アソートメントは組合せ探索が大きく、消費者嗜好も店舗ごとに異なる。従来は細かい販売推定が難しく、パーソナライズが困難だった。
+approach: 3Dコンピュータビジョンで販売を自動的に細粒度で推定し、ネットワークエッジ上で動かす。ノイズを含む3D LIDAR推定にはベイズ収益モデルを使い、空間クラスタリングで嗜好の不均一性に対応し、グラフベースの候補生成で組合せ探索を扱う。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - retail
+  method:
+  - bayesian
+  - graph-neural-network
+  data_type:
+  - image
+confidence: 0.85
+doi: 10.1145/3637528.3671518
+result: 飲料商品で6〜8週間の2回のA/Bテストにより売上が35%・27%増加、28週間の観察研究で9.4%の売上増を報告。
+has_online_experiment: true

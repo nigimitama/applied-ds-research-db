@@ -1,0 +1,29 @@
+id: 2024-ant-group-pareto-fraud-prevention-rules
+url: https://doi.org/10.1145/3637528.3671521
+title: On Finding Bi-objective Pareto-optimal Fraud Prevention Rule Sets for Fintech Applications
+title_ja: フィンテックにおける二目的パレート最適な不正防止ルールセットの探索
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 不正防止のif-thenルール集合について、多様な候補ルールを生成するSpectralRulesと、パレート最適性で非劣解の前線を求めるPORSを提案した。Alipayの2つの実アプリケーションで既存手法を上回ったと報告している。
+problem: フィンテックでは解釈可能なルールで不正を防ぐが、大量の候補ルールから精度と再現率などの基準で良い部分集合を選ぶ作業が難しく、候補プールの質にも左右される。
+approach: 第1段でSpectralRulesにより小さく多様なルールプールを作り、中間段でパレート最適性に基づく非劣ルール部分集合の前線をPORSで求め、前線上の解選択(SSF)手法を整理して比較する。
+tags:
+  task:
+  - fraud-detection
+  domain:
+  - finance
+  method:
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.75
+doi: 10.1145/3637528.3671521
+result: Alipayの2つの実適用場面で既存手法を上回ったと報告

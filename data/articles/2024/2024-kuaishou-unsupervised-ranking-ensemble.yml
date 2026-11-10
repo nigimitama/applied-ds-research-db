@@ -1,0 +1,31 @@
+id: 2024-kuaishou-unsupervised-ranking-ensemble
+url: https://doi.org/10.1145/3637528.3671598
+title: Unsupervised Ranking Ensemble Model for Recommendation
+title_ja: 推薦のための教師なしランキングアンサンブルモデル
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数の行動目的ごとのランキングを1つに統合するランキングアンサンブルで、教師信号の設計不備による情報損失を避ける教師なしモデルを提案。ショート動画プラットフォームへの導入で改善を得ている。
+problem: クリック、長時間視聴、いいね等の複数目的で得た複数のランキングを統合する際、学習の教師信号が不適切だと入力順位の情報が大きく失われる。
+approach: 出力順位が各入力順位の順序に近づくような距離尺度の損失と、隠れ層から入力の数値を復元するデコーダを用い、順序と数値の両方の情報を保持する。様々なランキングモデルやアンサンブル構造に適用可能。
+tags:
+  task:
+  - recommendation
+  - search-ranking
+  domain:
+  - media
+  - social
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8
+doi: 10.1145/3637528.3671598
+result: 実データで有効性を確認し、数十億ユーザー規模のショート動画プラットフォームでの導入で有意な改善と報告(具体値は原文参照)。

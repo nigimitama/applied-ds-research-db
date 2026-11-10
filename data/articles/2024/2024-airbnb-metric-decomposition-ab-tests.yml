@@ -1,0 +1,30 @@
+id: 2024-airbnb-metric-decomposition-ab-tests
+url: https://doi.org/10.1145/3637528.3671556
+title: Metric Decomposition in A/B Tests
+title_ja: A/Bテストにおけるメトリクス分解
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- airbnb
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 対象メトリクスをSN比の異なる成分に分解して分析することで、A/Bテストの感度を高める手法。頻度論とベイズの両面で推論を整備し、実世界の3つの適用で示す。
+problem: CUPEDなど事前共変量による分散削減の先で、さらに実験の感度・機動性を高めたい。
+tags:
+  task:
+  - experimentation
+  domain:
+  - travel
+  method:
+  - ab-testing
+  - bayesian
+  data_type:
+  - log
+confidence: 0.7
+approach: メトリクスを成分に分けて個別に解析する枠組みを提案し、推論理論を展開。
+result: 未分解の分析より機動性が高いことを3つの実適用で示したと報告(数値は未確認)。
+has_online_experiment: true

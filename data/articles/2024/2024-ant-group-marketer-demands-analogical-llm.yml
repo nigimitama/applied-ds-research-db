@@ -1,0 +1,35 @@
+id: 2024-ant-group-marketer-demands-analogical-llm
+url: https://doi.org/10.1145/3637528.3671583
+title: 'Know Your Needs Better: Towards Structured Understanding of Marketer Demands with Analogical Reasoning
+  Augmented LLMs'
+title_ja: ニーズを正しく捉える:類推推論で強化したLLMによるマーケター要望の構造化理解
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: マーケターが自然言語で述べる顧客ターゲティング要望を構造化クエリへ変換するため、類推推論プロンプトとGPT-3.5からの蒸留を組み合わせたARALLMを提案。非専門家でも対象ユーザーを選べるようにする。
+problem: 非専門のマーケターは対象ユーザーの条件を自然言語で伝えるが、重要な項目が文中に明示されないことが多く、構造化には高い理解・推論力が要る。手書きの推論例を新規要望ごとに用意するのも現実的でない。
+approach: 推論例のライブラリから類似例を検索して類推推論プロンプトを構成し、大規模モデルの出力を小型の生徒モデルへマルチタスクで蒸留して本番運用可能にする。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - advertising
+  - finance
+  method:
+  - llm
+  - model-compression
+  - fine-tuning
+  data_type:
+  - text
+confidence: 0.68
+doi: 10.1145/3637528.3671583
+result: NL2SELLタスクで通常のプロンプトを上回ったと報告
+alt_urls:
+- https://arxiv.org/abs/2401.04319

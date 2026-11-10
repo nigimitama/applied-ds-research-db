@@ -1,0 +1,31 @@
+id: 2024-kuaishou-self-boosted-calibrated-ranking
+url: https://doi.org/10.1145/3637528.3671570
+title: A Self-boosted Framework for Calibrated Ranking
+title_ja: キャリブレーション付きランキングのための自己ブーストフレームワーク
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 点別損失とペア損失を併用する従来のキャリブレーション付きランキングの弱点を解消するSBCRを提案。稼働中モデルのスコアを文脈特徴として使うペア損失でランキングを学習し、キャリブレーションは別モジュールで分離する。動画検索のA/Bテストで評価している。
+problem: ランキング損失の計算に候補リスト全体を同一ミニバッチに入れる必要がありデータのシャッフルを妨げる。また、衝突する2つの損失を1つの予測に課すためトレードオフが最適にならない。
+approach: 稼働中モデルのスコアを保存して文脈特徴とし、それに基づく自己ブーストのペア損失と点別損失でランキングモジュールを学習する。キャリブレーションは独立のモジュールで学習し目的を分離する。
+tags:
+  task:
+  - search-ranking
+  - ad-optimization
+  domain:
+  - media
+  - social
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.8
+result: 産業データセットでLogloss・NDCG@10が改善し、動画検索のオンラインA/Bテストで滞在時間が改善したと報告(具体値は原文参照)。
+has_online_experiment: true

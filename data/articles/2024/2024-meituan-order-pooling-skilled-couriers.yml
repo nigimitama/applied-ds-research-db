@@ -1,0 +1,36 @@
+id: 2024-meituan-order-pooling-skilled-couriers
+url: https://doi.org/10.1145/3637528.3671643
+title: 'Harvesting Efficient On-Demand Order Pooling from Skilled Couriers: Enhancing Graph Representation
+  Learning for Refining Real-time Many-to-One Assignments'
+title_ja: 熟練配達員から効率的な相乗り注文を獲得する:リアルタイム多対一割当のためのグラフ表現学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meituan
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 熟練配達員の過去の配送経路から実現可能な注文の組み合わせを学習し、グラフ表現学習で低次元ベクトル間の類似度計算により探索空間を絞るSCDNを提案。Meituanの配車システムに導入された。
+problem: オンデマンド配送のリアルタイム割当では、注文の相乗り候補の組み合わせが膨大で、熟練配達員の知見を取り込みつつ短時間で良い組み合わせを探す必要がある。
+approach: 熟練配達員のデータからグラフ表現学習で注文の埋め込みを獲得し、類似度に基づいて組み合わせ探索を剪定して割当を精緻化する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - logistics
+  - food
+  method:
+  - graph-neural-network
+  - embedding
+  data_type:
+  - geospatial
+  - graph
+confidence: 0.85
+doi: 10.1145/3637528.3671643
+result: 昼のピーク時に配達員の効率が45〜55%向上し、配達の時間遵守を維持したと報告
+alt_urls:
+- https://arxiv.org/abs/2406.14635
+has_online_experiment: true

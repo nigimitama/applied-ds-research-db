@@ -1,0 +1,31 @@
+id: 2024-dow-hierarchical-industrial-demand-forecasting
+url: https://doi.org/10.1145/3637528.3671632
+title: Large Scale Hierarchical Industrial Demand Time-Series Forecasting incorporating Sparsity
+title_ja: スパース性を考慮した大規模階層型の産業需要予測
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- dow
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 階層的な需要時系列で下位ほどスパースになる問題に対し、スパースと密な系列に異なる分布を仮定して階層整合を取る確率的予測モデルHAILSを提案。1万超の製品を持つ化学メーカーに導入した。
+problem: 大企業の需要予測では階層下位の系列がスパースで、既存の階層予測手法はこの階層ごとの違いを無視し、巨大な階層にスケールしにくい。
+approach: スパース系列と密系列を別の分布でモデル化し、階層制約を満たすよう整合(reconcile)させる確率的階層予測モデル。
+tags:
+  task:
+  - demand-forecasting
+  - time-series-forecasting
+  domain:
+  - manufacturing
+  method:
+  - time-series-model
+  - bayesian
+  data_type:
+  - time-series
+confidence: 0.85
+doi: 10.1145/3637528.3671632
+result: 化学メーカーで予測精度が8.5%改善、スパース系列では23%の改善と報告。

@@ -1,0 +1,33 @@
+id: 2024-kuaishou-gradcraft-multi-task-gradient
+url: https://doi.org/10.1145/3637528.3671585
+doi: 10.1145/3637528.3671585
+title: 'GradCraft: Elevating Multi-task Recommendations through Holistic Gradient Crafting'
+title_ja: 'GradCraft: 全体的な勾配調整によるマルチタスク推薦'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- kuaishou
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 推薦のマルチタスク学習で、勾配の大きさを最大ノルムに合わせて調整し、全タスク間の方向衝突を一括で射影解消するGradCraftを提案。WeChatとKuaishouのデータで評価し、オンライン実験も行った。
+problem: 既存のマルチタスク学習手法は推薦特有の事情を考慮せず、勾配の大きさと方向の双方でバランスが不十分だった。
+approach: 勾配の大きさを動的に最大ノルムへ揃え、ペアごとではなく全ての衝突タスクに対して射影を行い方向衝突を大域的に解消する。
+tags:
+  task:
+  - recommendation
+  domain:
+  - media
+  - social
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.75
+result: WeChat・Kuaishouのデータセットで、PCGradなどの基準手法を上回ると報告。
+has_online_experiment: true
+alt_urls:
+- https://arxiv.org/abs/2407.19682

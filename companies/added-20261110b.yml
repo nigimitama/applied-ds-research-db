@@ -1,0 +1,81 @@
+# KDD 2024 ADS 収集で追加(サブエージェント付与。aliases・country・industry は要レビュー)
+- id: delicious-ai
+  name: Delicious AI
+  aliases: [Delicious AI]
+  country: US
+  industry: Retail Tech
+- id: samson-ag
+  name: SAMSON AG
+  aliases: [SAMSON, SAMSON AG]
+  country: DE
+  industry: Manufacturing
+- id: dow
+  name: Dow
+  aliases: [Dow Chemical, 'Dow, Inc.']
+  country: US
+  industry: Chemicals
+- id: shopee
+  name: Shopee
+  aliases: [Sea Group, Sea Limited, Shopee, Shopee Discovery Ads, Shopee Pte. Ltd.]
+  country: SG
+  industry: E-commerce
+- id: games24x7
+  name: Games24x7
+  aliases: [Games24x7]
+  country: IN
+  industry: Gaming
+- id: walmart
+  name: Walmart
+  aliases: [Shipt, Walmart Global Tech, Walmart Labs]
+  country: US
+  industry: Retail
+- id: icbc
+  name: Industrial and Commercial Bank of China
+  aliases: [ICBC, ICBC Limited, 中国工商銀行]
+  country: CN
+  industry: Banking
+- id: cuezen
+  name: CueZen
+  aliases: ['CueZen, Inc.']
+  country: US
+  industry: Healthcare
+- id: sharechat
+  name: ShareChat
+  aliases: [Mohalla Tech, Moj]
+  country: IN
+  industry: SNS
+- id: doordash
+  name: DoorDash
+  aliases: ['DoorDash, Inc.']
+  country: US
+  industry: Food Delivery
+- id: expedia
+  name: Expedia Group
+  aliases: [Expedia]
+  country: US
+  industry: Travel
+- id: korea-telecom
+  name: Korea Telecom
+  aliases: [KT, KT Corporation]
+  country: KR
+  industry: Telecom
+- id: instacart
+  name: Instacart
+  aliases: [Maplebear]
+  country: US
+  industry: Grocery e-commerce
+- id: credit-karma
+  name: Credit Karma
+  aliases: [Intuit, Intuit Credit Karma, Mint]
+  country: US
+  industry: Fintech
+- id: ibm
+  name: IBM
+  aliases: [IBM Corporation, IBM Research]
+  country: US
+  industry: IT
+- id: china-telecom
+  name: China Telecom
+  aliases: [Research Institute of China Telecom, 中国電信]
+  country: CN
+  industry: Telecom

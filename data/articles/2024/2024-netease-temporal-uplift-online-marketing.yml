@@ -1,0 +1,31 @@
+id: 2024-netease-temporal-uplift-online-marketing
+url: https://doi.org/10.1145/3637528.3671560
+title: Temporal Uplift Modeling for Online Marketing
+title_ja: オンラインマーケティングのための時間的アップリフトモデリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- netease
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ユーザーのイベント系列を用いて、複数の施策をどのタイミングで打つべきかの効果を推定する時間的アップリフトモデル(TPPUM)を提案。マーク付き時間点過程と敵対的バランシングを組み合わせ、施策選択とタイミング選択を最適化した。
+problem: 従来のアップリフトモデリングは単発の施策を想定しており、複数の施策が時間をまたいで行われる実際のマーケティングでは、施策の種類とタイミングの両方を考慮した効果推定が難しい。
+approach: ユーザーのイベント系列をマーク付き時間点過程でモデル化し、マーケティング施策を介入、購買を結果イベントとして反事実推定を行う。介入群と非介入群の表現を敵対的にバランスさせて選択バイアスを抑える。
+tags:
+  task:
+  - causal-effect-estimation
+  method:
+  - uplift-modeling
+  - deep-learning
+  data_type:
+  - log
+  - time-series
+confidence: 0.72
+doi: 10.1145/3637528.3671560
+result: アプリケーション全体の収益が3.6%増加したと報告
+alt_urls:
+- https://chatpaper.com/paper/57213

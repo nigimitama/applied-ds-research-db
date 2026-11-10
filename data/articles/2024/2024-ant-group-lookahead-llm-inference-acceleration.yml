@@ -1,0 +1,34 @@
+id: 2024-ant-group-lookahead-llm-inference-acceleration
+url: https://doi.org/10.1145/3637528.3671614
+title: 'Lookahead: An Inference Acceleration Framework for Large Language Model with Lossless Generation
+  Accuracy'
+title_ja: Lookahead:生成精度を損なわないLLM推論高速化フレームワーク
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ant-group
+- alibaba
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: トライ木ベースの検索で複数の候補トークン列を一度に生成し、検証して最長の正しい部分列を採用することで、通常のデコードと同一の出力を保ったままLLM推論を高速化するLookaheadを提案。Alipayで運用されている。
+problem: LLMの自己回帰デコードは遅く、近似を入れる高速化手法は生成精度を損ねる。サービス運用では精度を落とさずにレイテンシとスループットを改善する必要がある。
+approach: 過去の生成文脈などから候補トークン列をトライ木で取得し、1回の順伝播でまとめて検証して正しい最長部分列を受理する。出力は標準のデコードと一致し、最悪時も標準デコードと同等で、複数のLLMへ最小限の改修で適用できる。
+tags:
+  task:
+  - text-generation
+  domain:
+  - finance
+  method:
+  - llm
+  - transformer
+  data_type:
+  - text
+confidence: 0.8
+doi: 10.1145/3637528.3671614
+result: 2023年4月からAlipayに導入され、2.66〜6.26倍の高速化を報告
+alt_urls:
+- https://arxiv.org/abs/2312.12728

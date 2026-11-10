@@ -1,0 +1,35 @@
+id: 2024-cuezen-nudgerank-personalized-health
+url: https://doi.org/10.1145/3637528.3671562
+title: 'NudgeRank: Digital Algorithmic Nudging for Personalized Health'
+title_ja: NudgeRank:個別化ヘルスケアのためのデジタル・アルゴリズミック・ナッジ
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- cuezen
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 知識グラフ上のグラフニューラルネットワークで、利用者に合わせた健康行動促進のナッジを選ぶ推薦システムNudgeRankを提案。シンガポール保健促進庁のHealthy 365アプリで運用されている。
+problem: 健康的な行動を促すプッシュ通知を、利用者ごとの文脈に合わせて個別化する必要があり、110万人規模でスケールさせる必要がある。
+approach: 知識グラフ上のGNNで利用者に適したナッジを推薦し、プッシュ通知で配信する。
+tags:
+  task:
+  - recommendation
+  - personalization
+  domain:
+  - healthcare
+  method:
+  - graph-neural-network
+  - knowledge-graph
+  data_type:
+  - graph
+  - log
+confidence: 0.82
+doi: 10.1145/3637528.3671562
+result: 2022年7月から本番運用され、歩数が6.17%、運動時間が7.61%増加と報告(arXiv抄録の記述)
+alt_urls:
+- https://arxiv.org/abs/2407.20241
+has_online_experiment: true

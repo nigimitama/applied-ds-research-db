@@ -1,0 +1,36 @@
+id: 2024-games24x7-games24x7-responsible-gameplay-forecast
+url: https://doi.org/10.1145/3637528.3671657
+doi: 10.1145/3637528.3671657
+title: Explainable and Interpretable Forecasts on Non-Smooth Multivariate Time Series for Responsible
+  Gameplay
+title_ja: 責任あるゲームプレイのための非平滑多変量時系列の説明可能な予測
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- games24x7
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: オンラインゲームでの過度なプレイヤー行動を事前に予測するため、予測精度・平滑で理解しやすい予測軌道・属性や事象に基づく説明を同時に満たす深層ネットワークAFNを提案。実プレイデータで数週間先の過剰プレイ検知を評価する。
+problem: マルチプレイヤーゲームの行動データは不規則で非線形なため、時間的平滑性を前提とする既存の解釈可能な時系列手法が使えず、責任あるゲームプレイ支援に必要な予測と説明の両立が難しい。
+approach: Actionable Forecasting Network(AFN)により、注意機構に基づく入力特徴・事象の説明を伴いながら、平滑で解釈しやすい予測軌道を出力する。
+tags:
+  task:
+  - time-series-forecasting
+  - anomaly-detection
+  domain:
+  - gaming
+  method:
+  - deep-learning
+  - explainable-ai
+  - time-series-model
+  data_type:
+  - time-series
+  - log
+confidence: 0.7
+result: 4週間先の過剰プレイヤーの23%超を検知し、近い将来の過剰プレイ量を18%超削減できると報告(第三者要約経由、要原文確認)。
+alt_urls:
+- https://arxiv.org/abs/2504.03777

@@ -1,0 +1,34 @@
+id: 2024-walmart-shipt-multi-retailer-dynamic-pricing
+url: https://doi.org/10.1145/3637528.3671634
+doi: 10.1145/3637528.3671634
+title: Dynamic Pricing for Multi-Retailer Delivery Platforms with Additive Deep Learning and Evolutionary
+  Optimization
+title_ja: 複数小売業者の配送プラットフォーム向け動的価格設定
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- walmart
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 複数小売業者を束ねる食料品配送プラットフォームShiptで、商品間の交差弾力性を加法的ニューラルネットで学習し、進化的アルゴリズムで店舗・商品単位の価格を制約付きで最適化する動的価格設定を提案。
+problem: 独立した複数小売業者の在庫を把握できず、ブランドや地域で需要が異なるため、既存の動的価格手法はそのまま適用できない。
+approach: 敵対的データで拡張した加法型ニューラルネットで需要と商品間の交差弾力性をモデル化し、バンディット着想の探索・活用機構を加えた遺伝的アルゴリズムでビジネス制約下の価格を最適化する。
+tags:
+  task:
+  - pricing
+  - demand-forecasting
+  domain:
+  - retail
+  - logistics
+  method:
+  - deep-learning
+  - mathematical-optimization
+  - bandit
+  data_type:
+  - tabular
+confidence: 0.8
+result: 公開データと産業データ(数百〜数千商品・数十店舗)で評価し、Shiptに展開済みと報告。

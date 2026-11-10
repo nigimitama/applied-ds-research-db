@@ -1,0 +1,30 @@
+id: 2024-amazon-transportation-rate-forecast-signature
+url: https://doi.org/10.1145/3637528.3671637
+title: Transportation Marketplace Rate Forecast Using Signature Transform
+title_ja: シグネチャ変換を用いた輸送マーケットプレイスの運賃予測
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- amazon
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 輸送市場の運賃予測に、シグネチャ変換とシグネチャカーネルを使って季節性やレジーム切替を捉える適応型2段階LASSOを提案。Amazonのトラック輸送業務で運用されている。
+problem: 輸送市場の運賃は季節性やレジーム変化の影響を受け、市販の予測モデルでは精度や解釈性に限界がある。
+approach: シグネチャ変換により予測を線形回帰問題に帰着し、シグネチャカーネルで時系列間の類似度を測って季節性・レジーム切替を検出し、適応型2段階LASSOで予測する。
+tags:
+  task:
+  - time-series-forecasting
+  - pricing
+  domain:
+  - logistics
+  method:
+  - time-series-model
+  data_type:
+  - time-series
+confidence: 0.85
+doi: 10.1145/3637528.3671637
+result: 商用の業界モデルより精度と解釈性が向上し、精度が5倍超の改善、年間約5000万ドルの節約見込みと報告(論文自己申告)。

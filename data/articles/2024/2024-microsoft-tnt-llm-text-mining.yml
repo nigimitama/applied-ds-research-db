@@ -1,0 +1,30 @@
+id: 2024-microsoft-tnt-llm-text-mining
+url: https://doi.org/10.1145/3637528.3671647
+title: 'TnT-LLM: Text Mining at Scale with Large Language Models'
+title_ja: 'TnT-LLM: 大規模言語モデルによる大規模テキストマイニング'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- microsoft
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: LLMのゼロショット多段プロンプトでラベル体系を作り、LLMで付けたラベルで軽量分類器を学習して大規模に適用する2段階パイプラインを提案。Bing Copilot(旧Bing Chat)の会話のユーザ意図とドメインの分析に適用している。
+problem: 対話ログのような大量の非構造テキストの分析では、ラベル体系の設計と大規模なラベル付けに人手と時間がかかり、従来のクラスタリングでは解釈性や関連性が不足する。
+approach: 第1段でLLMにより分類体系を生成・反復改良し、第2段でLLMにより学習データへラベルを付け、それで軽量分類器を訓練して大規模運用できるようにする。
+tags:
+  task:
+  - classification
+  domain:
+  - social
+  method:
+  - llm
+  - active-learning
+  data_type:
+  - text
+  - log
+confidence: 0.75
+result: クラスタリングのベースラインより正確で関連性の高い分類体系が得られ、精度と効率のバランスが良いと報告。

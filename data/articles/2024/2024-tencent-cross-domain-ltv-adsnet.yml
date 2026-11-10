@@ -1,0 +1,34 @@
+id: 2024-tencent-cross-domain-ltv-adsnet
+url: https://doi.org/10.1145/3637528.3671612
+doi: 10.1145/3637528.3671612
+alt_urls:
+- https://arxiv.org/abs/2406.10517
+title: 'ADSNet: Cross-Domain LTV Prediction with an Adaptive Siamese Network in Advertising'
+title_ja: 'ADSNet: 広告における適応型シャムネットワークによるクロスドメインLTV予測'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 購入サンプルが疎な広告LTV予測で、外部データも取り込んで学習データを増やす適応差分シャムネットワークADSNetを提案した。情報利得でサンプルを選別して負の転移を避け、ドメイン適応で分布差を縮める。オンラインA/Bテストで効果を確認している。
+problem: 広告の実データではLTV(購入)のラベルが疎で予測が難しい。外部データを足すと分布のずれや雑音サンプルによる負の転移が起きうる。
+approach: 情報利得を計算する利得評価戦略で、ターゲットドメインに有用なサンプルを学習し雑音サンプルを除外する。さらにドメイン適応モジュールでドメイン間の分布距離を縮める。
+result: オフラインでGINI +2%、ロングテールの予測が改善。オンラインA/BテストでLTV +3.47%、GMV +3.89%と報告。
+tags:
+  task:
+  - ad-optimization
+  - classification
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  data_type:
+  - tabular
+  - log
+has_online_experiment: true
+confidence: 0.85

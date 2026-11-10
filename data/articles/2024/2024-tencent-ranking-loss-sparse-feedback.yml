@@ -1,0 +1,34 @@
+id: 2024-tencent-ranking-loss-sparse-feedback
+url: https://doi.org/10.1145/3637528.3671565
+doi: 10.1145/3637528.3671565
+alt_urls:
+- https://arxiv.org/abs/2403.14144
+title: Understanding the Ranking Loss for Recommendation with Sparse User Feedback
+title_ja: 疎なユーザーフィードバック下の推薦におけるランキング損失の理解
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- tencent
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 広告のCTR予測で、BCEに補助的なランキング損失を加えると性能が上がる理由を分析した。正例が疎だとBCEは負例の勾配が消えるが、ランキング損失は負例に大きな勾配を与えて分類性能も改善する。Tencentの広告システムへの導入も報告している。
+problem: CTR予測では二値交差エントロピー(BCE)が標準だが、補助のランキング損失が効く理由が十分に理解されていない。正例が疎なとき負例の勾配が小さくなり学習が難しい。
+approach: 理論分析によりBCEの負例勾配消失とランキング損失による勾配増大を示し、公開データで検証。これに基づく損失をTencentのオンライン広告システムに適用した。
+result: arXiv初版の報告では、Tencent広告の2つの主要シナリオでGMVが0.70%、1.26%向上。
+tags:
+  task:
+  - ad-optimization
+  - recommendation
+  domain:
+  - advertising
+  method:
+  - deep-learning
+  data_type:
+  - log
+  - tabular
+has_online_experiment: true
+confidence: 0.75

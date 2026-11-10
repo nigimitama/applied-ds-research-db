@@ -1,0 +1,31 @@
+id: 2024-ebay-microservice-rca-latent-intervention
+url: https://doi.org/10.1145/3637528.3671530
+title: Microservice Root Cause Analysis With Limited Observability Through Intervention Recognition in
+  the Latent Space
+title_ja: 潜在空間の介入認識による観測が限られたマイクロサービスの根本原因分析
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ebay
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 根本原因候補を潜在変数として扱い、観測メトリクスとの二重空間グラフで根本原因を推定する教師なし手法LatentScope。eBayの本番環境に導入し、実障害で評価した。
+problem: マイクロサービスでは観測できない根本原因候補があり、観測が限られると既存の根本原因分析が難しい。
+tags:
+  task:
+  - anomaly-detection
+  domain:
+  - cloud-infra
+  - e-commerce
+  method:
+  - causal-inference
+  data_type:
+  - time-series
+  - graph
+confidence: 0.7
+approach: 潜在空間での介入認識に基づく高速な推論アルゴリズムRLIRと、計算量とノイズ耐性を改善したLatentRegressorを用いる。
+result: eBayの実障害と合成データで評価(数値は未確認)。

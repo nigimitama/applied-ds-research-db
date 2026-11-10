@@ -1,0 +1,33 @@
+id: 2024-meituan-decision-focused-causal-marketing
+url: https://doi.org/10.1145/3637528.3672353
+title: Decision Focused Causal Learning for Direct Counterfactual Marketing Optimization
+title_ja: 直接的な反実仮想マーケティング最適化のための意思決定焦点型因果学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meituan
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: マーケティングの資源配分で、予測精度ではなく意思決定の質を直接最適化する意思決定焦点型因果学習(DFCL)を提案。Meituanの複数のマーケティング場面に導入されている。
+problem: 通常の学習は下流の最適化を無視するため予測精度が高くても意思決定が良くならず、反実仮想のため意思決定損失の算出も難しい。
+tags:
+  task:
+  - causal-effect-estimation
+  - resource-optimization
+  domain:
+  - food
+  - advertising
+  method:
+  - causal-inference
+  - uplift-modeling
+  - mathematical-optimization
+  data_type:
+  - tabular
+confidence: 0.8
+approach: 2つの代理損失と、期待成果に基づくブラックボックス最適化の手法を組み合わせた枠組み(二次情報に基づく)。
+result: オフライン実験とオンラインA/Bテストで既存最先端手法に対する有効性を確認したと報告。
+has_online_experiment: true

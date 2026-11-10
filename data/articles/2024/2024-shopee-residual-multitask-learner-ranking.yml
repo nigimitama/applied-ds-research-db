@@ -1,0 +1,32 @@
+id: 2024-shopee-residual-multitask-learner-ranking
+url: https://doi.org/10.1145/3637528.3671523
+title: Residual Multi-Task Learner for Applied Ranking
+title_ja: 応用ランキングのための残差マルチタスク学習器
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- shopee
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: Shopee検索のプレランキング向けに、タスク間を残差接続で結び、スコアを加算で統合する軽量なマルチタスク枠組みResFlowを提案。オフライン指標Weighted Recall@Kも導入した。
+problem: 複数の目的(クリック・注文など)を同時に扱うランキングでは、タスク間の情報共有と、オフライン指標とオンライン指標のずれが課題になる。
+approach: 残差接続でタスク間の情報を流し、従来の乗算ではなく加算でマルチタスクのスコアを融合する。オンライン指標に整合するオフライン評価指標を設計した。
+tags:
+  task:
+  - search-ranking
+  domain:
+  - e-commerce
+  method:
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.88
+doi: 10.1145/3637528.3671523
+result: Shopee検索のA/Bテストで注文数/ユーザー(OPU)が1.29%増、追加遅延なし。プレランクに全面導入
+alt_urls:
+- https://arxiv.org/abs/2411.09705
+has_online_experiment: true

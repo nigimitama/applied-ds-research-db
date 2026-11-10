@@ -1,0 +1,31 @@
+id: 2024-ibm-generative-ai-sports-music-text
+url: https://doi.org/10.1145/3637528.3671542
+title: Large Scale Generative AI Text Applied to Sports and Music
+title_ja: スポーツと音楽への大規模生成AIテキストの適用
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- ibm
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 全米オープン、ウィンブルドン、マスターズのハイライトに付す解説文や、ESPNファンタジーフットボール、GRAMMYのアーティスト紹介文を、生成AIで大規模に作成するシステムの報告。共通のソフトウェア構成で複数の実イベントに適用している。
+problem: 大規模スポーツ・音楽イベントでは、映像や記事、スコア、統計など多様なデータから大量のコンテンツ(解説やパーソナライズされたニュース)を短時間で作る必要があり、人手では拡張が難しい。
+approach: 映像・記事・リアルタイムスコア・統計・ファクトシートなどのマルチモーダルなデータをもとに生成モデルでテキストを作る。GRAMMYではLlama 2 70Bに少数例提示とRAGを使う。
+tags:
+  task:
+  - text-generation
+  domain:
+  - media
+  method:
+  - llm
+  - rag
+  - fine-tuning
+  data_type:
+  - text
+  - video
+confidence: 0.8
+result: 生成速度が15倍、平均Rouge-L 82.00、perplexity 6.6。9000万人のファンに80億ページビュー規模を支えたと報告。

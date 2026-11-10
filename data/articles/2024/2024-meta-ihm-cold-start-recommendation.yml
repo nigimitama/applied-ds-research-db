@@ -1,0 +1,29 @@
+id: 2024-meta-ihm-cold-start-recommendation
+url: https://doi.org/10.1145/3637528.3671588
+title: Inductive Modeling for Realtime Cold Start Recommendations
+title_ja: リアルタイムなコールドスタート推薦のための帰納的モデリング
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 新着コンテンツを関連ユーザへ素早く届ける課題に対し、アイテム塔へユーザ交互作用情報を直接注入し、注意プーリングによる帰納的構造で再学習を不要にするItem History Model(IHM)を提案。公開データと産業データで評価している。
+problem: 標準のTwo Towerモデルでは塔間の特徴相互作用が限られ、コールドスタートアイテムでは学習データの疎性で情報損失が悪化する。大量のユーザ生成コンテンツによりエンドツーエンドの遅延も大きなボトルネックとなる。
+approach: アイテム塔にユーザ交互作用の履歴を注入して情報損失を補い、注意ベースのプーリングによる帰納的構造で再学習なしに新アイテムを扱えるようにする。
+tags:
+  task:
+  - recommendation
+  domain:
+  - social
+  method:
+  - embedding
+  - deep-learning
+  data_type:
+  - log
+confidence: 0.65
+result: 公開・産業データでベースラインを上回り、産業応用で最先端のリアルタイム性を達成したと報告(具体値は未確認)。

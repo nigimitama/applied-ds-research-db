@@ -1,0 +1,33 @@
+id: 2024-meta-offline-rl-production-bidding
+url: https://doi.org/10.1145/3637528.3671555
+doi: 10.1145/3637528.3671555
+alt_urls:
+- https://arxiv.org/abs/2310.09426
+title: Offline Reinforcement Learning for Optimizing Production Bidding Policies
+title_ja: 本番入札ポリシー最適化のためのオフライン強化学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- meta
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 稼働中の広告入札ポリシーを、ログデータとオフライン強化学習で調整する汎用的な方法を示した。微分可能な基底ポリシーのパラメータを最適化し、ニューラルネットは学習後に捨てるため、デプロイされる入札器の解釈性が保たれる。
+problem: 本番の入札システムでポリシーを改善したいが、オンラインでの探索はコストとリスクが高い。基底ポリシーが生成したログのみで学習する必要がある。
+approach: 任意の微分可能な基底ポリシーに対し、ハイブリッド構成でオフライン強化学習を行う。ニューラルネットは学習のみに使い、基底ポリシーと同じパラメータ空間の最適値だけを本番に展開する。
+result: シミュレーションと大規模な本番環境の双方で、統計的に有意な性能向上を報告。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - reinforcement-learning
+  - off-policy-evaluation
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.82

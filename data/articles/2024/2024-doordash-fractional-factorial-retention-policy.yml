@@ -1,0 +1,32 @@
+id: 2024-doordash-fractional-factorial-retention-policy
+url: https://doi.org/10.1145/3637528.3671574
+title: 'Business Policy Experiments using Fractional Factorial Designs: Consumer Retention on DoorDash'
+title_ja: '一部実施要因計画によるビジネス施策実験: DoorDashの消費者リテンション'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- doordash
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: ビジネス施策を要因に分解し一部実施要因計画で検証する手法を、DoorDashの消費者プロモーション施策に適用した。異質な処置効果推定と組み合わせている。
+problem: 多数の施策の組合せを全て実験すると変種数が膨大になり、意思決定が遅くコストも高い。
+tags:
+  task:
+  - experimentation
+  - causal-effect-estimation
+  domain:
+  - food
+  - e-commerce
+  method:
+  - ab-testing
+  - causal-inference
+  data_type:
+  - tabular
+confidence: 0.85
+approach: 施策を要因に分解して一部実施要因計画で実験し、異質処置効果の推定手法と併用して最適施策を探索する。
+result: 約5%の増分利益の施策を、実施コスト67%減で発見したと報告。
+has_online_experiment: true

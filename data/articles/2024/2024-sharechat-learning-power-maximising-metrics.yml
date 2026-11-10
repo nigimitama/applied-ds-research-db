@@ -1,0 +1,30 @@
+id: 2024-sharechat-learning-power-maximising-metrics
+url: https://doi.org/10.1145/3637528.3671512
+title: Learning Metrics that Maximise Power for Accelerated A/B-Tests
+title_ja: A/Bテストを加速する検出力最大化メトリクスの学習
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- sharechat
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 短期シグナルから、North Starメトリクスに対する統計的検出力が最大になるメトリクスを学習する手法。ShareChatとMojの過去のA/Bテスト結果で評価し、実際の意思決定にも使われている。
+problem: 長期のNorth Starメトリクスは感度が低く、A/Bテストの判断に時間とサンプルがかかる。
+tags:
+  task:
+  - experimentation
+  domain:
+  - social
+  - media
+  method:
+  - ab-testing
+  data_type:
+  - log
+confidence: 0.8
+approach: 短期シグナルを組み合わせたメトリクスを、検出力(p値)を直接最適化する目的関数で学習する。
+result: North Star単独より検出力が最大78%、併用で最大210%向上。必要サンプル数は元の12%まで削減できると報告。
+has_online_experiment: true

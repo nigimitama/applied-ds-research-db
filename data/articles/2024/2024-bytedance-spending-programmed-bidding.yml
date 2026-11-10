@@ -1,0 +1,30 @@
+id: 2024-bytedance-spending-programmed-bidding
+url: https://doi.org/10.1145/3637528.3671540
+doi: 10.1145/3637528.3671540
+title: 'Spending Programmed Bidding: Privacy-friendly Bid Optimization with ROI Constraint in Online Advertising'
+title_ja: 'Spending Programmed Bidding: オンライン広告におけるプライバシー配慮型のROI制約付き入札最適化'
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- bytedance
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: プライバシー施策でリアルタイムの精緻なフィードバックが得にくい環境でも、ROI制約を満たす入札を行うSPBを提案した。マクロ段階で目標ROIから期待消化額を求め、ミクロ段階でその消化額を実現する入札価格を最適化する二段構成。
+problem: イベント集約や報告遅延などのプライバシー対策により、広告主のROI制約下での入札最適化に必要な即時・詳細なフィードバックが使えない。
+approach: 二段階の枠組み。マクロ段階では効用を最大化する目標ROIのモデル化から期待消化額を導出し、ミクロ段階ではその消化額を前提に入札価格を最適化する。
+result: プライバシー制約のあるチャネルで、オフラインデータと大規模広告プラットフォームでのオンライン実験において既存の入札手法を上回ると報告(具体値は原文参照)。
+tags:
+  task:
+  - ad-optimization
+  domain:
+  - advertising
+  method:
+  - mathematical-optimization
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.7

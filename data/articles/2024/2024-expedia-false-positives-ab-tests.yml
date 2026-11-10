@@ -1,0 +1,28 @@
+id: 2024-expedia-false-positives-ab-tests
+url: https://doi.org/10.1145/3637528.3671631
+title: False Positives in A/B Tests
+title_ja: A/Bテストにおける偽陽性
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- expedia
+collab_academia: false
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 有意水準0.05では成功率が低い環境で偽陽性が多くなる問題を、ExpediaとOptimizelyの勝率から実験の真の成功率を推定して議論。逐次グループ検定に基づく改良手順を提案する。
+problem: A/Bテストの成功率が低い現場では、標準的な有意水準で有意となった結果の多くが偽陽性になりうる。
+tags:
+  task:
+  - experimentation
+  domain:
+  - travel
+  method:
+  - ab-testing
+  data_type:
+  - log
+confidence: 0.7
+approach: 観測された勝率から真の成功率を推定し、選んだ実験を延長する逐次グループ検定ベースの手順で偽陽性を減らし検出力を保つ。
+has_online_experiment: true

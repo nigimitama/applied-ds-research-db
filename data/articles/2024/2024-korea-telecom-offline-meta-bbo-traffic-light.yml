@@ -1,0 +1,32 @@
+id: 2024-korea-telecom-offline-meta-bbo-traffic-light
+url: https://doi.org/10.1145/3637528.3671606
+title: An Offline Meta Black-box Optimization Framework for Adaptive Design of Urban Traffic Light Management
+  Systems
+title_ja: 都市の信号制御システム適応設計のためのオフラインメタブラックボックス最適化
+published: '2024-08-25'
+collected: '2026-11-10'
+companies:
+- korea-telecom
+collab_academia: true
+source:
+  type: conference
+  venue: KDD Applied Data Science Track
+evidence: peer_reviewed
+lang: en
+summary_ja: 信号の現示組合せと現示時間配分の設計を、オフラインのメタブラックボックス最適化として定式化した。Attentive Neural Processで渋滞度を不確実性付きで予測し、ベイズ最適化で未知の交通パターンに対する設計を少数のシミュレーションで求める。実交通システムへの導入で処理台数が4.80%増加したと報告。
+problem: 複雑な都市道路網では信号が手動設定されがちで、変化する交通パターンへの適応が弱く渋滞が深刻になる。
+approach: 交通パターンごとの設計選択と渋滞指標を対にしたオフラインデータを作り、Attentive Neural Processを代理モデルにしてベイズ最適化で未見パターンの設計を探索する。
+tags:
+  task:
+  - resource-optimization
+  domain:
+  - mobility
+  method:
+  - bayesian
+  - mathematical-optimization
+  - simulation
+  data_type:
+  - time-series
+confidence: 0.8
+doi: 10.1145/3637528.3671606
+result: 実交通システムへの導入でスループット4.80%向上、シミュレーションでも待機車両数でベースラインを上回ったと報告
