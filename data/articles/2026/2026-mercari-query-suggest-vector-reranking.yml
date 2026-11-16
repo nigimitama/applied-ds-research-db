@@ -1,0 +1,34 @@
+id: 2026-mercari-query-suggest-vector-reranking
+url: https://engineering.mercari.com/blog/entry/20261113-query-suggest-vector-search-reranking/
+image: "https://storage.googleapis.com/prd-engineering-asset/2026/11/cf48338d-gemini_generated_image_du18iudu18iudu18-scaled.jpeg"
+title: ベクトル検索とRerankingモデルを活用した商品ページのクエリサジェストの改善
+published: '2026-11-16'
+collected: '2026-11-16'
+companies:
+- mercari
+collab_academia: false
+source:
+  type: techblog
+  venue: Mercari Engineering Blog
+evidence: blog
+lang: ja
+summary_ja: 商品ページの「他の人はこちらも検索」で、候補生成にメルカリの検索ログで微調整した日本語埋め込みによるベクトル検索を、並び替えにCTR予測モデルを導入した。新規出品など履歴の乏しい商品でも候補を出せるようにし、A/Bテストで経由購入数の改善を確認している。
+problem: 従来は過去の検索流入の逆引きと人気順で候補を作っており、一点物が多く履歴がたまる前に売れる商品では候補が足りず、約20%のリクエストで0件だった。先頭と末尾でタップ率に15倍以上の差があるのに、並びは検索回数順で汎用クエリが先頭に来やすかった。
+approach: 検索クエリと購入商品タイトルのペアでRuri v2を微調整し、32次元に切り詰めた埋め込みを使用。商品タイトルから近傍クエリを引くItem-to-Query検索を候補源に追加し、商品とクエリの埋め込みを連結したMLPのCTR予測モデルで候補を再順位付けした。
+result: A/Bテストで商品ページのQuery Suggest経由の購入数が、検索導入で+17.57%、Reranker導入で+5.09%(いずれも統計的に有意と報告)。
+tags:
+  task:
+  - search-ranking
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - embedding
+  - vector-search
+  - fine-tuning
+  - ab-testing
+  data_type:
+  - text
+  - log
+has_online_experiment: true
+confidence: 0.9

@@ -3270,3 +3270,46 @@
 {"url": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA16/_article", "reason": "no-real-world-application: JSAI2026。要旨から実データ・実運用での適用を確認できない(要旨のみで保守的に不採用)", "date": "2026-11-10"}
 {"url": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA30/_article", "reason": "no-company-author: JSAI2026。所属から企業事例と判断できない", "date": "2026-11-10"}
 {"url": "https://www.jstage.jst.go.jp/article/pjsai/JSAI2026/0/JSAI2026_5YinA48/_article", "reason": "no-real-world-application: JSAI2026。要旨から実データ・実運用での適用を確認できない(要旨のみで保守的に不採用)", "date": "2026-11-10"}
+{"url": "https://arxiv.org/abs/2611.18527v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18471v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18422v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18284v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18125v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17726v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17463v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17212v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17108v2", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.16139v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15426v1", "reason": "no-company-author: arXiv HTML版の著者所属に企業が見当たらない(自動判定)", "date": "2026-11-16"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261116c", "reason": "off-topic: 若手の会参加レポート", "date": "2026-11-16"}
+{"url": "https://techblog.lycorp.co.jp/ja/20261116b", "reason": "off-topic: AIコーディングエージェント基盤の開発者体験で、データ分析・ML適用事例ではない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18393v1", "reason": "no-real-world-application: 気象の世界モデル。観測データ・NOAA予報との比較評価で、企業の実運用への適用は読み取れない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18333v1", "reason": "no-company-author: 所属が読み取れず衛星データの手法研究。企業の実運用なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18244v1", "reason": "no-real-world-application: 推薦モデル圧縮の手法提案。実サービスへの適用が確認できない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18095v1", "reason": "off-topic: カーネル回帰の漸近理論", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18089v1", "reason": "no-real-world-application: LLM内部表現の理論的分析", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18074v1", "reason": "no-company-author: 大学のみ・手法研究", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18066v1", "reason": "no-company-author: 大学のみ・原子核物理への応用", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.18030v1", "reason": "no-company-author: 大学のみ・ベンチマーク", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17918v1", "reason": "no-company-author: 大学・独立研究者のみ", "date": "2026-11-16"}
+{"url": "https://developers.cyberagent.co.jp/blog/archives/67436/", "reason": "not-technical: KMP撤退の意思決定でML/データ分析が主題でない", "date": "2026-11-16"}
+{"url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/", "reason": "not-technical: 製品機能の紹介", "date": "2026-11-16"}
+{"url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/", "reason": "not-technical: インフラ/仮想デバイス基盤で、ML/データ分析が主題でない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17563v1", "reason": "no-real-world-application: 言語モデル評価のベンチマーク研究", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17556v1", "reason": "no-real-world-application: 合成ベンチマークで実プロセスへの適用なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17526v1", "reason": "not-technical: テンソルライブラリの最適化で、ML適用事例ではない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17524v1", "reason": "no-real-world-application: 手法提案のみで実運用の記述なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17488v1", "reason": "no-real-world-application: 収束性の理論解析", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17302v1", "reason": "no-company-author: 大学のみ・手法研究", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17226v1", "reason": "insufficient-info: 所属が読めず、公開データでの手法評価のみ", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17128v1", "reason": "no-company-author: 大学のみ", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.17052v1", "reason": "no-company-author: 大学・研究機関のみ", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.16789v1", "reason": "no-company-author: 公的研究機関・大学のみ", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.16422v1", "reason": "no-real-world-application: シミュレーション上のロボット制御の手法", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.16209v1", "reason": "no-real-world-application: 手法の理論提案で実運用なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.16028v1", "reason": "no-real-world-application: AI政策への市民意見に関する研究で、企業の実業務へのML適用ではない", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15911v1", "reason": "insufficient-info: 所属が読めず、数値例による枠組み提案のみで実運用の確認なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15895v1", "reason": "no-real-world-application: 二段階最適化の手法理論で実サービスへの適用なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15572v1", "reason": "no-company-author: 独立研究者・実運用なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15434v1", "reason": "no-real-world-application: 公開データ(KuaiRand/Avito)のみでの評価で、自社運用の記述なし", "date": "2026-11-16"}
+{"url": "https://arxiv.org/abs/2611.15268v1", "reason": "no-real-world-application: ベンチマーク(τ²-bench)での評価のみ", "date": "2026-11-16"}

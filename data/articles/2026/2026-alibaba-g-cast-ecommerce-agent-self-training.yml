@@ -1,0 +1,31 @@
+id: 2026-alibaba-g-cast-ecommerce-agent-self-training
+url: https://arxiv.org/abs/2611.17814
+title: 'G-CAST: Governed Continual Self-Training for E-Commerce Agents under Evolving Demands'
+title_ja: 'G-CAST: 需要変化下のECエージェントのための統制付き継続的自己学習'
+published: '2026-11-13'
+collected: '2026-11-16'
+companies:
+- alibaba
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: ECの対話型購買エージェントについて、日々の本番ログから報酬で振り分けた学習データを作り、モデルを継続的に更新する仕組みG-CASTを提案。更新ごとに累積的な評価で承認し、既存の挙動を損なわず新しい需要に適応させる。AlibabaのB2B調達エージェントに導入済みと報告している。
+problem: 新しい商品カテゴリや調達シナリオで需要の分布が変わり、一度学習したモデルが陳腐化する。エージェントのツールや手順も更新されるため、新機能を使えるようにしつつ既に受理された挙動を失わないことが難しい。人手での定期再学習は遅く手間がかかる。
+approach: 本番の利用証跡を報酬に応じて振り分け、エントロピーで優先度を付けた学習データに変換。報酬自体も統制のもとで進化させ、累積評価を通過したチェックポイントのみに遷移する。
+result: 実際の本番ECエージェントで、強い自律的ポストトレーニングのベースラインより新規需要への適応が高く、既存挙動の保持も良好と報告(数値は原文参照)。1688のB2B調達エージェントYuancaiに導入。
+tags:
+  task:
+  - conversational-ai
+  domain:
+  - e-commerce
+  method:
+  - llm
+  - reinforcement-learning
+  - online-learning
+  data_type:
+  - text
+  - log
+confidence: 0.65

@@ -1,0 +1,29 @@
+id: 2026-observe-ai-far-end-detection-voice-calls
+url: https://arxiv.org/abs/2611.18050
+title: 'FEND: Far-End Detection in Outbound Voice AI Calls'
+title_ja: アウトバウンド音声AI通話における相手側(留守電・IVR・AI)の判別
+published: '2026-11-13'
+collected: '2026-11-16'
+companies:
+- observe-ai
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: 音声AIが発信した電話の相手が、人・留守電・IVR・別のAIのどれかを判別するFENDを提案。音声と逐次文字起こしから各自動応答クラスを個別に検出し、人をデフォルトとして20秒以内に1ラベルを返す。自社の発信運用のトラフィックでも評価している。
+problem: 従来の留守電検出(AMD)は人か機械かの2値しか返さず、留守電へのメッセージ、IVR操作、AI同士の短い会話という異なる対応を音声AIエージェントが選べない。自社運用では通話の約45%が留守電、約7%がAIだった。
+approach: 音声と逐次文字起こしを入力に、留守電・IVR・AI応答それぞれの検出器を並べ、どれも発火しなければ人とみなす構成。AI応答の判別には録音条件に依存しにくい発話の間隔(タイミング)の特徴を利用した。
+result: 公開ベンチマークで留守電判定は精度100%で人を誤分類せず(AsteriskのAMDは30〜66%誤分類)。AI応答の判別はROC-AUC 0.952。本番トラフィックで人と自動応答の分離はF1 0.979、人が自動ラベルを付けられる誤りは2.9%。
+tags:
+  task:
+  - classification
+  domain:
+  - telecom
+  method:
+  - deep-learning
+  data_type:
+  - audio
+  - text
+confidence: 0.75
