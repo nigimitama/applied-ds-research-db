@@ -1,0 +1,32 @@
+id: 2026-jpmorgan-large-payments-model
+url: https://arxiv.org/abs/2611.15814
+title: Large Payments Model
+title_ja: 'Large Payments Model: 決済予測のための基盤モデル'
+published: '2026-11-11'
+collected: '2026-11-16'
+companies:
+- jpmorgan
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: 不正検知・承認予測・決済最適化が共通の取引情報に依存する点に着目し、大規模な構造化取引データでゼロから事前学習した決済ドメインの基盤モデルLPMを提案した。取引ごとの推論に向く独立型と、履歴を取り込む系列型の2構成で、複数の予測タスクの再利用可能な表現を得る。本番導入も報告している。
+problem: 決済の各予測タスクをタスクごとに別々に開発すると表現や信号が共有されない。取引フィールドの異質性、高カーディナリティのID、長い履歴、稀な結果を扱いつつ、遅延とコストの制約を満たす必要がある。
+approach: フィールド別の符号化とライフサイクルを考慮した自己教師あり学習で、ハイブリッドマスキングの独立型と、エンティティ連結の履歴を圧縮表現で取り込む系列型を構築。蒸留で軽量配備も可能にした。
+result: 最大4000億トークンで事前学習し、Merchant・Treasury Servicesの複数タスクでタスク特化ベースラインを上回る。事前学習で観測しない目的にも小さな追加部品で適応でき、本番導入も報告(数値は原文参照)。
+tags:
+  task:
+  - fraud-detection
+  - risk-scoring
+  domain:
+  - finance
+  method:
+  - transformer
+  - embedding
+  - model-compression
+  data_type:
+  - tabular
+  - log
+confidence: 0.8

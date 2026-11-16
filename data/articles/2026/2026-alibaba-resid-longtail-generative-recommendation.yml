@@ -1,0 +1,29 @@
+id: 2026-alibaba-resid-longtail-generative-recommendation
+url: https://arxiv.org/abs/2611.16404
+title: 'ReSID: Rethinking Long-Tail Retrieval in Generative Recommendation through Item Reachability'
+title_ja: 'ReSID: アイテム到達性から見る生成型推薦のロングテール検索'
+published: '2026-11-12'
+collected: '2026-11-16'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: セマンティックIDを生成する推薦で、ロングテール商品が取れにくい問題をSID構築・復号・照合の全体で分析した。並列SIDと、人気度の偏りを補正するビームサーチ、部分一致での回収を組み合わせたReSIDを提案。AlibabaのDigital Commerce Groupの本番システムで主要トラフィックを処理していると報告している。
+problem: 生成型推薦は偏った行動分布と厳しい配信予算のもとでロングテール商品を取り出しにくい。ビームサーチが完全一致に至る前の候補を切り捨てるため、復号列に残る局所的な手がかりも回収できない。
+approach: 長い並列SIDを用い、人気度で偏りを補正しユーザー意味を考慮したビームサーチで有望な経路を残し、残ったトークンからの部分一致でアイテムを回収する。
+result: ロングテールの検索で最高水準を達成しつつ全体精度も同等で、狭いビーム幅で低遅延・高スループット。本番で主要トラフィックに配信され事業上の効果があると報告(数値は原文参照)。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - transformer
+  - embedding
+  data_type:
+  - log
+confidence: 0.75

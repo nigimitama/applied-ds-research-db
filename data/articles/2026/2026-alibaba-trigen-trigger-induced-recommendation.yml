@@ -1,0 +1,30 @@
+id: 2026-alibaba-trigen-trigger-induced-recommendation
+url: https://arxiv.org/abs/2611.16395
+title: 'TriGen: A Generative Paradigm for Trigger-Induced Recommendation'
+title_ja: 'TriGen: トリガー起点の推薦のための生成パラダイム'
+published: '2026-11-12'
+collected: '2026-11-16'
+companies:
+- alibaba
+collab_academia: true
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: ユーザーのクリックを契機に即座に出すフィードを対象に、セマンティックIDの生成で推薦するTriGenを提案。直近のクリック意図と長期的な嗜好を動的なゲートで調停する。6か国のオンラインA/Bテストで収益とGMVが改善し、全面導入に至ったと報告している。
+problem: クリックが契機となる推薦では、その場の意図に合わせつつ履歴の嗜好との連続性も保つ必要がある。従来のTIR手法は識別的スコアリングでトークン単位の生成を誘導できず、既存の生成モデルは両者の緊張を扱えない。
+approach: 較正済みのテール注入で局所履歴を再符号化し、動的ゲートで持続的な嗜好と即時の衝動を調停、位置ごとの変換でデコード全体にトリガーの誘導を保つ。
+result: オフライン評価で競合ベースラインを一貫して上回り、6か国市場のオンラインA/Bテストで収益とGMVが有意に改善し本番に全面展開(数値は原文参照)。
+tags:
+  task:
+  - recommendation
+  domain:
+  - e-commerce
+  method:
+  - transformer
+  - embedding
+  data_type:
+  - log
+has_online_experiment: true
+confidence: 0.85

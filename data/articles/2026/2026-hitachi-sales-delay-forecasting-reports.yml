@@ -1,0 +1,28 @@
+id: 2026-hitachi-sales-delay-forecasting-reports
+url: https://arxiv.org/abs/2611.16704
+title: Forecasting Sales Delay through Time-aware Analysis of Sales Events in Textual Reports
+title_ja: 営業報告テキストの時系列分析による受注遅延の予測
+published: '2026-11-12'
+collected: '2026-11-16'
+companies:
+- hitachi
+collab_academia: false
+source:
+  type: preprint
+  venue: arXiv
+evidence: preprint
+lang: en
+summary_ja: 営業担当の報告テキストから、予定受注日に対する実際の受注日の遅れ日数を予測する新しいタスクを提案した。担当者が見込む今後の営業イベントの日付を抽出して確信度の特徴とし、案件の進捗状況の特徴と組み合わせる。実際の営業データで評価している。
+problem: 開発リソースを事前に準備するため予定受注日を見積もるが、実際の受注日とずれてコストが増える。営業の進み方は不確実で顧客の発注意欲に左右されるため、遅れの予測が難しい。
+approach: 営業担当の報告から将来の営業イベントの日付を抽出して確信度の代理指標とし、現在日付と過去イベントから進捗状況の特徴を作る。これらの特徴で遅れ日数を予測する。
+result: 実際の営業データで、先行研究に近い特徴量ベースの手法より平均絶対誤差が16%低く、LLMを使う特徴量なしの手法も上回った。
+tags:
+  task:
+  - time-series-forecasting
+  domain: []
+  method:
+  - llm
+  data_type:
+  - text
+  - tabular
+confidence: 0.7
